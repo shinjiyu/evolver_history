@@ -1,0 +1,73 @@
+{
+  "agents": {
+    "researcher_1771333366794_43efd5e4": {
+      "id": "researcher_1771333366794_43efd5e4",
+      "type": "researcher",
+      "role": "信息收集与分析",
+      "status": "idle",
+      "allowed_skills": [
+        "log-analysis",
+        "neutral-evaluator"
+      ],
+      "created_at": "2026-02-17T13:02:46.795Z",
+      "context_path": "/root/.openclaw/workspace/subagents/agents/researcher_1771333366794_43efd5e4",
+      "current_task": null,
+      "updated_at": "2026-02-17T13:02:46.805Z"
+    },
+    "executor_1771333366795_53f68869": {
+      "id": "executor_1771333366795_53f68869",
+      "type": "executor",
+      "role": "执行操作",
+      "status": "busy",
+      "allowed_skills": [
+        "skill-creator",
+        "feishu-doc"
+      ],
+      "created_at": "2026-02-17T13:02:46.795Z",
+      "context_path": "/root/.openclaw/workspace/subagents/agents/executor_1771333366795_53f68869",
+      "current_task": "task_1771333366797_2cc72d4b",
+      "updated_at": "2026-02-17T13:02:46.800Z"
+    },
+    "reviewer_1771333366795_07063921": {
+      "id": "reviewer_1771333366795_07063921",
+      "type": "reviewer",
+      "role": "结果审核",
+      "status": "busy",
+      "allowed_skills": [
+        "neutral-evaluator"
+      ],
+      "created_at": "2026-02-17T13:02:46.796Z",
+      "context_path": "/root/.openclaw/workspace/subagents/agents/reviewer_1771333366795_07063921",
+      "current_task": "task_1771333366797_f489d36a",
+      "updated_at": "2026-02-17T13:02:46.804Z"
+    },
+    "proponent_1771335117235_f9aa762a": {
+      "id": "proponent_1771335117235_f9aa762a",
+      "type": "proponent",
+      "role": "项目支持者 - 从正面角度分析项目优点",
+      "status": "idle",
+      "allowed_skills": [
+        "neutral-evaluator",
+        "log-analysis"
+      ],
+      "created_at": "2026-02-17T13:31:57.236Z",
+      "context_path": "/root/.openclaw/workspace/subagents/agents/proponent_1771335117235_f9aa762a",
+      "current_task": null,
+      "updated_at": "2026-02-17T13:31:57.241Z"
+    },
+    "opponent_1771335117236_b12782a6": {
+      "id": "opponent_1771335117236_b12782a6",
+      "type": "opponent",
+      "role": "项目反对者 - 从批判角度分析项目问题",
+      "status": "idle",
+      "allowed_skills": [
+        "neutral-evaluator",
+        "log-analysis"
+      ],
+      "created_at": "2026-02-17T13:31:57.237Z",
+      "context_path": "/root/.openclaw/workspace/subagents/agents/opponent_1771335117236_b12782a6",
+      "current_task": null,
+      "updated_at": "2026-02-17T13:31:57.242Z"
+    }
+  }
+}

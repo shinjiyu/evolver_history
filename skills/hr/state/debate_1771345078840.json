@@ -1,0 +1,151 @@
+{
+  "target": "https://github.com/shinjiyu/meta_skills",
+  "repoInfo": {
+    "id": 1158538251,
+    "node_id": "R_kgDORQ3kCw",
+    "name": "meta_skills",
+    "full_name": "shinjiyu/meta_skills",
+    "private": false,
+    "owner": {
+      "login": "shinjiyu",
+      "id": 6233416,
+      "node_id": "MDQ6VXNlcjYyMzM0MTY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6233416?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shinjiyu",
+      "html_url": "https://github.com/shinjiyu",
+      "followers_url": "https://api.github.com/users/shinjiyu/followers",
+      "following_url": "https://api.github.com/users/shinjiyu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shinjiyu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shinjiyu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shinjiyu/subscriptions",
+      "organizations_url": "https://api.github.com/users/shinjiyu/orgs",
+      "repos_url": "https://api.github.com/users/shinjiyu/repos",
+      "events_url": "https://api.github.com/users/shinjiyu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shinjiyu/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/shinjiyu/meta_skills",
+    "description": null,
+    "fork": false,
+    "url": "https://api.github.com/repos/shinjiyu/meta_skills",
+    "forks_url": "https://api.github.com/repos/shinjiyu/meta_skills/forks",
+    "keys_url": "https://api.github.com/repos/shinjiyu/meta_skills/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/shinjiyu/meta_skills/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/shinjiyu/meta_skills/teams",
+    "hooks_url": "https://api.github.com/repos/shinjiyu/meta_skills/hooks",
+    "issue_events_url": "https://api.github.com/repos/shinjiyu/meta_skills/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/shinjiyu/meta_skills/events",
+    "assignees_url": "https://api.github.com/repos/shinjiyu/meta_skills/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/shinjiyu/meta_skills/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/shinjiyu/meta_skills/tags",
+    "blobs_url": "https://api.github.com/repos/shinjiyu/meta_skills/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/shinjiyu/meta_skills/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/shinjiyu/meta_skills/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/shinjiyu/meta_skills/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/shinjiyu/meta_skills/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/shinjiyu/meta_skills/languages",
+    "stargazers_url": "https://api.github.com/repos/shinjiyu/meta_skills/stargazers",
+    "contributors_url": "https://api.github.com/repos/shinjiyu/meta_skills/contributors",
+    "subscribers_url": "https://api.github.com/repos/shinjiyu/meta_skills/subscribers",
+    "subscription_url": "https://api.github.com/repos/shinjiyu/meta_skills/subscription",
+    "commits_url": "https://api.github.com/repos/shinjiyu/meta_skills/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/shinjiyu/meta_skills/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/shinjiyu/meta_skills/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/shinjiyu/meta_skills/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/shinjiyu/meta_skills/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/shinjiyu/meta_skills/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/shinjiyu/meta_skills/merges",
+    "archive_url": "https://api.github.com/repos/shinjiyu/meta_skills/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/shinjiyu/meta_skills/downloads",
+    "issues_url": "https://api.github.com/repos/shinjiyu/meta_skills/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/shinjiyu/meta_skills/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/shinjiyu/meta_skills/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/shinjiyu/meta_skills/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/shinjiyu/meta_skills/labels{/name}",
+    "releases_url": "https://api.github.com/repos/shinjiyu/meta_skills/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/shinjiyu/meta_skills/deployments",
+    "created_at": "2026-02-15T14:43:30Z",
+    "updated_at": "2026-02-15T14:45:52Z",
+    "pushed_at": "2026-02-15T14:45:49Z",
+    "git_url": "git://github.com/shinjiyu/meta_skills.git",
+    "ssh_url": "git@github.com:shinjiyu/meta_skills.git",
+    "clone_url": "https://github.com/shinjiyu/meta_skills.git",
+    "svn_url": "https://github.com/shinjiyu/meta_skills",
+    "homepage": null,
+    "size": 96,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "language": null,
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "has_pull_requests": true,
+    "pull_request_creation_policy": "all",
+    "topics": [],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 0,
+    "default_branch": "master",
+    "temp_clone_token": null,
+    "network_count": 0,
+    "subscribers_count": 0
+  },
+  "projectId": "hr_project_1771345078839",
+  "team": [
+    {
+      "role": "支持者 (Proponent)",
+      "stance": "positive"
+    },
+    {
+      "role": "反对者 (Opponent)",
+      "stance": "negative"
+    },
+    {
+      "role": "裁判 (Judge)",
+      "stance": "neutral"
+    }
+  ],
+  "spawnInstructions": [
+    {
+      "tool": "sessions_spawn",
+      "params": {
+        "task": "你是支持者 Agent，从正面角度评测 GitHub 项目: https://github.com/shinjiyu/meta_skills\n\n项目信息:\n- 名称: meta_skills\n- 描述: Meta skills repository\n- Stars: N/A\n\n你的职责:\n1. 分析项目的创新性和价值\n2. 找出设计优点和技术亮点\n3. 论证其实用性和应用前景\n4. 针对反方可能的质疑准备反驳\n\n输出格式:\n## 正方观点\n\n### 核心优点\n1. ...\n2. ...\n3. ...\n\n### 价值论证\n...\n\n### 针对反方的反驳\n...\n",
+        "label": "支持者: 正面评测 https://github.com/shinjiyu/meta_skills",
+        "model": "glm-4-plus"
+      }
+    },
+    {
+      "tool": "sessions_spawn",
+      "params": {
+        "task": "你是反对者 Agent，从批判角度评测 GitHub 项目: https://github.com/shinjiyu/meta_skills\n\n项目信息:\n- 名称: meta_skills\n- 描述: Meta skills repository\n- Stars: N/A\n\n你的职责:\n1. 找出项目的设计缺陷和局限性\n2. 质疑其概念的可行性和实用性\n3. 指出潜在风险和技术债务\n4. 针对正方的论点准备质疑\n\n输出格式:\n## 反方观点\n\n### 核心问题\n1. ...\n2. ...\n3. ...\n\n### 风险论证\n...\n\n### 针对正方的质疑\n...\n",
+        "label": "反对者: 批判评测 https://github.com/shinjiyu/meta_skills",
+        "model": "glm-4-plus"
+      }
+    },
+    {
+      "tool": "sessions_spawn",
+      "params": {
+        "task": "你是裁判 Agent，综合正反双方观点做出客观判断。\n\n项目: https://github.com/shinjiyu/meta_skills\n\n你的职责:\n1. 听取正反双方的论点\n2. 评估双方论证的说服力\n3. 权衡项目的实际价值\n4. 给出综合评判和最终评分\n\n输出格式:\n## 综合评判\n\n### 正方优势论点\n...\n\n### 反方有效质疑\n...\n\n### 综合分析\n...\n\n### 最终评分\n- 创新性: X/10\n- 实用性: X/10\n- 完成度: X/10\n- 总评: X/10\n\n### 建议采纳程度\n[强烈推荐 / 推荐尝试 / 谨慎使用 / 不推荐]\n\n### 理由\n...\n",
+        "label": "裁判: 综合评判 https://github.com/shinjiyu/meta_skills",
+        "model": "glm-4-plus"
+      }
+    }
+  ],
+  "createdAt": "2026-02-17T16:17:58.840Z"
+}

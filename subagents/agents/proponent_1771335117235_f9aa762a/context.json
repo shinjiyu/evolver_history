@@ -1,0 +1,12 @@
+{
+  "agent_id": "proponent_1771335117235_f9aa762a",
+  "type": "proponent",
+  "role": "项目支持者 - 从正面角度分析项目优点",
+  "status": "idle",
+  "allowed_skills": [
+    "neutral-evaluator",
+    "log-analysis"
+  ],
+  "conversation_history": [],
+  "created_at": "2026-02-17T13:31:57.236Z"
+}

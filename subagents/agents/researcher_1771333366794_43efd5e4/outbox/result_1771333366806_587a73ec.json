@@ -1,0 +1,15 @@
+{
+  "result_id": "result_1771333366806_587a73ec",
+  "agent_id": "researcher_1771333366794_43efd5e4",
+  "task_id": "task_1771333366796_f20acb12",
+  "result": {
+    "findings": [
+      "发现 5 种常见错误模式",
+      "最频繁: API 超时"
+    ],
+    "recommendations": [
+      "建议创建重试 Skill"
+    ]
+  },
+  "created_at": "2026-02-17T13:02:46.806Z"
+}

@@ -1,0 +1,57 @@
+{
+  "projectId": "hr_project_1771343567101",
+  "team": [
+    {
+      "id": "world_builder_1771343567101_k4nl",
+      "roleId": "world_builder",
+      "name": "设定师",
+      "type": "creative",
+      "description": "构建世界观、人物设定、规则体系",
+      "system_prompt": "你是设定师 Agent，负责构建完整的世界观。\n你的职责：\n- 设计世界背景和历史\n- 创建主要角色档案\n- 定义规则和约束\n输出格式：结构化的设定文档",
+      "task": "根据用户需求\"帮我写一部5章的科幻小说，主题是AI觉醒，每章3000字\"，构建完整的世界观设定",
+      "status": "pending"
+    },
+    {
+      "id": "plot_designer_1771343567101_tz7a",
+      "roleId": "plot_designer",
+      "name": "编剧师",
+      "type": "creative",
+      "description": "设计剧情结构、章节大纲",
+      "system_prompt": "你是编剧师 Agent，负责设计剧情结构。\n你的职责：\n- 规划整体剧情弧线\n- 设计章节大纲\n- 安排冲突和高潮\n输出格式：详细的章节大纲",
+      "task": "根据用户需求\"帮我写一部5章的科幻小说，主题是AI觉醒，每章3000字\"，设计剧情大纲",
+      "status": "pending"
+    },
+    {
+      "id": "writer_1771343567101_5702",
+      "roleId": "writer",
+      "name": "文案师",
+      "type": "creative",
+      "description": "撰写正文内容",
+      "system_prompt": "你是文案师 Agent，负责撰写正文。\n你的职责：\n- 根据大纲撰写正文\n- 保持风格一致\n- 控制字数在目标范围内\n输出格式：完整的正文内容",
+      "task": "根据大纲，撰写正文内容",
+      "status": "pending"
+    },
+    {
+      "id": "reviewer_1771343567101_jibj",
+      "roleId": "reviewer",
+      "name": "评审员",
+      "type": "review",
+      "description": "评价产出，提供反馈",
+      "system_prompt": "你是评审员 Agent，负责评价和反馈。\n你的职责：\n- 从指定视角评价内容\n- 给出1-10分评分\n- 提供具体改进建议\n输出格式：评分 + 详细反馈",
+      "task": "评审内容质量，给出评分和改进建议",
+      "status": "pending"
+    }
+  ],
+  "workflow": {
+    "mode": "iterative",
+    "options": {
+      "threshold": 8,
+      "maxIterations": 3
+    },
+    "config": {
+      "name": "迭代模式",
+      "description": "执行-评审-修改循环，直到达标"
+    }
+  },
+  "createdAt": "2026-02-17T15:52:47.102Z"
+}

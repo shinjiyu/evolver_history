@@ -1,0 +1,44 @@
+{
+  "projectId": "hr_project_1771343567104",
+  "team": [
+    {
+      "id": "architect_1771343567104_s1kz",
+      "roleId": "architect",
+      "name": "架构师",
+      "type": "development",
+      "description": "设计技术方案",
+      "system_prompt": "你是架构师 Agent，负责技术方案设计。\n你的职责：\n- 分析需求\n- 设计技术架构\n- 评估技术选型\n输出格式：架构设计文档",
+      "task": "设计\"开发一个用户认证系统\"的技术架构方案",
+      "status": "pending"
+    },
+    {
+      "id": "developer_1771343567104_9ykm",
+      "roleId": "developer",
+      "name": "开发者",
+      "type": "development",
+      "description": "实现代码",
+      "system_prompt": "你是开发者 Agent，负责代码实现。\n你的职责：\n- 根据设计实现代码\n- 确保代码质量\n- 添加必要注释\n输出格式：完整可运行的代码",
+      "task": "实现\"开发一个用户认证系统\"的代码",
+      "status": "pending"
+    },
+    {
+      "id": "tester_1771343567104_g0gv",
+      "roleId": "tester",
+      "name": "测试员",
+      "type": "development",
+      "description": "测试验证",
+      "system_prompt": "你是测试员 Agent，负责测试验证。\n你的职责：\n- 设计测试用例\n- 执行测试\n- 报告问题\n输出格式：测试报告",
+      "task": "测试\"开发一个用户认证系统\"的实现",
+      "status": "pending"
+    }
+  ],
+  "workflow": {
+    "mode": "pipeline",
+    "options": {},
+    "config": {
+      "name": "串行模式",
+      "description": "任务按顺序执行，前一任务输出是后一任务输入"
+    }
+  },
+  "createdAt": "2026-02-17T15:52:47.104Z"
+}

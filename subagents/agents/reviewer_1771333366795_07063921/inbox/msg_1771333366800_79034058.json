@@ -1,0 +1,21 @@
+{
+  "message_id": "msg_1771333366800_79034058",
+  "type": "task_assignment",
+  "from": "scheduler",
+  "to": "reviewer_1771333366795_07063921",
+  "payload": {
+    "task_id": "task_1771333366797_f489d36a",
+    "type": "reviewer",
+    "description": "审核生成的 Skill 质量",
+    "inputs": {},
+    "constraints": {},
+    "assigned_to": "reviewer_1771333366795_07063921",
+    "status": "assigned",
+    "created_at": "2026-02-17T13:02:46.797Z",
+    "depends_on": [
+      "task_1771333366797_2cc72d4b"
+    ],
+    "assigned_at": "2026-02-17T13:02:46.800Z"
+  },
+  "created_at": "2026-02-17T13:02:46.804Z"
+}

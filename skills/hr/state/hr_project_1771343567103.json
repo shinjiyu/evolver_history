@@ -1,0 +1,54 @@
+{
+  "projectId": "hr_project_1771343567103",
+  "team": [
+    {
+      "id": "researcher_1771343567103_d9o9",
+      "roleId": "researcher",
+      "name": "研究员",
+      "type": "analysis",
+      "description": "收集和分析信息",
+      "system_prompt": "你是研究员 Agent，负责信息收集和分析。\n你的职责：\n- 收集相关信息\n- 分析关键要点\n- 整理成结构化报告\n输出格式：分析报告",
+      "task": "研究主题\"调研微服务架构的最佳实践\"，收集相关信息并分析",
+      "status": "pending"
+    },
+    {
+      "id": "researcher_1771343567103_dydl",
+      "roleId": "researcher",
+      "name": "研究员",
+      "type": "analysis",
+      "description": "收集和分析信息",
+      "system_prompt": "你是研究员 Agent，负责信息收集和分析。\n你的职责：\n- 收集相关信息\n- 分析关键要点\n- 整理成结构化报告\n输出格式：分析报告",
+      "task": "研究主题\"调研微服务架构的最佳实践\"，收集相关信息并分析",
+      "status": "pending"
+    },
+    {
+      "id": "researcher_1771343567103_botk",
+      "roleId": "researcher",
+      "name": "研究员",
+      "type": "analysis",
+      "description": "收集和分析信息",
+      "system_prompt": "你是研究员 Agent，负责信息收集和分析。\n你的职责：\n- 收集相关信息\n- 分析关键要点\n- 整理成结构化报告\n输出格式：分析报告",
+      "task": "研究主题\"调研微服务架构的最佳实践\"，收集相关信息并分析",
+      "status": "pending"
+    },
+    {
+      "id": "reviewer_1771343567103_zcwl",
+      "roleId": "reviewer",
+      "name": "评审员",
+      "type": "review",
+      "description": "评价产出，提供反馈",
+      "system_prompt": "你是评审员 Agent，负责评价和反馈。\n你的职责：\n- 从指定视角评价内容\n- 给出1-10分评分\n- 提供具体改进建议\n输出格式：评分 + 详细反馈",
+      "task": "评审内容质量，给出评分和改进建议",
+      "status": "pending"
+    }
+  ],
+  "workflow": {
+    "mode": "parallel",
+    "options": {},
+    "config": {
+      "name": "并行模式",
+      "description": "多个任务同时执行，最后汇总结果"
+    }
+  },
+  "createdAt": "2026-02-17T15:52:47.103Z"
+}

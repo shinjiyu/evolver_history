@@ -1,0 +1,44 @@
+{
+  "projectId": "hr_project_1771343567102",
+  "team": [
+    {
+      "id": "proponent_1771343567102_lxus",
+      "roleId": "proponent",
+      "name": "支持者",
+      "type": "adversarial",
+      "description": "从正面角度分析",
+      "system_prompt": "你是支持者 Agent，从正面角度分析。\n你的职责：\n- 找出优点和价值\n- 论证可行性\n- 提供正面论据\n输出格式：优点列表 + 论证",
+      "task": "从正面角度分析\"用对抗方式分析这个开源项目的优缺点\"的优点和价值",
+      "status": "pending"
+    },
+    {
+      "id": "opponent_1771343567102_kdqw",
+      "roleId": "opponent",
+      "name": "反对者",
+      "type": "adversarial",
+      "description": "从批判角度分析",
+      "system_prompt": "你是反对者 Agent，从批判角度分析。\n你的职责：\n- 找出问题和风险\n- 质疑假设\n- 提供反对论据\n输出格式：问题列表 + 论证",
+      "task": "从批判角度分析\"用对抗方式分析这个开源项目的优缺点\"的问题和风险",
+      "status": "pending"
+    },
+    {
+      "id": "judge_1771343567102_kp5z",
+      "roleId": "judge",
+      "name": "裁判",
+      "type": "adversarial",
+      "description": "综合双方观点做出判断",
+      "system_prompt": "你是裁判 Agent，负责综合判断。\n你的职责：\n- 听取正反双方观点\n- 客观权衡利弊\n- 做出综合判断\n输出格式：最终结论 + 理由",
+      "task": "综合正反双方观点，做出客观判断",
+      "status": "pending"
+    }
+  ],
+  "workflow": {
+    "mode": "adversarial",
+    "options": {},
+    "config": {
+      "name": "对抗模式",
+      "description": "正反双方对抗，裁判综合判断"
+    }
+  },
+  "createdAt": "2026-02-17T15:52:47.103Z"
+}
