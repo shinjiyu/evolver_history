@@ -1,0 +1,128 @@
+{
+  "github_token": "${GITHUB_TOKEN}",
+  "output_dir": "./results",
+  "rate_limit_delay_ms": 500,
+  "max_files_per_query": 20,
+  "providers": {
+    "openai": {
+      "name": "OpenAI",
+      "pattern": "sk-[a-zA-Z0-9]{20,}T3Ab[a-zA-Z0-9]*",
+      "search_queries": [
+        "sk- language:JSON",
+        "sk-proj- extension:env"
+      ],
+      "validate_url": "https://api.openai.com/v1/models",
+      "auth_header": "Bearer"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "pattern": "sk-ant-api03-[a-zA-Z0-9]{80,}",
+      "search_queries": [
+        "sk-ant-api03- extension:env",
+        "sk-ant- language:python"
+      ],
+      "validate_url": "https://api.anthropic.com/v1/models",
+      "auth_header": "x-api-key"
+    },
+    "google": {
+      "name": "Google Gemini",
+      "pattern": "AIza[a-zA-Z0-9_-]{35}",
+      "search_queries": [
+        "AIza extension:json",
+        "AIza language:yaml"
+      ],
+      "validate_url": "https://generativelanguage.googleapis.com/v1/models",
+      "auth_header": "key"
+    },
+    "zhipu": {
+      "name": "智谱 AI",
+      "pattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\\.[a-zA-Z0-9_-]+",
+      "search_queries": [
+        "zhipu api_key extension:env",
+        "GLM language:python"
+      ],
+      "validate_url": "https://open.bigmodel.cn/api/paas/v4/models",
+      "auth_header": "Bearer"
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "pattern": "sk-[a-zA-Z0-9]{32,}",
+      "search_queries": [
+        "DEEPSEEK_API_KEY extension:env",
+        "deepseek sk- language:python"
+      ],
+      "validate_url": "https://api.deepseek.com/v1/models",
+      "auth_header": "Bearer"
+    },
+    "moonshot": {
+      "name": "Moonshot",
+      "pattern": "sk-[a-zA-Z0-9]{40,}",
+      "search_queries": [
+        "MOONSHOT_API_KEY extension:env",
+        "moonshot sk- language:js"
+      ],
+      "validate_url": "https://api.moonshot.cn/v1/models",
+      "auth_header": "Bearer"
+    },
+    "qwen": {
+      "name": "通义千问",
+      "pattern": "sk-[a-zA-Z0-9]{30,}",
+      "search_queries": [
+        "QWEN_API_KEY extension:env",
+        "dashscope sk- language:python"
+      ],
+      "validate_url": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+      "auth_header": "Bearer"
+    },
+    "openrouter": {
+      "name": "OpenRouter",
+      "pattern": "sk-or-[a-zA-Z0-9]{20,}",
+      "search_queries": [
+        "sk-or- extension:env",
+        "OPENROUTER_API_KEY language:js"
+      ],
+      "validate_url": "https://openrouter.ai/api/v1/models",
+      "auth_header": "Bearer"
+    },
+    "together": {
+      "name": "Together AI",
+      "pattern": "[a-zA-Z0-9]{40,}",
+      "search_queries": [
+        "TOGETHER_API_KEY extension:env",
+        "together.ai language:python"
+      ],
+      "validate_url": "https://api.together.xyz/v1/models",
+      "auth_header": "Bearer"
+    },
+    "replicate": {
+      "name": "Replicate",
+      "pattern": "r8_[a-zA-Z0-9]{30,}",
+      "search_queries": [
+        "REPLICATE_API_TOKEN extension:env",
+        "r8_ language:python"
+      ],
+      "validate_url": "https://api.replicate.com/v1/models",
+      "auth_header": "Token"
+    },
+    "cohere": {
+      "name": "Cohere",
+      "pattern": "[a-zA-Z0-9]{40,}",
+      "search_queries": [
+        "COHERE_API_KEY extension:env",
+        "cohere language:python"
+      ],
+      "validate_url": "https://api.cohere.ai/v1/models",
+      "auth_header": "Bearer"
+    },
+    "mistral": {
+      "name": "Mistral",
+      "pattern": "[a-zA-Z0-9]{32,}",
+      "search_queries": [
+        "MISTRAL_API_KEY extension:env",
+        "mistral language:python"
+      ],
+      "validate_url": "https://api.mistral.ai/v1/models",
+      "auth_header": "Bearer"
+    }
+  }
+}

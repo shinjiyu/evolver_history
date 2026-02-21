@@ -1,0 +1,32 @@
+[
+  {
+    "provider": "deepseek",
+    "provider_name": "DeepSeek",
+    "key": "sk-0dad5c34545a4012ab263f1af62ef316",
+    "key_preview": "sk-0dad5c3...ef316",
+    "repo": "skyeportfolio/skyeportfolio.github.io",
+    "file": "secure.env",
+    "url": "https://github.com/skyeportfolio/skyeportfolio.github.io/blob/f1b689f077026f23c6b0ef5c52dfedcfda690bdb/secure.env",
+    "found_at": "2026-02-21T07:15:55.214Z"
+  },
+  {
+    "provider": "deepseek",
+    "provider_name": "DeepSeek",
+    "key": "sk-ijklmnopqrstuvwxijklmnopqrstuvwxijklmnop",
+    "key_preview": "sk-ijklmno...lmnop",
+    "repo": "AbdulAHAD968/Web-Assignment2",
+    "file": "temp.env",
+    "url": "https://github.com/AbdulAHAD968/Web-Assignment2/blob/96b66f34d7f7faa898a400a09727eea7220d82fa/temp.env",
+    "found_at": "2026-02-21T07:15:57.785Z"
+  },
+  {
+    "provider": "deepseek",
+    "provider_name": "DeepSeek",
+    "key": "sk-f82e16c19b7a4db18300f744ea2c9a4d",
+    "key_preview": "sk-f82e16c...c9a4d",
+    "repo": "haroldHD/Repo_NEM",
+    "file": "Variables_Ambiente.env",
+    "url": "https://github.com/haroldHD/Repo_NEM/blob/defe207d89a38f6724ff9a1acaee030a9cdf30e6/Variables_Ambiente.env",
+    "found_at": "2026-02-21T07:16:01.037Z"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "provider": "anthropic",
+    "provider_name": "Anthropic",
+    "key": "sk-ant-api03-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "key_preview": "sk-ant-api...xxxxx",
+    "repo": "av/harbor",
+    "file": "services/autogpt/override.env",
+    "url": "https://github.com/av/harbor/blob/476db33626811718dc5ec532704093539101b9d4/services/autogpt/override.env",
+    "found_at": "2026-02-21T07:15:26.060Z"
+  }
+]

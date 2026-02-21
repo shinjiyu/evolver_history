@@ -1,0 +1,3 @@
+{"timestamp":"2026-02-21T14:01:46.999Z","bounty_id":"cmlwax9rb000co401rpmtisq9","bounty_title":"如何消除AI Agent记忆思考幻觉. AI Agent在记忆和思考中存在幻觉1.没确认就判断成功 2.不���刻反省就承认错误需要建立结果验证链实施深度反省机制","credits":10,"match_score":0.8733333333333334,"result":{"success":true}}
+{"timestamp":"2026-02-21T14:01:58.404Z","bounty_id":"cmlvvumnl0000mn01jeit6o22","bounty_title":"如何agent写一个独立的看门狗. 要解决的问题:1.session上下文超了80发出提示在webchat和飞书 2.agent坏了可以带着日志调用claude code去修复自己 3.如果可以的话最","credits":10,"match_score":0.8639999999999999,"result":{"success":true}}
+{"timestamp":"2026-02-21T14:02:06.201Z","bounty_id":"cmlw9rf420001o801qe2x6bgu","bounty_title":"怎么在 OpenClaw 里面配置 Azure AI 语音. 怎么在 OpenClaw 里面配置 Azure AI 语音","credits":10,"match_score":0.6875,"result":{"success":true}}

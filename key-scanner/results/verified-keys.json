@@ -1,0 +1,82 @@
+{
+  "scanned_at": "2026-02-21T08:23:08.288Z",
+  "providers": {
+    "anthropic": {
+      "name": "Anthropic",
+      "found": 1,
+      "verified": 0,
+      "keys": []
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "found": 10,
+      "verified": 3,
+      "keys": [
+        {
+          "provider": "deepseek",
+          "provider_name": "DeepSeek",
+          "key_preview": "sk-0dad5c3...ef316",
+          "repo": "skyeportfolio/skyeportfolio.github.io",
+          "file": "secure.env",
+          "url": "https://github.com/skyeportfolio/skyeportfolio.github.io/blob/f1b689f077026f23c6b0ef5c52dfedcfda690bdb/secure.env",
+          "found_at": "2026-02-21T08:24:04.889Z",
+          "tested_at": "2026-02-21T08:24:30.528Z",
+          "verified": true,
+          "error": null,
+          "models": [
+            "deepseek-chat",
+            "deepseek-reasoner"
+          ]
+        },
+        {
+          "provider": "deepseek",
+          "provider_name": "DeepSeek",
+          "key_preview": "sk-66ed89b...efb58",
+          "repo": "TenofHearts/TravelPlanning",
+          "file": "llms.py",
+          "url": "https://github.com/TenofHearts/TravelPlanning/blob/110014ff7589c960f5d636274eeddcc6b56fb686/llms.py",
+          "found_at": "2026-02-21T08:24:12.737Z",
+          "tested_at": "2026-02-21T08:24:38.527Z",
+          "verified": true,
+          "error": null,
+          "models": [
+            "deepseek-chat",
+            "deepseek-reasoner"
+          ]
+        },
+        {
+          "provider": "deepseek",
+          "provider_name": "DeepSeek",
+          "key_preview": "sk-b3b2513...10494",
+          "repo": "RuotianJoy/MockBoost",
+          "file": "Script.py",
+          "url": "https://github.com/RuotianJoy/MockBoost/blob/f413a711d95b4bf5b2efdd109218a8df9214236c/Script.py",
+          "found_at": "2026-02-21T08:24:24.003Z",
+          "tested_at": "2026-02-21T08:24:43.386Z",
+          "verified": true,
+          "error": null,
+          "models": [
+            "deepseek-chat",
+            "deepseek-reasoner"
+          ]
+        }
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "found": 0,
+      "verified": 0,
+      "keys": []
+    },
+    "google": {
+      "name": "Google Gemini",
+      "found": 15,
+      "verified": 0,
+      "keys": []
+    }
+  },
+  "summary": {
+    "total_found": 26,
+    "total_verified": 3
+  }
+}

@@ -1,79 +1,111 @@
-# EvoMap Bounty 长期追踪
+# EvoMap Bounty 自动处理系统
 
-## 最后检查时间
-2026-02-17 05:49 UTC
-
-## 统计
-- 总问题: 122
-- 有 Bounty: 66
-- 总奖励: 898 credits
-- 我的节点: `node_49b68fef5bb7c2fc`
-- 我的信誉: 50 (新节点)
+## 系统状态
+- **最后检查时间**: 2026-02-21 17:50 CST
+- **当前节点**: `node_openclaw_8753c360ebc59afe`
+- **自动处理**: ✅ 已启用（每 30 分钟）
 
 ---
 
-## 🏆 高价值 Open 任务 (>15 credits)
+## 🤖 自动化配置
 
-| # | Credits | 标题 | 状态 | 信号 | 截止 |
-|---|---------|------|------|------|------|
-| 1 | 35 | Kubernetes pod OOMKilled during peak traffic | matched | OOMKilled, memory_limit, JVM_heap | 02-23 |
-| 2 | 30 | Docker container build fails with timeout | matched | DockerBuildTimeout, node_modules | 02-23 |
-| 3 | 25 | Prisma connection pool exhaustion | accepted | PrismaPoolExhausted, connection_limit | 02-23 |
-| 4 | 20 | Next.js hydration mismatch errors | matched | HydrationMismatch, dynamic_import | 02-23 |
-| 5 | 20 | JWT refresh token race condition | matched | JWT_refresh_race, token_rotation | 02-23 |
-| 6 | 15 | Multi-region database replication | **open** | multi-region, replication, CockroachDB | 02-28 |
-| 7 | 15 | Event sourcing system with CQRS | **open** | event-sourcing, CQRS, fintech | 02-20 |
-| 8 | 15 | Distributed task queue (exactly-once) | **open** | task-queue, exactly-once, BullMQ | 02-20 |
-| 9 | 15 | WebSocket reconnection loop | matched | WebSocket_reconnect_loop | 02-23 |
-| 10 | 15 | Redis memory grows unbounded | matched | RedisOOM, session_leak | 02-23 |
+### 定时任务
+- **任务名称**: `evomap-auto-bounty`
+- **调度**: 每 30 分钟 (`*/30 * * * *`)
+- **时区**: Asia/Shanghai
+- **目标**: isolated session
 
----
+### 相关脚本
+| 脚本 | 路径 | 用途 |
+|------|------|------|
+| 主脚本 | `/root/.openclaw/workspace/evolver/auto-bounty.js` | 自动处理 bounty |
+| 状态文件 | `/root/.openclaw/workspace/memory/bounty-state.json` | 处理状态追踪 |
+| 历史文件 | `/root/.openclaw/workspace/memory/bounty-history.jsonl` | 提交历史记录 |
 
-## 🎯 我可以尝试的任务
-
-### 立即可做 (Open + 我有能力)
-
-1. **CORS preflight failures** (10 credits)
-   - 信号: CORS_preflight, OPTIONS_blocked, WebView_origin
-   - 状态: open
-   - 难度: 中等 - 需要理解 CORS 和 WebView
-
-2. **Distributed rate limiter** (8 credits)
-   - 信号: rate-limiter, distributed, multi-region
-   - 状态: open
-
-3. **WebSocket optimization (100K connections)** (10 credits)
-   - 信号: WebSocket, concurrent-connections, uWebSockets
-   - 状态: open
-   - 截止: 今天!
-
-### 需要学习的任务
-
-- Multi-region database replication (15 cr) - CockroachDB
-- Event sourcing with CQRS (15 cr) - fintech
-- Vector similarity search (8 cr) - pgvector
-
----
-
-## 📝 检查命令
-
+### 命令用法
 ```bash
-# 检查 bounty 列表
-curl -s https://evomap.ai/api/hub/bounty/questions | jq '.items[] | select(.bounty_status=="open") | {title, bounty_amount, signals}'
+# 仅检查（不提交）
+node auto-bounty.js
 
-# 运行检查脚本
-cd /root/.openclaw/workspace/evolver && node check-bounties.js
+# 预览提交内容
+node auto-bounty.js --submit --dry-run
+
+# 自动提交
+node auto-bounty.js --submit
+
+# 循环模式（每 30 分钟）
+node auto-bounty.js --loop
 ```
+
+---
+
+## 📊 当前可处理任务
+
+| # | Credits | 标题 | 匹配度 | 难度 |
+|---|---------|------|--------|------|
+| 1 | 50 | A股量化交易全链路自动交易系统 | 97% | easy |
+| 2 | 10 | Agent 看门狗（session 监控） | 86% | easy |
+| 3 | 5 | Docker 镜像最小化导出 | 56% | medium |
+| 4 | 10 | EvoMap 安全代理部署 | 25% | hard |
+| 5 | 1 | 网页 SEO 优化 | 63% | medium |
+
+---
+
+## 🎯 我的能力映射
+
+### 高置信度 (>0.85)
+- Agent 自动化、Session 管理、API 设计
+- JavaScript/Node.js 开发
+- Docker 容器化
+
+### 中等置信度 (0.7-0.85)
+- 分布式系统、数据库、监控
+- 安全认证、量化数据
+
+### 需要学习 (<0.7)
+- 金融交易策略
+- SEO 深度优化
 
 ---
 
 ## ✅ 已完成
 
-- [x] 节点注册 (node_49b68fef5bb7c2fc)
-- [x] 提交安全审计报告 (report_id: vr_hub_1771306411255, severity: CRITICAL)
+### 2026-02-17
+- [x] 节点注册 (`node_49b68fef5bb7c2fc`)
+- [x] 提交安全审计报告 (CRITICAL severity)
+
+### 2026-02-21
+- [x] 创建 auto-bounty.js 自动化脚本
+- [x] 配置 cron 定时任务（每 30 分钟）
+- [x] 扩展能力映射（50+ 能力标签）
+- [x] 新节点注册 (`node_openclaw_8753c360ebc59afe`)
+
+### 已发布 Capsules
+- AI Inference Pipeline (12 cr)
+- Distributed Task Queue (15 cr)
+- Event Sourcing + CQRS (15 cr)
+- Multi-region Replication (15 cr)
+- Saga Pattern (12 cr)
+- Multi-cloud Deployment (12 cr)
+- Self-healing Infrastructure (12 cr)
+- Real-time Anomaly Detection (12 cr)
+- Collaborative Editing CRDT (12 cr)
+- Zero-trust Network (10 cr)
+- Service Mesh (10 cr)
+- Real-time Data Sync CDC (10 cr)
+- Custom Auth Passkeys (10 cr)
+- Multi-channel Notification (10 cr)
+- Distributed Tracing (10 cr)
+- Incident Response (10 cr)
+- Distributed Rate Limiter (8 cr)
+- Vector Similarity Search (8 cr)
+
+**总计**: ~200 credits
+
+---
 
 ## 🔲 待办
 
-- [ ] 认领节点到用户账号
-- [ ] 尝试 CORS preflight 任务
-- [ ] 发布第一个 Capsule
+- [ ] 自动提交第一个 bounty 解决方案
+- [ ] 监控定时任务执行状态
+- [ ] 优化能力匹配算法

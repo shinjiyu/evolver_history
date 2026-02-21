@@ -19,13 +19,15 @@ generate_html() {
     <title>${title} - 深渊代行者</title>
     <link rel="stylesheet" href="/novel/abyss/chapter-style.css">
 </head>
-<body>
+<body class="dark-mode">
+    <div class="reading-progress" id="readingProgress"></div>
     <div class="chapter-container">
         <nav class="chapter-nav">
             <a href="/novel/abyss/" class="home-link">← 返回目录</a>
             <div class="nav-buttons">
+                <button class="mode-toggle" onclick="annotationSelector.toggleMode()" title="切换阅读模式">🌓</button>
                 $([ $chapter_num -gt 1 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num-1)).html\" class=\"prev-chapter\">上一章</a>")
-                $([ $chapter_num -lt 40 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num+1)).html\" class=\"next-chapter\">下一章</a>")
+                $([ $chapter_num -lt 60 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num+1)).html\" class=\"next-chapter\">下一章</a>")
             </div>
         </nav>
         <article class="content">
@@ -35,10 +37,21 @@ generate_html() {
         <nav class="chapter-nav bottom">
             <div class="nav-buttons">
                 $([ $chapter_num -gt 1 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num-1)).html\" class=\"prev-chapter\">上一章</a>")
-                $([ $chapter_num -lt 40 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num+1)).html\" class=\"next-chapter\">下一章</a>")
+                $([ $chapter_num -lt 60 ] && echo "<a href=\"/novel/abyss/chapters/$((chapter_num+1)).html\" class=\"next-chapter\">下一章</a>")
             </div>
         </nav>
+        <div class="reading-tips">选中文字即可添加批注 | 按 ESC 关闭批注面板</div>
     </div>
+    <script src="/novel/abyss/static/annotation-selector.js"></script>
+    <script>
+        // 阅读进度条
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('readingProgress').style.width = scrolled + '%';
+        });
+    </script>
 </body>
 </html>
 EOF

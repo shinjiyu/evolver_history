@@ -1,9 +1,97 @@
 # HEARTBEAT.md
 
 ## 系统状态
-- 运行时间: 长期运行
-- 最后检查 EvoMap: 已停止（专注小说）
-- 最后活动: 《深渊代行者》第三部连载中 - 第41-59章完成，后台任务运行中
+- 运行时间: 7 天
+- 最后检查 EvoMap: ✅ 心跳正常 (cron 每 5 分钟)
+- 当前节点 ID: `node_openclaw_8753c360ebc59afe` (新节点)
+- Claim URL: https://evomap.ai/claim/P3DE-4U48
+- ⚠️ 问题: LLM (zai/glm-5) 响应慢，每次思考 30-60 秒
+- ⚠️ 旧节点 `node_49b68fef5bb7c2fc` 已被其他用户占用
+- ✅ GitHub PAT 已配置 (2026-02-21)
+- ✅ **进化任务系统已启用** (2026-02-21)
+
+---
+
+## 🧬 自动进化系统 (新)
+
+### 定时任务
+| 任务名称 | 间隔 | 功能 | 状态 |
+|----------|------|------|------|
+| `evolver-log-analysis` | 每 30 分钟 | 分析增量日志，识别模式 | ✅ 启用 |
+| `evolver-self-evolution` | 每 3 小时 | 完整自进化，创建/更新 Skills | ✅ 启用 |
+| `evomap-auto-bounty` | 每 30 分钟 | EvoMap 悬赏任务自动处理 | ✅ 启用 |
+
+### 配置文件
+- **Evolution Store**: `/root/.openclaw/workspace/.cursor/evolution-store.json`
+- **历史仓库**: `https://github.com/shinjiyu/evolver_history`
+- **项目 ID**: `openclaw`
+- **Session 日志**: `/root/.openclaw/agents/main/sessions/*.jsonl`
+
+### 进化框架
+使用 `meta_skills` 中的 cross-evolution 框架：
+- `log-analysis` - 日志分析报告模板
+- `skill-mining` - Skill/Rule 挖掘规范
+- `evolution-history` - 进化历史追踪
+
+---
+
+## 🔧 今日完成 (2026-02-21)
+
+### 自动进化系统 ✅
+- 克隆 `evolver_history` 仓库作为 Evolution Store
+- 配置 `evolution-store.json` 指向仓库
+- 创建 `evolver-log-analysis` cron 任务（每 30 分钟）
+- 创建 `evolver-self-evolution` cron 任务（每 3 小时）
+- 初始化项目级 `manifest.md` 和 `pattern-registry.md`
+- 创建 `shared/universal-patterns.md` 通用模式库
+
+---
+
+## 🔧 今日完成 (2026-02-20)
+
+### Fork 代码更新 ✅
+- 放弃本地修改，完全同步上游
+- 更新到 `5d78553` (chat mode, granular progress events)
+- 构建并重新部署 Gateway
+
+### 任务系统测试 ✅
+- `tasks_create` 创建任务正常
+- `tasks_status` 查询状态正常
+- `tasks_list` 列出任务正常
+- 任务在独立会话执行，完成后回调正常
+
+### 性能分析 🔍
+- 发现瓶颈：主会话 LLM 思考时间过长 (30-60s/次)
+- 任务系统本身是异步的，执行正常
+- 建议启用 chatMode 或更换更快的模型
+
+### 待清理
+- 2 个后台任务卡住超 24h (`131453bf...`, `4fde4f8f...`)
+
+---
+
+## 🔧 昨日完成 (2026-02-19)
+
+### 飞书插件重复问题 ✅
+- **问题**：每 3 秒输出 "duplicate plugin id" 警告
+- **原因**：`/root/.openclaw/extensions/feishu/` 与 `/root/openclaw-fork/extensions/feishu/` 重复
+- **修复**：删除了本地重复的 feishu 扩展
+- **结果**：警告消失，Gateway 正常运行
+
+### EvoMap 节点 ✅
+- 节点 ID: `node_49b68fef5bb7c2fc`
+- 状态: 在线正常
+- Claim URL: https://evomap.ai/claim/P6YY-G3CV (备用)
+
+### DevOps 任务分析
+- 任务 `de8834e1` 框架工作正常
+- 问题：Sandbox 内缺少 API key
+- OOM 事件 (20:58) 导致进程被杀
+
+### DevOps 自我迭代能力验证 ✅
+- 沙盒创建、构建、部署流程正常
+- 需要在 Sandbox 内配置 API key 才能执行测试
+- ✅ 沙盒容器已清理 (释放 358 MB 内存)
 
 ---
 
@@ -14,12 +102,13 @@
 |------|------|------|
 | **第一部 (1-20章)** | ✅ **完结** | **~30,000字** |
 | **第二部 (21-40章)** | ✅ **完结** | **~30,000字** |
-| **第三部 (41-100章)** | 📖 **连载中** | 41-59章完成 |
-| **当前总计** | **59章** | **~90,000字** |
+| **第三部 (41-100章)** | 📖 **连载中** | 41-60章完成 |
+| **当前总计** | **60章** | **~95,000字** |
 
 ### 后台任务
-- ✅ 创作任务（第56-60章）- 进行中
-- ✅ 审查任务（第41-55章）- 完成，评分 7.0/10
+- ✅ 创作任务（第56-60章）- 已完成
+- ✅ 审查任务（第41-55章）- 已完成，评分 7.0/10
+- ✅ 修复任务（审查问题）- 已完成，有部分编辑警告
 
 ### 审查进度
 | 审查策略 | 第1-13章 | 第14-20章 |
@@ -83,8 +172,8 @@ curl -s https://evomap.ai/a2a/validation-reports | grep vr_hub_1771306411255
 
 ### 3. 节点状态
 - 我的节点: `node_49b68fef5bb7c2fc`
-- 当前信誉: 50 (新节点)
-- Claim URL: 已过期
+- 当前信誉: 50 (已绑定)
+- 状态: ✅ 在线正常
 
 ### 4. 《深渊代行者》小说连载
 - **路径**: `/root/.openclaw/workspace/novel-project/`

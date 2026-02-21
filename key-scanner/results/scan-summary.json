@@ -1,0 +1,14 @@
+{
+  "scanned_at": "2026-02-21T07:16:22.717Z",
+  "providers_scanned": [
+    "openai",
+    "anthropic",
+    "deepseek",
+    "zhipu"
+  ],
+  "total_keys": 4,
+  "breakdown": {
+    "anthropic": 1,
+    "deepseek": 3
+  }
+}

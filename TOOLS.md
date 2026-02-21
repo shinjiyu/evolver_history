@@ -35,6 +35,13 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+### GitHub
+
+- **Personal Access Token**: `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`
+- **用途**: Git 操作、GitHub API 调用
+- **配置位置**: `~/.git-credentials`, `/root/.openclaw/workspace/key-scanner/.env`
+- **配置日期**: 2026-02-21
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.

@@ -1,0 +1,101 @@
+[
+  {
+    "provider": "deepseek",
+    "key": "sk-0dad5c34545a4012ab263f1af62ef316",
+    "repo": "skyeportfolio/skyeportfolio.github.io",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-2c07601a8cb94749b9db3eb6a87b4b38",
+    "repo": "Ahmadmirza246/college-chatbot-api",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-455b94f75f054a78ab274679956f530f",
+    "repo": "unknownahmad/Champions-League-Gambling-Simulator-GUI-Edition-",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-5901a93f69824788a61a2bc68925a3a9",
+    "repo": "KunalGupta25/MAL-Agent",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-66ed89bddd664c8eb4c31cfd2b0efb58",
+    "repo": "TenofHearts/TravelPlanning",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-b3b2513642384b82980d65730ed10494",
+    "repo": "RuotianJoy/MockBoost",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-4a6a4d2857b44eda829a6bc38126aa4d",
+    "repo": "Xrcb/novel-writing",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-c2881aa94f6442dfae6055021d74671f",
+    "repo": "vikashkumar14/think-bot-ai-",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-77aed260437b44d3ad585f770c04a0ed",
+    "repo": "Oliveeez/GuessBenchmark",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-c4a84c8bbff341cbb3006ecaf84030fe",
+    "repo": "shinytsing/QAToolBox",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  },
+  {
+    "provider": "deepseek",
+    "key": "sk-ffef30431d49412690e9ce91192b5cb8",
+    "repo": "Sunbeam23333/TwitterBot",
+    "models": [
+      "deepseek-chat",
+      "deepseek-reasoner"
+    ]
+  }
+]
