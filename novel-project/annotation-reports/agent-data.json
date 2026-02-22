@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-02-21T14:43:01.995Z",
+  "stats": {
+    "total": 1,
+    "pending": 1,
+    "byPriority": {
+      "high": 1,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "actionItems": [
+    {
+      "chapter": 1,
+      "type": "typo",
+      "originalText": "测试文字",
+      "suggestion": "这是一个测试批注",
+      "priority": "high",
+      "id": "ann_20260221_rlpe"
+    }
+  ]
+}

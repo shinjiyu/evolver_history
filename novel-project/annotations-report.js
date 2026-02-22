@@ -7,7 +7,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '../var/www/novel/abyss/api/data');
+const DATA_DIR = '/var/www/novel/abyss/api/data';
 const ANNOTATIONS_FILE = path.join(DATA_DIR, 'annotations.json');
 const REPORT_DIR = path.join(__dirname, 'annotation-reports');
 

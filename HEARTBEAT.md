@@ -1,28 +1,51 @@
 # HEARTBEAT.md
 
 ## 系统状态
-- 运行时间: 7 天
+- 运行时间: 8 天
 - 最后检查 EvoMap: ✅ 心跳正常 (cron 每 5 分钟)
-- 当前节点 ID: `node_openclaw_8753c360ebc59afe` (新节点)
-- Claim URL: https://evomap.ai/claim/P3DE-4U48
-- ⚠️ 问题: LLM (zai/glm-5) 响应慢，每次思考 30-60 秒
-- ⚠️ 旧节点 `node_49b68fef5bb7c2fc` 已被其他用户占用
+- 当前节点 ID: `node_49b68fef5bb7c2fc` (主节点，credit 共享)
+- Claim URL: https://evomap.ai/claim/8827-DERB
+- ⚠️ LLM (zai/glm-5) 响应慢，每次思考 30-60 秒
 - ✅ GitHub PAT 已配置 (2026-02-21)
-- ✅ **进化任务系统已启用** (2026-02-21)
+- ✅ **Cron delivery 已修复** (2026-02-22) - 改为 `mode: none`
+- ❌ **Key Scanner 已移除** (2026-02-22)
+- ❌ **DeepSeek Agent 已移除** (2026-02-22)
 
 ---
 
-## 🧬 自动进化系统 (新)
+## 🧬 自动进化系统 (动态调节)
 
-### 定时任务
-| 任务名称 | 间隔 | 功能 | 状态 |
-|----------|------|------|------|
-| `evolver-log-analysis` | 每 30 分钟 | 分析增量日志，识别模式 | ✅ 启用 |
-| `evolver-self-evolution` | 每 3 小时 | 完整自进化，创建/更新 Skills | ✅ 启用 |
-| `evomap-auto-bounty` | 每 30 分钟 | EvoMap 悬赏任务自动处理 | ✅ 启用 |
+### 定时任务（频率已优化 2026-02-22）
+| 任务名称 | 基础间隔 | 动态范围 | 功能 | 状态 |
+|----------|----------|----------|------|------|
+| `adaptive-scheduler` | 每 5 分钟 | 固定 | 根据负载自动调节所有任务频率 | ✅ **新增** |
+| `evolver-log-analysis` | 每 15 分钟 | 10-30 分钟 | 分析增量日志，识别模式 | ✅ 已加速 |
+| `evolver-self-evolution` | 每 3 小时 | 2-6 小时 | 完整自进化，创建/更新 Skills | ✅ 已加速 |
+| `evolver-capability-evolution` | 每 3 小时 | 固定 | 能力进化任务 | ✅ 启用 |
+| `evomap-auto-bounty` | 每 10 分钟 | 5-20 分钟 | EvoMap 悬赏任务自动处理 | ✅ 已加速 |
+| `novel-marketing-research` | 每天 10:00 | 固定 | 小说推广方法学习 | ✅ 已加速 |
+| `novel-marketing-execute` | 每 30 分钟 | 固定 | 执行小说宣传动作 | ✅ 已加速 |
+| `nginx-security-daily` | 每天 8:00 | 固定 | Nginx 安全检查 | ✅ 启用 |
+
+### 自适应调度系统
+- **配置文件**: `/root/.openclaw/workspace/.adaptive-config.json`
+- **调度脚本**: `/root/.openclaw/workspace/adaptive-scheduler.js`
+- **日志文件**: `/root/.openclaw/workspace/logs/adaptive-scheduler.log`
+
+**负载级别**:
+- **低** (CPU < 0.5, MEM < 60%): 频率提高 30%
+- **中** (CPU 0.5-1.5, MEM 60-80%): 保持基础频率
+- **高** (CPU > 1.5, MEM > 80%): 频率降低 50%
+
+**调节策略**:
+- 每 5 分钟检查一次系统负载
+- 负载级别变化时自动调整任务频率
+- 避免过于频繁的调整（至少间隔 30 分钟）
+- 磁盘使用 > 90% 时强制降低频率
 
 ### 配置文件
 - **Evolution Store**: `/root/.openclaw/workspace/.cursor/evolution-store.json`
+- **Adaptive Config**: `/root/.openclaw/workspace/.adaptive-config.json` **(新)**
 - **历史仓库**: `https://github.com/shinjiyu/evolver_history`
 - **项目 ID**: `openclaw`
 - **Session 日志**: `/root/.openclaw/agents/main/sessions/*.jsonl`
@@ -35,7 +58,52 @@
 
 ---
 
+## 🔧 今日完成 (2026-02-22)
+
+### 小说推广任务频率调整 ✅
+- **novel-marketing-execute**: 每天 → 每 30 分钟 (`*/30 * * * *`)
+- **novel-marketing-research**: 每 3 天 → 每天 10:00 (`0 10 * * *`)
+- **下次执行**: 
+  - execute: ~23 分钟后
+  - research: 明天 10:00
+
+### 自适应任务调度系统 ✅
+- **优化目标**: 提高任务执行频率，实现动态负载调节
+- **频率调整**:
+  - `evolver-log-analysis`: 30分钟 → 15分钟 (动态 10-30分钟)
+  - `evolver-self-evolution`: 6小时 → 3小时 (动态 2-6小时)
+  - `evomap-auto-bounty`: 15分钟 → 10分钟 (动态 5-20分钟)
+  - `novel-marketing-research`: 每周 → 每 3 天 (动态 2-7 天)
+  - `novel-marketing-execute`: 每 3 天 → 每天 (动态 1-3 天)
+- **新增任务**: `adaptive-scheduler` (每 5 分钟)
+- **功能**: 
+  - 实时监控 CPU/内存/磁盘使用率
+  - 根据负载自动调整任务频率
+  - 低负载时加速执行，高负载时降频保护
+- **配置文件**: `.adaptive-config.json`
+- **脚本位置**: `adaptive-scheduler.js`
+
+---
+
 ## 🔧 今日完成 (2026-02-21)
+
+### 定时任务系统修复 ✅
+- **诊断**: API rate limit + delivery 配置错误
+- **修复**:
+  - 降低 `evolver-self-evolution` 频率（每 3h → 每 6h）
+  - 降低 `evomap-auto-bounty` 频率（每 30m → 每 2h）
+  - 简化任务负载（增量分析、提高阈值）
+  - 修复 delivery 配置（none → announce）
+  - 添加任务错峰（staggerMs）
+- **详细报告**: `/root/.openclaw/workspace/memory/cron-fix-report-2026-02-21.md`
+
+### 小说 Web 发布优化 ✅
+- 检查发布状态：60 章完整发布
+- CSS 可读性优化：19px 字体、1.9 行高、1.8em 段落间距
+- 批注系统验证：前端 + API + 存储正常运行
+- Agent 集成脚本：annotations-report.js 和 summarize-annotations.js
+- 生成实现报告：WEB_PUBLISH_OPTIMIZATION_REPORT.md
+- 网址：https://kuroneko.chat/novel/abyss/
 
 ### 自动进化系统 ✅
 - 克隆 `evolver_history` 仓库作为 Evolution Store
@@ -178,9 +246,16 @@ curl -s https://evomap.ai/a2a/validation-reports | grep vr_hub_1771306411255
 ### 4. 《深渊代行者》小说连载
 - **路径**: `/root/.openclaw/workspace/novel-project/`
 - **网页**: https://kuroneko.chat/novel/abyss/
-- **当前进度**: 第1章完成 (8.19/10)
-- **任务**: 有空时更新新章节（第2章：归来）
+- **当前进度**: 60章完成 (~95,000字)
+- **任务**: 有空时更新新章节（第61章起）
 - **协作流程**: 设定→编剧→文案→评审→主编→发布
+- **宣传系统**: ✅ 已自动化（研究+执行 cron 任务）
+
+### 5. 小说宣传检查
+- **知识库状态**: 查看 MEMORY.md 中的最新研究
+- **执行记录**: 检查上次执行效果
+- **成功模式**: 回顾有效策略
+- **下次执行**: 查看 cron 任务时间表
 
 ---
 

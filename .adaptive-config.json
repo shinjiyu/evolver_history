@@ -1,0 +1,48 @@
+{
+  "loadLevel": "low",
+  "multiplier": 0.5,
+  "lastCheck": "2026-02-22T16:04:42.170Z",
+  "metrics": {
+    "cpuLoad": 0.04,
+    "memPercent": 0.40216360507182747,
+    "diskPercent": 0.727042710854786,
+    "timestamp": "2026-02-22T16:04:42.163Z"
+  },
+  "adjustments": {
+    "evolver-log-analysis": {
+      "success": true,
+      "newInterval": 12,
+      "cronExpr": "*/12 * * * *",
+      "multiplier": 0.6,
+      "unit": "minutes"
+    },
+    "evolver-self-evolution": {
+      "success": true,
+      "newInterval": 2,
+      "cronExpr": "0 */2 * * *",
+      "multiplier": 0.5,
+      "unit": "hours"
+    },
+    "evomap-auto-bounty": {
+      "success": true,
+      "newInterval": 10,
+      "cronExpr": "*/10 * * * *",
+      "multiplier": 0.75,
+      "unit": "minutes"
+    },
+    "novel-marketing-research": {
+      "success": true,
+      "newInterval": 3,
+      "cronExpr": "0 */3 * * *",
+      "multiplier": 0.75,
+      "unit": "hours"
+    },
+    "novel-marketing-execute": {
+      "success": true,
+      "newInterval": 34,
+      "cronExpr": "*/34 * * * *",
+      "multiplier": 0.75,
+      "unit": "minutes"
+    }
+  }
+}
