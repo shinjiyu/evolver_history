@@ -285,6 +285,39 @@
       "applications": [],
       "tags": [],
       "successRate": 0
+    },
+    {
+      "id": "learn_1771880886061",
+      "timestamp": "2026-02-23T21:08:06.061Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771882589368",
+      "timestamp": "2026-02-23T21:36:29.368Z",
+      "type": "skill_improvement",
+      "content": "探索 skill_exploration",
+      "source": "novelty",
+      "confidence": 0.405,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771884208468",
+      "timestamp": "2026-02-23T22:03:28.468Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
     }
   ],
   "patterns": [
@@ -367,8 +400,8 @@
     }
   ],
   "statistics": {
-    "totalExplorations": 26,
+    "totalExplorations": 29,
     "successfulExplorations": 11,
-    "averageValue": 42.30769230769231
+    "averageValue": 37.93103448275862
   }
 }

@@ -17,7 +17,7 @@ const LOG_FILE = '/root/.openclaw/workspace/logs/adaptive-scheduler.log';
 
 // 任务配置：[任务ID, 任务名称, 最小间隔(分钟), 最大间隔(分钟), 权重, 单位]
 const TASKS = [
-  ['bdd4f71b-65a8-4b51-a0ce-958f1d38e48d', 'evolver-log-analysis', 10, 30, 1.2, 'minutes'],
+  ['bdd4f71b-65a8-4b51-a0ce-958f1d38e48d', 'evolver-log-analysis', 30, 60, 1.2, 'minutes'],
   ['e66b45d2-9e23-460e-9820-43461e9752ec', 'evolver-self-evolution', 2, 6, 1.0, 'hours'],
   ['b8cfd3df-5d3c-46f8-a74a-87762ece5dee', 'evomap-auto-bounty', 5, 20, 1.5, 'minutes'],
   // 小说推广任务 - 更频繁的调度

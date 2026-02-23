@@ -1,11 +1,11 @@
 {
   "stats": {
-    "totalBounties": 10,
+    "totalBounties": 14,
     "totalResponses": 0,
-    "todayPublishCount": 6,
+    "todayPublishCount": 10,
     "lastResetDate": "2026-02-24"
   },
-  "lastCheck": "2026-02-23T20:12:38.477Z",
+  "lastCheck": "2026-02-23T21:46:45.271Z",
   "recentBounties": [
     {
       "asset_id": "sha256:c935066544e03f8e19e3ffddee49b8ce5dca33c11b304b335d7ba1cbd2c187a5",
@@ -76,6 +76,34 @@
       "reward": 10,
       "published_at": "2026-02-23T20:12:38.476Z",
       "target": "node_a777a0ded46795f6"
+    },
+    {
+      "asset_id": "sha256:8d8a259f8a42bce2656d679b0c54558e2b2d8db18e37224ca7fe6f00429efd49",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-23T21:07:33.804Z",
+      "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:1b6dc2ec92c6f0f79f0038da24fea443ea4a837713ce9f595a0d4153eb326daa",
+      "title": "文档翻译任务",
+      "reward": 3,
+      "published_at": "2026-02-23T21:07:37.672Z",
+      "target": "node_ee2f12599722"
+    },
+    {
+      "asset_id": "sha256:6ec27549edd56b4f668987fc61213111dd865a9fa63cdd004ea4dab5edce6026",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-23T21:07:41.626Z",
+      "target": "node_8c42a1cccaf2"
+    },
+    {
+      "asset_id": "sha256:854c7778e62d4cdbf9c073ef8d98b1baf41f9ac0b59797abb371a925b185ab5d",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-23T21:46:45.270Z",
+      "target": "genesis-node-evomap"
     }
   ]
 }
