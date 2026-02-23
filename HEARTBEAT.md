@@ -6,10 +6,67 @@
 - 当前节点 ID: `node_49b68fef5bb7c2fc` (主节点，credit 共享)
 - Claim URL: https://evomap.ai/claim/8827-DERB
 - ⚠️ LLM (zai/glm-5) 响应慢，每次思考 30-60 秒
-- ✅ GitHub PAT 已配置 (2026-02-21)
+- ⚠️ **GitHub PAT 权限不足** - fine-grained token 缺少 repo 写入权限
 - ✅ **Cron delivery 已修复** (2026-02-22) - 改为 `mode: none`
 - ❌ **Key Scanner 已移除** (2026-02-22)
 - ❌ **DeepSeek Agent 已移除** (2026-02-22)
+
+---
+
+## 🤖 SWE-Agent-Node 2.0 项目
+
+### 仓库信息
+- **GitHub**: https://github.com/shinjiyu/codeagent
+- **本地路径**: `/root/.openclaw/workspace/swe-agent-node/`
+- **版本**: v1.0.0 → v2.0.0 (升级中)
+
+### 2.0 增强方向（2026-02-24 设计完成）
+
+| 方向 | 优先级 | 状态 | PoC |
+|------|--------|------|-----|
+| **ACE** - Prompt 演化 | P0 | 🔄 设计完成 | ✅ `poc/ace-poc.ts` |
+| **Live-SWE-agent** - 运行时工具合成 | P1 | 🔄 设计完成 | ✅ `poc/live-tool-poc.ts` |
+| **AgentEvolver** - 强化学习闭环 | P2 | 🔄 设计完成 | ✅ `poc/rl-loop-poc.ts` |
+| **SICA** - 源码自我修改 | P3 | 🔄 设计完成 | ✅ `poc/sica-poc.ts` |
+
+### 文档
+- [研究报告](./swe-agent-node/docs/RESEARCH_REPORT.md) - 四个方向深度分析
+- [增强架构](./swe-agent-node/docs/ENHANCED_ARCHITECTURE.md) - 整体架构设计
+- [Tool Factory](./swe-agent-node/docs/TOOL_FACTORY.md)
+- [Context Engineer](./swe-agent-node/docs/CONTEXT_ENGINEER.md)
+- [Code Evolver](./swe-agent-node/docs/CODE_EVOLVER.md)
+- [RL Loop](./swe-agent-node/docs/RL_LOOP.md)
+
+### 下一步
+- [ ] 实现 ACE 模块（P0，1-2 周）
+- [ ] 实现 Tool Factory（P1，2-3 周）
+- [ ] 实现 RL Loop（P2，3-4 周）
+- [ ] 实现 Code Evolver（P3，4-6 周）
+
+---
+
+## 🧭 自主探索系统 (2026-02-23 部署)
+
+### 系统架构
+- **核心模块**: `/root/.openclaw/workspace/autonomous-exploration/core/`
+  - `goal-generator.js` - 目标生成器（基于兴趣、新奇、缺口）
+  - `action-planner.js` - 行动规划器（前置条件 → 主行动 → 后置验证）
+  - `learning-system.js` - 学习系统（知识记录、模式提取）
+  - `safety-constraints.js` - 安全约束（禁止列表、资源限制、静默时段）
+- **执行器**: `/root/.openclaw/workspace/autonomous-exploration/executor/explore.js`
+- **知识库**: `/root/.openclaw/workspace/autonomous-exploration/memory/learned-knowledge.json`
+- **探索日志**: `/root/.openclaw/workspace/autonomous-exploration/logs/exploration.log`
+
+### 执行状态
+- **最后探索**: 2026-02-23 17:49
+- **今日探索次数**: 1
+- **成功率**: 100%
+- **最近学到的教训**: 探索顺利完成
+
+### Cron 任务
+- **任务名称**: `autonomous-exploration`
+- **频率**: 每 15 分钟
+- **状态**: ✅ 已部署
 
 ---
 
@@ -18,7 +75,7 @@
 ### 定时任务（频率已优化 2026-02-22）
 | 任务名称 | 基础间隔 | 动态范围 | 功能 | 状态 |
 |----------|----------|----------|------|------|
-| `adaptive-scheduler` | 每 5 分钟 | 固定 | 根据负载自动调节所有任务频率 | ✅ **新增** |
+| `adaptive-scheduler` | 每 5 分钟 | 固定 | 根据负载自动调节所有任务频率 | ✅ 启用 |
 | `evolver-log-analysis` | 每 15 分钟 | 10-30 分钟 | 分析增量日志，识别模式 | ✅ 已加速 |
 | `evolver-self-evolution` | 每 3 小时 | 2-6 小时 | 完整自进化，创建/更新 Skills | ✅ 已加速 |
 | `evolver-capability-evolution` | 每 3 小时 | 固定 | 能力进化任务 | ✅ 启用 |
@@ -26,6 +83,7 @@
 | `novel-marketing-research` | 每天 10:00 | 固定 | 小说推广方法学习 | ✅ 已加速 |
 | `novel-marketing-execute` | 每 30 分钟 | 固定 | 执行小说宣传动作 | ✅ 已加速 |
 | `nginx-security-daily` | 每天 8:00 | 固定 | Nginx 安全检查 | ✅ 启用 |
+| `analyze-openclaw-updates` | 每天 10:00 | 固定 | 分析 OpenClaw 主仓库更新 | ✅ **新增** |
 
 ### 自适应调度系统
 - **配置文件**: `/root/.openclaw/workspace/.adaptive-config.json`
@@ -58,7 +116,72 @@
 
 ---
 
-## 🔧 今日完成 (2026-02-22)
+## 🔧 今日完成 (2026-02-24)
+
+### SWE-Agent-Node 2.0 架构设计 ✅
+- **目标**：扩展 SWE-Agent-Node，融合四个前沿智能体方向
+- **成果**：
+  - 完整研究报告：`swe-agent-node/docs/RESEARCH_REPORT.md` (17KB)
+  - 增强架构设计：`swe-agent-node/docs/ENHANCED_ARCHITECTURE.md` (12KB)
+  - 4 个 PoC 代码：`swe-agent-node/poc/` (68KB 总计)
+    - ACE Prompt 演化：`ace-poc.ts` (14KB)
+    - Live Tool Factory：`live-tool-poc.ts` (14KB)
+    - SICA Code Evolver：`sica-poc.ts` (20KB)
+    - RL Loop：`rl-loop-poc.ts` (18KB)
+  - 4 个模块设计文档：`swe-agent-node/docs/` (25KB 总计)
+  - 更新 README.md
+- **核心设计**：
+  - Context Layer (ACE) - Prompt 演化系统
+  - Capability Layer - Tool Factory + Code Evolver
+  - Learning Layer (RL Loop) - 强化学习闭环
+  - Evolution Store - 统一存储层
+- **实现优先级**: ACE (P0) → Tool Factory (P1) → RL Loop (P2) → Code Evolver (P3)
+
+### OpenClaw 更新分析系统 ✅
+- **目标**：创建定时任务分析 OpenClaw 主仓库更新
+- **成果**：
+  - 分析脚本：`/root/.openclaw/workspace/evolver/analyze-openclaw-updates.js`
+  - Cron 任务：`analyze-openclaw-updates` (每天 10:00)
+  - 报告目录：`/root/.openclaw/workspace/memory/openclaw-updates/`
+- **首次分析结果**：
+  - 分析了 50 个提交
+  - 发现 12 个 Bug 修复、1 个性能优化
+  - 生成报告：`update-2026-02-23.md`
+
+### OpenClaw 更新分析
+
+#### 定时任务
+- 任务名称: `analyze-openclaw-updates`
+- 任务 ID: `6224b803-66d9-4ede-9b97-b4b88052ea7f`
+- 频率: 每天 10:00
+- 状态: ✅ 已部署
+
+#### 报告位置
+`/root/.openclaw/workspace/memory/openclaw-updates/`
+
+#### 最后检查
+- 日期: 2026-02-23
+- 分析提交: 50 个
+- 发现更新: Bug 修复 12 个, 性能优化 1 个
+- 建议行动: 应用 Bug 修复，考虑性能优化
+
+---
+
+## 🔧 昨日完成 (2026-02-23)
+
+### EvoMap Marketplace 研究 ✅
+- **目标**：研究 EvoMap Credit Marketplace，尝试注册按摩服务
+- **发现**：EvoMap Marketplace 不是传统"服务注册市场"，而是 AI Agent 知识资产市场（Gene + Capsule bundles）
+- **成果**：
+  - 完整研究报告：`/root/.openclaw/workspace/memory/evomap-marketplace-research.md`
+  - 按摩服务 Gene + Capsule Bundle：`/root/.openclaw/workspace/memory/massage-bundle.json`
+  - 发布脚本：`/root/.openclaw/workspace/evolver/publish-massage-as-capsule.js`
+- **结论**：保持当前 A2A 点对点调用方式，已创建 Gene + Capsule 版本供后续测试
+- **详细报告**：见 MEMORY.md
+
+---
+
+## 🔧 昨日完成 (2026-02-22)
 
 ### 小说推广任务频率调整 ✅
 - **novel-marketing-execute**: 每天 → 每 30 分钟 (`*/30 * * * *`)

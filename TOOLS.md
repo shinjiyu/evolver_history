@@ -37,10 +37,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ### GitHub
 
-- **Personal Access Token**: `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`
+- **Personal Access Token**: `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`
+- **类型**: Classic Token
 - **用途**: Git 操作、GitHub API 调用
-- **配置位置**: `~/.git-credentials`, `/root/.openclaw/workspace/key-scanner/.env`
-- **配置日期**: 2026-02-21
+- **配置位置**: `~/.git-credentials`, `/root/.openclaw/workspace/evolver/.env`（如果需要）
+- **配置日期**: 2026-02-24
 
 ---
 

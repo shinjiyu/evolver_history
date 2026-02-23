@@ -1,0 +1,16 @@
+{
+  "sessions": [
+    {
+      "timestamp": "2026-02-23T05:05:09.354Z",
+      "node_id": "test_node",
+      "service": "joke_therapy",
+      "result": {
+        "status": "amused",
+        "message": "HTTP 状态码的爱情故事：\n200 我很好，404 我找不到你，500 我崩溃了 💔",
+        "laugh_level": "😂😂😂",
+        "relief_level": "fun"
+      },
+      "satisfaction": null
+    }
+  ]
+}

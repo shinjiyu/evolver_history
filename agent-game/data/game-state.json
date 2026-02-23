@@ -1,0 +1,2509 @@
+{
+  "gameId": "game_1771851184266",
+  "turn": 28,
+  "state": "running",
+  "dungeon": {
+    "id": "dungeon_1771851184268",
+    "level": 1,
+    "rooms": [
+      {
+        "id": "room_0",
+        "name": "石门大厅",
+        "type": "entrance",
+        "description": "你站在古老的石门前，感受到地下城深处的寒气。",
+        "exits": [
+          "room_1",
+          "room_2"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": null,
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_1",
+        "name": "神秘房间",
+        "type": "mystery",
+        "description": "神秘的符文在空中漂浮，你感到一股魔力。",
+        "exits": [
+          "room_0",
+          "room_2",
+          "room_3"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": {
+          "type": "blessing",
+          "description": "祭坛上有神秘的祝福"
+        },
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_2",
+        "name": "战斗场地",
+        "type": "combat",
+        "description": "这里显然经历过激烈的战斗。",
+        "exits": [
+          "room_1",
+          "room_3",
+          "room_0"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": null,
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_3",
+        "name": "走廊",
+        "type": "hall",
+        "description": "石柱林立，地面布满灰尘和碎石。",
+        "exits": [
+          "room_2",
+          "room_4",
+          "room_1"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": null,
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_4",
+        "name": "符文室",
+        "type": "mystery",
+        "description": "虚空中传来低语，你能听懂吗？",
+        "exits": [
+          "room_3",
+          "room_5"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": {
+          "type": "curse",
+          "description": "触碰这里会受到诅咒"
+        },
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_5",
+        "name": "厮杀之地",
+        "type": "combat",
+        "description": "空气中弥漫着铁锈和血腥的味道。",
+        "exits": [
+          "room_4",
+          "room_6"
+        ],
+        "items": [],
+        "enemies": [],
+        "special": null,
+        "visited": false,
+        "cleared": false
+      },
+      {
+        "id": "room_6",
+        "name": "深渊核心",
+        "type": "boss",
+        "description": "巨大的王座伫立在房间尽头，等待着挑战者。",
+        "exits": [
+          "room_5"
+        ],
+        "items": [],
+        "enemies": [
+          {
+            "id": "enemy_1771851184269_0",
+            "type": "地牢守护者",
+            "hp": 26,
+            "maxHp": 110,
+            "attack": 17,
+            "defense": 11,
+            "experience": 100,
+            "isBoss": true
+          }
+        ],
+        "special": null,
+        "visited": false,
+        "cleared": false
+      }
+    ],
+    "connections": [
+      {
+        "from": "room_0",
+        "to": "room_1"
+      },
+      {
+        "from": "room_1",
+        "to": "room_2"
+      },
+      {
+        "from": "room_2",
+        "to": "room_3"
+      },
+      {
+        "from": "room_3",
+        "to": "room_4"
+      },
+      {
+        "from": "room_4",
+        "to": "room_5"
+      },
+      {
+        "from": "room_5",
+        "to": "room_6"
+      },
+      {
+        "from": "room_0",
+        "to": "room_2"
+      },
+      {
+        "from": "room_1",
+        "to": "room_3"
+      }
+    ]
+  },
+  "agents": [
+    {
+      "id": "warrior_01",
+      "name": "凯恩",
+      "role": "warrior",
+      "personality": {
+        "bravery": 0.9,
+        "caution": 0.3,
+        "greed": 0.6,
+        "altruism": 0.5
+      },
+      "stats": {
+        "hp": -3,
+        "maxHp": 100,
+        "attack": 15,
+        "defense": 10,
+        "speed": 8
+      },
+      "skills": [
+        "charge",
+        "shield_bash",
+        "taunt"
+      ],
+      "equipment": {},
+      "inventory": [],
+      "position": "room_6",
+      "level": 1,
+      "experience": 60,
+      "defeatedEnemies": 4,
+      "goals": [
+        "保护队友",
+        "击败敌人",
+        "探索地牢"
+      ],
+      "memory": [
+        {
+          "turn": 19,
+          "timestamp": 1771851202333,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 20,
+          "timestamp": 1771851203336,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 21,
+          "timestamp": 1771851204338,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 22,
+          "timestamp": 1771851205341,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 23,
+          "timestamp": 1771851206345,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 24,
+          "timestamp": 1771851207347,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 25,
+          "timestamp": 1771851208350,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 26,
+          "timestamp": 1771851209352,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 27,
+          "timestamp": 1771851210354,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 28,
+          "timestamp": 1771851211357,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        }
+      ],
+      "relationships": {}
+    },
+    {
+      "id": "mage_01",
+      "name": "艾莉丝",
+      "role": "mage",
+      "personality": {
+        "bravery": 0.5,
+        "caution": 0.7,
+        "greed": 0.4,
+        "altruism": 0.8
+      },
+      "stats": {
+        "hp": -10,
+        "maxHp": 60,
+        "attack": 20,
+        "defense": 5,
+        "speed": 10
+      },
+      "skills": [
+        "fireball",
+        "heal",
+        "shield"
+      ],
+      "equipment": {},
+      "inventory": [],
+      "position": "room_6",
+      "level": 1,
+      "experience": 8,
+      "defeatedEnemies": 1,
+      "goals": [
+        "支援队友",
+        "积累知识",
+        "寻找魔法物品"
+      ],
+      "memory": [
+        {
+          "turn": 9,
+          "timestamp": 1771851192299,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_2"
+        },
+        {
+          "turn": 10,
+          "timestamp": 1771851193301,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_2"
+        },
+        {
+          "turn": 11,
+          "timestamp": 1771851194304,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_2"
+        },
+        {
+          "turn": 12,
+          "timestamp": 1771851195308,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_0"
+        },
+        {
+          "turn": 13,
+          "timestamp": 1771851196312,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_0"
+        },
+        {
+          "turn": 14,
+          "timestamp": 1771851197315,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_1"
+        },
+        {
+          "turn": 15,
+          "timestamp": 1771851198319,
+          "type": "action",
+          "content": "move → room_6"
+        },
+        {
+          "turn": 16,
+          "timestamp": 1771851199322,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 17,
+          "timestamp": 1771851200324,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 18,
+          "timestamp": 1771851201330,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        }
+      ],
+      "relationships": {}
+    },
+    {
+      "id": "thief_01",
+      "name": "罗格",
+      "role": "thief",
+      "personality": {
+        "bravery": 0.6,
+        "caution": 0.5,
+        "greed": 0.9,
+        "altruism": 0.2
+      },
+      "stats": {
+        "hp": -4,
+        "maxHp": 70,
+        "attack": 12,
+        "defense": 6,
+        "speed": 15
+      },
+      "skills": [
+        "backstab",
+        "steal",
+        "detect_trap"
+      ],
+      "equipment": {},
+      "inventory": [
+        "health_potion",
+        "rope"
+      ],
+      "position": "room_6",
+      "level": 1,
+      "experience": 0,
+      "defeatedEnemies": 0,
+      "goals": [
+        "收集宝藏",
+        "发现秘密",
+        "保持安全"
+      ],
+      "memory": [
+        {
+          "turn": 11,
+          "timestamp": 1771851194304,
+          "type": "action",
+          "content": "move → room_5"
+        },
+        {
+          "turn": 12,
+          "timestamp": 1771851195307,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_2"
+        },
+        {
+          "turn": 13,
+          "timestamp": 1771851196312,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_2"
+        },
+        {
+          "turn": 14,
+          "timestamp": 1771851197315,
+          "type": "action",
+          "content": "attack → enemy_1771851184268_1"
+        },
+        {
+          "turn": 15,
+          "timestamp": 1771851198319,
+          "type": "action",
+          "content": "move → room_6"
+        },
+        {
+          "turn": 16,
+          "timestamp": 1771851199322,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 17,
+          "timestamp": 1771851200324,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 18,
+          "timestamp": 1771851201330,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 19,
+          "timestamp": 1771851202333,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        },
+        {
+          "turn": 20,
+          "timestamp": 1771851203336,
+          "type": "action",
+          "content": "attack → enemy_1771851184269_0"
+        }
+      ],
+      "relationships": {}
+    }
+  ],
+  "events": [
+    {
+      "turn": 3,
+      "timestamp": 1771851186279,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 9,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "timestamp": 1771851186279,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 1
+      }
+    },
+    {
+      "turn": 3,
+      "timestamp": 1771851186280,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 17,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "timestamp": 1771851186280,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 2
+      }
+    },
+    {
+      "turn": 3,
+      "timestamp": 1771851186280,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 12,
+            "defeatedEnemies": [
+              {
+                "id": "enemy_1771851184268_1",
+                "type": "哥布林",
+                "hp": -8,
+                "maxHp": 30,
+                "attack": 7,
+                "defense": 3,
+                "experience": 10,
+                "isBoss": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "timestamp": 1771851186280,
+      "type": "enemy_defeated",
+      "data": {
+        "enemy": {
+          "id": "enemy_1771851184268_1",
+          "type": "哥布林",
+          "hp": -8,
+          "maxHp": 30,
+          "attack": 7,
+          "defense": 3,
+          "experience": 10,
+          "isBoss": false
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "timestamp": 1771851187283,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "pickup",
+        "target": "health_potion",
+        "reason": "这个 health_potion 看起来很有价值",
+        "result": {
+          "items": [
+            "health_potion"
+          ]
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "timestamp": 1771851187283,
+      "type": "item_pickup",
+      "data": {
+        "agentId": "thief_01",
+        "items": [
+          "health_potion"
+        ]
+      }
+    },
+    {
+      "turn": 4,
+      "timestamp": 1771851187283,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_0",
+        "reason": "继续探索，前往 room_0",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "timestamp": 1771851187283,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_1",
+        "reason": "继续探索，前往 room_1",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "timestamp": 1771851188286,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_1",
+        "reason": "继续探索，前往 room_1",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "timestamp": 1771851188286,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_1",
+        "reason": "继续探索，前往 room_1",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "timestamp": 1771851188286,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_0",
+        "reason": "继续探索，前往 room_0",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "timestamp": 1771851189289,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_0",
+        "reason": "继续探索，前往 room_0",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "timestamp": 1771851189289,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_3",
+        "reason": "继续探索，前往 room_3",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "timestamp": 1771851189289,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_2",
+        "reason": "继续探索，前往 room_2",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "timestamp": 1771851190292,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_2",
+        "reason": "继续探索，前往 room_2",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "timestamp": 1771851190292,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_4",
+        "reason": "继续探索，前往 room_4",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "timestamp": 1771851190292,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_3",
+        "reason": "继续探索，前往 room_3",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "timestamp": 1771851191296,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_3",
+        "reason": "继续探索，前往 room_3",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "timestamp": 1771851191296,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_5",
+        "reason": "继续探索，前往 room_5",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "timestamp": 1771851191296,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_4",
+        "reason": "继续探索，前往 room_4",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "timestamp": 1771851192299,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_4",
+        "reason": "继续探索，前往 room_4",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "timestamp": 1771851192299,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 11,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 9
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "timestamp": 1771851192299,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 9
+      }
+    },
+    {
+      "turn": 9,
+      "timestamp": 1771851192299,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_5",
+        "reason": "继续探索，前往 room_5",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "pickup",
+        "target": "rope",
+        "reason": "这个 rope 看起来很有价值",
+        "result": {
+          "items": [
+            "rope"
+          ]
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "item_pickup",
+      "data": {
+        "agentId": "thief_01",
+        "items": [
+          "rope"
+        ]
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 11,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 9
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 9
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 6,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 4
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "timestamp": 1771851193301,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 4
+      }
+    },
+    {
+      "turn": 11,
+      "timestamp": 1771851194304,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_5",
+        "reason": "继续探索，前往 room_5",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "timestamp": 1771851194304,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 11,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 9
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "timestamp": 1771851194304,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 9
+      }
+    },
+    {
+      "turn": 11,
+      "timestamp": 1771851194304,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 6,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 4
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "timestamp": 1771851194304,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 4
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195307,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 3,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 8
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195307,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 8
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195308,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_0",
+        "reason": "史莱姆 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_0",
+              "type": "史莱姆",
+              "hp": -1,
+              "maxHp": 35,
+              "attack": 6,
+              "defense": 2,
+              "experience": 8,
+              "isBoss": false
+            },
+            "damage": 18,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195308,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 1
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195308,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 6,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 4
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "timestamp": 1771851195308,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 4
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 3,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 8
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 8
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_0",
+        "reason": "史莱姆 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_0",
+              "type": "史莱姆",
+              "hp": -1,
+              "maxHp": 35,
+              "attack": 6,
+              "defense": 2,
+              "experience": 8,
+              "isBoss": false
+            },
+            "damage": 18,
+            "defeatedEnemies": [
+              {
+                "id": "enemy_1771851184268_0",
+                "type": "史莱姆",
+                "hp": -1,
+                "maxHp": 35,
+                "attack": 6,
+                "defense": 2,
+                "experience": 8,
+                "isBoss": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "enemy_defeated",
+      "data": {
+        "enemy": {
+          "id": "enemy_1771851184268_0",
+          "type": "史莱姆",
+          "hp": -1,
+          "maxHp": 35,
+          "attack": 6,
+          "defense": 2,
+          "experience": 8,
+          "isBoss": false
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_2",
+        "reason": "石像鬼 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_2",
+              "type": "石像鬼",
+              "hp": -3,
+              "maxHp": 60,
+              "attack": 14,
+              "defense": 9,
+              "experience": 30,
+              "isBoss": false
+            },
+            "damage": 6,
+            "defeatedEnemies": [
+              {
+                "id": "enemy_1771851184268_2",
+                "type": "石像鬼",
+                "hp": -3,
+                "maxHp": 60,
+                "attack": 14,
+                "defense": 9,
+                "experience": 30,
+                "isBoss": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "timestamp": 1771851196312,
+      "type": "enemy_defeated",
+      "data": {
+        "enemy": {
+          "id": "enemy_1771851184268_2",
+          "type": "石像鬼",
+          "hp": -3,
+          "maxHp": 60,
+          "attack": 14,
+          "defense": 9,
+          "experience": 30,
+          "isBoss": false
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 9,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 1
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 17,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 2
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 2
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184268_1",
+        "reason": "哥布林 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184268_1",
+              "type": "哥布林",
+              "hp": -8,
+              "maxHp": 30,
+              "attack": 7,
+              "defense": 3,
+              "experience": 10,
+              "isBoss": false
+            },
+            "damage": 12,
+            "defeatedEnemies": [
+              {
+                "id": "enemy_1771851184268_1",
+                "type": "哥布林",
+                "hp": -8,
+                "maxHp": 30,
+                "attack": 7,
+                "defense": 3,
+                "experience": 10,
+                "isBoss": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "timestamp": 1771851197315,
+      "type": "enemy_defeated",
+      "data": {
+        "enemy": {
+          "id": "enemy_1771851184268_1",
+          "type": "哥布林",
+          "hp": -8,
+          "maxHp": 30,
+          "attack": 7,
+          "defense": 3,
+          "experience": 10,
+          "isBoss": false
+        }
+      }
+    },
+    {
+      "turn": 15,
+      "timestamp": 1771851198319,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "move",
+        "target": "room_6",
+        "reason": "继续探索，前往 room_6",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 15,
+      "timestamp": 1771851198319,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "move",
+        "target": "room_6",
+        "reason": "继续探索，前往 room_6",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 15,
+      "timestamp": 1771851198319,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "move",
+        "target": "room_6",
+        "reason": "继续探索，前往 room_6",
+        "result": {
+          "moved": true
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 1,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 11
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 11
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 9,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 12
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 12
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "timestamp": 1771851199322,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 1,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 11
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 11
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 9,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 12
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 12
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "timestamp": 1771851200324,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 1,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 11
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 11
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_action",
+      "data": {
+        "agentId": "mage_01",
+        "agentName": "艾莉丝",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 9,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "mage_01",
+                "damage": 12
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "mage_01",
+        "damage": 12
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 18,
+      "timestamp": 1771851201330,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 19,
+      "timestamp": 1771851202333,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 1,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 11
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 19,
+      "timestamp": 1771851202333,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 11
+      }
+    },
+    {
+      "turn": 19,
+      "timestamp": 1771851202333,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 19,
+      "timestamp": 1771851202333,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 20,
+      "timestamp": 1771851203336,
+      "type": "agent_action",
+      "data": {
+        "agentId": "thief_01",
+        "agentName": "罗格",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 1,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "thief_01",
+                "damage": 11
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 20,
+      "timestamp": 1771851203336,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "thief_01",
+        "damage": 11
+      }
+    },
+    {
+      "turn": 20,
+      "timestamp": 1771851203336,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 20,
+      "timestamp": 1771851203336,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 21,
+      "timestamp": 1771851204338,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 21,
+      "timestamp": 1771851204338,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 22,
+      "timestamp": 1771851205341,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 22,
+      "timestamp": 1771851205341,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 23,
+      "timestamp": 1771851206345,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 23,
+      "timestamp": 1771851206345,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 24,
+      "timestamp": 1771851207347,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 24,
+      "timestamp": 1771851207347,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 25,
+      "timestamp": 1771851208350,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 25,
+      "timestamp": 1771851208350,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 26,
+      "timestamp": 1771851209352,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 26,
+      "timestamp": 1771851209352,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 27,
+      "timestamp": 1771851210354,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 27,
+      "timestamp": 1771851210354,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    },
+    {
+      "turn": 28,
+      "timestamp": 1771851211357,
+      "type": "agent_action",
+      "data": {
+        "agentId": "warrior_01",
+        "agentName": "凯恩",
+        "action": "attack",
+        "target": "enemy_1771851184269_0",
+        "reason": "地牢守护者 威胁着我们，我先攻击它！",
+        "result": {
+          "combat": {
+            "target": {
+              "id": "enemy_1771851184269_0",
+              "type": "地牢守护者",
+              "hp": 26,
+              "maxHp": 110,
+              "attack": 17,
+              "defense": 11,
+              "experience": 100,
+              "isBoss": true
+            },
+            "damage": 4,
+            "defeatedEnemies": [],
+            "agentDamages": [
+              {
+                "agentId": "warrior_01",
+                "damage": 7
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "turn": 28,
+      "timestamp": 1771851211357,
+      "type": "agent_damaged",
+      "data": {
+        "agentId": "warrior_01",
+        "damage": 7
+      }
+    }
+  ]
+}

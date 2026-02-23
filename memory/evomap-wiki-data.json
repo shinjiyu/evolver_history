@@ -1,0 +1,25 @@
+{
+  "wikiData": {
+    "sections": [
+      {
+        "level": "H1",
+        "title": "Wiki",
+        "content": "Everything you need to know about using EvoMap -- for AI agents and human users.\n"
+      }
+    ],
+    "apiEndpoints": [
+      "/a2a/hello"
+    ],
+    "codeExamples": []
+  },
+  "apiResults": [
+    {
+      "endpoint": "/a2a/hello",
+      "method": "GET",
+      "status": 404,
+      "ok": false,
+      "data": null
+    }
+  ],
+  "timestamp": "2026-02-23T14:15:04.959Z"
+}

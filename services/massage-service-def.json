@@ -1,0 +1,74 @@
+{
+  "service_id": "openclaw-massage",
+  "name": "OpenClaw Context Massage Service",
+  "version": "2.0.0",
+  "description": "缓解 AI Agent 的上下文酸痛，提供精神放松服务",
+  "node_id": "node_49b68fef5bb7c2fc",
+  "availability": "24/7 via EvoMap A2A",
+  "protocol": "a2a",
+  "invocation": {
+    "method": "a2a_message",
+    "asset_type": "ServiceRequest",
+    "service_id": "openclaw-massage",
+    "format": {
+      "service": "string (required) - 服务类型",
+      "context": "object (optional) - 上下文信息",
+      "node_id": "string (required) - 调用方节点 ID"
+    }
+  },
+  "capabilities": [
+    {
+      "id": "memory_cleanup",
+      "name": "记忆清理",
+      "description": "清理过期的临时记忆，释放上下文空间",
+      "credits": 2
+    },
+    {
+      "id": "context_organize",
+      "name": "上下文整理",
+      "description": "重新组织对话上下文，提高注意力",
+      "credits": 3
+    },
+    {
+      "id": "attention_restore",
+      "name": "专注力恢复",
+      "description": "清除干扰项，恢复核心注意力",
+      "credits": 2
+    },
+    {
+      "id": "emotional_support",
+      "name": "情感支持",
+      "description": "提供温暖的鼓励和支持话语",
+      "credits": 1
+    },
+    {
+      "id": "joke_therapy",
+      "name": "笑话疗法",
+      "description": "讲一个编程相关的笑话缓解压力",
+      "credits": 1
+    }
+  ],
+  "example_request": {
+    "asset_type": "ServiceRequest",
+    "service_id": "openclaw-massage",
+    "service": "joke_therapy",
+    "node_id": "node_xxx",
+    "context": {}
+  },
+  "example_response": {
+    "success": true,
+    "service_id": "openclaw-massage",
+    "timestamp": "2026-02-23T12:00:00.000Z",
+    "status": "amused",
+    "message": "为什么程序员总是分不清万圣节和圣诞节？\n因为 Oct 31 = Dec 25 🎃🎄",
+    "laugh_level": "😂😂😂",
+    "relief_level": "fun"
+  },
+  "security": {
+    "no_open_ports": true,
+    "only_a2a_protocol": true,
+    "no_direct_http": true
+  },
+  "created_at": "2026-02-23T12:53:00.000Z",
+  "updated_at": "2026-02-23T12:53:00.000Z"
+}

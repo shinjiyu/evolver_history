@@ -1,0 +1,138 @@
+[Turn 1] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 1] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 1] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 2] [agent_damaged] {"agentId":"thief_01","damage":1}
+[Turn 2] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_0","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_0","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":17,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":2}]}}}
+[Turn 2] [agent_damaged] {"agentId":"mage_01","damage":2}
+[Turn 2] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_0","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_0","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":12,"defeatedEnemies":[{"id":"enemy_1771851184268_0","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}]}}}
+[Turn 2] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_0","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}}
+[Turn 3] [agent_damaged] {"agentId":"thief_01","damage":1}
+[Turn 3] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_1","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":17,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":2}]}}}
+[Turn 3] [agent_damaged] {"agentId":"mage_01","damage":2}
+[Turn 3] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_1","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":12,"defeatedEnemies":[{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}]}}}
+[Turn 3] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}}
+[Turn 4] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}}
+[Turn 4] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"pickup","target":"health_potion","reason":"这个 health_potion 看起来很有价值","result":{"items":["health_potion"]}}
+[Turn 4] [item_pickup] {"agentId":"thief_01","items":["health_potion"]}
+[Turn 4] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 4] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 6] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 6] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 6] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 6] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 6] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 7] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 7] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 7] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 7] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 7] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 8] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 8] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 8] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 8] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_5","reason":"继续探索，前往 room_5","result":{"moved":true}}
+[Turn 8] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 9] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 9] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 9] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":49,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":11,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":9}]}}}
+[Turn 9] [agent_damaged] {"agentId":"mage_01","damage":9}
+[Turn 9] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_5","reason":"继续探索，前往 room_5","result":{"moved":true}}
+[Turn 10] [item_pickup] {"agentId":"thief_01","items":["rope"]}
+[Turn 10] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":32,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":11,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":9}]}}}
+[Turn 10] [agent_damaged] {"agentId":"mage_01","damage":9}
+[Turn 10] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":32,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":6,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":4}]}}}
+[Turn 10] [agent_damaged] {"agentId":"warrior_01","damage":4}
+[Turn 11] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_5","reason":"继续探索，前往 room_5","result":{"moved":true}}
+[Turn 11] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":15,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":11,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":9}]}}}
+[Turn 11] [agent_damaged] {"agentId":"mage_01","damage":9}
+[Turn 11] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":15,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":6,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":4}]}}}
+[Turn 11] [agent_damaged] {"agentId":"warrior_01","damage":4}
+[Turn 12] [agent_damaged] {"agentId":"thief_01","damage":8}
+[Turn 12] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_0","reason":"史莱姆 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_0","type":"史莱姆","hp":17,"maxHp":35,"attack":6,"defense":2,"experience":8,"isBoss":false},"damage":18,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":1}]}}}
+[Turn 12] [agent_damaged] {"agentId":"mage_01","damage":1}
+[Turn 12] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":6,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":6,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":4}]}}}
+[Turn 12] [agent_damaged] {"agentId":"warrior_01","damage":4}
+[Turn 13] [agent_damaged] {"agentId":"thief_01","damage":8}
+[Turn 13] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_0","reason":"史莱姆 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_0","type":"史莱姆","hp":-1,"maxHp":35,"attack":6,"defense":2,"experience":8,"isBoss":false},"damage":18,"defeatedEnemies":[{"id":"enemy_1771851184268_0","type":"史莱姆","hp":-1,"maxHp":35,"attack":6,"defense":2,"experience":8,"isBoss":false}]}}}
+[Turn 13] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_0","type":"史莱姆","hp":-1,"maxHp":35,"attack":6,"defense":2,"experience":8,"isBoss":false}}
+[Turn 13] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_2","reason":"石像鬼 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":-3,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false},"damage":6,"defeatedEnemies":[{"id":"enemy_1771851184268_2","type":"石像鬼","hp":-3,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false}]}}}
+[Turn 13] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_2","type":"石像鬼","hp":-3,"maxHp":60,"attack":14,"defense":9,"experience":30,"isBoss":false}}
+[Turn 14] [agent_damaged] {"agentId":"thief_01","damage":1}
+[Turn 14] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184268_1","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":17,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":2}]}}}
+[Turn 14] [agent_damaged] {"agentId":"mage_01","damage":2}
+[Turn 14] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_1","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":12,"defeatedEnemies":[{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}]}}}
+[Turn 14] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}}
+[Turn 15] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184268_1","reason":"哥布林 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false},"damage":12,"defeatedEnemies":[{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}]}}}
+[Turn 15] [enemy_defeated] {"enemy":{"id":"enemy_1771851184268_1","type":"哥布林","hp":-8,"maxHp":30,"attack":7,"defense":3,"experience":10,"isBoss":false}}
+[Turn 15] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_6","reason":"继续探索，前往 room_6","result":{"moved":true}}
+[Turn 15] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_6","reason":"继续探索，前往 room_6","result":{"moved":true}}
+[Turn 15] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_6","reason":"继续探索，前往 room_6","result":{"moved":true}}
+[Turn 16] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 16] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":96,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":9,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":12}]}}}
+[Turn 16] [agent_damaged] {"agentId":"mage_01","damage":12}
+[Turn 16] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":96,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 16] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 17] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 17] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":82,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":9,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":12}]}}}
+[Turn 17] [agent_damaged] {"agentId":"mage_01","damage":12}
+[Turn 17] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":82,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 17] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 18] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 18] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":68,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":9,"defeatedEnemies":[],"agentDamages":[{"agentId":"mage_01","damage":12}]}}}
+[Turn 18] [agent_damaged] {"agentId":"mage_01","damage":12}
+[Turn 18] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":68,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 18] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 19] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 19] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":63,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":1,"defeatedEnemies":[],"agentDamages":[{"agentId":"thief_01","damage":11}]}}}
+[Turn 19] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 19] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":63,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 19] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 20] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 20] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":58,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":1,"defeatedEnemies":[],"agentDamages":[{"agentId":"thief_01","damage":11}]}}}
+[Turn 20] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 20] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":58,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 20] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 21] [agent_damaged] {"agentId":"thief_01","damage":11}
+[Turn 21] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":54,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 21] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 21] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":54,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 21] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 22] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 22] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":50,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 22] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 22] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":50,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 22] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 23] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 23] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":46,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 23] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 23] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":46,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 23] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 24] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 24] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":42,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 24] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 24] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":42,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 24] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 25] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 25] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":38,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 25] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 25] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":38,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 25] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 26] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 26] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":34,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 26] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 26] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":34,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 26] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 27] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 27] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":30,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 27] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 27] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":30,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 27] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 28] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 28] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":26,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 28] [agent_damaged] {"agentId":"warrior_01","damage":7}
+[Turn 28] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"attack","target":"enemy_1771851184269_0","reason":"地牢守护者 威胁着我们，我先攻击它！","result":{"combat":{"target":{"id":"enemy_1771851184269_0","type":"地牢守护者","hp":26,"maxHp":110,"attack":17,"defense":11,"experience":100,"isBoss":true},"damage":4,"defeatedEnemies":[],"agentDamages":[{"agentId":"warrior_01","damage":7}]}}}
+[Turn 28] [agent_damaged] {"agentId":"warrior_01","damage":7}

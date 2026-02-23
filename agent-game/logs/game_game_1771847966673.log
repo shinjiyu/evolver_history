@@ -1,0 +1,23 @@
+[Turn 1] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 1] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 1] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 2] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 2] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 2] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 2] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 2] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 3] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 3] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_0","reason":"继续探索，前往 room_0","result":{"moved":true}}
+[Turn 3] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 3] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 3] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 4] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_1","reason":"继续探索，前往 room_1","result":{"moved":true}}
+[Turn 4] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"pickup","target":"health_potion","reason":"这个 health_potion 看起来很有价值","result":{"items":["health_potion"]}}
+[Turn 4] [item_pickup] {"agentId":"thief_01","items":["health_potion"]}
+[Turn 4] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 4] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_2","reason":"继续探索，前往 room_2","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"thief_01","agentName":"罗格","action":"move","target":"room_4","reason":"继续探索，前往 room_4","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"mage_01","agentName":"艾莉丝","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
+[Turn 5] [agent_action] {"agentId":"warrior_01","agentName":"凯恩","action":"move","target":"room_3","reason":"继续探索，前往 room_3","result":{"moved":true}}
