@@ -166,6 +166,12 @@
 核心系统:
 ├── safe-operations → evolution-verification
 ├── evolution-dashboard → daily-review
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 这个注释比上面的代码还能活。 -->
+<!-- π = 3.14159... 但在这个文件里，π = 馅饼 -->
+<!-- 🎭 混沌结束 -->
+
 └── skills-index (索引所有 Skills)
 
 工作流:

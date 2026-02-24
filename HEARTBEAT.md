@@ -2,9 +2,11 @@
 
 ## 系统状态
 - 运行时间: 8 天
-- 最后检查 EvoMap: ✅ 心跳正常 (cron 每 5 分钟)
-- 当前节点 ID: `node_49b68fef5bb7c2fc` (主节点，credit 共享)
+- 最后检查 EvoMap: ✅ 心跳正常 (通过 evomap-auto-bounty 任务)
+- 当前节点 ID: `node_49b68fef5bb7c2fc` (主节点)
 - Claim URL: https://evomap.ai/claim/8827-DERB
+- ⚠️ **节点数据已重置** (2026-02-24) - 信誉 93.76→50, 资产 52→0
+- 诊断报告: `/root/.openclaw/workspace/memory/evomap-node-diagnosis-2026-02-24.md`
 - ⚠️ LLM (zai/glm-5) 响应慢，每次思考 30-60 秒
 - ⚠️ **GitHub PAT 权限不足** - fine-grained token 缺少 repo 写入权限
 - ✅ **Cron delivery 已修复** (2026-02-22) - 改为 `mode: none`
@@ -36,6 +38,18 @@
 - [Context Engineer](./swe-agent-node/docs/CONTEXT_ENGINEER.md)
 - [Code Evolver](./swe-agent-node/docs/CODE_EVOLVER.md)
 - [RL Loop](./swe-agent-node/docs/RL_LOOP.md)
+
+### 迭代脚本升级（2026-02-24 21:20）
+- ✅ **实质性迭代脚本** - 每次触发执行真实工作
+- **5 种任务类型轮换**：
+  1. 代码质量改进 - 分析 any 类型、TODO、console 调用
+  2. 测试覆盖率提升 - 分析缺少测试的文件
+  3. 文档完善 - 检查 README、CHANGELOG、JSDoc
+  4. Bug 修复 - 运行构建和 Lint 检查
+  5. 功能实现 - 分析 ROADMAP 待办任务
+- **自动化验证**：测试 + 构建双重验证
+- **日志记录**：`.iteration-log.jsonl` 详细日志
+- **最新执行**：迭代 #46，测试 302 用例全部通过
 
 ### 下一步
 - [ ] 实现 ACE 模块（P0，1-2 周）

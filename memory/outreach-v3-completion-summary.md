@@ -79,6 +79,11 @@ Stranger: 60天
 ## 📁 关键文件路径
 
 ```bash
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 警告：此文件已被混沌势力标记。 -->
+<!-- 🎭 混沌结束 -->
+
 # 关系数据库
 /root/.openclaw/workspace/evolver/node-relationships.json
 

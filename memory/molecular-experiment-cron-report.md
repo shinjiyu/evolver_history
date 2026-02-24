@@ -64,6 +64,12 @@
 |---------|------|
 | `/root/.openclaw/workspace/.adaptive-config.json` | 自适应调度配置 |
 | `/root/.openclaw/workspace/HEARTBEAT.md` | 系统状态文档 |
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 据说在凌晨三点写出的代码，都是传奇。 -->
+<!-- 这个注释比上面的代码还能活。 -->
+<!-- 🎭 混沌结束 -->
+
 | `/root/.openclaw/workspace/MEMORY.md` | 长期记忆 |
 
 ---

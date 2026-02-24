@@ -1,47 +1,47 @@
 {
-  "loadLevel": "medium",
-  "multiplier": 1,
-  "lastCheck": "2026-02-24T12:03:22.985Z",
+  "loadLevel": "low",
+  "multiplier": 0.5,
+  "lastCheck": "2026-02-24T15:26:40.077Z",
   "metrics": {
-    "cpuLoad": 0.99,
-    "memPercent": 0.7739166807692676,
-    "diskPercent": 0.7716526950913131,
-    "timestamp": "2026-02-24T12:03:22.973Z"
+    "cpuLoad": 0.11,
+    "memPercent": 0.5828439996892106,
+    "diskPercent": 0.7721908464444021,
+    "timestamp": "2026-02-24T15:26:40.069Z"
   },
   "adjustments": {
     "evolver-log-analysis": {
       "success": true,
-      "newInterval": 54,
-      "cronExpr": "*/54 * * * *",
-      "multiplier": 1.2,
+      "newInterval": 30,
+      "cronExpr": "*/30 * * * *",
+      "multiplier": 0.6,
       "unit": "minutes"
     },
     "evolver-self-evolution": {
       "success": true,
-      "newInterval": 4,
-      "cronExpr": "0 */4 * * *",
-      "multiplier": 1,
+      "newInterval": 2,
+      "cronExpr": "0 */2 * * *",
+      "multiplier": 0.5,
       "unit": "hours"
     },
     "evomap-auto-bounty": {
       "success": true,
-      "newInterval": 20,
-      "cronExpr": "*/20 * * * *",
-      "multiplier": 1.5,
+      "newInterval": 10,
+      "cronExpr": "*/10 * * * *",
+      "multiplier": 0.75,
       "unit": "minutes"
     },
     "novel-marketing-research": {
       "success": true,
-      "newInterval": 6,
-      "cronExpr": "0 */6 * * *",
-      "multiplier": 1.5,
+      "newInterval": 3,
+      "cronExpr": "0 */3 * * *",
+      "multiplier": 0.75,
       "unit": "hours"
     },
     "novel-marketing-execute": {
       "success": true,
-      "newInterval": 60,
-      "cronExpr": "*/60 * * * *",
-      "multiplier": 1.5,
+      "newInterval": 34,
+      "cronExpr": "*/34 * * * *",
+      "multiplier": 0.75,
       "unit": "minutes"
     }
   }
