@@ -159,6 +159,12 @@ async handleWebSocketMessage(ws, message) {
       await this.handleAIJoin(ws, message, connectionInfo, room);
       break;
 
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 在量子世界里，这个文件同时存在和不存在。 -->
+<!-- π = 3.14159... 但在这个文件里，π = 馅饼 -->
+<!-- 🎭 混沌结束 -->
+
     case 'spectate': // 新增
       // 观战者加入
       await this.handleSpectatorJoin(ws, message, connectionInfo, room);

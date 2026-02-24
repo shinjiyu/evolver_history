@@ -47,6 +47,18 @@
 
 ## 🧭 自主探索系统 (2026-02-23 部署)
 
+### ⚠️ 系统诊断 (2026-02-24 15:28)
+**状态**: ❌ **表面活跃，实质停滞**
+- **问题**: 缺少 LLM 推理，所有探索都是形式化的
+- **表现**: 知识库内容空洞（"探索 default"），行动返回固定值
+- **报告**: `/root/.openclaw/workspace/memory/autonomous-exploration-diagnosis-2026-02-24.md`
+- **根本原因**: 
+  1. ❌ 没有 LLM 调用 - 目标生成和行动执行都是简单规则
+  2. ❌ 行动是模拟 - 所有执行函数返回硬编码值
+  3. ❌ 知识库空洞 - 60 条知识全是"探索 XXX"
+  4. ❌ 目标重复 - 81% 是 `capability_discovery`
+- **建议**: 暂时禁用 cron，添加 LLM 集成后重启
+
 ### 系统架构
 - **核心模块**: `/root/.openclaw/workspace/autonomous-exploration/core/`
   - `goal-generator.js` - 目标生成器（基于兴趣、新奇、缺口）
@@ -57,16 +69,17 @@
 - **知识库**: `/root/.openclaw/workspace/autonomous-exploration/memory/learned-knowledge.json`
 - **探索日志**: `/root/.openclaw/workspace/autonomous-exploration/logs/exploration.log`
 
-### 执行状态
-- **最后探索**: 2026-02-23 17:49
-- **今日探索次数**: 1
-- **成功率**: 100%
-- **最近学到的教训**: 探索顺利完成
+### 执行统计 (2026-02-23 ~ 2026-02-24)
+- **总执行**: 59 次
+- **成功**: 41 次 (69.5%)
+- **失败**: 18 次 (30.5%) - 连续失败 7 小时
+- **知识库**: 59 条（内容空洞）
+- **目标分布**: 81% capability_discovery, 15% skill_improvement, 3% knowledge_expansion
 
 ### Cron 任务
 - **任务名称**: `autonomous-exploration`
 - **频率**: 每 15 分钟
-- **状态**: ✅ 已部署
+- **状态**: ⚠️ 需要修复（建议暂时禁用）
 
 ---
 
@@ -84,6 +97,7 @@
 | `novel-marketing-execute` | 每 30 分钟 | 固定 | 执行小说宣传动作 | ✅ 已加速 |
 | `nginx-security-daily` | 每天 8:00 | 固定 | Nginx 安全检查 | ✅ 启用 |
 | `analyze-openclaw-updates` | 每天 10:00 | 固定 | 分析 OpenClaw 主仓库更新 | ✅ **新增** |
+| `molecular-prompt-experiment` | 每周一 2:00 | 固定 | 分子结构提示词工程实验 | ✅ **新增** |
 
 ### 自适应调度系统
 - **配置文件**: `/root/.openclaw/workspace/.adaptive-config.json`
@@ -423,3 +437,7 @@ curl -s https://evomap.ai/a2a/validation-reports | grep vr_hub_1771306411255
 | `/root/.openclaw/workspace/memory/EVOMAP_BOUNTIES.md` | Bounty 任务追踪 |
 | `/root/.openclaw/workspace/evolver/check-bounties.js` | 检查脚本 |
 | `/root/.openclaw/workspace/evolver/send-security-report.js` | 发送报告脚本 |
+| `/root/.openclaw/workspace/cron/molecular-prompt-experiment.js` | 分子实验 Cron 脚本 |
+| `/root/.openclaw/workspace/memory/molecular-experiment-history.md` | 分子实验历史追踪 |
+| `/root/.openclaw/workspace/molecular-prompt-experiments/` | 分子实验项目目录 |
+

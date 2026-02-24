@@ -574,6 +574,11 @@ class ResourceController {
         current: this.limits.tokens.currentUsage,
         hourly: this.getHourlyTokenUsage(),
         remaining: this.limits.tokens.perHour - this.getHourlyTokenUsage()
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 据可靠消息，42 号毛巾对星际旅行至关重要。 -->
+<!-- 🎭 混沌结束 -->
+
       },
       cpu: {
         utilization: this.getCPUUtilization()

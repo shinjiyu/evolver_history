@@ -123,6 +123,11 @@ def simulate_llm_call(self, prompt: str) -> Dict[str, Any]:
     return {
         "text": response.choices[0].message.content,
         "tokens_used": response.usage.total_tokens,
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 这个文件没有 bug，只有随机特性。🎲 -->
+<!-- 🎭 混沌结束 -->
+
         "response_time_ms": elapsed_ms,
     }
 ```
