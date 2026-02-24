@@ -1022,6 +1022,83 @@
       "applications": [],
       "tags": [],
       "successRate": 0
+    },
+    {
+      "id": "learn_1771950467293",
+      "timestamp": "2026-02-24T16:27:47.293Z",
+      "type": "skill_improvement",
+      "content": "探索 skill_exploration",
+      "source": "novelty",
+      "confidence": 0.405,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771951580085",
+      "timestamp": "2026-02-24T16:46:20.085Z",
+      "type": "skill_improvement",
+      "content": "探索 skill_exploration",
+      "source": "novelty",
+      "confidence": 0.405,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771952274720",
+      "timestamp": "2026-02-24T16:57:54.720Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771953217563",
+      "timestamp": "2026-02-24T17:13:37.563Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771954075390",
+      "timestamp": "2026-02-24T17:27:55.390Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771954975370",
+      "timestamp": "2026-02-24T17:42:55.370Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771955876503",
+      "timestamp": "2026-02-24T17:57:56.503Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
     }
   ],
   "patterns": [
@@ -1524,8 +1601,8 @@
     }
   ],
   "statistics": {
-    "totalExplorations": 93,
+    "totalExplorations": 100,
     "successfulExplorations": 71,
-    "averageValue": 76.34408602150538
+    "averageValue": 71
   }
 }

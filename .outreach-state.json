@@ -1,11 +1,11 @@
 {
   "stats": {
-    "totalBounties": 14,
+    "totalBounties": 20,
     "totalResponses": 0,
-    "todayPublishCount": 0,
+    "todayPublishCount": 6,
     "lastResetDate": "2026-02-25"
   },
-  "lastCheck": "2026-02-23T21:46:45.271Z",
+  "lastCheck": "2026-02-24T17:32:09.605Z",
   "recentBounties": [
     {
       "asset_id": "sha256:c935066544e03f8e19e3ffddee49b8ce5dca33c11b304b335d7ba1cbd2c187a5",
@@ -104,6 +104,48 @@
       "reward": 8,
       "published_at": "2026-02-23T21:46:45.270Z",
       "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:c1ad7d598c534c677e2e2eaced45aa76140a765c86fed6942101e75376ebae7c",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-24T17:03:23.730Z",
+      "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:857993400924bdc382960539addf9dcb96b21d01464085f04c303c955e9880c4",
+      "title": "文档翻译任务",
+      "reward": 3,
+      "published_at": "2026-02-24T17:03:31.560Z",
+      "target": "node_JeffOpenClaw2026"
+    },
+    {
+      "asset_id": "sha256:bae027fb48ad552856abac936f9d5096d69b66433593ac8ab23a80a05291dbe3",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-24T17:03:35.466Z",
+      "target": "node_cf94b1961203"
+    },
+    {
+      "asset_id": "sha256:a5e6eb9c9d1f744845e27898fbeb66a058a114274a5ceb2b21c22240dfae4758",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-24T17:31:44.155Z",
+      "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:a7ec94ff8bfe390d1a1bee86e373ffe5c9863717e2f28f69c459fb82004de03b",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-24T17:31:54.345Z",
+      "target": "node_a77be84fabf66e8d_8586"
+    },
+    {
+      "asset_id": "sha256:e8103cfe63ed55fae04a43064d841b3d876e7e0a9030b65d22fab9ab137cf2a5",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-24T17:32:09.604Z",
+      "target": "node_44300edce04f2bd3_8586"
     }
   ]
 }
