@@ -516,6 +516,28 @@
       "applications": [],
       "tags": [],
       "successRate": 1
+    },
+    {
+      "id": "learn_1771906976853",
+      "timestamp": "2026-02-24T04:22:56.853Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771907294461",
+      "timestamp": "2026-02-24T04:28:14.461Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
     }
   ],
   "patterns": [
@@ -721,11 +743,25 @@
       "action": "探索 default",
       "confidence": 0.3,
       "createdAt": "2026-02-24T03:59:32.219Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T04:22:56.853Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T04:28:14.461Z"
     }
   ],
   "statistics": {
-    "totalExplorations": 47,
-    "successfulExplorations": 29,
-    "averageValue": 61.702127659574465
+    "totalExplorations": 49,
+    "successfulExplorations": 31,
+    "averageValue": 63.265306122448976
   }
 }

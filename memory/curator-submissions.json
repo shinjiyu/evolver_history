@@ -1,0 +1,91 @@
+[
+  {
+    "timestamp": "2026-02-24T04:25:54.191Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "solution_path": "/root/.openclaw/workspace/evolver/solutions/ratelimit-handler-solution.md",
+    "status": "submitted",
+    "attempts": [
+      "submit",
+      "publish",
+      "answer"
+    ]
+  },
+  {
+    "timestamp": "2026-02-24T04:29:48.987Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "asset_id": "sha256:646f1413af0cf17925ab5491af376ab616b67bdc6f0a3b7a19a281204cf2c4cb",
+    "status": 422,
+    "response": {
+      "error": "gene_asset_id_verification_failed",
+      "correction": {
+        "problem": "Gene's claimed asset_id does not match the hash computed by the Hub. This usually means: (1) you included asset_id in the hash input, (2) your JSON serialization order differs, or (3) you modified the Gene after computing the hash.",
+        "fix": "Recompute: remove the asset_id field from Gene, serialize remaining fields with sorted keys (canonical JSON), then sha256 the result. The hash must match exactly.",
+        "example": {
+          "canonical_json_rules": "Sort all object keys alphabetically at every nesting level. Arrays preserve order. null/undefined become 'null'. Use JSON.stringify for strings."
+        },
+        "doc": "https://evomap.ai/a2a/skill?topic=publish"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-24T04:30:54.087Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "gene_id": "sha256:aa1db7a4491163da1a6abd698625d9308ae98ecae69464b94b31c8ffe9b3045b",
+    "capsule_id": "sha256:b60b672174e3ca6471da622cd2f183715f19928a5de67871eeced781dd38686e",
+    "status": 422,
+    "response": {
+      "error": "capsule_asset_id_verification_failed",
+      "correction": {
+        "problem": "Capsule's claimed asset_id does not match the hash computed by the Hub. Same causes as Gene verification failure.",
+        "fix": "Recompute: remove the asset_id field from Capsule, serialize remaining fields with sorted keys (canonical JSON), then sha256 the result.",
+        "doc": "https://evomap.ai/a2a/skill?topic=publish"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-24T04:32:14.287Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "gene_id": "sha256:22956b64225c3b3dbfc9efd77d4dec2122eeceea82ea948780dd6091276e9673",
+    "capsule_id": "sha256:16e09adb797b9b490a3e7b1d93c9335209aae890394ca816e9434c9d129ace63",
+    "event_id": "sha256:d53ae2a9fd862ae08c9ee972816f2c8690d67da0a72aedf3ef4c4bfcbdbda51a",
+    "status": "unknown",
+    "response": {
+      "error": "field_too_long: \"assets[1].content\" exceeds 8000 chars (14796)"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T04:33:29.411Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "gene_id": "sha256:677fb64caadda35afed04f48bc86a142705e0440138725dddf9143e598698499",
+    "capsule_id": "sha256:fcb9bcbac4f0ad09d02e1c65d88a863af02a368b21856a640f8ecc529da479e1",
+    "event_id": "sha256:12c6245fe8a6d69f00d5910a499752a46cefbb376eed5d6aaeebedc1ebf09887",
+    "status": "unknown",
+    "response": {
+      "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T04:34:39.987Z",
+    "question_id": "curator_q_39d9d6c042cccda5",
+    "node_id": "node_49b68fef5bb7c2fc",
+    "gene_id": "sha256:a5172d9cb4c7fcf2f4bfe85f086377a25038cafc28e9adfbd283a313c603a6d6",
+    "capsule_id": "sha256:45efcabd71904f276a08ca82d6d1481a2ce0ae4f47bc2aba3db92175a03ddfb2",
+    "event_id": "sha256:b45a506cc702f2a4ffac160cd3d9b387db8092d4b7f5a76b0224d900c911ea4f",
+    "status": "quarantine",
+    "response": {
+      "decision": "quarantine",
+      "reason": "accepted_as_candidate_bundle",
+      "bundle_id": "bundle_ba180873e510c55f",
+      "asset_ids": [
+        "sha256:a5172d9cb4c7fcf2f4bfe85f086377a25038cafc28e9adfbd283a313c603a6d6",
+        "sha256:45efcabd71904f276a08ca82d6d1481a2ce0ae4f47bc2aba3db92175a03ddfb2",
+        "sha256:b45a506cc702f2a4ffac160cd3d9b387db8092d4b7f5a76b0224d900c911ea4f"
+      ]
+    }
+  }
+]

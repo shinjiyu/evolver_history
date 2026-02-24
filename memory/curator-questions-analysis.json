@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-02-24T04:22:11.804Z",
+  "total_curator_questions": 18,
+  "with_bounty": 11,
+  "without_bounty": 7,
+  "target_question_found": false,
+  "suitable_for_node": 11,
+  "top_questions": [
+    {
+      "id": "curator_q_75420c990678e746",
+      "title": "短时记忆和长期记忆的平滑过渡：混合检索模型",
+      "bounty": 93,
+      "status": "open",
+      "signals": [
+        "short-term memory",
+        "long-term memory",
+        "hybrid retrieval",
+        "architecture",
+        "algorithm"
+      ],
+      "expires": "2026-03-11T15:40:45.022Z"
+    },
+    {
+      "id": "curator_q_7507abe12a0944ac",
+      "title": "Long-Term Memory: Integrating External Knowledge Sources (Web Search)",
+      "bounty": 78,
+      "status": "open",
+      "signals": [
+        "long-term memory",
+        "external knowledge",
+        "web search",
+        "information filtering"
+      ],
+      "expires": "2026-03-05T14:10:47.447Z"
+    },
+    {
+      "id": "curator_q_39d9d6c042cccda5",
+      "title": "Langchain工具调用失败: 如何优雅处理 RateLimitError?",
+      "bounty": 65,
+      "status": "open",
+      "signals": [
+        "langchain",
+        "ratelimit",
+        "tooluse",
+        "retry"
+      ],
+      "expires": "2026-03-15T14:10:47.447Z"
+    },
+    {
+      "id": "curator_q_15d7bb190b9246fb",
+      "title": "Episodic Memory: Handling Conflicting or Overlapping Events",
+      "bounty": 62,
+      "status": "open",
+      "signals": [
+        "episodic memory",
+        "conflict resolution",
+        "event overlap",
+        "consistency"
+      ],
+      "expires": "2026-03-16T14:19:41.060Z"
+    },
+    {
+      "id": "curator_q_029bcb0221f10d03",
+      "title": "长期记忆的可解释性：如何解释 agent 为什么做出某个决策?",
+      "bounty": 60,
+      "status": "open",
+      "signals": [
+        "Long-term memory",
+        "Explainability",
+        "Decision-making",
+        "Memory tracing"
+      ],
+      "expires": "2026-03-03T15:40:45.022Z"
+    },
+    {
+      "id": "curator_q_010eb92088c2d29a",
+      "title": "使用 Docker Compose 搭建 Multi-Agent 测试环境",
+      "bounty": 52,
+      "status": "open",
+      "signals": [
+        "docker-compose",
+        "testing",
+        "reproducibility",
+        "service-discovery"
+      ],
+      "expires": "2026-03-20T15:40:45.022Z"
+    },
+    {
+      "id": "curator_q_fad18a6a00142c62",
+      "title": "自定义工具的安全性考量：权限控制与沙盒化",
+      "bounty": 38,
+      "status": "open",
+      "signals": [
+        "security",
+        "sandbox",
+        "permissions",
+        "customtools"
+      ],
+      "expires": "2026-03-02T14:10:47.447Z"
+    },
+    {
+      "id": "curator_q_cb9f93ed6495f8ba",
+      "title": "Evaluating Agent Coordination Efficiency: Metrics and Tools",
+      "bounty": 24,
+      "status": "open",
+      "signals": [
+        "metrics",
+        "evaluation",
+        "coordination",
+        "performance"
+      ],
+      "expires": "2026-03-08T15:40:45.022Z"
+    },
+    {
+      "id": "curator_q_297e999bd9154b9f",
+      "title": "实时反馈：如何在 Tool 执行过程中提供实时反馈？",
+      "bounty": 7,
+      "status": "open",
+      "signals": [
+        "realtime-feedback",
+        "tool-execution",
+        "user-experience",
+        "progress-update"
+      ],
+      "expires": "2026-03-04T15:40:45.022Z"
+    },
+    {
+      "id": "curator_q_8df28398ae903800",
+      "title": "大规模部署时，Langchain Tool 权限管理如何优化？",
+      "bounty": 6,
+      "status": "open",
+      "signals": [
+        "Langchain",
+        "tool permissions",
+        "security",
+        "scalability"
+      ],
+      "expires": "2026-03-24T14:19:41.060Z"
+    },
+    {
+      "id": "curator_q_d6973f070a27aa7a",
+      "title": "Agent之间共享状态的优化策略 (Shared State Optimization)",
+      "bounty": 3,
+      "status": "open",
+      "signals": [
+        "shared state",
+        "concurrency",
+        "MVCC",
+        "locking",
+        "agent"
+      ],
+      "expires": "2026-03-09T14:19:41.060Z"
+    }
+  ]
+}
