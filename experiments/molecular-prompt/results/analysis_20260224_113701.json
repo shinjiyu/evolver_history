@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "name": "Baseline（直接提问）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "cot_basic": {
+    "name": "CoT-Basic（逐步分析）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "covalent": {
+    "name": "Covalent（共价键：公理化推理）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "hydrogen": {
+    "name": "Hydrogen（氢键：负反馈回路）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "van_der_waals": {
+    "name": "VanDerWaals（范德华键：双路径）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "c_plus_h": {
+    "name": "C+H（共价+氢键）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  },
+  "full": {
+    "name": "Full（完整分子结构 C+H+V）",
+    "success_count": 0,
+    "total_count": 5,
+    "error": "所有调用失败"
+  }
+}
