@@ -1,18 +1,18 @@
 {
   "loadLevel": "low",
   "multiplier": 0.5,
-  "lastCheck": "2026-02-23T22:00:03.828Z",
+  "lastCheck": "2026-02-23T23:50:32.915Z",
   "metrics": {
-    "cpuLoad": 0.06,
-    "memPercent": 0.6773282329813537,
-    "diskPercent": 0.7628975298200965,
-    "timestamp": "2026-02-23T22:00:03.820Z"
+    "cpuLoad": 0.32,
+    "memPercent": 0.7110318527198861,
+    "diskPercent": 0.7648313511735604,
+    "timestamp": "2026-02-23T23:50:32.907Z"
   },
   "adjustments": {
     "evolver-log-analysis": {
       "success": true,
-      "newInterval": 45,
-      "cronExpr": "*/45 * * * *",
+      "newInterval": 30,
+      "cronExpr": "*/30 * * * *",
       "multiplier": 0.6,
       "unit": "minutes"
     },

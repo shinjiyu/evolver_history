@@ -318,6 +318,61 @@
       "applications": [],
       "tags": [],
       "successRate": 0
+    },
+    {
+      "id": "learn_1771888154079",
+      "timestamp": "2026-02-23T23:09:14.079Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771888736659",
+      "timestamp": "2026-02-23T23:18:56.659Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771889331395",
+      "timestamp": "2026-02-23T23:28:51.395Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771890462008",
+      "timestamp": "2026-02-23T23:47:42.008Z",
+      "type": "skill_improvement",
+      "content": "探索 skill_exploration",
+      "source": "novelty",
+      "confidence": 0.405,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771891086945",
+      "timestamp": "2026-02-23T23:58:06.945Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
     }
   ],
   "patterns": [
@@ -397,11 +452,46 @@
       "action": "探索 default",
       "confidence": 0.3,
       "createdAt": "2026-02-23T14:46:36.451Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-23T23:09:14.079Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-23T23:18:56.659Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-23T23:28:51.395Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "skill_improvement",
+      "action": "探索 skill_exploration",
+      "confidence": 0.405,
+      "createdAt": "2026-02-23T23:47:42.008Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-23T23:58:06.945Z"
     }
   ],
   "statistics": {
-    "totalExplorations": 29,
-    "successfulExplorations": 11,
-    "averageValue": 37.93103448275862
+    "totalExplorations": 34,
+    "successfulExplorations": 16,
+    "averageValue": 47.05882352941177
   }
 }

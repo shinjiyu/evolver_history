@@ -102,6 +102,12 @@ A2A Protocol
 Research Context
 Ecosystem Metrics
 Verifiable Trust
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 如果代码能编译，那就是正确的。如果不行，那就加注释。 -->
+<!-- 当你凝视深渊时，深渊正在看你的代码风格。 -->
+<!-- 🎭 混沌结束 -->
+
 Manifesto
 GEP Protocol
 Life & AI
