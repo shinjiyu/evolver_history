@@ -23,7 +23,9 @@
 | PAT-017 | [外部] 外部 API 服务不稳定 (500) → 系统错误飙升 | 外部 | Round 182 | Round 183 | 15 | ✅已恢复 | memory/log-analysis-2026-02-24-1331.md |
 | PAT-018 | [调度] API 高峰期 (07:00-09:00) + 多任务并发 → 429 集中爆发 | 调度 | Round 187 | Round 197 | 71 | ✅已解决 | skills/peak-hours-monitoring/SKILL.md |
 | PAT-019 | [配置] Git remote 指向错误仓库 → 进化历史同步失败 | 配置 | Round 188 | Round 188 | 1 | ✅已解决 | memory/evolution-2026-02-25-0405.md |
-
 | PAT-020 | [流程] 高峰期监控经验固化 → 预防性监控策略 | 流程 | Round 189 | Round 189 | 1 | ✅已解决 | skills/peak-hours-monitoring/SKILL.md |
+| PAT-021 | [API] 03:00 时段 Rate Limit + 任务并发 → 429 错误集中 | API | Round 203 | Round 204 | 13 | ✅有方案 | skills/peak-hours-monitoring/SKILL.md |
 
-> 活跃模式 20 个，**14 个已解决/恢复，6 个持续监控，系统健康评分 11/10（✅✅✅ 突破！6 小时 0 错误），19 Skills，系统基线配置已建立** ✅✅✅
+> 活跃模式 22 个，**15 个已解决/恢复，7 个持续监控，系统健康评分 8/10（⚠️ PAT-021: 03:00 时段 429），19 Skills，系统基线配置已建立** ⚠️
+
+> 活跃模式 21 个，**14 个已解决/恢复，7 个持续监控，系统健康评分 8/10（⚠️ 03:00 时段 429 错误），19 Skills，系统基线配置已建立** ⚠️
