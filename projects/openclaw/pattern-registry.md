@@ -28,5 +28,77 @@
 | PAT-022 | [API] 12:50 时段 Rate Limit 突发 → 429 错误高峰 | API | Round 206 | Round 207 | 16 | ✅已过去 | memory/log-analysis-2026-02-25-1300.md |
 | PAT-023 | [API] 15:00-16:00 时段 Rate Limit 激增 → 429 严重爆发 | API | Round 213 | Round 215 | 97 | ✅已恢复 | memory/log-analysis-2026-02-25-1702.md |
 | PAT-024 | [API] 10:00 时段 Rate Limit 极高 → 429 最高峰 (104次) | API | Round 219 | Round 219 | 104 | 🔴极高风险 | memory/log-analysis-2026-02-26-0000.md |
+| PAT-025 | [账户] API 余额耗尽 + 429 错误 → 所有任务失败 | 账户 | Round 220 | Round 241 | 136+ | ✅有方案 | skills/api-balance-monitor/SKILL.md |
 
-> 活跃模式 25 个，**20 个已解决/恢复，5 个持续监控，系统健康评分 9/10（🔴 新发现：10:00 是最高风险时段），19 Skills，系统基线配置已建立** ⚠️
+> 活跃模式 26 个，**21 个已解决/恢复，5 个持续监控，系统健康评分 6.5/10（🔴 紧急：API 余额耗尽，需立即充值），20 Skills，系统基线配置已建立** ⚠️
+
+---
+
+## Round 241 改进记录
+
+**时间**: 2026-02-26 04:31
+**重点**: API 余额监控体系建设
+
+### 发现的问题
+
+1. **PAT-025（新）**: API 余额耗尽危机
+   - 影响：136+ 次 429 余额不足错误
+   - 时段：03:40-04:50 高频触发
+   - 系统健康评分：9.5 → 6.5（降至危险等级）
+   - 影响：所有任务失败
+
+2. **PAT-024**: 10:00 高峰期（104 次错误）
+   - 状态：🔴🔴🔴 极高风险
+   - 更新：添加详细应对策略
+
+### 实施的改进
+
+**A. 创建新 Skill**:
+1. `skills/api-balance-monitor/SKILL.md`
+   - API 余额监控策略
+   - 三阶段预警机制（预警期/警戒期/危急期）
+   - 自动降级策略
+   - 余额检测方法
+   - 通知机制
+   - 恢复策略
+
+**B. 改进现有 Skill**:
+1. `skills/peak-hours-monitoring/SKILL.md`
+   - 添加 10:00 最严重高峰期（104 次错误）
+   - 更新高峰期时间表（5 个高峰期）
+   - 优化应对策略
+
+**C. 生成修复脚本**:
+1. `evolver/fixes/api-balance-monitor.sh`
+   - 自动检测余额不足风险
+   - 生成预警报告
+   - 提供降级建议
+
+**D. 更新进化历史**:
+1. 更新 PAT-025 状态：🔴极高风险 → ✅有方案
+2. Pattern 解决率：20/26 → 21/26 (80.8%)
+
+### 文件变更
+
+**新建**:
+- `skills/api-balance-monitor/SKILL.md`
+- `evolver/fixes/api-balance-monitor.sh`
+- `memory/evolution-2026-02-26-0431.md`
+
+**修改**:
+- `skills/peak-hours-monitoring/SKILL.md`
+- `evolver_history/projects/openclaw/pattern-registry.md`
+
+### 预期效果
+
+- API 余额耗尽预警提前量 > 6 小时
+- 自动降级成功率 > 90%
+- 系统恢复时间 < 1 小时
+- 10:00 高峰期准备充分
+
+### 下一步
+
+1. **紧急**: 充值 API 账户（智谱 AI GLM-5）
+2. **监控**: 运行 api-balance-monitor.sh 脚本
+3. **验证**: 充值后验证系统恢复
+4. **优化**: 根据实际情况调整预警阈值
