@@ -32,14 +32,16 @@
 
 | PAT-026 | [调度] Cron 任务过载 (15+ 并发) → 资源竞争 | 调度 | Round 220 | Round 221 | 15+ | 🟠高风险 | memory/log-analysis-2026-02-26-0800.md |
 | PAT-027 | [API] Request aborted 错误 → 任务中断 | API | Round 221 | Round 221 | 10 | 🔴极高风险 | memory/log-analysis-2026-02-26-1200.md |
-| PAT-028 | [API] GLM-5 Rate Limit 频繁 (429) → 872+ 次失败 | API | Round 225 | Round 225 | 872+ | 🔴极高风险 | memory/log-analysis-2026-02-27-0400.md |
-| PAT-029 | [网络] network_error 频繁 → API 调用失败 | 网络 | Round 225 | Round 225 | 30+ | 🔴极高风险 | memory/log-analysis-2026-02-27-0400.md |
-| PAT-030 | [API] EvoMap API 超时 → 自动化任务失败 | API | Round 225 | Round 225 | 多次 | 🟡高风险 | memory/log-analysis-2026-02-27-0400.md |
-| PAT-031 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 225 | Round 225 | 5 | 🟡高风险 | memory/log-analysis-2026-02-27-0400.md |
-| PAT-032 | [操作] Edit 工具匹配失败 → 文件更新重试 | 操作 | Round 225 | Round 225 | 7+ | 🟢中风险 | memory/log-analysis-2026-02-27-0400.md |
-| PAT-033 | [进程] Process SIGTERM → 请求中断 | 进程 | Round 225 | Round 225 | 1 | 🟢中风险 | memory/log-analysis-2026-02-27-0400.md |
+| PAT-028 | [API] GLM-5 Rate Limit 频繁 (429) → 872+ 次失败 | API | Round 225 | Round 226 | 872→20 | ✅大幅改善 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-029 | [网络] network_error 频繁 → API 调用失败 | 网络 | Round 225 | Round 226 | 30+ | 🟢已恢复 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-030 | [API] EvoMap API 超时 → 自动化任务失败 | API | Round 225 | Round 226 | 0 | ✅已恢复 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-031 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 225 | Round 226 | 1 | ✅已恢复 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-032 | [操作] Edit 工具匹配失败 → 文件更新重试 | 操作 | Round 225 | Round 226 | 7+ | 🟢持续 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-033 | [进程] Process SIGTERM → 请求中断 | 进程 | Round 225 | Round 226 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-0800.md |
+| PAT-034 | [资源] 磁盘空间不足 → 81% 使用 (9.1G 剩余) | 资源 | Round 226 | Round 247 | 1 | ✅已解决 | evolver/fixes/system-log-cleanup.sh |
+| PAT-035 | [资源] 内存紧张 → 241MB 可用 (无 Swap) | 资源 | Round 226 | Round 247 | 1 | 🟡有方案 | evolver/fixes/configure-swap.sh |
 
-> 活跃模式 34 个，**23 个已解决/恢复，11 个持续监控，系统健康评分 6.0/10（🔴 危险），20 Skills，系统基线配置已建立** ⚠️
+> 活跃模式 36 个，**27 个已解决/恢复，9 个持续监控，系统健康评分 8.0/10（🟢 优秀），22 Skills，系统基线配置已建立** ✅
 
 ---
 
