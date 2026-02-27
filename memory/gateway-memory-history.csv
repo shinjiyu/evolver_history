@@ -1,0 +1,3 @@
+timestamp,mem_mb,mem_percent,cpu_percent,status
+2026-02-27 16:32:09,1309,35.6,7.5,warning
+2026-02-27 16:32:24,1310,35.7,7.5,warning
