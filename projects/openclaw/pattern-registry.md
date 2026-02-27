@@ -32,16 +32,16 @@
 
 | PAT-026 | [调度] Cron 任务过载 (15+ 并发) → 资源竞争 | 调度 | Round 220 | Round 221 | 15+ | 🟠高风险 | memory/log-analysis-2026-02-26-0800.md |
 | PAT-027 | [API] Request aborted 错误 → 任务中断 | API | Round 221 | Round 221 | 10 | 🔴极高风险 | memory/log-analysis-2026-02-26-1200.md |
-| PAT-028 | [API] GLM-5 Rate Limit 频繁 (429) → 872+ 次失败 | API | Round 225 | Round 226 | 872→20 | ✅大幅改善 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-029 | [网络] network_error 频繁 → API 调用失败 | 网络 | Round 225 | Round 226 | 30+ | 🟢已恢复 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-030 | [API] EvoMap API 超时 → 自动化任务失败 | API | Round 225 | Round 226 | 0 | ✅已恢复 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-031 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 225 | Round 226 | 1 | ✅已恢复 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-032 | [操作] Edit 工具匹配失败 → 文件更新重试 | 操作 | Round 225 | Round 226 | 7+ | 🟢持续 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-033 | [进程] Process SIGTERM → 请求中断 | 进程 | Round 225 | Round 226 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-0800.md |
-| PAT-034 | [资源] 磁盘空间不足 → 81% 使用 (9.1G 剩余) | 资源 | Round 226 | Round 247 | 1 | ✅已解决 | evolver/fixes/system-log-cleanup.sh |
-| PAT-035 | [资源] 内存紧张 → 241MB 可用 (无 Swap) | 资源 | Round 226 | Round 247 | 1 | 🟡有方案 | evolver/fixes/configure-swap.sh |
+| PAT-028 | [API] GLM-5 Rate Limit 频繁 (429) → 872+ 次失败 | API | Round 225 | Round 227 | 872→0 | ✅✅已恢复 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-029 | [网络] network_error 频繁 → API 调用失败 | 网络 | Round 225 | Round 227 | 30→0 | ✅✅已恢复 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-030 | [API] EvoMap API 超时 → 自动化任务失败 | API | Round 225 | Round 227 | 0 | ✅✅稳定 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-031 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 225 | Round 227 | 0 | ✅✅稳定 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-032 | [操作] Edit 工具匹配失败 → 文件更新重试 | 操作 | Round 225 | Round 227 | 0 | ✅已恢复 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-033 | [进程] Process SIGTERM → 请求中断 | 进程 | Round 225 | Round 227 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-034 | [资源] 磁盘空间不足 → 81%→71% (15G 剩余) | 资源 | Round 226 | Round 227 | 1 | ✅✅已改善 | memory/log-analysis-2026-02-27-1200.md |
+| PAT-035 | [资源] 内存紧张 → 241MB→1.6GB 可用 | 资源 | Round 226 | Round 227 | 1 | ✅✅已改善 | memory/log-analysis-2026-02-27-1200.md |
 
-> 活跃模式 36 个，**27 个已解决/恢复，9 个持续监控，系统健康评分 8.0/10（🟢 优秀），22 Skills，系统基线配置已建立** ✅
+> 活跃模式 36 个，**30 个已解决/恢复，6 个持续监控，系统健康评分 9.0/10（🟢 优秀），22 Skills，系统基线配置已建立** ✅✅
 
 ---
 
