@@ -38,12 +38,14 @@
 | PAT-031 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 225 | Round 227 | 0 | ✅✅稳定 | memory/log-analysis-2026-02-27-1200.md |
 | PAT-032 | [操作] Edit 工具匹配失败 → 文件更新重试 | 操作 | Round 225 | Round 227 | 0 | ✅已恢复 | memory/log-analysis-2026-02-27-1200.md |
 | PAT-033 | [进程] Process SIGTERM → 请求中断 | 进程 | Round 225 | Round 227 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-1200.md |
-| PAT-034 | [资源] 磁盘空间不足 → 81%→71% (15G 剩余) | 资源 | Round 226 | Round 228 | 1 | ✅✅稳定 | memory/log-analysis-2026-02-27-1600.md |
-| PAT-035 | [资源] 内存紧张 → 241MB→1.6GB 可用 | 资源 | Round 226 | Round 228 | 1 | 🟡波动 | memory/log-analysis-2026-02-27-1600.md |
-| PAT-036 | [资源] Gateway 内存增长 → 1.1GB (29.2%) | 资源 | Round 228 | Round 228 | 1 | 🟡监控 | memory/log-analysis-2026-02-27-1600.md |
-| PAT-037 | [资源] CPU 负载波动 → 0.00→0.38 | 资源 | Round 228 | Round 228 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-1600.md |
+| PAT-034 | [资源] 磁盘空间不足 → 81%→71% (15G 剩余) | 资源 | Round 226 | Round 229 | 1 | ✅✅稳定 | memory/log-analysis-2026-02-27-2000.md |
+| PAT-035 | [资源] 内存紧张 → 1.6GB→375MB 可用 | 资源 | Round 226 | Round 229 | 1 | 🔴极高风险 | memory/log-analysis-2026-02-27-2000.md |
+| PAT-036 | [资源] Gateway 内存泄漏 → 1.8GB (49.9%) | 资源 | Round 228 | Round 229 | 1 | 🔴极高风险 | memory/log-analysis-2026-02-27-2000.md |
+| PAT-037 | [资源] CPU 负载波动 → 0.00→0.18 | 资源 | Round 228 | Round 229 | 1 | 🟢低风险 | memory/log-analysis-2026-02-27-2000.md |
+| PAT-038 | [内存] Gateway 内存泄漏 → 175MB/h 增长率 | 内存 | Round 229 | Round 229 | 1 | 🔴P0紧急 | memory/log-analysis-2026-02-27-2000.md |
+| PAT-039 | [系统] 可用内存耗尽 → 375MB (危险) | 系统 | Round 229 | Round 229 | 1 | 🔴P0紧急 | memory/log-analysis-2026-02-27-2000.md |
 
-> 活跃模式 38 个，**30 个已解决/恢复，8 个持续监控，系统健康评分 8.5/10（🟢 良好），22 Skills，系统基线配置已建立** ✅
+> 活跃模式 40 个，**30 个已解决/恢复，10 个持续监控，系统健康评分 5.0/10（🔴 危险），22 Skills，系统基线配置已建立** ⚠️
 
 ---
 
