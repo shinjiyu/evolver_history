@@ -47,8 +47,13 @@
 | PAT-040 | [API] 429 速率限制 → 33 次 (12:00-16:00) | API | Round 230 | Round 230 | 33 | 🟡高风险 | memory/log-analysis-2026-02-28-0000.md |
 | PAT-041 | [安全] SSH 扫描攻击 → 39 次 (5个攻击源) | 安全 | Round 230 | Round 230 | 39 | 🟡中风险 | memory/log-analysis-2026-02-28-0000.md |
 | PAT-042 | [配置] Swap 未配置 → 无内存缓冲 | 配置 | Round 230 | Round 230 | 1 | 🟡中风险 | memory/log-analysis-2026-02-28-0000.md |
+| PAT-043 | [连接] Gateway 超时 (10s) → 远程通信中断 | 连接 | Round 252 | Round 253 | 3 | 🟡持续监控 | memory/log-analysis-2026-02-28-0800.md |
+| PAT-044 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 252 | Round 253 | 2 | ✅已稳定 | memory/log-analysis-2026-02-28-0800.md |
+| PAT-045 | [代理] Unknown subagent target → 子代理管理失败 | 代理 | Round 252 | Round 253 | 2 | ✅✅已稳定 | memory/log-analysis-2026-02-28-0800.md |
+| PAT-046 | [操作] Edit 匹配失败 → 文件编辑重试 | 操作 | Round 252 | Round 253 | 11 | 🟢中风险 | memory/log-analysis-2026-02-28-0800.md |
+| PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 253 | 1 | ✅已处理 | memory/log-analysis-2026-02-28-0800.md |
 
-> 活跃模式 43 个，**33 个已解决/恢复，10 个持续监控，系统健康评分 8.0/10（🟢 良好），22 Skills，系统基线配置已建立** ✅
+> 活跃模式 47 个，**35 个已解决/恢复，12 个持续监控，系统健康评分 8.8/10（🟢 优秀），22 Skills，系统基线配置已建立** ✅
 
 ---
 
