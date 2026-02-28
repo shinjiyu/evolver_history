@@ -50,16 +50,16 @@
 | PAT-043 | [连接] Gateway 超时 (10s) → 远程通信中断 | 连接 | Round 252 | Round 254 | 3→12 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-044 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-045 | [代理] Unknown subagent target → 子代理管理失败 | 代理 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
-| PAT-046 | [操作] Edit 匹配失败 → 文件编辑重试 | 操作 | Round 252 | Round 254 | 11→14 | 🟢中风险 | memory/log-analysis-2026-02-28-1200.md |
+| PAT-046 | [操作] Edit 匹配失败 → 文件编辑重试 | 操作 | Round 252 | Round 258 | 11→28 | 🔧有方案 | skills/smart-file-edit/SKILL.md |
 | PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 254 | 1→2 | 🟢低风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-048 | [API] 429 速率限制激增 → 196 次失败 | API | Round 254 | Round 257 | 76→196 | 🔴极高风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-049 | [连接] Gateway 超时激增 → 22 次通信中断 | 连接 | Round 254 | Round 257 | 12→22 | 🔴高风险 | memory/log-analysis-2026-03-01-0000.md |
-| PAT-050 | [代理] Unknown subagent 激增 → 56 次管理失败 | 代理 | Round 254 | Round 257 | 26→56 | 🔴高风险 | memory/log-analysis-2026-03-01-0000.md |
+| PAT-050 | [代理] Unknown subagent 激增 → 56 次管理失败 | 代理 | Round 254 | Round 258 | 26→56 | 🔧有方案 | skills/subagent-lifecycle-manager/SKILL.md |
 | PAT-051 | [网络] Network error 激增 → 42 次 API 调用失败 | 网络 | Round 254 | Round 257 | 20→42 | 🔴高风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-052 | [任务] Task aborted 激增 → 48 次任务中断 | 任务 | Round 254 | Round 257 | 26→48 | 🔴高风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
 
-> 活跃模式 53 个，**35 个已解决/恢复，18 个持续监控/高风险，系统健康评分 5.5/10（🔴 需要关注），22 Skills，系统基线配置已建立** 🔴
+> 活跃模式 53 个，**37 个已解决/有方案，16 个持续监控/高风险，系统健康评分 3.5/10（🔴 严重），38 Skills，21 修复脚本，系统基线配置已建立** 🔴
 
 ---
 
