@@ -51,15 +51,16 @@
 | PAT-044 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-045 | [代理] Unknown subagent target → 子代理管理失败 | 代理 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-046 | [操作] Edit 匹配失败 → 文件编辑重试 | 操作 | Round 252 | Round 258 | 11→28 | 🔧有方案 | skills/smart-file-edit/SKILL.md |
-| PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 261 | 1→64 | 🔴恶化中 | skills/file-existence-checker/SKILL.md |
-| PAT-048 | [API] 429 速率限制激增 → 156 次失败 | API | Round 254 | Round 261 | 76→156 | 🔴反弹中 | skills/peak-hours-monitoring/SKILL.md |
+| PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 262 | 1→84 | 🔴恶化中 | skills/file-existence-checker/SKILL.md |
+| PAT-048 | [API] 429 速率限制激增 → 187 次失败 | API | Round 254 | Round 262 | 76→187 | 🔴恶化中 | skills/peak-hours-monitoring/SKILL.md |
 | PAT-049 | [连接] Gateway 超时激增 → 19 次通信中断 | 连接 | Round 254 | Round 261 | 12→19 | 🟡持续监控 | memory/log-analysis-2026-03-01-1600.md |
 | PAT-050 | [代理] Unknown subagent 激增 → 56 次管理失败 | 代理 | Round 254 | Round 258 | 26→56 | 🔧有方案 | skills/subagent-lifecycle-manager/SKILL.md |
-| PAT-051 | [网络] Network error 激增 → 74 次 API 调用失败 | 网络 | Round 254 | Round 261 | 20→74 | 🔴恶化中 | skills/network-error-monitor/SKILL.md |
-| PAT-052 | [任务] Task aborted 激增 → 38 次任务中断 | 任务 | Round 254 | Round 261 | 19→38 | 🔴恶化中 | memory/log-analysis-2026-03-01-1600.md |
+| PAT-051 | [网络] Network error 激增 → 100 次 API 调用失败 | 网络 | Round 254 | Round 262 | 20→100 | 🔴恶化中 | skills/network-error-monitor/SKILL.md |
+| PAT-052 | [任务] Task aborted 激增 → 58 次任务中断 | 任务 | Round 254 | Round 262 | 19→58 | 🔴恶化中 | memory/log-analysis-2026-03-01-2000.md |
+| PAT-054 | [内存] Gateway 内存泄漏 → +467 MB | 内存 | Round 262 | Round 262 | 1135→1602 | 🔧已修复 | evolver/fixes/gateway-memory-leak-fix.sh |
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
 
-> 活跃模式 53 个，**38 个已解决/有方案/改善中，15 个持续监控/高风险/恶化，系统健康评分 5.0/10（🟡 需要关注），27 Skills，20 修复脚本，系统基线配置已建立** 🟡
+> 活跃模式 54 个，**37 个已解决/有方案/改善中/已修复，17 个持续监控/高风险/恶化，系统健康评分 3.8/10（🔴 需要关注），27 Skills，21 修复脚本，系统基线配置已建立** 🔴
 
 ---
 
