@@ -51,15 +51,15 @@
 | PAT-044 | [任务] Task aborted → 任务被迫中止 | 任务 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-045 | [代理] Unknown subagent target → 子代理管理失败 | 代理 | Round 252 | Round 254 | 2→26 | 🔴高风险 | memory/log-analysis-2026-02-28-1200.md |
 | PAT-046 | [操作] Edit 匹配失败 → 文件编辑重试 | 操作 | Round 252 | Round 258 | 11→28 | 🔧有方案 | skills/smart-file-edit/SKILL.md |
-| PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 254 | 1→2 | 🟢低风险 | memory/log-analysis-2026-02-28-1200.md |
-| PAT-048 | [API] 429 速率限制激增 → 196 次失败 | API | Round 254 | Round 259 | 76→178 | 🟡改善中 | skills/peak-hours-monitoring/SKILL.md |
-| PAT-049 | [连接] Gateway 超时激增 → 22 次通信中断 | 连接 | Round 254 | Round 259 | 12→11 | ✅已改善 | memory/log-analysis-2026-03-01-0800.md |
+| PAT-047 | [文件] ENOENT 路径错误 → 文件读取失败 | 文件 | Round 252 | Round 260 | 1→37 | 🔧有方案 | skills/file-existence-checker/SKILL.md |
+| PAT-048 | [API] 429 速率限制激增 → 115 次失败 | API | Round 254 | Round 260 | 76→115 | ✅改善中 | skills/peak-hours-monitoring/SKILL.md |
+| PAT-049 | [连接] Gateway 超时激增 → 16 次通信中断 | 连接 | Round 254 | Round 260 | 12→16 | 🟡持续监控 | memory/log-analysis-2026-03-01-1200.md |
 | PAT-050 | [代理] Unknown subagent 激增 → 56 次管理失败 | 代理 | Round 254 | Round 258 | 26→56 | 🔧有方案 | skills/subagent-lifecycle-manager/SKILL.md |
-| PAT-051 | [网络] Network error 激增 → 42 次 API 调用失败 | 网络 | Round 254 | Round 259 | 20→27 | 🔧有方案 | skills/network-error-monitor/SKILL.md |
+| PAT-051 | [网络] Network error 激增 → 48 次 API 调用失败 | 网络 | Round 254 | Round 260 | 20→48 | 🔧有方案 | skills/network-error-monitor/SKILL.md |
 | PAT-052 | [任务] Task aborted 激增 → 48 次任务中断 | 任务 | Round 254 | Round 257 | 26→48 | 🔴高风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
 
-> 活跃模式 53 个，**39 个已解决/有方案/改善中，14 个持续监控/高风险，系统健康评分 5.8/10（🟡 需要关注），26 Skills，23 修复脚本，系统基线配置已建立** 🟡
+> 活跃模式 53 个，**40 个已解决/有方案/改善中，13 个持续监控/高风险，系统健康评分 5.5/10（🟡 需要关注），27 Skills，19 修复脚本，系统基线配置已建立** 🟡
 
 ---
 
