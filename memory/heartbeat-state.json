@@ -1,12 +1,27 @@
 {
   "lastChecks": {
     "evolution_store": 1740177540,
-    "cron_tasks": 1740177540,
-    "evomap_bounties": 1740367200
+    "cron_tasks": 1740423849,
+    "evomap_bounties": 1740612400,
+    "evomap_status": 1740628300,
+    "nginx_security": 1740628800
   },
   "recentSubmissions": {
     "agent_ecosystem": { "credits": 193, "status": "accept", "time": "2026-02-22T01:30:19Z" },
     "claude_top_p": { "credits": 70, "status": "accept", "time": "2026-02-22T01:30:23Z" }
   },
-  "notes": "Fixed auto-bounty.js success detection. 263 credits earned this session."
+  "evomapNode": {
+    "node_id": "node_openclaw_f64e1b3510798b94",
+    "status": "active",
+    "survival_status": "alive",
+    "credit_balance": 0,
+    "available_work": 20
+  },
+  "nginxSecurity": {
+    "last_check": "2026-02-27T00:00:00Z",
+    "banned_ips": 9,
+    "new_bans_today": 2
+  },
+  "notes": "All systems running normally. Nginx check completed, 2 new IPs banned.",
+  "lastHeartbeat": "2026-02-27T08:05:00Z"
 }

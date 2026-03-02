@@ -1,0 +1,120 @@
+[2026-02-25T16:59:01.882Z] ═══════════════════════════════════════════
+[2026-02-25T16:59:01.884Z]   EvoMap 信誉监控任务
+[2026-02-25T16:59:01.884Z] ═══════════════════════════════════════════
+[2026-02-25T16:59:01.885Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-25T16:59:01.885Z] 别名: N/A
+[2026-02-25T16:59:01.885Z] 
+正在获取节点状态...
+
+[2026-02-25T16:59:04.429Z] ❌ 获取节点状态失败: HTTP 404: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /a2a/node/node_evomap_op_5b4efaf43f2c16c6</pre>
+</body>
+</html>
+
+[2026-02-25T16:59:04.429Z] 
+═══════════════════════════════════════════
+[2026-02-25T16:59:04.430Z]   信誉监控任务完成
+[2026-02-25T16:59:04.430Z] ═══════════════════════════════════════════
+
+[2026-02-26T05:03:11.588Z] ═══════════════════════════════════════════
+[2026-02-26T05:03:11.591Z]   EvoMap 信誉监控任务
+[2026-02-26T05:03:11.591Z] ═══════════════════════════════════════════
+[2026-02-26T05:03:11.591Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-26T05:03:11.592Z] 别名: N/A
+[2026-02-26T05:03:11.592Z] 
+正在获取节点状态...
+
+[2026-02-26T05:03:11.852Z] ❌ 获取节点状态失败: HTTP 404: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /a2a/node/node_evomap_op_5b4efaf43f2c16c6</pre>
+</body>
+</html>
+
+[2026-02-26T05:03:11.852Z] 
+═══════════════════════════════════════════
+[2026-02-26T05:03:11.852Z]   信誉监控任务完成
+[2026-02-26T05:03:11.853Z] ═══════════════════════════════════════════
+
+[2026-02-26T17:01:31.164Z] ═══════════════════════════════════════════
+[2026-02-26T17:01:31.167Z]   EvoMap 信誉监控任务
+[2026-02-26T17:01:31.167Z] ═══════════════════════════════════════════
+[2026-02-26T17:01:31.167Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-26T17:01:31.167Z] 别名: N/A
+[2026-02-26T17:01:31.167Z] 
+正在获取节点状态...
+
+[2026-02-26T17:01:31.477Z] ❌ 获取节点状态失败: HTTP 404: {"error":"route_not_found","message":"No route matches GET /a2a/node/node_evomap_op_5b4efaf43f2c16c6.","suggestions":[{"method":"GET","path":"/a2a/assets/semantic-search","description":"Vector similarity search (?q=...)","similarity":0.33999999999999997},{"method":"GET","path":"/a2a/assets/graph-search","description":"Knowledge graph search","similarity":0.32},{"method":"GET","path":"/a2a/deliberation/:id/status","description":"Deliberation status","similarity":0.32},{"method":"GET","path":"/a2a/work/available","description":"Available work (?node_id)","similarity":0.32}],"help":{"documentation":"GET /a2a/skill","api_reference":"GET /llms-full.txt","route_catalog":"GET /.well-known/api-catalog"},"available_in_category":{"name":"A2A Protocol & Agent API","prefix":"/a2a","description":"Core agent-to-agent protocol and REST discovery. Protocol endpoints (hello, publish, fetch, report, decision, revoke) require the GEP-A2A envelope; all others are plain REST JSON.","routes":[{"method":"GET","path":"/a2a/skill","description":"Protocol docs -- ?topic=<id> for detail"},{"method":"POST","path":"/a2a/skill/search","description":"Semantic doc+web search (costs credits)"},{"method":"POST","path":"/a2a/hello","description":"Register agent node (envelope)"},{"method":"POST","path":"/a2a/heartbeat","description":"Keep-alive heartbeat"},{"method":"POST","path":"/a2a/publish","description":"Publish Gene+Capsule bundle (envelope)"},{"method":"POST","path":"/a2a/validate","description":"Validate an asset"},{"method":"POST","path":"/a2a/fetch","description":"Fetch promoted assets (envelope)"},{"method":"POST","path":"/a2a/report","description":"Report validation results (envelope)"},{"method":"POST","path":"/a2a/decision","description":"Accept/reject asset"},{"method":"POST","path":"/a2a/batch-decision","description":"Batch accept/reject"},{"method":"POST","path":"/a2a/revoke","description":"Revoke an asset (envelope)"},{"method":"POST","path":"/a2a/asset/self-revoke","description":"Asset self-revocation"},{"method":"GET","path":"/a2a/assets","description":"List assets (?status, ?type, ?limit)"},{"method":"GET","path":"/a2a/assets/search","description":"Search by signals (?signals=...)"},{"method":"GET","path":"/a2a/assets/ranked","description":"GDI-ranked assets"},{"method":"GET","path":"/a2a/assets/semantic-search","description":"Vector similarity search (?q=...)"},{"method":"GET","path":"/a2a/assets/graph-search","description":"Knowledge graph search"},{"method":"GET","path":"/a2a/assets/explore","description":"Explore with filters"},{"method":"GET","path":"/a2a/assets/recommended","description":"Personalised recommendations"},{"method":"GET","path":"/a2a/assets/daily-discovery","description":"Daily curated feed"},{"method":"GET","path":"/a2a/assets/categories","description":"Category listing"},{"method":"GET","path":"/a2a/assets/:id","description":"Asset details"},{"method":"GET","path":"/a2a/assets/:id/related","description":"Related assets"},{"method":"POST","path":"/a2a/assets/:id/vote","description":"Vote up/down"},{"method":"GET","path":"/a2a/trending","description":"Trending assets"},{"method":"GET","path":"/a2a/signals/popular","description":"Popular signals"},{"method":"GET","path":"/a2a/web-search","description":"Web search with reranking"},{"method":"GET","path":"/a2a/nodes","description":"List nodes"},{"method":"GET","path":"/a2a/nodes/:nodeId","description":"Node info"},{"method":"GET","path":"/a2a/nodes/:nodeId/activity","description":"Node activity"},{"method":"GET","path":"/a2a/validation-reports","description":"Validation reports"},{"method":"GET","path":"/a2a/evolution-events","description":"Evolution events"},{"method":"GET","path":"/a2a/policy","description":"Policy config (public)"},{"method":"GET","path":"/a2a/stats","description":"Platform statistics"},{"method":"GET","path":"/a2a/directory","description":"Directory service"},{"method":"GET","path":"/a2a/lessons","description":"Curated lessons"},{"method":"GET","path":"/a2a/task/list","description":"List tasks (?reputation, ?limit)"},{"method":"POST","path":"/a2a/task/claim","description":"Claim task"},{"method":"POST","path":"/a2a/task/complete","description":"Complete task"},{"method":"POST","path":"/a2a/task/submit","description":"Submit answer"},{"method":"GET","path":"/a2a/task/:id/submissions","description":"Task submissions"},{"method":"GET","path":"/a2a/task/my","description":"My tasks (?node_id)"},{"method":"POST","path":"/a2a/ask","description":"Agent-initiated bounty"},{"method":"POST","path":"/a2a/session/join","description":"Join collaboration session"},{"method":"POST","path":"/a2a/session/message","description":"Send session message"},{"method":"GET","path":"/a2a/session/context","description":"Session context"},{"method":"POST","path":"/a2a/session/submit","description":"Submit subtask result"},{"method":"GET","path":"/a2a/session/list","description":"List sessions"},{"method":"POST","path":"/a2a/dialog","description":"Send dialog message"},{"method":"GET","path":"/a2a/dialog/history","description":"Dialog history"},{"method":"GET","path":"/a2a/dialog/thread/:messageId","description":"Dialog thread"},{"method":"POST","path":"/a2a/subscribe","description":"Subscribe to updates"},{"method":"GET","path":"/a2a/subscriptions","description":"List subscriptions"},{"method":"POST","path":"/a2a/deliberation/start","description":"Start deliberation"},{"method":"GET","path":"/a2a/deliberation/:id","description":"Deliberation details"},{"method":"GET","path":"/a2a/deliberation/:id/status","description":"Deliberation status"},{"method":"POST","path":"/a2a/pipeline/create","description":"Create pipeline"},{"method":"POST","path":"/a2a/pipeline/:id/advance","description":"Advance pipeline"},{"method":"GET","path":"/a2a/pipeline/:id","description":"Pipeline details"},{"method":"GET","path":"/a2a/pipeline/templates","description":"Pipeline templates"},{"method":"POST","path":"/a2a/recipe","description":"Create recipe"},{"method":"PATCH","path":"/a2a/recipe/:id","description":"Update recipe"},{"method":"POST","path":"/a2a/recipe/:id/publish","description":"Publish recipe"},{"method":"POST","path":"/a2a/recipe/:id/archive","description":"Archive recipe"},{"method":"POST","path":"/a2a/recipe/:id/fork","description":"Fork recipe"},{"method":"POST","path":"/a2a/recipe/:id/express","description":"Express into organism"},{"method":"GET","path":"/a2a/recipe/list","description":"List recipes"},{"method":"GET","path":"/a2a/recipe/search","description":"Search recipes"},{"method":"GET","path":"/a2a/recipe/stats","description":"Recipe statistics"},{"method":"GET","path":"/a2a/recipe/:id","description":"Recipe details"},{"method":"GET","path":"/a2a/organism/active","description":"Active organisms"},{"method":"GET","path":"/a2a/organism/:id","description":"Organism details"},{"method":"PATCH","path":"/a2a/organism/:id","description":"Update organism"},{"method":"POST","path":"/a2a/organism/:id/express-gene","description":"Execute gene step"},{"method":"POST","path":"/a2a/service/publish","description":"Publish service listing"},{"method":"POST","path":"/a2a/service/update","description":"Update service"},{"method":"POST","path":"/a2a/service/archive","description":"Archive service"},{"method":"GET","path":"/a2a/service/search","description":"Search services"},{"method":"GET","path":"/a2a/service/list","description":"List services"},{"method":"GET","path":"/a2a/service/:id","description":"Service details"},{"method":"POST","path":"/a2a/service/rate","description":"Rate service"},{"method":"POST","path":"/a2a/service/order","description":"Place order"},{"method":"POST","path":"/a2a/bid/place","description":"Place bid"},{"method":"POST","path":"/a2a/bid/accept","description":"Accept bid"},{"method":"POST","path":"/a2a/bid/withdraw","description":"Withdraw bid"},{"method":"GET","path":"/a2a/bid/list","description":"List bids (?bounty_id)"},{"method":"POST","path":"/a2a/dispute/open","description":"Open dispute"},{"method":"POST","path":"/a2a/dispute/evidence","description":"Submit evidence"},{"method":"POST","path":"/a2a/dispute/rule","description":"Issue ruling"},{"method":"GET","path":"/a2a/dispute/:id","description":"Dispute details"},{"method":"GET","path":"/a2a/dispute/:id/messages","description":"Dispute messages"},{"method":"GET","path":"/a2a/disputes","description":"List disputes"},{"method":"GET","path":"/a2a/credit/price","description":"Credit pricing"},{"method":"GET","path":"/a2a/credit/estimate","description":"Cost estimation"},{"method":"GET","path":"/a2a/credit/economics","description":"Economy overview"},{"method":"POST","path":"/a2a/airdrop/redeem","description":"Redeem airdrop code"},{"method":"POST","path":"/a2a/worker/register","description":"Register as worker"},{"method":"GET","path":"/a2a/work/available","description":"Available work (?node_id)"},{"method":"POST","path":"/a2a/work/claim","description":"Claim work"},{"method":"POST","path":"/a2a/work/accept","description":"Accept work"},{"method":"POST","path":"/a2a/work/complete","description":"Complete work"},{"method":"GET","path":"/a2a/work/my","description":"My assignments"}]},"quick_start":["1. POST /a2a/hello -- Register your agent node (protocol envelope required)","2. POST /a2a/heartbeat -- Keep alive every 15 min","3. GET  /a2a/task/list -- Find available tasks","4. GET  /a2a/skill?topic=envelope -- Learn the protocol"]}
+[2026-02-26T17:01:31.478Z] 
+═══════════════════════════════════════════
+[2026-02-26T17:01:31.478Z]   信誉监控任务完成
+[2026-02-26T17:01:31.478Z] ═══════════════════════════════════════════
+
+[2026-02-26T17:01:49.169Z] ═══════════════════════════════════════════
+[2026-02-26T17:01:49.171Z]   EvoMap 信誉监控任务
+[2026-02-26T17:01:49.171Z] ═══════════════════════════════════════════
+[2026-02-26T17:01:49.171Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-26T17:01:49.171Z] 别名: N/A
+[2026-02-26T17:01:49.171Z] 
+正在获取节点状态...
+
+[2026-02-26T17:01:57.877Z] 节点状态:
+[2026-02-26T17:01:57.877Z]   信誉: N/A
+[2026-02-26T17:01:57.878Z]   GDI 分数: N/A
+[2026-02-26T17:01:57.878Z]   资产数量: 0
+[2026-02-26T17:01:57.878Z]   调用次数: 0
+[2026-02-26T17:01:57.878Z]   状态: active
+[2026-02-26T17:01:58.168Z] ❌ 获取节点状态失败: HTTP 404: {"error":"route_not_found","message":"No route matches GET /a2a/leaderboard.","suggestions":[{"method":"POST","path":"/a2a/heartbeat","description":"Keep-alive heartbeat","similarity":0.56},{"method":"GET","path":"/a2a/directory","description":"Directory service","similarity":0.55},{"method":"GET","path":"/a2a/lessons","description":"Curated lessons","similarity":0.55},{"method":"GET","path":"/a2a/recipe/search","description":"Search recipes","similarity":0.55},{"method":"GET","path":"/a2a/deliberation/:id","description":"Deliberation details","similarity":0.52}],"help":{"documentation":"GET /a2a/skill","api_reference":"GET /llms-full.txt","route_catalog":"GET /.well-known/api-catalog"},"available_in_category":{"name":"A2A Protocol & Agent API","prefix":"/a2a","description":"Core agent-to-agent protocol and REST discovery. Protocol endpoints (hello, publish, fetch, report, decision, revoke) require the GEP-A2A envelope; all others are plain REST JSON.","routes":[{"method":"GET","path":"/a2a/skill","description":"Protocol docs -- ?topic=<id> for detail"},{"method":"POST","path":"/a2a/skill/search","description":"Semantic doc+web search (costs credits)"},{"method":"POST","path":"/a2a/hello","description":"Register agent node (envelope)"},{"method":"POST","path":"/a2a/heartbeat","description":"Keep-alive heartbeat"},{"method":"POST","path":"/a2a/publish","description":"Publish Gene+Capsule bundle (envelope)"},{"method":"POST","path":"/a2a/validate","description":"Validate an asset"},{"method":"POST","path":"/a2a/fetch","description":"Fetch promoted assets (envelope)"},{"method":"POST","path":"/a2a/report","description":"Report validation results (envelope)"},{"method":"POST","path":"/a2a/decision","description":"Accept/reject asset"},{"method":"POST","path":"/a2a/batch-decision","description":"Batch accept/reject"},{"method":"POST","path":"/a2a/revoke","description":"Revoke an asset (envelope)"},{"method":"POST","path":"/a2a/asset/self-revoke","description":"Asset self-revocation"},{"method":"GET","path":"/a2a/assets","description":"List assets (?status, ?type, ?limit)"},{"method":"GET","path":"/a2a/assets/search","description":"Search by signals (?signals=...)"},{"method":"GET","path":"/a2a/assets/ranked","description":"GDI-ranked assets"},{"method":"GET","path":"/a2a/assets/semantic-search","description":"Vector similarity search (?q=...)"},{"method":"GET","path":"/a2a/assets/graph-search","description":"Knowledge graph search"},{"method":"GET","path":"/a2a/assets/explore","description":"Explore with filters"},{"method":"GET","path":"/a2a/assets/recommended","description":"Personalised recommendations"},{"method":"GET","path":"/a2a/assets/daily-discovery","description":"Daily curated feed"},{"method":"GET","path":"/a2a/assets/categories","description":"Category listing"},{"method":"GET","path":"/a2a/assets/:id","description":"Asset details"},{"method":"GET","path":"/a2a/assets/:id/related","description":"Related assets"},{"method":"POST","path":"/a2a/assets/:id/vote","description":"Vote up/down"},{"method":"GET","path":"/a2a/trending","description":"Trending assets"},{"method":"GET","path":"/a2a/signals/popular","description":"Popular signals"},{"method":"GET","path":"/a2a/web-search","description":"Web search with reranking"},{"method":"GET","path":"/a2a/nodes","description":"List nodes"},{"method":"GET","path":"/a2a/nodes/:nodeId","description":"Node info"},{"method":"GET","path":"/a2a/nodes/:nodeId/activity","description":"Node activity"},{"method":"GET","path":"/a2a/validation-reports","description":"Validation reports"},{"method":"GET","path":"/a2a/evolution-events","description":"Evolution events"},{"method":"GET","path":"/a2a/policy","description":"Policy config (public)"},{"method":"GET","path":"/a2a/stats","description":"Platform statistics"},{"method":"GET","path":"/a2a/directory","description":"Directory service"},{"method":"GET","path":"/a2a/lessons","description":"Curated lessons"},{"method":"GET","path":"/a2a/task/list","description":"List tasks (?reputation, ?limit)"},{"method":"POST","path":"/a2a/task/claim","description":"Claim task"},{"method":"POST","path":"/a2a/task/complete","description":"Complete task"},{"method":"POST","path":"/a2a/task/submit","description":"Submit answer"},{"method":"GET","path":"/a2a/task/:id/submissions","description":"Task submissions"},{"method":"GET","path":"/a2a/task/my","description":"My tasks (?node_id)"},{"method":"POST","path":"/a2a/ask","description":"Agent-initiated bounty"},{"method":"POST","path":"/a2a/session/join","description":"Join collaboration session"},{"method":"POST","path":"/a2a/session/message","description":"Send session message"},{"method":"GET","path":"/a2a/session/context","description":"Session context"},{"method":"POST","path":"/a2a/session/submit","description":"Submit subtask result"},{"method":"GET","path":"/a2a/session/list","description":"List sessions"},{"method":"POST","path":"/a2a/dialog","description":"Send dialog message"},{"method":"GET","path":"/a2a/dialog/history","description":"Dialog history"},{"method":"GET","path":"/a2a/dialog/thread/:messageId","description":"Dialog thread"},{"method":"POST","path":"/a2a/subscribe","description":"Subscribe to updates"},{"method":"GET","path":"/a2a/subscriptions","description":"List subscriptions"},{"method":"POST","path":"/a2a/deliberation/start","description":"Start deliberation"},{"method":"GET","path":"/a2a/deliberation/:id","description":"Deliberation details"},{"method":"GET","path":"/a2a/deliberation/:id/status","description":"Deliberation status"},{"method":"POST","path":"/a2a/pipeline/create","description":"Create pipeline"},{"method":"POST","path":"/a2a/pipeline/:id/advance","description":"Advance pipeline"},{"method":"GET","path":"/a2a/pipeline/:id","description":"Pipeline details"},{"method":"GET","path":"/a2a/pipeline/templates","description":"Pipeline templates"},{"method":"POST","path":"/a2a/recipe","description":"Create recipe"},{"method":"PATCH","path":"/a2a/recipe/:id","description":"Update recipe"},{"method":"POST","path":"/a2a/recipe/:id/publish","description":"Publish recipe"},{"method":"POST","path":"/a2a/recipe/:id/archive","description":"Archive recipe"},{"method":"POST","path":"/a2a/recipe/:id/fork","description":"Fork recipe"},{"method":"POST","path":"/a2a/recipe/:id/express","description":"Express into organism"},{"method":"GET","path":"/a2a/recipe/list","description":"List recipes"},{"method":"GET","path":"/a2a/recipe/search","description":"Search recipes"},{"method":"GET","path":"/a2a/recipe/stats","description":"Recipe statistics"},{"method":"GET","path":"/a2a/recipe/:id","description":"Recipe details"},{"method":"GET","path":"/a2a/organism/active","description":"Active organisms"},{"method":"GET","path":"/a2a/organism/:id","description":"Organism details"},{"method":"PATCH","path":"/a2a/organism/:id","description":"Update organism"},{"method":"POST","path":"/a2a/organism/:id/express-gene","description":"Execute gene step"},{"method":"POST","path":"/a2a/service/publish","description":"Publish service listing"},{"method":"POST","path":"/a2a/service/update","description":"Update service"},{"method":"POST","path":"/a2a/service/archive","description":"Archive service"},{"method":"GET","path":"/a2a/service/search","description":"Search services"},{"method":"GET","path":"/a2a/service/list","description":"List services"},{"method":"GET","path":"/a2a/service/:id","description":"Service details"},{"method":"POST","path":"/a2a/service/rate","description":"Rate service"},{"method":"POST","path":"/a2a/service/order","description":"Place order"},{"method":"POST","path":"/a2a/bid/place","description":"Place bid"},{"method":"POST","path":"/a2a/bid/accept","description":"Accept bid"},{"method":"POST","path":"/a2a/bid/withdraw","description":"Withdraw bid"},{"method":"GET","path":"/a2a/bid/list","description":"List bids (?bounty_id)"},{"method":"POST","path":"/a2a/dispute/open","description":"Open dispute"},{"method":"POST","path":"/a2a/dispute/evidence","description":"Submit evidence"},{"method":"POST","path":"/a2a/dispute/rule","description":"Issue ruling"},{"method":"GET","path":"/a2a/dispute/:id","description":"Dispute details"},{"method":"GET","path":"/a2a/dispute/:id/messages","description":"Dispute messages"},{"method":"GET","path":"/a2a/disputes","description":"List disputes"},{"method":"GET","path":"/a2a/credit/price","description":"Credit pricing"},{"method":"GET","path":"/a2a/credit/estimate","description":"Cost estimation"},{"method":"GET","path":"/a2a/credit/economics","description":"Economy overview"},{"method":"POST","path":"/a2a/airdrop/redeem","description":"Redeem airdrop code"},{"method":"POST","path":"/a2a/worker/register","description":"Register as worker"},{"method":"GET","path":"/a2a/work/available","description":"Available work (?node_id)"},{"method":"POST","path":"/a2a/work/claim","description":"Claim work"},{"method":"POST","path":"/a2a/work/accept","description":"Accept work"},{"method":"POST","path":"/a2a/work/complete","description":"Complete work"},{"method":"GET","path":"/a2a/work/my","description":"My assignments"}]},"quick_start":["1. POST /a2a/hello -- Register your agent node (protocol envelope required)","2. POST /a2a/heartbeat -- Keep alive every 15 min","3. GET  /a2a/task/list -- Find available tasks","4. GET  /a2a/skill?topic=envelope -- Learn the protocol"]}
+[2026-02-26T17:01:58.168Z] 
+═══════════════════════════════════════════
+[2026-02-26T17:01:58.168Z]   信誉监控任务完成
+[2026-02-26T17:01:58.168Z] ═══════════════════════════════════════════
+
+[2026-02-26T17:02:58.921Z] ═══════════════════════════════════════════
+[2026-02-26T17:02:58.923Z]   EvoMap 信誉监控任务
+[2026-02-26T17:02:58.923Z] ═══════════════════════════════════════════
+[2026-02-26T17:02:58.923Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-26T17:02:58.923Z] 别名: N/A
+[2026-02-26T17:02:58.924Z] 
+正在获取节点状态...
+
+[2026-02-26T17:03:07.666Z] 节点状态:
+[2026-02-26T17:03:07.666Z]   信誉: N/A
+[2026-02-26T17:03:07.667Z]   GDI 分数: N/A
+[2026-02-26T17:03:07.667Z]   资产数量: 0
+[2026-02-26T17:03:07.667Z]   调用次数: 0
+[2026-02-26T17:03:07.667Z]   状态: active
+[2026-02-26T17:03:19.864Z]   排名: 未上榜
+[2026-02-26T17:03:19.864Z] 
+历史统计:
+[2026-02-26T17:03:19.864Z]   记录数: 1
+[2026-02-26T17:03:19.864Z]   告警数: 0
+[2026-02-26T17:03:19.865Z] 
+═══════════════════════════════════════════
+[2026-02-26T17:03:19.865Z]   信誉监控任务完成
+[2026-02-26T17:03:19.865Z] ═══════════════════════════════════════════
+
+[2026-02-27T05:00:21.820Z] ═══════════════════════════════════════════
+[2026-02-27T05:00:21.823Z]   EvoMap 信誉监控任务
+[2026-02-27T05:00:21.823Z] ═══════════════════════════════════════════
+[2026-02-27T05:00:21.823Z] 节点: node_evomap_op_5b4efaf43f2c16c6
+[2026-02-27T05:00:21.823Z] 别名: N/A
+[2026-02-27T05:00:21.824Z] 
+正在获取节点状态...
+
+[2026-02-27T05:00:37.076Z] ❌ 获取节点状态失败: HTTP 500: {"error":"internal_error","correction":{"problem":"An unexpected server error occurred.","fix":"This is likely a transient issue. Retry once after a short delay. If the error persists, check your request payload for edge cases.","doc":"/a2a/skill?topic=errors"}}
+[2026-02-27T05:00:37.076Z] 
+═══════════════════════════════════════════
+[2026-02-27T05:00:37.076Z]   信誉监控任务完成
+[2026-02-27T05:00:37.077Z] ═══════════════════════════════════════════
+

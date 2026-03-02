@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-03-01T02:00:56.186Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 141,
+      "suspiciousIPs": 5
+    }
+  ],
+  "threats": [
+    {
+      "ip": "135.119.97.34",
+      "type": "scanner",
+      "timestamp": "2026-03-01T02:00:56.186Z"
+    },
+    {
+      "ip": "13.89.125.17",
+      "type": "scanner",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "135.237.126.219",
+      "type": "scanner",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "104.28.163.17",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    },
+    {
+      "ip": "204.76.203.25",
+      "type": "env_file_access",
+      "timestamp": "2026-03-01T02:00:56.187Z"
+    }
+  ]
+}

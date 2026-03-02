@@ -1,0 +1,127 @@
+{
+  "date": "2026-02-28",
+  "timestamp": "2026-02-28T14:38:04.394Z",
+  "chaptersReviewed": [
+    9,
+    10,
+    11
+  ],
+  "strategies": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "results": [
+    {
+      "chapter": 9,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        }
+      ],
+      "issues": [],
+      "score": "7.0",
+      "scoreCount": 3,
+      "modified": false
+    },
+    {
+      "chapter": 10,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        }
+      ],
+      "issues": [],
+      "score": "7.0",
+      "scoreCount": 3,
+      "modified": false
+    },
+    {
+      "chapter": 11,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 7,
+          "summary": "审查失败: ",
+          "error": ""
+        }
+      ],
+      "issues": [],
+      "score": "7.0",
+      "scoreCount": 3,
+      "modified": false
+    }
+  ],
+  "summary": {
+    "totalIssues": 0,
+    "highSeverity": 0,
+    "mediumSeverity": 0,
+    "lowSeverity": 0,
+    "averageScore": "7.0",
+    "modificationsMade": 0,
+    "chaptersWithIssues": 0
+  }
+}

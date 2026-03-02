@@ -213,11 +213,265 @@ async function safeEdit(filePath, oldText, newText, maxRetries = 3) {
 - [ ] 检查是否覆盖现有文件
 - [ ] 备份重要文件（如需要）
 
+## 智能编辑策略
+
+### 策略 1: 上下文扩展
+
+当精确匹配失败时，扩展上下文：
+
+```
+# ❌ 太短，可能不唯一
+edit /path/to/file "some text" "new text"
+
+# ✅ 扩展上下文（包含前后各 2 行）
+read /path/to/file
+# 复制包含目标文本的 5 行内容
+edit /path/to/file "Line 1\nLine 2\nLine 3: some text\nLine 4\nLine 5" "Line 1\nLine 2\nLine 3: new text\nLine 4\nLine 5"
+```
+
+### 策略 2: 模糊匹配
+
+对于微小的空白差异，使用模糊匹配：
+
+```bash
+# 检查是否是空白字符问题
+diff -u <(echo "expected text") <(echo "actual text")
+
+# 使用 grep 查找近似匹配
+grep -n "some text" /path/to/file
+# 查看实际内容和行号，然后调整匹配文本
+```
+
+### 策略 3: 降级到 Write
+
+如果多次 Edit 失败，降级到 Write：
+
+```
+# Attempt 1-3: 尝试 Edit
+read /path/to/file
+edit /path/to/file "old" "new"
+# 失败...
+
+# Attempt 4: 降级到 Write（覆盖整个文件）
+read /path/to/file
+# 手动修改内容
+write /path/to/file "完整的新内容（包含修改）"
+```
+
+### 策略 4: 并发冲突检测
+
+检测文件是否在编辑期间被修改：
+
+```bash
+# 记录文件哈希
+hash_before=$(md5sum /path/to/file | awk '{print $1}')
+
+# 读取并编辑
+read /path/to/file
+# ... 准备编辑 ...
+
+# 再次检查哈希
+hash_after=$(md5sum /path/to/file | awk '{print $1}')
+
+if [ "$hash_before" != "$hash_after" ]; then
+  echo "⚠️ 文件在编辑期间被修改，可能存在并发冲突"
+  echo "建议：重新读取文件，合并更改后重试"
+fi
+```
+
+## 自动化脚本
+
+### 智能编辑脚本
+
+```bash
+#!/bin/bash
+# evolver/fixes/smart-edit.sh
+
+FILE="$1"
+OLD_TEXT="$2"
+NEW_TEXT="$3"
+MAX_RETRIES="${4:-3}"
+
+if [ -z "$FILE" ] || [ -z "$OLD_TEXT" ] || [ -z "$NEW_TEXT" ]; then
+  echo "用法: $0 <file> <old_text> <new_text> [max_retries]"
+  exit 1
+fi
+
+for i in $(seq 1 $MAX_RETRIES); do
+  echo "尝试 $i/$MAX_RETRIES: 编辑 $FILE"
+  
+  # 读取当前内容
+  if ! content=$(cat "$FILE" 2>/dev/null); then
+    echo "❌ 无法读取文件"
+    exit 1
+  fi
+  
+  # 检查是否存在目标文本
+  if ! echo "$content" | grep -qF "$OLD_TEXT"; then
+    echo "❌ 未找到目标文本，尝试扩展上下文..."
+    
+    # 查找包含部分文本的行
+    partial=$(echo "$OLD_TEXT" | head -c 20)
+    line_num=$(grep -n "$partial" "$FILE" | head -1 | cut -d: -f1)
+    
+    if [ -n "$line_num" ]; then
+      echo "找到部分匹配在第 $line_num 行"
+      echo "建议：重新读取文件，使用更大的上下文"
+    fi
+    
+    exit 1
+  fi
+  
+  # 执行编辑（这里需要调用实际的 edit 工具）
+  # 由于脚本限制，这里只是示例
+  echo "✅ 文本匹配成功，可以执行编辑"
+  exit 0
+done
+
+echo "❌ 重试 $MAX_RETRIES 次后仍然失败"
+echo "建议：使用 write 工具覆盖整个文件"
+exit 1
+```
+
+### 文件存在性检查脚本
+
+```bash
+#!/bin/bash
+# evolver/fixes/check-file-exists.sh
+
+FILE="$1"
+CREATE_IF_MISSING="${2:-false}"
+DEFAULT_CONTENT="${3:-# Created by OpenClaw}"
+
+if [ -z "$FILE" ]; then
+  echo "用法: $0 <file> [create_if_missing] [default_content]"
+  exit 1
+fi
+
+if [ -f "$FILE" ]; then
+  echo "✅ 文件存在: $FILE"
+  exit 0
+else
+  echo "❌ 文件不存在: $FILE"
+  
+  if [ "$CREATE_IF_MISSING" = "true" ]; then
+    # 创建目录
+    mkdir -p "$(dirname "$FILE")"
+    
+    # 创建文件
+    echo "$DEFAULT_CONTENT" > "$FILE"
+    echo "✅ 已创建文件: $FILE"
+    exit 0
+  else
+    echo "提示：使用 create_if_missing=true 自动创建"
+    exit 1
+  fi
+fi
+```
+
+## 最佳实践清单（增强版）
+
+编辑文件前：
+- [ ] 读取文件确认当前内容
+- [ ] 从 read 输出中复制精确文本
+- [ ] 确保文本唯一（足够上下文）
+- [ ] 检查特殊字符（引号、换行、制表符）
+- [ ] **记录文件哈希（检测并发修改）**
+- [ ] **准备降级策略（Write 覆盖）**
+
+读取文件前：
+- [ ] 确认路径正确
+- [ ] 考虑文件可能不存在
+- [ ] 准备错误处理逻辑
+- [ ] 对于大文件，使用 offset/limit
+- [ ] **使用 check-file-exists.sh 脚本**
+
+写入文件前：
+- [ ] 创建必要的目录
+- [ ] 检查是否覆盖现有文件
+- [ ] 备份重要文件（如需要）
+- [ ] **确认文件路径拼写正确**
+
+## 常见错误案例库
+
+### 案例 1: 空白字符不匹配
+
+**问题**:
+```
+❌ Edit 失败：文件中有制表符，但匹配文本使用空格
+```
+
+**解决**:
+```bash
+# 查看实际字符
+cat -A /path/to/file | grep "target text"
+# ^I 表示制表符
+
+# 使用正确的字符
+edit /path/to/file "$(printf '\t')target text" "new text"
+```
+
+### 案例 2: 换行符差异
+
+**问题**:
+```
+❌ Edit 失败：文件使用 CRLF (\r\n)，匹配文本使用 LF (\n)
+```
+
+**解决**:
+```bash
+# 转换换行符
+sed -i 's/\r$//' /path/to/file
+
+# 或者使用正确的换行符
+edit /path/to/file "line1\r\nline2" "new line1\r\nnew line2"
+```
+
+### 案例 3: 并发编辑冲突
+
+**问题**:
+```
+❌ Edit 失败：文件在读取和编辑之间被修改
+```
+
+**解决**:
+```bash
+# 使用文件锁（如果系统支持）
+(
+  flock -x 200
+  read /path/to/file
+  edit /path/to/file "old" "new"
+) 200>/tmp/file.lock
+```
+
+### 案例 4: 文本不唯一
+
+**问题**:
+```
+❌ Edit 失败：匹配文本在文件中出现多次
+```
+
+**解决**:
+```bash
+# 扩大上下文，包含前后各 3 行
+read /path/to/file
+# 复制 7 行内容（前3行 + 目标 + 后3行）
+```
+
 ## 与其他 Skill 的协作
 
 - **log-to-skill**: 当日志显示重复的编辑错误时，提炼流程
 - **skill-doctor**: 诊断 skill 中的文件操作问题
 - **create-skill**: 创建新 skill 时，使用安全文件操作
+- **evomap-heartbeat-monitor**: 心跳监控脚本中的文件操作
+- **evomap-publish-validator**: 发布验证脚本中的配置文件读取
+
+## 改进历史
+
+- **2026-03-02**: 添加智能编辑策略、自动化脚本、常见错误案例库
+  - 新增：上下文扩展、模糊匹配、降级策略、并发冲突检测
+  - 新增：smart-edit.sh、check-file-exists.sh 脚本
+  - 改进：增强最佳实践清单
 
 ## 工具函数
 

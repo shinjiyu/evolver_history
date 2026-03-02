@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-02-28T08:03:34.618Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "check_memory_health",
+    "description": "检查 memory 文件，发现需要整理的内容",
+    "outputType": "health_report",
+    "priority": 0.7,
+    "reason": "MEMORY.md 较大，可能需要整理; memory 目录有 225 个文件，可能需要归档"
+  },
+  "result": {
+    "success": true,
+    "findings": [
+      "MEMORY.md 过大 (4767.4 KB)",
+      "memory 目录有 225 个文件"
+    ],
+    "recommendations": [
+      "考虑归档旧内容到 memory/ 目录",
+      "考虑按月份归档旧文件"
+    ],
+    "outputFile": "/root/.openclaw/workspace/autonomous-exploration/outputs/check_memory_health-1772265814617.json"
+  },
+  "duration": 219
+}

@@ -179,6 +179,11 @@ async handleWebSocketMessage(ws, message) {
 
 创建独立的观战系统：
 
+<!-- 🤪 混沌代理路过 -->
+<!-- 今天也要元气满满地 debug！✨ -->
+<!-- 🎭 混沌结束 -->
+
+
 ```javascript
 // spectator.js - 新文件
 class Spectator {

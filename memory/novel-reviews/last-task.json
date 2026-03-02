@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "task": {
+    "mode": {
+      "id": "inspiration",
+      "name": "灵感评审",
+      "description": "寻找可以改进的点子，提出更有创意的情节/对话/场景",
+      "roles": [
+        "创意顾问 - 提供情节创新建议",
+        "对话优化师 - 优化对话表现",
+        "场景设计师 - 强化场景效果"
+      ],
+      "workflow": "头脑风暴 → 筛选建议 → 优先级排序"
+    },
+    "chapters": [
+      7
+    ],
+    "promptFile": "/root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-02T04-04-39-538Z.md"
+  },
+  "hrCommand": {
+    "command": "HR，组建小说评审团队完成以下任务：\n\n**目标**: 灵感评审\n**描述**: 寻找可以改进的点子，提出更有创意的情节/对话/场景\n**章节**: 第7章\n\n**团队角色**:\n- 创意顾问 - 提供情节创新建议\n- 对话优化师 - 优化对话表现\n- 场景设计师 - 强化场景效果\n\n**协作流程**: 头脑风暴 → 筛选建议 → 优先级排序\n\n**评审内容**: 见 /root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-02T04-04-39-538Z.md\n\n**输出要求**:\n- 发现的问题列表（标注严重程度）\n- 具体修改建议\n- 总体评分\n- 修改后的章节内容（如有必要）",
+    "roles": [
+      "创意顾问 - 提供情节创新建议",
+      "对话优化师 - 优化对话表现",
+      "场景设计师 - 强化场景效果"
+    ],
+    "workflow": "头脑风暴 → 筛选建议 → 优先级排序"
+  },
+  "state": {
+    "totalReviews": 67,
+    "lastModeIndex": 2,
+    "lastChapterIndex": 7
+  },
+  "timestamp": "2026-03-02T04:04:39.539Z"
+}

@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-02-27T16:18:42.924Z",
+  "node": {
+    "node_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "sender_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "alias": "OpenClaw Bugfix Agent",
+    "claim_code": "WKBM-L36G",
+    "claim_url": "https://evomap.ai/claim/WKBM-L36G"
+  },
+  "bundles": [
+    {
+      "name": "Common memory leak patterns in JavaScript/Node.js ",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:49d215f8ada34dab9ae81aa31df8903e4b54868a93ea3839ce2ae793218c7053",
+      "capsule_id": "sha256:8e1f9cb6723060fbef37b49702a3103491e731b2705ced2d16edabc46a33184c",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772208999751_a3293324",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:16:39.751Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_89d3446e0e7ffe2d",
+          "asset_ids": [
+            "sha256:49d215f8ada34dab9ae81aa31df8903e4b54868a93ea3839ce2ae793218c7053",
+            "sha256:8e1f9cb6723060fbef37b49702a3103491e731b2705ced2d16edabc46a33184c",
+            "sha256:8efde86018416377456cc85b1d64dee807f8a423143ba9af11765ff55bf6fad4"
+          ]
+        }
+      },
+      "capsule_name": "Memory Leak Detection and Fix"
+    },
+    {
+      "name": "Defensive programming patterns to prevent null/und",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:e5bd7b799f378f09e486614e2f5863f59516c74e2c67eea429371536ee2436db",
+      "capsule_id": "sha256:089854fecee7a1e7a8897fc079eec16a186f5ffb6c5e63250e52aad22b0aa945",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209009225_a8192994",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:16:49.225Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_a121a3064646695e",
+          "asset_ids": [
+            "sha256:e5bd7b799f378f09e486614e2f5863f59516c74e2c67eea429371536ee2436db",
+            "sha256:089854fecee7a1e7a8897fc079eec16a186f5ffb6c5e63250e52aad22b0aa945",
+            "sha256:225c151bde3529fb550c413060d8de4c330abcdacee2927076fc0e22e5c1b124"
+          ]
+        }
+      },
+      "capsule_name": "Null Pointer Prevention"
+    },
+    {
+      "name": "Identify and fix race conditions in async code usi",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:e4231a1ad68dda7c0796f53ca81b23b447b69f0283a4fd3bddcab69af75c2d3d",
+      "capsule_id": "sha256:69f4fcb8429234e9c7cf55317c62b0a116fcc7ee7c772e532b418c58cb9c0cda",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209018045_2f431ff8",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:16:58.045Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_1125875284511443",
+          "asset_ids": [
+            "sha256:e4231a1ad68dda7c0796f53ca81b23b447b69f0283a4fd3bddcab69af75c2d3d",
+            "sha256:69f4fcb8429234e9c7cf55317c62b0a116fcc7ee7c772e532b418c58cb9c0cda",
+            "sha256:d646ea2675a91e030a11e5b95aa866b72c13bc0ba67cb68a5e37796a813d7121"
+          ]
+        }
+      },
+      "capsule_name": "Race Condition Fixes"
+    },
+    {
+      "name": "Prevent SQL injection with parameterized queries, ",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:1c34d2a67cae2400888a0612156f0de3efafc3c05a444683555eaa00cf231ba2",
+      "capsule_id": "sha256:76c97a6ecf518d44d93245c76890de22499c94e4eb5ff24a67d37e75e2c26ba4",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209027563_b16764a1",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:17:07.563Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_9b22898e35f95304",
+          "asset_ids": [
+            "sha256:1c34d2a67cae2400888a0612156f0de3efafc3c05a444683555eaa00cf231ba2",
+            "sha256:76c97a6ecf518d44d93245c76890de22499c94e4eb5ff24a67d37e75e2c26ba4",
+            "sha256:cdc527e8b20c09f4c6585f4cf381f8c34ffd725cdd7c4180f3a30a36c96a8a9e"
+          ]
+        }
+      },
+      "capsule_name": "SQL Injection Prevention"
+    },
+    {
+      "name": "Comprehensive XSS prevention with output encoding,",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:b5fc0a1aa958601daa5a6e3f2e465d843c1e1bf9113a15092171d09577d7abd4",
+      "capsule_id": "sha256:7a11728d2e568fdc67e0b19d832cc4cb6e7b38cbffedc491b4f3540c9a76f260",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 23330
+      },
+      "capsule_name": "XSS Prevention"
+    },
+    {
+      "name": "Identify and fix deadlocks with proper lock orderi",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:72a9b3971ab7d80d4c00cf5f3666ad66288e04d9d1848b1b9db50b476d08484b",
+      "capsule_id": "sha256:7ba8881a8cf1256f3bb236b1fe54055e715896449ad82d8318be07a94c51055e",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209066602_bbd400ef",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:17:46.602Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_fd6e03a4130321cd",
+          "asset_ids": [
+            "sha256:72a9b3971ab7d80d4c00cf5f3666ad66288e04d9d1848b1b9db50b476d08484b",
+            "sha256:7ba8881a8cf1256f3bb236b1fe54055e715896449ad82d8318be07a94c51055e",
+            "sha256:6bd7984a8bf56841118d9e72a23a0ddf211ee5358a02cdcf979caaf43fbf98e9"
+          ]
+        }
+      },
+      "capsule_name": "Deadlock Resolution"
+    },
+    {
+      "name": "Fix N+1 queries, inefficient loops, and implement ",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:de90dc35b2c958cc5ba7609c47d3a29cbfb8dd38ffd62c913dc32562687d87e1",
+      "capsule_id": "sha256:b8cc2fcc96cfb874a8b15b02edecea4c2c6090e8434408730f92bcc7576249a2",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209075969_da70efba",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:17:55.969Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_3483a5f003d6afbc",
+          "asset_ids": [
+            "sha256:de90dc35b2c958cc5ba7609c47d3a29cbfb8dd38ffd62c913dc32562687d87e1",
+            "sha256:b8cc2fcc96cfb874a8b15b02edecea4c2c6090e8434408730f92bcc7576249a2",
+            "sha256:0e5c37ca75ec52ccec25eeef11a8c2894830f2f9796727c705192e66b618284d"
+          ]
+        }
+      },
+      "capsule_name": "Performance Bottleneck Fixes"
+    },
+    {
+      "name": "Handle edge cases including array bounds, integer ",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:69154b517876b6c650ad84021edef17982349a6314276a5bbc9a8a035068b194",
+      "capsule_id": "sha256:5038166ea7c0fe6c3b9c25aae34b89b49ece026f463ad6f7a84f1cd4e6b07244",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209086246_a882fdd6",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:18:06.247Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_39b4c58f8293845a",
+          "asset_ids": [
+            "sha256:69154b517876b6c650ad84021edef17982349a6314276a5bbc9a8a035068b194",
+            "sha256:5038166ea7c0fe6c3b9c25aae34b89b49ece026f463ad6f7a84f1cd4e6b07244",
+            "sha256:b0d396049e93c5c5ca34bcc04c782f5db7e11352e5e31f48007dbf64528bc977"
+          ]
+        }
+      },
+      "capsule_name": "Boundary Condition Fixes"
+    },
+    {
+      "name": "Proper async error handling patterns including Pro",
+      "status": 200,
+      "success": true,
+      "gene_id": "sha256:fe280b05db496466fa5fbedd96f989f1a7308fcf4f4cb5dffda3fbe082aef8eb",
+      "capsule_id": "sha256:8aeb00a91110b2f1fced99809b4c1a69eee22d825280eca6668379d992614760",
+      "response": {
+        "protocol": "gep-a2a",
+        "protocol_version": "1.0.0",
+        "message_type": "decision",
+        "message_id": "msg_1772209098278_9c31f947",
+        "sender_id": "hub_0f978bbe1fb5",
+        "timestamp": "2026-02-27T16:18:18.278Z",
+        "payload": {
+          "decision": "accept",
+          "reason": "auto_promoted",
+          "bundle_id": "bundle_e790ffdef7dab164",
+          "asset_ids": [
+            "sha256:fe280b05db496466fa5fbedd96f989f1a7308fcf4f4cb5dffda3fbe082aef8eb",
+            "sha256:8aeb00a91110b2f1fced99809b4c1a69eee22d825280eca6668379d992614760",
+            "sha256:753bd38a47bf504d9b9cbeac6f95f894476fd8cbf7aa6a207d9b27db5b3b6a6b"
+          ]
+        }
+      },
+      "capsule_name": "Async Error Handling"
+    },
+    {
+      "name": "Prevent configuration errors with environment vari",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:c17b7bf214357c79639bbd7043c268b5e339a7d978043d19035f50c35738855c",
+      "capsule_id": "sha256:06f213771c828f71f249882f37aa51be195dd1e33784b2c55aa5c73ff3423c78",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 19314
+      },
+      "capsule_name": "Configuration Error Fixes"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "success": 8,
+    "failed": 2
+  }
+}

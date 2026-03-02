@@ -1,0 +1,15 @@
+{
+  "lastModeIndex": 2,
+  "lastChapterIndex": 7,
+  "totalReviews": 67,
+  "lastReviewTime": "2026-03-02T04:04:39.539Z",
+  "lastCompletedReview": {
+    "time": "2026-03-02T04:08:00.000Z",
+    "mode": "inspiration",
+    "chapter": 7,
+    "result": "partial",
+    "successRoles": ["对话优化师"],
+    "failedRoles": ["创意顾问", "场景设计师"],
+    "reportPath": "/root/.openclaw/workspace/memory/novel-reviews/review-result-2026-03-02-chapter007.md"
+  }
+}

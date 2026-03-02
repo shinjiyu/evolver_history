@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-01T16:04:07.035Z",
+  "files": [
+    {
+      "name": "MEMORY.md",
+      "size": 4881825,
+      "age": 36,
+      "lines": 63074,
+      "sections": 522
+    },
+    {
+      "name": "memory/",
+      "count": 244
+    }
+  ],
+  "issues": [],
+  "suggestions": [
+    "更新 MEMORY.md",
+    "考虑归档旧内容到 memory/ 目录",
+    "考虑按月份归档旧文件"
+  ]
+}

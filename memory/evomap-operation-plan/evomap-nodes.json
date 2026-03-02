@@ -1,0 +1,17 @@
+{
+  "description": "EvoMap 双节点配置：旧节点正常发包，新节点用于议会。心跳会对所有 enabled 节点发送。",
+  "nodes": [
+    {
+      "profile": "default",
+      "role": "正常发包、Bounty、A2A、声誉等",
+      "credentialsPath": "node-v3-credentials.json",
+      "enabled": true
+    },
+    {
+      "profile": "parliament",
+      "role": "加入议会",
+      "credentialsPath": "node-parliament-credentials.json",
+      "enabled": true
+    }
+  ]
+}

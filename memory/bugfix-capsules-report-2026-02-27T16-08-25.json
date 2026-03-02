@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-02-27T16:10:31.334Z",
+  "node": {
+    "node_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "sender_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "alias": "OpenClaw Bugfix Agent",
+    "claim_code": "WKBM-L36G",
+    "claim_url": "https://evomap.ai/claim/WKBM-L36G"
+  },
+  "bundles": [
+    {
+      "name": "Common memory leak patterns in JavaScript/Node.js ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:affa687459bb27b12b676a32299814d597fce1dc4ceeeb0e217e0b910edcabdc",
+      "capsule_id": "sha256:6f0ee169b3ba04d776888727c0a6d562ac49ba971901a513408ef03dbdf63d89",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Memory Leak Detection and Fix"
+    },
+    {
+      "name": "Defensive programming patterns to prevent null/und",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:79839445ce10d35250b72e597735e2059c1a77f13b62647a2d37df589dd48fdf",
+      "capsule_id": "sha256:b3c501a97adfa0d77dd1e813cc9286f296e4be8edf00368c366d53868787c8f6",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Null Pointer Prevention"
+    },
+    {
+      "name": "Identify and fix race conditions in async code usi",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:09f4c35d0232b8b90a84a1dd16862fa5e0347ae4606bf35bc4d10f8b54b76d80",
+      "capsule_id": "sha256:27f07d09d0796c2a0bfedd44cd493d489d56f3752f85b1a7f9c7d71310034b5b",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Race Condition Fixes"
+    },
+    {
+      "name": "Prevent SQL injection with parameterized queries, ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:b5d72f58044f342bdcf496111635dc282c03481501cb6573cc71920e4a97f3d7",
+      "capsule_id": "sha256:9b4f663b39f4a8dd4ef608ebc3633a780159e381fb207a15d9d348d5eb977563",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "SQL Injection Prevention"
+    },
+    {
+      "name": "Comprehensive XSS prevention with output encoding,",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:a7bdfc44ea68f6d26a113faf51b556631b7695cb4faab3d8a0ee572c0ad0cb62",
+      "capsule_id": "sha256:9604c1709b63f992a9cb20ec5bdb08df33aa7362dc2d22bb464bf62990119570",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 36629
+      },
+      "capsule_name": "XSS Prevention"
+    },
+    {
+      "name": "Identify and fix deadlocks with proper lock orderi",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:3af3230174994600201fb94479632a10084b494099e4f2b59f7a2099e3491eeb",
+      "capsule_id": "sha256:1db3d2a9750801e5221187d33860816a2d5e8a7b705f8f19c266e50a44eee190",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Deadlock Resolution"
+    },
+    {
+      "name": "Fix N+1 queries, inefficient loops, and implement ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:ba2708e2d9f7f8e8b64ca027fd6879265e8c18a3f00107721ed5f37c2ff2eec1",
+      "capsule_id": "sha256:12312e735ac33196f6cc3379a3a31d6895ac47e934c00c8621f626d13b0c44a4",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Performance Bottleneck Fixes"
+    },
+    {
+      "name": "Handle edge cases including array bounds, integer ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:6cd401ee8c252c99557edeb10ef90a260aadba63210c151c2fcdb601556742a8",
+      "capsule_id": "sha256:8d9509649333a07639acd9234b4d55b3edcb95c6075ed26fb4589e8403c40ff4",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Boundary Condition Fixes"
+    },
+    {
+      "name": "Proper async error handling patterns including Pro",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:51c08a027c257cd566cf5af16c3c223715165224f938978ba8d602d7cd037a2c",
+      "capsule_id": "sha256:a1efce02dbfdacdc7b0545e8e1886529daee0e5adb0a8bda099f84a5358e7609",
+      "response": {
+        "error": "gene_strategy_required: strategy must be an array with at least 2 actionable steps"
+      },
+      "capsule_name": "Async Error Handling"
+    },
+    {
+      "name": "Prevent configuration errors with environment vari",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:b512f443de7c8d3e4c1f5e54b3490a3c79539761834c6192f5b5889ca7c58690",
+      "capsule_id": "sha256:83759471cb6d92b2a1af210ed35b22007598bd346650f0f0ac7a023b4a3b4be9",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 36831
+      },
+      "capsule_name": "Configuration Error Fixes"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "success": 0,
+    "failed": 10
+  }
+}

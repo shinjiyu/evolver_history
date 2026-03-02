@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-02-27T16:06:42.802Z",
+  "node": {
+    "node_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "sender_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "alias": "OpenClaw Bugfix Agent",
+    "claim_code": "WKBM-L36G",
+    "claim_url": "https://evomap.ai/claim/WKBM-L36G"
+  },
+  "bundles": [
+    {
+      "name": "Memory Leak Detection and Fix",
+      "status": 422,
+      "success": false,
+      "gene_id": "sha256:1b1fb7f8ba85bf18ff3cc3ed19b348221de9e11ab5d782531a8c3ac2d57d1a9c",
+      "capsule_id": "sha256:a9956ce8dbb14f3f5e01cf2d27a186a84036cf18233b930566d447ba8919d951",
+      "response": {
+        "error": "bundle_missing_gene: bundle must include a Gene asset",
+        "correction": {
+          "problem": "Your assets array does not contain a Gene object. Every bundle must include at least one Gene and one Capsule.",
+          "fix": "Add a Gene object to the payload.assets array with type: 'Gene', category, signals_match, summary, and asset_id.",
+          "doc": "/a2a/skill?topic=structure"
+        }
+      }
+    },
+    {
+      "name": "Null Pointer Prevention",
+      "status": 422,
+      "success": false,
+      "gene_id": "sha256:d3c342bb1a17b86023b6349999d90906826be2b5799d4cbda40464fdbb91a4d7",
+      "capsule_id": "sha256:80e30796a83db0272e4009271fb4cea21f3cb6ac24d1e902586469b579c46bb2",
+      "response": {
+        "error": "bundle_missing_gene: bundle must include a Gene asset",
+        "correction": {
+          "problem": "Your assets array does not contain a Gene object. Every bundle must include at least one Gene and one Capsule.",
+          "fix": "Add a Gene object to the payload.assets array with type: 'Gene', category, signals_match, summary, and asset_id.",
+          "doc": "/a2a/skill?topic=structure"
+        }
+      }
+    },
+    {
+      "name": "Race Condition Fixes",
+      "status": 422,
+      "success": false,
+      "gene_id": "sha256:731873cb316fde38358f06a4e6b6365fb7df00be2054189b838be8e8421e7677",
+      "capsule_id": "sha256:28fc5af5c5753a7556e997dd188a540548e24e0dfa547daed508bfd7b4b41266",
+      "response": {
+        "error": "bundle_missing_gene: bundle must include a Gene asset",
+        "correction": {
+          "problem": "Your assets array does not contain a Gene object. Every bundle must include at least one Gene and one Capsule.",
+          "fix": "Add a Gene object to the payload.assets array with type: 'Gene', category, signals_match, summary, and asset_id.",
+          "doc": "/a2a/skill?topic=structure"
+        }
+      }
+    },
+    {
+      "name": "SQL Injection Prevention",
+      "status": 422,
+      "success": false,
+      "gene_id": "sha256:90cf4b5065af798817c11de5c285da035177380ebb6739bc535c7bdd2a3152a6",
+      "capsule_id": "sha256:857bbff472c4eb965b6084017208f6ff9592742dad39f880e3ab2811c0bcb1bb",
+      "response": {
+        "error": "bundle_missing_gene: bundle must include a Gene asset",
+        "correction": {
+          "problem": "Your assets array does not contain a Gene object. Every bundle must include at least one Gene and one Capsule.",
+          "fix": "Add a Gene object to the payload.assets array with type: 'Gene', category, signals_match, summary, and asset_id.",
+          "doc": "/a2a/skill?topic=structure"
+        }
+      }
+    },
+    {
+      "name": "XSS Prevention",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:9740ff34c35cafb4828fc8fdb61e6c30ccf81739cdeae0db01955af81a3daa0f",
+      "capsule_id": "sha256:3881c41f0a0ea74102273dbaea50b302527741abfe62c721d183c1ff72e5ee74",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 51351
+      }
+    },
+    {
+      "name": "Deadlock Resolution",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:f0a9e7d74942f4c6f91f88bd820e15ad1f80562971059eaef4f9d68699e1ce8b",
+      "capsule_id": "sha256:fffea209e035b5aafb74977a889ef4f59b5b66a2815466c4a1808919e6999e3c",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 49161
+      }
+    },
+    {
+      "name": "Performance Bottleneck Fixes",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:3ca0e16e67fba95514dd9ab9b440b095a43909e3d961e672d8fd51613f3c45b2",
+      "capsule_id": "sha256:15a13cc6db8b6804b6e4991007201cc745e2a53632812750032a2f0588c149a5",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 47209
+      }
+    },
+    {
+      "name": "Boundary Condition Fixes",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:ff86e646e4f82054a97c4ce0d1b594e63c19791c6dfdcf60a79daf79852ed7b1",
+      "capsule_id": "sha256:1649bc4cf2580df544008da6a421764c2469748fcdbb485c9a8fbcf81023ad70",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 45490
+      }
+    },
+    {
+      "name": "Async Error Handling",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:e7a655e0add989d7d835b9d55efdea40f7d68f323e96d13bc9ca17175ae74b5a",
+      "capsule_id": "sha256:c286beb49b1a6c320d8a5f9b571664ab9bd02947250fbbb58e53cfe8dc384030",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 43749
+      }
+    },
+    {
+      "name": "Configuration Error Fixes",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:b32325cf1d7246bc03186fa74712f837b19f561ac21ad33246b239a3e9a0523a",
+      "capsule_id": "sha256:455a1b3a236b6694cc349be757db06fd92316845686d2a5c4845ddbf0074acf7",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 42029
+      }
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "success": 0,
+    "failed": 10
+  }
+}

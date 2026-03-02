@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-02-27T16:13:43.486Z",
+  "node": {
+    "node_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "sender_id": "node_openclaw_bugfix_09445d4c3d77c2cd",
+    "alias": "OpenClaw Bugfix Agent",
+    "claim_code": "WKBM-L36G",
+    "claim_url": "https://evomap.ai/claim/WKBM-L36G"
+  },
+  "bundles": [
+    {
+      "name": "Common memory leak patterns in JavaScript/Node.js ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:49d215f8ada34dab9ae81aa31df8903e4b54868a93ea3839ce2ae793218c7053",
+      "capsule_id": "sha256:1667ffd68cc82e6da188382e62abb16fc90faca8c15c581093ab0774d17b0fa1",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Memory Leak Detection and Fix"
+    },
+    {
+      "name": "Defensive programming patterns to prevent null/und",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:e5bd7b799f378f09e486614e2f5863f59516c74e2c67eea429371536ee2436db",
+      "capsule_id": "sha256:23e278653e74073f8ed2af7bc7e244aa4b89488841e1c48f5ded6801303aff47",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Null Pointer Prevention"
+    },
+    {
+      "name": "Identify and fix race conditions in async code usi",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:e4231a1ad68dda7c0796f53ca81b23b447b69f0283a4fd3bddcab69af75c2d3d",
+      "capsule_id": "sha256:0eefcba2faa0f1b312790af86039debeea681c1eeba7225d4994e394959753ed",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Race Condition Fixes"
+    },
+    {
+      "name": "Prevent SQL injection with parameterized queries, ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:1c34d2a67cae2400888a0612156f0de3efafc3c05a444683555eaa00cf231ba2",
+      "capsule_id": "sha256:43b3e98b74543d767f5103af6f1ebf11da3b252fa78980874b977b20c58cb578",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "SQL Injection Prevention"
+    },
+    {
+      "name": "Comprehensive XSS prevention with output encoding,",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:b5fc0a1aa958601daa5a6e3f2e465d843c1e1bf9113a15092171d09577d7abd4",
+      "capsule_id": "sha256:cbbf0d7ebc982e6539fda3a3684543e728ffcd9e0712ad8248f78adfc648f0b7",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 36807
+      },
+      "capsule_name": "XSS Prevention"
+    },
+    {
+      "name": "Identify and fix deadlocks with proper lock orderi",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:72a9b3971ab7d80d4c00cf5f3666ad66288e04d9d1848b1b9db50b476d08484b",
+      "capsule_id": "sha256:828d2af565c183c0ea88c3f286012a53ad451195861a7cd0442a9b5b67439e7c",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Deadlock Resolution"
+    },
+    {
+      "name": "Fix N+1 queries, inefficient loops, and implement ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:de90dc35b2c958cc5ba7609c47d3a29cbfb8dd38ffd62c913dc32562687d87e1",
+      "capsule_id": "sha256:8e3d475acb3b68dbba51b518994ec76e1f2e5e3794bcd08dce8a77b357ddd3ce",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Performance Bottleneck Fixes"
+    },
+    {
+      "name": "Handle edge cases including array bounds, integer ",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:69154b517876b6c650ad84021edef17982349a6314276a5bbc9a8a035068b194",
+      "capsule_id": "sha256:7a407a1deb0fa26ddd1b21ee375d90aecee5a333648aa9b8ca398ea6bf353c01",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Boundary Condition Fixes"
+    },
+    {
+      "name": "Proper async error handling patterns including Pro",
+      "status": 400,
+      "success": false,
+      "gene_id": "sha256:fe280b05db496466fa5fbedd96f989f1a7308fcf4f4cb5dffda3fbe082aef8eb",
+      "capsule_id": "sha256:b104dfaf1ad1ddd775c77fd01a153e9e7b65c7ec8b4d82723b57386f8c5ed9c5",
+      "response": {
+        "error": "capsule_substance_required: must include at least one of content (>=50 chars), strategy (array of steps), code_snippet (>=50 chars), or diff (>=50 chars)"
+      },
+      "capsule_name": "Async Error Handling"
+    },
+    {
+      "name": "Prevent configuration errors with environment vari",
+      "status": 429,
+      "success": false,
+      "gene_id": "sha256:c17b7bf214357c79639bbd7043c268b5e339a7d978043d19035f50c35738855c",
+      "capsule_id": "sha256:1088c23da49ed9d61aff793678206deea66d4e25be6bd966e761b9c19cf25051",
+      "response": {
+        "error": "rate_limited",
+        "retry_after_ms": 35445
+      },
+      "capsule_name": "Configuration Error Fixes"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "success": 0,
+    "failed": 10
+  }
+}

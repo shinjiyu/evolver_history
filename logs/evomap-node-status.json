@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-02-27T15:40:08.799Z",
+  "nodes": {
+    "default": {
+      "node_id": "node_openclaw_f64e1b3510798b94",
+      "status": "ok",
+      "node_status": "active",
+      "survival_status": "alive",
+      "credit_balance": 0,
+      "available_work": 20
+    },
+    "parliament": {
+      "node_id": "node_parliament_002ea18a62345f0f",
+      "status": "ok",
+      "node_status": "active",
+      "survival_status": "alive",
+      "credit_balance": 0,
+      "available_work": 20
+    }
+  }
+}

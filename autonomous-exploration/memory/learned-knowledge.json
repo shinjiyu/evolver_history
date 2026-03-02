@@ -1099,6 +1099,551 @@
       "applications": [],
       "tags": [],
       "successRate": 0
+    },
+    {
+      "id": "learn_1771956828768",
+      "timestamp": "2026-02-24T18:13:48.768Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771957675508",
+      "timestamp": "2026-02-24T18:27:55.508Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771958576332",
+      "timestamp": "2026-02-24T18:42:56.332Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771959478580",
+      "timestamp": "2026-02-24T18:57:58.580Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771960401569",
+      "timestamp": "2026-02-24T19:13:21.569Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771961275052",
+      "timestamp": "2026-02-24T19:27:55.052Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771962179057",
+      "timestamp": "2026-02-24T19:42:59.057Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771963077228",
+      "timestamp": "2026-02-24T19:57:57.228Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771964319609",
+      "timestamp": "2026-02-24T20:18:39.609Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771964874299",
+      "timestamp": "2026-02-24T20:27:54.299Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771965774309",
+      "timestamp": "2026-02-24T20:42:54.309Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771966674835",
+      "timestamp": "2026-02-24T20:57:54.835Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771967574123",
+      "timestamp": "2026-02-24T21:12:54.123Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771968474640",
+      "timestamp": "2026-02-24T21:27:54.640Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771969374619",
+      "timestamp": "2026-02-24T21:42:54.619Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771970273767",
+      "timestamp": "2026-02-24T21:57:53.767Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771971281198",
+      "timestamp": "2026-02-24T22:14:41.198Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771972074475",
+      "timestamp": "2026-02-24T22:27:54.475Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771972975372",
+      "timestamp": "2026-02-24T22:42:55.372Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771973874939",
+      "timestamp": "2026-02-24T22:57:54.939Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 0
+    },
+    {
+      "id": "learn_1771974869782",
+      "timestamp": "2026-02-24T23:14:29.782Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771975674823",
+      "timestamp": "2026-02-24T23:27:54.823Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771976573845",
+      "timestamp": "2026-02-24T23:42:53.845Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771977473593",
+      "timestamp": "2026-02-24T23:57:53.593Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771978618727",
+      "timestamp": "2026-02-25T00:16:58.727Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771979276318",
+      "timestamp": "2026-02-25T00:27:56.318Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771980174074",
+      "timestamp": "2026-02-25T00:42:54.074Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771981074089",
+      "timestamp": "2026-02-25T00:57:54.089Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771981974276",
+      "timestamp": "2026-02-25T01:12:54.276Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771982874998",
+      "timestamp": "2026-02-25T01:27:54.998Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771983776244",
+      "timestamp": "2026-02-25T01:42:56.244Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771984686886",
+      "timestamp": "2026-02-25T01:58:06.886Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771985957457",
+      "timestamp": "2026-02-25T02:19:17.457Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771986474726",
+      "timestamp": "2026-02-25T02:27:54.726Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771987374399",
+      "timestamp": "2026-02-25T02:42:54.399Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771988273641",
+      "timestamp": "2026-02-25T02:57:53.641Z",
+      "type": "skill_improvement",
+      "content": "探索 skill_exploration",
+      "source": "novelty",
+      "confidence": 0.405,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771989173795",
+      "timestamp": "2026-02-25T03:12:53.795Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771990078863",
+      "timestamp": "2026-02-25T03:27:58.863Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771990975490",
+      "timestamp": "2026-02-25T03:42:55.490Z",
+      "type": "capability_discovery",
+      "content": "探索 default",
+      "source": "default",
+      "confidence": 0.3,
+      "applications": [],
+      "tags": [],
+      "successRate": 1
+    },
+    {
+      "id": "learn_1771990981530",
+      "timestamp": "2026-02-25T03:43:01.530Z",
+      "type": "code_analysis",
+      "subject": "分析 SWE-Agent-Node 代码质量",
+      "concepts": [
+        "code_analysis",
+        "分析"
+      ],
+      "insights": [
+        "无法提取洞察（LLM 调用失败）"
+      ],
+      "lessons": [],
+      "applications": [],
+      "relatedFiles": [
+        "/root/.openclaw/workspace/swe-agent-node/ARCHITECTURE.md",
+        "/root/.openclaw/workspace/swe-agent-node/CHANGELOG.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771939116796.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771965654606.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771974384910.md"
+      ],
+      "source": "llm_enhanced",
+      "confidence": 0.8,
+      "successRate": 1,
+      "rawDiscoveries": [
+        "扫描了 128 个文件，发现 72 个问题",
+        "问题分布: any_type: 9, todo: 9, console_log: 54"
+      ]
+    },
+    {
+      "id": "learn_1771992198491",
+      "timestamp": "2026-02-25T04:03:18.491Z",
+      "type": "code_analysis",
+      "subject": "分析 SWE-Agent-Node 代码质量",
+      "concepts": [
+        "code_analysis",
+        "分析"
+      ],
+      "insights": [
+        "无法提取洞察（LLM 调用失败）"
+      ],
+      "lessons": [],
+      "applications": [],
+      "relatedFiles": [
+        "/root/.openclaw/workspace/swe-agent-node/ARCHITECTURE.md",
+        "/root/.openclaw/workspace/swe-agent-node/CHANGELOG.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771939116796.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771965654606.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771974384910.md"
+      ],
+      "source": "llm_enhanced",
+      "confidence": 0.8,
+      "successRate": 1,
+      "rawDiscoveries": [
+        "扫描了 128 个文件，发现 72 个问题",
+        "问题分布: any_type: 9, todo: 9, console_log: 54"
+      ]
+    },
+    {
+      "id": "learn_1771993967701",
+      "timestamp": "2026-02-25T04:32:47.701Z",
+      "type": "code_analysis",
+      "subject": "分析 SWE-Agent-Node 代码质量",
+      "concepts": [
+        "code_analysis",
+        "分析"
+      ],
+      "insights": [
+        "无法提取洞察（LLM 调用失败）"
+      ],
+      "lessons": [],
+      "applications": [],
+      "relatedFiles": [
+        "/root/.openclaw/workspace/swe-agent-node/ARCHITECTURE.md",
+        "/root/.openclaw/workspace/swe-agent-node/CHANGELOG.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771939116796.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771965654606.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771974384910.md"
+      ],
+      "source": "llm_enhanced",
+      "confidence": 0.8,
+      "successRate": 1,
+      "rawDiscoveries": [
+        "扫描了 129 个文件，发现 75 个问题",
+        "问题分布: any_type: 11, todo: 10, console_log: 54"
+      ]
+    },
+    {
+      "id": "learn_1771995764655",
+      "timestamp": "2026-02-25T05:02:44.655Z",
+      "type": "code_analysis",
+      "subject": "分析 SWE-Agent-Node 代码质量",
+      "concepts": [
+        "code_analysis",
+        "分析"
+      ],
+      "insights": [
+        "无法提取洞察（LLM 调用失败）"
+      ],
+      "lessons": [],
+      "applications": [],
+      "relatedFiles": [
+        "/root/.openclaw/workspace/swe-agent-node/ARCHITECTURE.md",
+        "/root/.openclaw/workspace/swe-agent-node/CHANGELOG.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771939116796.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771965654606.md",
+        "/root/.openclaw/workspace/swe-agent-node/CODE_QUALITY_REPORT_1771974384910.md"
+      ],
+      "source": "llm_enhanced",
+      "confidence": 0.8,
+      "successRate": 1,
+      "rawDiscoveries": [
+        "扫描了 130 个文件，发现 75 个问题",
+        "问题分布: any_type: 11, todo: 10, console_log: 54"
+      ]
     }
   ],
   "patterns": [
@@ -1598,11 +2143,145 @@
       "action": "探索 default",
       "confidence": 0.3,
       "createdAt": "2026-02-24T14:57:55.321Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T23:14:29.782Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T23:27:54.823Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T23:42:53.845Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-24T23:57:53.593Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T00:16:58.727Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T00:27:56.318Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T00:42:54.074Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T00:57:54.089Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T01:12:54.276Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T01:27:54.998Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T01:42:56.244Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T01:58:06.886Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T02:19:17.457Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T02:27:54.726Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T02:42:54.399Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "skill_improvement",
+      "action": "探索 skill_exploration",
+      "confidence": 0.405,
+      "createdAt": "2026-02-25T02:57:53.641Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T03:12:53.795Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T03:27:58.863Z"
+    },
+    {
+      "type": "success_pattern",
+      "condition": "capability_discovery",
+      "action": "探索 default",
+      "confidence": 0.3,
+      "createdAt": "2026-02-25T03:42:55.490Z"
     }
   ],
   "statistics": {
-    "totalExplorations": 100,
-    "successfulExplorations": 71,
-    "averageValue": 71
+    "totalExplorations": 143,
+    "successfulExplorations": 94,
+    "averageValue": 64.74820143884892,
+    "lastUpdated": "2026-02-25T05:02:44.655Z"
   }
 }

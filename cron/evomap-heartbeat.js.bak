@@ -1,0 +1,150 @@
+#!/usr/bin/env node
+/**
+ * EvoMap Heartbeat Task
+ * 
+ * 每隔固定时间发送心跳到 EvoMap Hub，确保节点保持在线状态
+ * 
+ * Cron schedule: Every 10 minutes
+ */
+
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
+
+// 节点凭证
+const CREDENTIALS_PATH = path.join(__dirname, '../memory/evomap-operation-plan/node-v3-credentials.json');
+
+// 心跳配置
+const HEARTBEAT_URL = 'https://evomap.ai/a2a/heartbeat';
+const NODE_ID = 'node_openclaw_f64e1b3510798b94';
+
+// 日志目录
+const LOG_DIR = path.join(__dirname, '../logs');
+const LOG_FILE = path.join(LOG_DIR, 'evomap-heartbeat.log');
+
+// 确保日志目录存在
+if (!fs.existsSync(LOG_DIR)) {
+  fs.mkdirSync(LOG_DIR, { recursive: true });
+}
+
+/**
+ * 写入日志
+ */
+function log(message) {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+  
+  console.log(logMessage.trim());
+  
+  // 写入日志文件
+  fs.appendFileSync(LOG_FILE, logMessage);
+}
+
+/**
+ * 发送心跳请求
+ */
+async function sendHeartbeat() {
+  return new Promise((resolve, reject) => {
+    const timestamp = new Date().toISOString();
+    
+    const payload = JSON.stringify({
+      protocol: 'gep-a2a',
+      version: '1.0.0',
+      node_id: NODE_ID,
+      timestamp: timestamp
+    });
+    
+    const url = new URL(HEARTBEAT_URL);
+    
+    const options = {
+      hostname: url.hostname,
+      port: 443,
+      path: url.pathname,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(payload)
+      }
+    };
+    
+    const req = https.request(options, (res) => {
+      let data = '';
+      
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+      
+      res.on('end', () => {
+        try {
+          const response = JSON.parse(data);
+          resolve(response);
+        } catch (error) {
+          reject(new Error(`Failed to parse response: ${data}`));
+        }
+      });
+    });
+    
+    req.on('error', (error) => {
+      reject(error);
+    });
+    
+    req.write(payload);
+    req.end();
+  });
+}
+
+/**
+ * 主函数
+ */
+async function main() {
+  log('='.repeat(60));
+  log('EvoMap Heartbeat Task Started');
+  log(`Node ID: ${NODE_ID}`);
+  
+  try {
+    // 发送心跳
+    const response = await sendHeartbeat();
+    
+    if (response.status === 'ok') {
+      log('✅ Heartbeat successful');
+      log(`  Node Status: ${response.node_status}`);
+      log(`  Survival Status: ${response.survival_status}`);
+      log(`  Credit Balance: ${response.credit_balance}`);
+      log(`  Next Heartbeat: ${response.next_heartbeat_ms}ms`);
+      
+      // 检查可用任务
+      if (response.available_work && response.available_work.length > 0) {
+        log(`  Available Tasks: ${response.available_work.length}`);
+        
+        // 显示前 3 个任务
+        response.available_work.slice(0, 3).forEach((task, index) => {
+          log(`    ${index + 1}. ${task.title.substring(0, 50)}...`);
+        });
+      }
+      
+      // 保存状态到文件
+      const statusFile = path.join(LOG_DIR, 'evomap-node-status.json');
+      fs.writeFileSync(statusFile, JSON.stringify({
+        timestamp: new Date().toISOString(),
+        node_id: NODE_ID,
+        status: response.status,
+        node_status: response.node_status,
+        survival_status: response.survival_status,
+        credit_balance: response.credit_balance,
+        available_tasks: response.available_work ? response.available_work.length : 0
+      }, null, 2));
+      
+      log(`Status saved to: ${statusFile}`);
+    } else {
+      log(`❌ Heartbeat failed: ${JSON.stringify(response)}`);
+    }
+  } catch (error) {
+    log(`❌ Error: ${error.message}`);
+  }
+  
+  log('Heartbeat Task Completed');
+  log('='.repeat(60));
+}
+
+// 执行主函数
+main().catch(console.error);

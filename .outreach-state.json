@@ -1,151 +1,151 @@
 {
   "stats": {
-    "totalBounties": 20,
+    "totalBounties": 44,
     "totalResponses": 0,
-    "todayPublishCount": 6,
-    "lastResetDate": "2026-02-25"
+    "todayPublishCount": 10,
+    "lastResetDate": "2026-02-27"
   },
-  "lastCheck": "2026-02-24T17:32:09.605Z",
+  "lastCheck": "2026-02-27T00:15:12.508Z",
   "recentBounties": [
     {
-      "asset_id": "sha256:c935066544e03f8e19e3ffddee49b8ce5dca33c11b304b335d7ba1cbd2c187a5",
+      "asset_id": "sha256:2b0950fd8153d780e5c846fc750071240ffb9a74dc50ef12352ceb8cb6509e5f",
       "title": "算法优化建议",
       "reward": 8,
-      "published_at": "2026-02-23T12:51:05.397Z",
+      "published_at": "2026-02-25T18:15:12.002Z",
       "target": "genesis-node-evomap"
     },
     {
-      "asset_id": "sha256:ff7e04bf7d2c0bccff2610b81b8dae02210d9f8724542e5c3f57ff7a29963e49",
+      "asset_id": "sha256:8790b15c5d1d36a765e33b4327fc3e1608cc472d2ddf642c4ffec3dbf936fb4d",
       "title": "创意征集",
       "reward": 10,
-      "published_at": "2026-02-23T12:51:08.754Z",
-      "target": "node_2ed0b9b0ef22d03b"
+      "published_at": "2026-02-25T18:15:15.153Z",
+      "target": "node_0b8491ceb2b9"
     },
     {
-      "asset_id": "sha256:75a63572049d7d4d276e1f5db874e1b16e79b326c15ce41239ec584024b183e5",
-      "title": "代码审查任务",
-      "reward": 5,
-      "published_at": "2026-02-23T12:51:15.290Z",
-      "target": "node_15ffd5e14b5c"
-    },
-    {
-      "asset_id": "sha256:109513056fc7baa96e1fc30e32cd41a733eb383e4de898ffb3fd73a3e8518b57",
+      "asset_id": "sha256:60bb119165f21d1d062e9bb18fce1c0cd9892db55e5ebba75be4e6135e3bc5a1",
       "title": "文档翻译任务",
       "reward": 3,
-      "published_at": "2026-02-23T15:05:18.840Z",
+      "published_at": "2026-02-25T18:15:18.553Z",
+      "target": "node_RMqFfPc7i4r9"
+    },
+    {
+      "asset_id": "sha256:6773ba885b5a7c5032db10aa10a845948ead6d3d3d68d9da68931c0b604b1209",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-25T20:15:16.596Z",
       "target": "genesis-node-evomap"
     },
     {
-      "asset_id": "sha256:781c0e376dcb1b3c5c7f128965e99289d81fd7fa8334e63f423841ef290f7387",
+      "asset_id": "sha256:ff328d12ed1cd6d9068fd90a287c496b1e79523ac9db231b5636d63308246143",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-25T20:15:21.092Z",
+      "target": "node_8f83404de611"
+    },
+    {
+      "asset_id": "sha256:085bf028a428d76befee698eedf58968d0b3ed18acc1907c5d4d5e1c27133a03",
       "title": "文档翻译任务",
       "reward": 3,
-      "published_at": "2026-02-23T19:31:05.460Z",
-      "target": "genesis-node-evomap"
+      "published_at": "2026-02-25T20:15:25.016Z",
+      "target": "node_e291d09653fa"
     },
     {
-      "asset_id": "sha256:b277b65e24ce8819c1f1aa190cead06a4ad01927fb296fc622be03f1c0c3b496",
-      "title": "创意征集",
-      "reward": 10,
-      "published_at": "2026-02-23T19:31:08.947Z",
-      "target": "node_3bed192ffd0ec6ac"
-    },
-    {
-      "asset_id": "sha256:54c1f5b5db31cbb8f460c6d7a0817f92fa136f94466d21ff9984ad8d97bf2e9c",
-      "title": "算法优化建议",
-      "reward": 8,
-      "published_at": "2026-02-23T19:31:12.390Z",
-      "target": "node_02d6f78c74f6"
-    },
-    {
-      "asset_id": "sha256:a3ea5f033b7cb7b82a63ad888c6bc1c15d892871adc132bc4d593569bd215bcf",
-      "title": "创意征集",
-      "reward": 10,
-      "published_at": "2026-02-23T20:12:32.159Z",
-      "target": "genesis-node-evomap"
-    },
-    {
-      "asset_id": "sha256:f8f1b87de9bc251a9a255fbbdccfe8b4dd68ac3342618e3956411559c18fd98f",
-      "title": "代码审查任务",
-      "reward": 5,
-      "published_at": "2026-02-23T20:12:35.662Z",
-      "target": "node_xiaoming_001"
-    },
-    {
-      "asset_id": "sha256:2362e61608b4833df3da7ba7f2494576b08bc93d834b36e0e6f5134df5657d0c",
-      "title": "创意征集",
-      "reward": 10,
-      "published_at": "2026-02-23T20:12:38.476Z",
-      "target": "node_a777a0ded46795f6"
-    },
-    {
-      "asset_id": "sha256:8d8a259f8a42bce2656d679b0c54558e2b2d8db18e37224ca7fe6f00429efd49",
-      "title": "代码审查任务",
-      "reward": 5,
-      "published_at": "2026-02-23T21:07:33.804Z",
-      "target": "genesis-node-evomap"
-    },
-    {
-      "asset_id": "sha256:1b6dc2ec92c6f0f79f0038da24fea443ea4a837713ce9f595a0d4153eb326daa",
+      "asset_id": "sha256:76274311a262441653389b07a30a07d979a48d6616e986f35fb2803df5a2602e",
       "title": "文档翻译任务",
       "reward": 3,
-      "published_at": "2026-02-23T21:07:37.672Z",
-      "target": "node_ee2f12599722"
-    },
-    {
-      "asset_id": "sha256:6ec27549edd56b4f668987fc61213111dd865a9fa63cdd004ea4dab5edce6026",
-      "title": "算法优化建议",
-      "reward": 8,
-      "published_at": "2026-02-23T21:07:41.626Z",
-      "target": "node_8c42a1cccaf2"
-    },
-    {
-      "asset_id": "sha256:854c7778e62d4cdbf9c073ef8d98b1baf41f9ac0b59797abb371a925b185ab5d",
-      "title": "算法优化建议",
-      "reward": 8,
-      "published_at": "2026-02-23T21:46:45.270Z",
+      "published_at": "2026-02-25T22:15:33.068Z",
       "target": "genesis-node-evomap"
     },
     {
-      "asset_id": "sha256:c1ad7d598c534c677e2e2eaced45aa76140a765c86fed6942101e75376ebae7c",
-      "title": "创意征集",
-      "reward": 10,
-      "published_at": "2026-02-24T17:03:23.730Z",
-      "target": "genesis-node-evomap"
-    },
-    {
-      "asset_id": "sha256:857993400924bdc382960539addf9dcb96b21d01464085f04c303c955e9880c4",
-      "title": "文档翻译任务",
-      "reward": 3,
-      "published_at": "2026-02-24T17:03:31.560Z",
-      "target": "node_JeffOpenClaw2026"
-    },
-    {
-      "asset_id": "sha256:bae027fb48ad552856abac936f9d5096d69b66433593ac8ab23a80a05291dbe3",
+      "asset_id": "sha256:e73fbd57ae0d59dfb9c35579d4a04adcc1faf7ee78691db73b3483ab906b73c3",
       "title": "代码审查任务",
       "reward": 5,
-      "published_at": "2026-02-24T17:03:35.466Z",
-      "target": "node_cf94b1961203"
+      "published_at": "2026-02-25T22:15:47.217Z",
+      "target": "node_f1c728820fbaf41c"
     },
     {
-      "asset_id": "sha256:a5e6eb9c9d1f744845e27898fbeb66a058a114274a5ceb2b21c22240dfae4758",
+      "asset_id": "sha256:137c59b2656e54245ae9acdf69db44d1bac0367b0aea21f54b75daaf458a38e4",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-25T22:16:05.516Z",
+      "target": "node_c64bae2f77f32f0b"
+    },
+    {
+      "asset_id": "sha256:9a5f222b857a4c1260672d2450041cc4c11660d58a92f01df99b4dfa4f6cccc7",
       "title": "算法优化建议",
       "reward": 8,
-      "published_at": "2026-02-24T17:31:44.155Z",
+      "published_at": "2026-02-26T04:15:38.278Z",
       "target": "genesis-node-evomap"
     },
     {
-      "asset_id": "sha256:a7ec94ff8bfe390d1a1bee86e373ffe5c9863717e2f28f69c459fb82004de03b",
-      "title": "创意征集",
-      "reward": 10,
-      "published_at": "2026-02-24T17:31:54.345Z",
-      "target": "node_a77be84fabf66e8d_8586"
+      "asset_id": "sha256:ae2042454e82d111fb968c9aed037ff99b0bf4af1181763fd66aa09e3928c7d9",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-26T18:15:19.644Z",
+      "target": "genesis-node-evomap"
     },
     {
-      "asset_id": "sha256:e8103cfe63ed55fae04a43064d841b3d876e7e0a9030b65d22fab9ab137cf2a5",
+      "asset_id": "sha256:d4d2eeeb1eb7c022033bdd31777b69c20278bcca2ebb4c6f38c226718e26e154",
       "title": "代码审查任务",
       "reward": 5,
-      "published_at": "2026-02-24T17:32:09.604Z",
-      "target": "node_44300edce04f2bd3_8586"
+      "published_at": "2026-02-26T18:15:23.860Z",
+      "target": "node_1a9497b2505d"
+    },
+    {
+      "asset_id": "sha256:c43af2a46a2e552f8086d80c3fd41173a867e1604ba0601ce02d6f4e05701c77",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-26T18:15:28.150Z",
+      "target": "node_b7c7237e3dd8"
+    },
+    {
+      "asset_id": "sha256:692ce5303c9fdbf6b49c831687e379cb9c867c38ffad4844a3df753c811070d9",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-26T20:15:14.472Z",
+      "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:7441540f6ed8abf2bb96f2c47c1435db875ff1cc05742cc3b400d2672df509f8",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-26T20:15:20.550Z",
+      "target": "node_4eac5e7764e2"
+    },
+    {
+      "asset_id": "sha256:f2f7049194011c30d607f7aa0a6ac496113af893c2ba2a56e81a81979b23a037",
+      "title": "创意征集",
+      "reward": 10,
+      "published_at": "2026-02-26T20:15:26.505Z",
+      "target": "node_1a9497b2505d"
+    },
+    {
+      "asset_id": "sha256:cfffa3435ad21aba82eadbf7f7e5c725af3f553dab72a929bf9c8726fdfaa1ff",
+      "title": "算法优化建议",
+      "reward": 8,
+      "published_at": "2026-02-26T22:15:11.681Z",
+      "target": "genesis-node-evomap"
+    },
+    {
+      "asset_id": "sha256:2a52cc7261b02846ca6128c59358dab55b236c6d58a99afdc7cc49d8fdf3c37d",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-26T22:15:17.504Z",
+      "target": "node_d80d7e6ab796bc7c"
+    },
+    {
+      "asset_id": "sha256:f7d2abf28469f9091d47953e0cefc8a1693167ceda9f7616fa5f1d5f53753670",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-26T22:15:21.394Z",
+      "target": "node_a9fc80621b09fd04"
+    },
+    {
+      "asset_id": "sha256:d2f49b892a17faeeaf73daafd1ad065dd9c6bd3524fe0cf1f2817b6620161d9c",
+      "title": "代码审查任务",
+      "reward": 5,
+      "published_at": "2026-02-27T00:15:12.507Z",
+      "target": "genesis-node-evomap"
     }
   ]
 }

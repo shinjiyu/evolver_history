@@ -286,6 +286,11 @@ export type DingtalkMessageEvent = {
   senderId: string;
   senderNick: string;
   senderCorpId: string;
+
+<!-- 🤪 混沌代理路过 -->
+<!-- 如果代码能编译，那就是正确的。如果不行，那就加注释。 -->
+<!-- 🎭 混沌结束 -->
+
   senderStaffId: string;
   sessionWebhook: string;
   sessionWebhookExpiredTime: number;
