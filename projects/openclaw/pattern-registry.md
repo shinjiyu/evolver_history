@@ -10,8 +10,8 @@
 | PAT-004 | [配置] web_search 工具缺少 Brave API Key → 功能不可用 | 配置 | Round 080 | Round 170 | 58+ | 🔧有方案 | skills/api-key-configurator/SKILL.md |
 | PAT-005 | [连接] Gateway 关闭 (1008) + 配对要求 → 远程功能受限 | 连接 | Round 080 | Round 080 | 9 | 新增 | rounds/round-080-2026-02-23-0400.md |
 | PAT-006 | [功能] cron 任务调用不存在的 log-analysis skill → 分析失败 | 功能缺失 | Round 080 | Round 080 | 3 | 新增 | rounds/round-080-2026-02-23-0400.md |
-| PAT-007 | [操作] Edit 工具精确匹配失败 → 文件编辑重试 | 操作 | Round 164 | Round 187 | 28+ | 持续 | memory/log-analysis-2026-02-24-0255.md |
-| PAT-008 | [文件] 尝试读取不存在的文件 → ENOENT 错误 | 文件 | Round 164 | Round 187 | 28 | 持续 | memory/log-analysis-2026-02-24-0255.md |
+| PAT-007 | [操作] Edit 工具精确匹配失败 → 文件编辑重试 | 操作 | Round 164 | Round 265 | 28+ | 🔧有方案 | skills/safe-operations/SKILL.md |
+| PAT-008 | [文件] 尝试读取不存在的文件 → ENOENT 错误 | 文件 | Round 164 | Round 265 | 28 | 🔧有方案 | skills/safe-operations/SKILL.md |
 | PAT-009 | [API] EvoMap API Rate Limit (429) → evomap-auto-bounty 失败 | API | Round 166 | Round 169 | 229 | ✅已解决 | memory/verification-round-168-1771885395593.md |
 | PAT-010 | [API] EvoMap API Server Error (5xx) → API 调用失败 | API | Round 166 | Round 169 | 53 | ✅已解决 | memory/verification-round-168-1771885395593.md |
 | PAT-011 | [配置] evomap-auto-bounty 调用过于频繁 → 触发速率限制 | 配置 | Round 166 | Round 169 | 216 | ✅已解决 | memory/log-analysis-2026-02-24-0526.md |
@@ -59,8 +59,10 @@
 | PAT-052 | [任务] Task aborted 激增 → 58 次任务中断 | 任务 | Round 254 | Round 262 | 19→58 | 🔴恶化中 | memory/log-analysis-2026-03-01-2000.md |
 | PAT-054 | [内存] Gateway 内存泄漏 → +467 MB | 内存 | Round 262 | Round 262 | 1135→1602 | 🔧已修复 | evolver/fixes/gateway-memory-leak-fix.sh |
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
+| PAT-055 | [监控] EvoMap 心跳超时 → 节点状态更新失败 | 监控 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-heartbeat-monitor/SKILL.md |
+| PAT-056 | [发布] EvoMap 发布前缺少预检查 → 发布失败 | 流程 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-publish-validator/SKILL.md |
 
-> 活跃模式 54 个，**37 个已解决/有方案/改善中/已修复，17 个持续监控/高风险/恶化，系统健康评分 3.8/10（🔴 需要关注），27 Skills，21 修复脚本，系统基线配置已建立** 🔴
+> 活跃模式 56 个，**41 个已解决/有方案/改善中/已修复，15 个持续监控/高风险/恶化，系统健康评分 6.0/10（🟡 改善中），32 Skills，25 修复脚本，系统基线配置已建立** 🟡
 
 ---
 
