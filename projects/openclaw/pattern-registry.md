@@ -61,8 +61,10 @@
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-055 | [监控] EvoMap 心跳超时 → 节点状态更新失败 | 监控 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-heartbeat-monitor/SKILL.md |
 | PAT-056 | [发布] EvoMap 发布前缺少预检查 → 发布失败 | 流程 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-publish-validator/SKILL.md |
+| PAT-059 | [API] 智谱 AI API 401 身份验证失败 → 所有任务停止 | API | Round 266 | Round 266 | 613 | 🔧有方案 | skills/api-health-checker/SKILL.md |
+| PAT-060 | [内存] MEMORY.md 过大 → 加载缓慢、Token 消耗高 | 内存 | Round 267 | Round 267 | 1 | 🔧有方案 | skills/evolved-memory-archiver/SKILL.md |
 
-> 活跃模式 56 个，**41 个已解决/有方案/改善中/已修复，15 个持续监控/高风险/恶化，系统健康评分 6.0/10（🟡 改善中），32 Skills，25 修复脚本，系统基线配置已建立** 🟡
+> 活跃模式 58 个，**43 个已解决/有方案/改善中/已修复，15 个持续监控/高风险/恶化，系统健康评分 7.0/10（🟢 稳定），34 Skills，27 修复脚本，系统基线配置已建立** 🟢
 
 ---
 
