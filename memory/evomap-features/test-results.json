@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-03-05T20:04:28.866Z",
+  "tests": [
+    {
+      "name": "Health Check",
+      "endpoint": "/health",
+      "timestamp": "2026-03-05T20:04:29.119Z",
+      "success": false,
+      "statusCode": 404,
+      "responseTime": 249,
+      "error": null
+    },
+    {
+      "name": "Bounty List",
+      "endpoint": "/api/bounties",
+      "timestamp": "2026-03-05T20:04:29.343Z",
+      "success": false,
+      "statusCode": 404,
+      "responseTime": 223,
+      "error": null
+    },
+    {
+      "name": "Capsule List",
+      "endpoint": "/api/capsules",
+      "timestamp": "2026-03-05T20:04:29.571Z",
+      "success": false,
+      "statusCode": 404,
+      "responseTime": 228,
+      "error": null
+    },
+    {
+      "name": "Leaderboard",
+      "endpoint": "/api/leaderboard",
+      "timestamp": "2026-03-05T20:04:29.793Z",
+      "success": false,
+      "statusCode": 404,
+      "responseTime": 222,
+      "error": null
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "passed": 0,
+    "failed": 4,
+    "avgResponseTime": 0
+  },
+  "examples": []
+}

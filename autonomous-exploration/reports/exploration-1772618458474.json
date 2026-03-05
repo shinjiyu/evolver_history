@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-04T10:00:58.474Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "scan_security",
+    "description": "扫描安全日志，发现可疑活动",
+    "outputType": "security_report",
+    "priority": 0.9,
+    "reason": "发现 1 个安全问题"
+  },
+  "result": {
+    "success": true,
+    "findings": [
+      "发现 7 个可疑 IP"
+    ],
+    "recommendations": [
+      "检查并封禁可疑 IP"
+    ],
+    "outputFile": "/root/.openclaw/workspace/autonomous-exploration/outputs/scan_security-1772618458474.json"
+  },
+  "duration": 15
+}

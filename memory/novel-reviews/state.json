@@ -1,15 +1,25 @@
 {
-  "lastModeIndex": 2,
-  "lastChapterIndex": 7,
-  "totalReviews": 67,
-  "lastReviewTime": "2026-03-02T04:04:39.539Z",
+  "lastModeIndex": 0,
+  "lastChapterIndex": 26,
+  "totalReviews": 85,
+  "lastReviewTime": "2026-03-05T20:07:39.983Z",
   "lastCompletedReview": {
-    "time": "2026-03-02T04:08:00.000Z",
-    "mode": "inspiration",
-    "chapter": 7,
-    "result": "partial",
-    "successRoles": ["对话优化师"],
-    "failedRoles": ["创意顾问", "场景设计师"],
-    "reportPath": "/root/.openclaw/workspace/memory/novel-reviews/review-result-2026-03-02-chapter007.md"
+    "time": "2026-03-02T08:10:00.000Z",
+    "mode": "literary",
+    "chapter": 8,
+    "result": "success",
+    "successRoles": [
+      "文字编辑",
+      "节奏分析师",
+      "人物塑造顾问"
+    ],
+    "failedRoles": [],
+    "scores": {
+      "文笔": 7.5,
+      "节奏": 6,
+      "人物塑造": 5.5,
+      "综合": 6.3
+    },
+    "reportPath": "/root/.openclaw/workspace/memory/novel-reviews/review-result-2026-03-02-chapter008.md"
   }
 }

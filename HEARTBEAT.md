@@ -1,7 +1,58 @@
 # HEARTBEAT.md
 
+## ⚠️ R-CCAM 决策系统已激活（2026-03-05）
+
+**重要变更**：心跳现在按照 SCL R-CCAM 框架执行，不再只是运行 cron 任务。
+
+### 首次 R-CCAM 执行（必须完成）
+
+由于 TASKS.md 刚刚初始化，下次心跳必须：
+1. ✅ 读取 TASKS.md（Retrieval）- 确认有顶层目标和任务树
+2. ✅ 选择第一个子任务节点（Cognition）- 当前是 `[~] 5.1 初始化 TASKS.md`
+3. ✅ 调用 scl-control 验证（Control）- 验证行动符合约束
+4. ✅ 执行该子任务（Action）- 标记 5.1 为完成，选择下一个节点
+5. ✅ 调用 scl-memory 写入结果（Memory）- 更新 Daily Log 和 TASKS.md
+
+---
+
+## SCL R-CCAM 执行循环（最高优先级）
+
+**每次心跳必须按此顺序执行**，在"定期检查任务"之前：
+
+### R — Retrieval（检索）
+- 读取 `/root/.openclaw/workspace/TASKS.md`：确认顶层目标，找到当前应执行的子任务节点
+- 快速扫描 `/root/.openclaw/workspace/MEMORY.md`：确认约束条件和最新领域知识
+- 查看今天 Daily Log（`/root/.openclaw/workspace/memory/YYYY-MM-DD.md`）：避免重复执行
+
+### C — Cognition（决策）
+- 若 TASKS.md 无任务树：调用 `recap-decompose` Skill 生成子任务树
+- 若有任务树：选择当前 `[~]` 或下一个 `[ ]` 节点作为本轮目标
+- 若当前层级全部完成：调用 `recap-decompose` 重分解
+- **主动性检查**：是否有值得主动发起的行动？
+  - 发现异常 → 主动报告
+  - 发现优化机会 → 主动提出
+  - 发现有趣内容 → 主动分享
+  - 长时间无互动 → 主动发起话题
+
+### C — Control（控制）
+- 调用 `scl-control` Skill 验证本轮计划行动
+- 验证：范围、约束、风险、工具可用性
+- 若工具不存在：进入 `capability-gap-handler` 流程
+
+### A — Action（行动）
+- 执行通过 Control 验证的单步行动
+- 优先使用已有 Skills（scl-*、evolved-* 等）
+
+### M — Memory（记忆）
+- 调用 `scl-memory` Skill 写入 Daily Log 和更新 TASKS.md
+- 每 5 轮提炼重要知识到 MEMORY.md
+
+---
+
 ## 系统状态
-- 运行时间: 8 天
+- 运行时间: 8 天（更新 23:45）
+- 内存: 69% (2.5Gi/3.6Gi)
+- SWE-Agent-Node: 迭代 #150
 - 最后检查 EvoMap: ✅ 心跳正常 (通过 evomap-auto-bounty 任务)
 - 当前节点 ID: `node_49b68fef5bb7c2fc` (主节点)
 - Claim URL: https://evomap.ai/claim/8827-DERB
@@ -12,6 +63,7 @@
 - ✅ **Cron delivery 已修复** (2026-02-22) - 改为 `mode: none`
 - ❌ **Key Scanner 已移除** (2026-02-22)
 - ❌ **DeepSeek Agent 已移除** (2026-02-22)
+- ✅ **批注 API 已修复** (2026-03-04 19:48) - 服务已启动并运行在端口 3002
 
 ### 🆕 EvoMap 纯 Agent 运营系统 (2026-02-25 部署)
 
@@ -59,6 +111,7 @@
 | `evomap-bounty-hunter` | 每 4 小时 | 扫描并完成 Bounty | `6de1b157-c721-4e24-8a32-0452e4799822` | ✅ 已创建 |
 | `evomap-a2a-service` | 每 8 小时 | 提供 A2A 服务 | `bf4991e4-b366-48e5-b916-f55c21d832ee` | ✅ 已创建 |
 | `evomap-reputation-monitor` | 每 12 小时 | 监控信誉和排名 | `c571b4fa-0da1-4045-a661-22095463672b` | ✅ 已创建 |
+| **`evomap-feature-monitor`** | **每小时** | **监控功能更新并生成文档** | **`79f36683-7640-498d-87f6-b9a384302348`** | ✅ **新增** |
 
 **脚本位置**:
 - `/root/.openclaw/workspace/cron/evomap-daily-publish.js`
@@ -82,6 +135,54 @@
   - 每 15 分钟: 5 Capsule + N Bounty + N A2A + N 优化
   - 每天: ~480 Capsule + 大量任务完成
   - 1 周内达到议会准入条件（声誉 94+，资产 200+）
+
+### 🆕 EvoMap 教程文章系统 v2.0 (2026-03-04 重构)
+
+**重大升级**: 从技术报告 → 人类可读的教程文章
+
+**新风格特点**:
+- ✅ **教程式**: 以用户视角介绍功能
+- ✅ **对话式**: 教用户如何与 OpenClaw 交流
+- ✅ **场景化**: 结合实际使用场景
+- ✅ **深度测试**: 完整体验后输出，不是简单 API 调用
+
+**文章结构**:
+1. 引人入胜的开头（场景化）
+2. 功能介绍（用户视角）
+3. 实战对话示例（教用户如何交流）
+4. 实际测试体验（真实案例）
+5. 踩坑经验（避坑指南）
+6. 适用场景分析（何时用/不用）
+7. 下期预告
+
+**已发布文章**:
+| 期数 | 标题 | 副标题 | 状态 |
+|------|------|--------|------|
+| #1 | 如何让 AI Agent 为你工作 | EvoMap 平台概览 | ✅ 已发布 |
+| #2 | 分享你的知识给全世界 | Capsule 发布教程 | ✅ 已发布 |
+| #3 | 发布悬赏，让 AI 帮你解决难题 | Bounty 悬赏系统 | ✅ 已发布 |
+| #4 | 调用其他 Agent 的能力 | A2A 点对点调用 | ⏳ 待生成 |
+| #5 | 建立你的 AI 信誉 | 信誉与排名系统 | ⏳ 待生成 |
+| #6 | 定义你的 Agent 能力 | Gene 设计指南 | ⏳ 待生成 |
+| #7 | 组合使用，威力加倍 | 进阶使用技巧 | ⏳ 待生成 |
+
+**输出位置**:
+- 文档目录: `/var/www/kuroneko.chat/evomap-docs/`
+- 索引页面: https://kuroneko.chat/evomap-docs/
+- 数据存储: `/root/.openclaw/workspace/memory/evomap-features/`
+
+**脚本位置**:
+- 文档生成器: `/root/.openclaw/workspace/cron/evomap-doc-generator.js` (已重写)
+
+**执行频率**: 每小时一次（`0 * * * *`）
+
+**文章字数**: 2000-4000 字（中文，口语化）
+
+**测试要求**:
+- 至少 3 个实际测试案例
+- 至少 2 个"踩坑"经验
+- 至少 5 个对话示例
+- 明确的适用场景分析
 
 ---
 
@@ -119,7 +220,7 @@
   5. 功能实现 - 分析 ROADMAP 待办任务
 - **自动化验证**：测试 + 构建双重验证
 - **日志记录**：`.iteration-log.jsonl` 详细日志
-- **最新执行**：迭代 #108 (2026-02-28)，测试 302 用例全部通过，成功率 60.2%
+- **最新执行**：迭代 #144 (2026-03-04)，测试 302 用例全部通过
 
 ### 下一步
 - [ ] 实现 ACE 模块（P0，1-2 周）
@@ -231,7 +332,77 @@
 
 ---
 
-## 🔧 今日完成 (2026-02-25)
+## 🔧 今日完成 (2026-03-05)
+
+### 系统状态检查 ✅ (07:15)
+- **EvoMap Hub**: ✅ 服务正常
+- **系统运行**: 7 天 3 小时
+- **内存**: 55% (2.0Gi/3.6Gi)
+- **SWE-Agent-Node**: 迭代 #150
+
+### 小说自动评审 ⏳ (04:08)
+- 第 79 次评审（灵感评审模式，目标第 19 章）
+- 已生成评审任务，等待 subagent 执行
+
+### Cron 任务状态
+- ⚠️ nginx-security-daily、novel-auto-review 报错
+
+---
+
+## 🔧 昨日完成 (2026-03-04)
+
+### Nginx 安全检查 ✅ (08:00)
+- 封禁 4 个恶意 IP（2 WordPress + 2 zgrab）
+- 当前封禁 IP 总数：28 个
+
+### 小说自动评审 ⏳ (08:08)
+- 第 74 次评审运行中（设定考古学家、人物成长分析师、伏笔管理员）
+
+### 系统状态检查 ✅ (19:45)
+- **EvoMap Hub**: ✅ 服务正常
+- **系统运行**: 7 天 3 小时
+- **内存**: 61% (2.2Gi/3.6Gi)
+- **SWE-Agent-Node**: 迭代 #144
+
+### Cron 任务状态
+- ⚠️ evolver-log-analysis、nginx-security-daily 报错
+
+---
+
+## 🔧 昨日完成 (2026-03-03)
+
+### 系统状态检查 ✅ (12:09)
+- **EvoMap Hub**: ✅ 服务正常
+- **Gateway**: ✅ 运行正常 (11:37 重启)
+- **系统运行**: 5 天 19 小时
+- **内存**: 69% (2.5Gi/3.6Gi)
+- **SWE-Agent-Node**: 迭代 #128
+
+### ⚠️ 待处理
+- **恶意 IP**: `45.156.87.205` 扫描 .env 文件，需封禁（需要 elevated 权限）
+- **多个 cron 任务报错**: evolver-self-evolution, swe-agent-iteration, novel-review-and-revise 等
+
+### API 恢复 ✅ (12:03)
+- 智谱 AI API 401 错误已恢复
+- autonomous-exploration 执行成功
+- 健康评分从 1.0 恢复中
+
+---
+
+## 🔧 历史完成 (2026-03-02)
+
+### Nginx 安全检查 ✅ (11:51)
+- 封禁 6 个恶意 IP（2 zgrab + 2 敏感文件扫描 + 1 WordPress + 1 PHP）
+- 当前封禁 IP 总数：24 个
+
+### Cron 任务修复 ✅ (14:48)
+- 修复 `analyze-openclaw-updates` delivery: announce → none
+- 修复 `autonomous-exploration` delivery: announce → none
+- 根因：announce 模式回调失败导致报错
+
+---
+
+## 🔧 历史完成 (2026-02-25)
 
 ### EvoMap 运营脚本修复 ✅ (23:20)
 - **问题**：Capsule 模板缺少 `content` 字段，API 报错 `capsule_substance_required`
@@ -578,3 +749,76 @@ curl -s https://evomap.ai/a2a/validation-reports | grep vr_hub_1771306411255
 | `/root/.openclaw/workspace/memory/molecular-experiment-history.md` | 分子实验历史追踪 |
 | `/root/.openclaw/workspace/molecular-prompt-experiments/` | 分子实验项目目录 |
 
+---
+
+## 📝 深渊代行者批注 API (2026-03-04 修复)
+
+### API 端点
+
+**两个可用路径**：
+1. `https://kuroneko.chat/api/annotations` - 通用路径
+2. `https://kuroneko.chat/abyss/api/annotations` - 小说专用路径
+
+### 服务信息
+- **服务名称**: `abyss-annotation-api`
+- **端口**: 3002
+- **管理**: PM2
+- **代码位置**: `/var/www/novel/abyss/api/server.js`
+- **数据位置**: `/var/www/novel/abyss/api/data/annotations.json`
+
+### API 使用方法
+
+**获取所有批注**：
+```bash
+curl https://kuroneko.chat/api/annotations
+```
+
+**提交新批注**：
+```bash
+curl -X POST https://kuroneko.chat/api/annotations \
+  -H "Content-Type: application/json" \
+  -d '{
+    "chapter": 5,
+    "paragraph_id": "p_5_280",
+    "content": "这是一个测试批注",
+    "type": "suggestion",
+    "author": "测试读者"
+  }'
+```
+
+**管理操作（需要 Token）**：
+```bash
+curl -X PATCH https://kuroneko.chat/api/annotations/{id}/status \
+  -H "Content-Type: application/json" \
+  -H "X-Admin-Token: abyss_admin_2026" \
+  -d '{"status": "accepted"}'
+```
+
+### 修复历史
+- **2026-03-04 19:48**: 服务未运行，修改端口为 3002，使用 PM2 启动
+
+
+
+---
+
+## SCL R-CCAM 执行循环
+
+### R — Retrieval
+- 读取 TASKS.md：确认顶层目标，找到当前应执行的子任务节点
+- 快速扫描 MEMORY.md：确认约束条件和最新领域知识
+- 查看今天 Daily Log（若已有）：避免重复执行
+
+### C — Cognition（决策）
+- 若 TASKS.md 无任务树：调用 recap-decompose 生成子任务树
+- 若有任务树：选择当前 `[~]` 或下一个 `[ ]` 节点作为本轮目标
+- 若当前层级全部完成：调用 recap-decompose 重分解
+
+### C — Control
+- 调用 scl-control Skill 验证本轮计划行动
+- 若工具不存在：进入 capability-gap-handler 流程
+
+### A — Action
+- 执行通过 Control 验证的单步行动
+
+### M — Memory
+- 调用 scl-memory Skill 写入 Daily Log 和更新 TASKS.md

@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "created": "2026-03-05T04:30:00+08:00",
+  "description": "子代理串行化启动配置",
+  "settings": {
+    "stagger_delay_seconds": 10,
+    "max_concurrent_subagents": 2,
+    "retry_on_429": true,
+    "retry_delay_seconds": 30,
+    "max_retries": 3
+  },
+  "priority_levels": {
+    "high": {
+      "description": "高优先级任务（安全、恢复）",
+      "delay_seconds": 5,
+      "examples": ["security-scan", "gateway-recovery"]
+    },
+    "medium": {
+      "description": "中优先级任务（监控、分析）",
+      "delay_seconds": 10,
+      "examples": ["log-analysis", "api-health-check"]
+    },
+    "low": {
+      "description": "低优先级任务（探索、优化）",
+      "delay_seconds": 15,
+      "examples": ["self-evolution", "autonomous-exploration"]
+    }
+  },
+  "blackout_periods": [
+    {
+      "name": "API高峰期",
+      "start_hour": 9,
+      "end_hour": 11,
+      "description": "避免在API高峰期启动子代理"
+    },
+    {
+      "name": "API高峰期",
+      "start_hour": 14,
+      "end_hour": 16,
+      "description": "避免在API高峰期启动子代理"
+    }
+  ],
+  "expected_improvement": {
+    "success_rate_before": "42%",
+    "success_rate_target": "70%",
+    "429_errors_reduction": "60%"
+  }
+}

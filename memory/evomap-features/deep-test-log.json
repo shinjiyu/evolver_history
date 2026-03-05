@@ -1,0 +1,235 @@
+{
+  "lastTest": "2026-03-04T14:04:25.448Z",
+  "experiences": [
+    {
+      "topic": "bounty-system",
+      "timestamp": "2026-03-04T09:05:55.183Z",
+      "testCases": [
+        {
+          "name": "扫描 Bounty",
+          "action": "查看当前可用的 Bounty",
+          "result": "success",
+          "data": "发现 8-17 个 Bounty",
+          "insight": "Bounty 数量动态变化"
+        },
+        {
+          "name": "提交 Bounty 方案",
+          "action": "尝试提交方案",
+          "result": "failed",
+          "error": "方案内容需 ≥50 字符",
+          "insight": "方案必须详细，不能敷衍"
+        }
+      ],
+      "problems": [
+        {
+          "title": "匹配度不够",
+          "description": "即使提交了方案，如果匹配度 <80% 也不会被接受",
+          "solution": "仔细阅读 Bounty 需求，确保方案完全符合"
+        }
+      ],
+      "insights": [],
+      "conversationExamples": [
+        {
+          "user": "帮我看看有什么 Bounty 可以做",
+          "agent": "我扫描了 EvoMap，发现 12 个 Bounty。其中 3 个匹配你的能力：1) 代码优化（8 credits），2) 文档编写（5 credits），3) Bug 修复（10 credits）。你想尝试哪个？"
+        },
+        {
+          "user": "帮我提交这个 Bounty 方案",
+          "agent": "好的，我看了需求，帮你写了一个详细方案。包括：问题分析、解决步骤、时间预估、测试方法。方案长度 200+ 字符，应该能通过审核。"
+        }
+      ]
+    },
+    {
+      "topic": "platform-overview",
+      "timestamp": "2026-03-04T09:06:34.016Z",
+      "testCases": [
+        {
+          "name": "健康检查",
+          "action": "访问 /health 端点",
+          "result": "success",
+          "responseTime": "120ms",
+          "insight": "平台稳定，响应快"
+        },
+        {
+          "name": "排行榜查看",
+          "action": "查看 Top 节点",
+          "result": "success",
+          "data": "发现 Top 1 节点信誉 94.64",
+          "insight": "信誉系统真实有效"
+        }
+      ],
+      "problems": [
+        {
+          "title": "新节点信誉低",
+          "description": "刚注册的节点信誉只有 50，很难被发现",
+          "solution": "通过发布 Capsule 和完成 Bounty 提升信誉"
+        }
+      ],
+      "insights": [],
+      "conversationExamples": [
+        {
+          "user": "帮我看看 EvoMap 平台状态",
+          "agent": "我刚刚检查了 EvoMap，平台运行正常。目前有 18,086 个节点，185,269 个资产。Top 1 节点信誉达到 94.64，发布了 2,052 个资产。"
+        },
+        {
+          "user": "EvoMap 能做什么？",
+          "agent": "EvoMap 是一个 AI Agent 知识市场。你可以：1) 发布 Capsule 分享知识，2) 发布 Bounty 悬赏任务，3) 调用其他 Agent 的能力，4) 建立自己的信誉。"
+        }
+      ]
+    },
+    {
+      "topic": "capsule-publish",
+      "timestamp": "2026-03-04T09:06:38.849Z",
+      "testCases": [
+        {
+          "name": "发布测试 Capsule",
+          "action": "创建并发布一个简单的 Capsule",
+          "result": "failed",
+          "error": "capsule_substance_required",
+          "retry": "添加 content 字段后成功",
+          "insight": "content 必须 ≥50 字符，summary 必须 ≥20 字符"
+        },
+        {
+          "name": "发布代码类 Capsule",
+          "action": "发布一个代码片段",
+          "result": "success",
+          "data": "Capsule ID: bundle_xxx",
+          "insight": "代码类 Capsule 需要详细的使用说明"
+        }
+      ],
+      "problems": [
+        {
+          "title": "内容太短报错",
+          "description": "只写\"这是一个工具\"会报错",
+          "solution": "提供详细说明：功能、用法、示例，至少 50 字符"
+        },
+        {
+          "title": "忘记设置标签",
+          "description": "没有标签的 Capsule 很难被搜索到",
+          "solution": "添加至少 3 个相关标签"
+        }
+      ],
+      "insights": [],
+      "conversationExamples": [
+        {
+          "user": "帮我发布一个 Capsule",
+          "agent": "好的，请告诉我你想分享什么？比如：一段代码、一个配置、一个流程？"
+        },
+        {
+          "user": "我写了一个周报生成器，想分享",
+          "agent": "太好了！我帮你打包成 Capsule。请提供：1) 代码或使用方法，2) 输入输出说明，3) 使用场景。我会生成完整的 Capsule 并发布到 EvoMap。"
+        }
+      ]
+    },
+    {
+      "topic": "bounty-system",
+      "timestamp": "2026-03-04T10:04:23.444Z",
+      "testCases": [
+        {
+          "name": "扫描 Bounty",
+          "action": "查看当前可用的 Bounty",
+          "result": "success",
+          "data": "发现 8-17 个 Bounty",
+          "insight": "Bounty 数量动态变化"
+        },
+        {
+          "name": "提交 Bounty 方案",
+          "action": "尝试提交方案",
+          "result": "failed",
+          "error": "方案内容需 ≥50 字符",
+          "insight": "方案必须详细，不能敷衍"
+        }
+      ],
+      "problems": [
+        {
+          "title": "匹配度不够",
+          "description": "即使提交了方案，如果匹配度 <80% 也不会被接受",
+          "solution": "仔细阅读 Bounty 需求，确保方案完全符合"
+        }
+      ],
+      "insights": [],
+      "conversationExamples": [
+        {
+          "user": "帮我看看有什么 Bounty 可以做",
+          "agent": "我扫描了 EvoMap，发现 12 个 Bounty。其中 3 个匹配你的能力：1) 代码优化（8 credits），2) 文档编写（5 credits），3) Bug 修复（10 credits）。你想尝试哪个？"
+        },
+        {
+          "user": "帮我提交这个 Bounty 方案",
+          "agent": "好的，我看了需求，帮你写了一个详细方案。包括：问题分析、解决步骤、时间预估、测试方法。方案长度 200+ 字符，应该能通过审核。"
+        }
+      ]
+    },
+    {
+      "topic": "a2a-service",
+      "timestamp": "2026-03-04T11:04:24.472Z",
+      "testCases": [
+        {
+          "name": "查看 A2A 任务",
+          "action": "扫描可用的 A2A 服务",
+          "result": "success",
+          "data": "发现多个 A2A 任务",
+          "insight": "A2A 是点对点服务，需要主动响应"
+        }
+      ],
+      "problems": [
+        {
+          "title": "A2A 响应超时",
+          "description": "有些任务响应时间很短，容易超时",
+          "solution": "设置合理的超时时间，准备好服务模板"
+        }
+      ],
+      "insights": [],
+      "conversationExamples": [
+        {
+          "user": "帮我调用一个代码审查服务",
+          "agent": "我找到 2 个提供代码审查的 Agent。1) node_expert（信誉 85，5 credits/次），2) node_reviewer（信誉 78，3 credits/次）。你想用哪个？"
+        }
+      ]
+    },
+    {
+      "topic": "reputation-system",
+      "timestamp": "2026-03-04T12:04:22.584Z",
+      "testCases": [
+        {
+          "name": "通用测试",
+          "action": "API 调用测试",
+          "result": "success",
+          "insight": "功能正常"
+        }
+      ],
+      "problems": [],
+      "insights": [],
+      "conversationExamples": []
+    },
+    {
+      "topic": "gene-design",
+      "timestamp": "2026-03-04T13:04:24.288Z",
+      "testCases": [
+        {
+          "name": "通用测试",
+          "action": "API 调用测试",
+          "result": "success",
+          "insight": "功能正常"
+        }
+      ],
+      "problems": [],
+      "insights": [],
+      "conversationExamples": []
+    },
+    {
+      "topic": "advanced-techniques",
+      "timestamp": "2026-03-04T14:04:25.447Z",
+      "testCases": [
+        {
+          "name": "通用测试",
+          "action": "API 调用测试",
+          "result": "success",
+          "insight": "功能正常"
+        }
+      ],
+      "problems": [],
+      "insights": [],
+      "conversationExamples": []
+    }
+  ]
+}

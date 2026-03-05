@@ -1,0 +1,32 @@
+[2026-03-04 16:32:48] 🔧 开始应用优化后的 Cron 配置...
+[2026-03-04 16:32:48] 💾 备份当前 Crontab...
+[2026-03-04 16:32:48] ✅ 备份已保存: /tmp/crontab.backup.20260304-163248
+[2026-03-04 16:32:48] 
+[2026-03-04 16:32:48] 📋 当前 Cron 配置:
+[2026-03-04 16:32:48]   0 * * * * /root/.openclaw/workspace/evolver/fixes/api-health-checker.sh --check >> /root/.openclaw/workspace/logs/api-health.log 2>&1
+[2026-03-04 16:32:48]   0 * * * * /root/.openclaw/workspace/evolver/fixes/api-rate-limiter.sh --auto-adjust >> /root/.openclaw/workspace/logs/rate-limit.log 2>&1
+[2026-03-04 16:32:48]   0 * * * * /root/.openclaw/workspace/evolver/fixes/threat-detector.sh --check >> /root/.openclaw/workspace/logs/threats.log 2>&1
+[2026-03-04 16:32:48]   0 2 * * 0 /root/.openclaw/workspace/evolver/fixes/memory-archiver.sh --archive 30 --force >> /root/.openclaw/workspace/logs/memory-archiver.log 2>&1
+[2026-03-04 16:32:48]   */30 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-memory-monitor.sh >> /root/.openclaw/workspace/logs/gateway-memory.log 2>&1
+[2026-03-04 16:32:48]   */30 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-auto-recovery.sh >> /root/.openclaw/workspace/logs/gateway-auto-recovery.log 2>&1
+[2026-03-04 16:32:48] 
+[2026-03-04 16:32:48] 🚀 应用优化后的配置...
+[2026-03-04 16:32:48] ✅ 新配置已应用
+[2026-03-04 16:32:48] 
+[2026-03-04 16:32:48] 📋 新的 Cron 配置:
+[2026-03-04 16:32:48]   5 * * * * /root/.openclaw/workspace/evolver/fixes/api-health-checker.sh --check >> /root/.openclaw/workspace/logs/api-health.log 2>&1
+[2026-03-04 16:32:48]   10 * * * * /root/.openclaw/workspace/evolver/fixes/api-rate-limiter.sh --auto-adjust >> /root/.openclaw/workspace/logs/rate-limit.log 2>&1
+[2026-03-04 16:32:48]   15 * * * * /root/.openclaw/workspace/evolver/fixes/threat-detector.sh --check >> /root/.openclaw/workspace/logs/threats.log 2>&1
+[2026-03-04 16:32:48]   */30 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-memory-monitor.sh >> /root/.openclaw/workspace/logs/gateway-memory.log 2>&1
+[2026-03-04 16:32:48]   15,45 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-auto-recovery.sh >> /root/.openclaw/workspace/logs/gateway-auto-recovery.log 2>&1
+[2026-03-04 16:32:48]   0 2 * * 0 /root/.openclaw/workspace/evolver/fixes/memory-archiver.sh --archive 30 --force >> /root/.openclaw/workspace/logs/memory-archiver.log 2>&1
+[2026-03-04 16:32:48]   0 4 * * * /root/.openclaw/workspace/evolver/fixes/gateway-restart.sh >> /root/.openclaw/workspace/logs/gateway-restart.log 2>&1
+[2026-03-04 16:32:48] 
+[2026-03-04 16:32:48] 📊 优化统计:
+[2026-03-04 16:32:48]   - 整点并发任务: 5 → 0 (错峰执行)
+[2026-03-04 16:32:48]   - 新增定期重启: 每天凌晨 4 点
+[2026-03-04 16:32:48]   - API 监控错峰: 05 分、10 分、15 分
+[2026-03-04 16:32:48]   - Gateway 恢复错峰: 15 分、45 分
+[2026-03-04 16:32:48] 
+[2026-03-04 16:32:48] ✅ Cron 优化完成
+[2026-03-04 16:32:48] 📋 备份文件: /tmp/crontab.backup.20260304-163248

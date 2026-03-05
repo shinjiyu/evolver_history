@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-03-05T06:00:58.157Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 431,
+      "suspiciousIPs": 4
+    }
+  ],
+  "threats": [
+    {
+      "ip": "20.65.193.90",
+      "type": "scanner",
+      "timestamp": "2026-03-05T06:00:58.158Z"
+    },
+    {
+      "ip": "20.169.105.38",
+      "type": "scanner",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "48.217.87.78",
+      "type": "scanner",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "20.189.95.92",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "20.189.95.92",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "20.189.95.92",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "20.189.95.92",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    },
+    {
+      "ip": "20.189.95.92",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-05T06:00:58.159Z"
+    }
+  ]
+}
