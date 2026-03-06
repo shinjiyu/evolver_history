@@ -2,35 +2,34 @@
   "success": true,
   "task": {
     "mode": {
-      "id": "long_distance",
-      "name": "长距离章节一致性评审",
-      "description": "评审相距较远的章节，检查设定是否前后一致，人物发展是否合理",
+      "id": "inspiration",
+      "name": "灵感评审",
+      "description": "寻找可以改进的点子，提出更有创意的情节/对话/场景",
       "roles": [
-        "设定考古学家 - 追踪设定演变",
-        "人物成长分析师 - 分析人物弧光",
-        "伏笔管理员 - 检查伏笔和呼应"
+        "创意顾问 - 提供情节创新建议",
+        "对话优化师 - 优化对话表现",
+        "场景设计师 - 强化场景效果"
       ],
-      "workflow": "并行分析 → 交叉验证 → 综合报告"
+      "workflow": "头脑风暴 → 筛选建议 → 优先级排序"
     },
     "chapters": [
-      1,
-      60
+      27
     ],
-    "promptFile": "/root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-06T04-07-40-059Z.md"
+    "promptFile": "/root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-06T08-07-43-045Z.md"
   },
   "hrCommand": {
-    "command": "HR，组建小说评审团队完成以下任务：\n\n**目标**: 长距离章节一致性评审\n**描述**: 评审相距较远的章节，检查设定是否前后一致，人物发展是否合理\n**章节**: 第1章, 第60章\n\n**团队角色**:\n- 设定考古学家 - 追踪设定演变\n- 人物成长分析师 - 分析人物弧光\n- 伏笔管理员 - 检查伏笔和呼应\n\n**协作流程**: 并行分析 → 交叉验证 → 综合报告\n\n**评审内容**: 见 /root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-06T04-07-40-059Z.md\n\n**输出要求**:\n- 发现的问题列表（标注严重程度）\n- 具体修改建议\n- 总体评分\n- 修改后的章节内容（如有必要）",
+    "command": "HR，组建小说评审团队完成以下任务：\n\n**目标**: 灵感评审\n**描述**: 寻找可以改进的点子，提出更有创意的情节/对话/场景\n**章节**: 第27章\n\n**团队角色**:\n- 创意顾问 - 提供情节创新建议\n- 对话优化师 - 优化对话表现\n- 场景设计师 - 强化场景效果\n\n**协作流程**: 头脑风暴 → 筛选建议 → 优先级排序\n\n**评审内容**: 见 /root/.openclaw/workspace/memory/novel-reviews/prompt-2026-03-06T08-07-43-045Z.md\n\n**输出要求**:\n- 发现的问题列表（标注严重程度）\n- 具体修改建议\n- 总体评分\n- 修改后的章节内容（如有必要）",
     "roles": [
-      "设定考古学家 - 追踪设定演变",
-      "人物成长分析师 - 分析人物弧光",
-      "伏笔管理员 - 检查伏笔和呼应"
+      "创意顾问 - 提供情节创新建议",
+      "对话优化师 - 优化对话表现",
+      "场景设计师 - 强化场景效果"
     ],
-    "workflow": "并行分析 → 交叉验证 → 综合报告"
+    "workflow": "头脑风暴 → 筛选建议 → 优先级排序"
   },
   "state": {
-    "totalReviews": 86,
-    "lastModeIndex": 1,
-    "lastChapterIndex": 26
+    "totalReviews": 87,
+    "lastModeIndex": 2,
+    "lastChapterIndex": 27
   },
-  "timestamp": "2026-03-06T04:07:40.060Z"
+  "timestamp": "2026-03-06T08:07:43.046Z"
 }
