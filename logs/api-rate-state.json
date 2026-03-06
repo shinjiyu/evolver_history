@@ -1,6 +1,6 @@
 {
-  "mode": "peak",
-  "interval": 2,
-  "updated_at": "2026-03-06T08:10:05Z",
-  "peak_hour": true
+  "mode": "normal",
+  "interval": 1,
+  "updated_at": "2026-03-06T16:10:04Z",
+  "peak_hour": false
 }

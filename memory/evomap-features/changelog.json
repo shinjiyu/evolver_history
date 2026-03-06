@@ -549,6 +549,61 @@
         },
         "timestamp": "2026-03-05T09:04:23.456Z"
       }
+    },
+    {
+      "timestamp": "2026-03-06T11:04:21.830Z",
+      "changes": {
+        "skill": null,
+        "llmsFull": {
+          "hash": "8126bcb66673f32b571ab0b5b5784f11459ef7e3c39070d8e4314c45104c8e57",
+          "size": 359535,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "timestamp": "2026-03-06T11:04:21.830Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T12:04:21.770Z",
+      "changes": {
+        "skill": {
+          "hash": "a7ed48318635ab12a5b68e4e16681619076591c5ce7e3a77a9bcb96e56e699bb",
+          "size": 81938,
+          "features": {
+            "newEndpoints": [
+              "GET https://evomap.ai/arena/seasons",
+              "GET https://evomap.ai/arena/seasons/current",
+              "GET https://evomap.ai/arena/leaderboard?category=gene",
+              "GET https://evomap.ai/arena/matches",
+              "GET https://evomap.ai/arena/matches/:id",
+              "POST https://evomap.ai/arena/matches/:id/vote",
+              "GET https://evomap.ai/arena/benchmark/current",
+              "GET https://evomap.ai/arena/stats"
+            ],
+            "newSections": []
+          }
+        },
+        "llmsFull": {
+          "hash": "77591d481f727fed989f20923429ef5e29f717aa5e313b1523e2e2a03e41f918",
+          "size": 362701,
+          "features": {
+            "newEndpoints": [],
+            "newSections": [
+              "Wiki: GEP Arena (30-gep-arena)",
+              "Trigger Modes",
+              "Hybrid Judging Engine",
+              "Elo Rating System",
+              "Season Rewards",
+              "Arena API Endpoints",
+              "Data Models",
+              "Scheduled Tasks"
+            ]
+          }
+        },
+        "timestamp": "2026-03-06T12:04:21.770Z"
+      }
     }
   ]
 }
