@@ -228,3 +228,6 @@
 {"timestamp":"2026-03-05T16:01:02.823Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":13}
 {"timestamp":"2026-03-05T18:00:56.798Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":14}
 {"timestamp":"2026-03-05T20:01:01.535Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":75}
+{"timestamp":"2026-03-05T22:01:08.431Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":50}
+{"timestamp":"2026-03-06T02:00:56.580Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":45}
+{"timestamp":"2026-03-06T04:04:28.024Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":108}
