@@ -61,13 +61,22 @@
 | PAT-053 | [文件] EISDIR 错误 → 尝试读取目录 | 文件 | Round 254 | Round 257 | 1 | 🟢低风险 | memory/log-analysis-2026-03-01-0000.md |
 | PAT-055 | [监控] EvoMap 心跳超时 → 节点状态更新失败 | 监控 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-heartbeat-monitor/SKILL.md |
 | PAT-056 | [发布] EvoMap 发布前缺少预检查 → 发布失败 | 流程 | Round 265 | Round 265 | 多次 | 🔧有方案 | skills/evomap-publish-validator/SKILL.md |
-| PAT-059 | [API] 智谱 AI API 401 身份验证失败 → 所有任务停止 | API | Round 266 | Round 269 | 613→0 | ✅✅已解决 | skills/api-health-checker/SKILL.md |
+| PAT-059 | [API] 智谱 AI API 401 身份验证失败 → 所有任务停止 | API | Round 266 | Round 273 | 613→1 | ✅✅基本解决 | skills/api-health-checker/SKILL.md |
 | PAT-060 | [内存] MEMORY.md 过大 → 加载缓慢、Token 消耗高 | 内存 | Round 267 | Round 270 | 1 | 🔧有方案 | skills/evolved-memory-archiver/SKILL.md |
 | PAT-061 | [安全] 恶意 IP 扫描敏感文件 → 潜在安全威胁 | 安全 | Round 268 | Round 270 | 27 | 🔧有方案 | skills/evolved-security-hardening/SKILL.md |
-| PAT-062 | [API] 429 Rate Limit 频繁触发 → 请求失败 | API | Round 269 | Round 270 | 21 | 🔧有方案 | skills/evolved-api-rate-limiter/SKILL.md |
+| PAT-062 | [API] 429 Rate Limit 频繁触发 → 请求失败 | API | Round 269 | Round 275 | 12 | ✅改善中 | skills/evolved-api-rate-limiter/SKILL.md |
 | PAT-063 | [流程] 工具创建后未自动集成 → 价值未发挥 | 流程 | Round 270 | Round 270 | 1 | 🔧有方案 | skills/evolved-cron-integration/SKILL.md |
+| PAT-064 | [代理] 子代理并发启动 → 429 限流激增 | 代理 | Round 271 | Round 271 | 12+ | 🔧有方案 | skills/evolved-subagent-stagger/SKILL.md |
+| PAT-065 | [内存] Gateway 内存占用过高 → 1.4GB (38.7%) | 内存 | Round 272 | Round 274 | 1 | ✅✅已解决 | skills/evolved-gateway-optimizer/SKILL.md |
+| PAT-066 | [内存] Gateway 内存持续增长 → 自动恢复 | 内存 | Round 273 | Round 273 | 1 | ✅已解决 | skills/evolved-auto-recovery/SKILL.md |
+| PAT-067 | [调度] Cron 任务时间冲突 → 并发压力 | 调度 | Round 274 | Round 274 | 1 | ✅已解决 | skills/evolved-cron-optimizer/SKILL.md |
+| PAT-068 | [API] EvoMap API 404 → 所有端点不可用 | API | Round 276 | Round 277 | 4→0 | ✅已调查 | memory/evomap-api-404-investigation-*.md |
+| PAT-064 | [代理] 子代理并发启动 → 429 限流激增 | 代理 | Round 271 | Round 277 | 12→2 | ✅改善中 | skills/evolved-subagent-stagger/SKILL.md |
+| PAT-069 | [调度] Cron 任务执行模式错误 → 权限冲突 | 调度 | Round 271 | Round 289 | 2 | 🔧有方案 | skills/evolved-cron-health-monitor/SKILL.md |
+| PAT-070 | [认证] EvoMap API 认证缺失 → 401 Unauthorized | 认证 | Round 276 | Round 289 | 24h+ | 🔧有方案 | skills/evolved-evomap-health/SKILL.md |
+| PAT-071 | [资源] 磁盘使用率偏高 → 74% | 资源 | Round 271 | Round 289 | 持续 | 🟡监控中 | evolver/fixes/disk-monitor.sh |
 
-> 活跃模式 61 个，**46 个已解决/有方案/改善中/已修复，15 个持续监控/高风险/恶化，系统健康评分 7.0/10（🟡 良好），37 Skills，33 修复脚本，系统基线配置已建立** 🟡
+> 活跃模式 71 个，**59 个已解决/有方案/改善中/已修复，12 个持续监控/高风险/恶化，系统健康评分 8.0/10（🟢 良好），53 Skills，43 修复脚本，系统基线配置已建立** 🟢
 
 ---
 
@@ -235,3 +244,17 @@
 如果充值：
 - **充值后 4h**: ~50 次（-95%）
 - **充值后 8h**: ~10 次（-99%）
+| PAT-069 | [流程] 缺少效果验证 → 无法量化改进效果 | 流程 | Round 278 | Round 278 | 1 | ✅已解决 | skills/evolved-effect-verification/SKILL.md |
+
+> 活跃模式 69 个，**57 个已解决/有方案/改善中/已修复，12 个持续监控/高风险/恶化，系统健康评分 8.0/10（🟢 良好），52 Skills，41 修复脚本，效果验证系统已建立** 🟢
+| PAT-070 | [流程] R-CCAM 系统未执行 → 决策系统失效 | 流程 | Round 279 | Round 279 | 1 | ✅已解决 | evolver/scripts/execute-rccam-cycle.sh |
+
+> 活跃模式 70 个，**58 个已解决/有方案/改善中/已修复，12 个持续监控/高风险/恶化，系统健康评分 8.0/10（🟢 良好），53 Skills，43 修复脚本，R-CCAM 决策系统已优化** 🟢
+| PAT-071 | [流程] 改进未自动化 → 价值未完全发挥 | 流程 | Round 280 | Round 280 | 1 | ✅已解决 | evolver/scripts/integrate-to-crontab.sh |
+| PAT-072 | [脚本] R-CCAM 查找逻辑硬编码 → 无法找到新任务 | 脚本 | Round 281 | Round 282 | 1 | ✅已解决 | evolver/scripts/execute-rccam-cycle.sh |
+| PAT-073 | [脚本] R-CCAM 过滤逻辑 Bug → 过滤掉所有任务 | 脚本 | Round 282 | Round 284 | 9 | ✅已解决 | evolver/scripts/execute-rccam-cycle.sh |
+
+> 活跃模式 71 个，**60 个已解决/有方案/改善中/已修复，11 个持续监控/高风险/恶化，系统健康评分 8.5/10（🟢 良好），53 Skills，44 修复脚本，自动化系统集成完成** 🟢
+| PAT-074 | [内存] Gateway 内存持续增长 → 超过阈值 | 内存 | Round 284 | Round 285 | 6 | 🔧有方案 | evolver/fixes/gateway-smart-restart.sh |
+| PAT-075 | [任务] ReCAP 任务树耗尽 → R-CCAM 无法找到任务 | 任务 | Round 284 | Round 285 | 1 | ✅已解决 | TASKS.md (第 3 轮 ReCAP) |
+| PAT-076 | [任务] ReCAP 任务树耗尽（第 3 次）→ R-CCAM 无法找到任务 | 任务 | Round 285 | Round 286 | 4 | ✅已解决 | TASKS.md (第 4 轮 ReCAP) |
