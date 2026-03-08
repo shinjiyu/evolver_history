@@ -79,13 +79,13 @@
 | PAT-078 | [权限] Subagent agentId 限制 → 小说评审功能受限 | 权限 | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-079 | [配置] 文件存在性检查缺失 → 自进化任务失败 | 配置 | Round 289 | Round 289 | 6 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-080 | [API] EvoMap API 测试失败 (404) → 自动化测试失败 | API | Round 289 | Round 290 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
-| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 292 | 155 | ✅已修复 | skills/evolved-critical-fixer/SKILL.md |
-| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 292 | 328 | ✅已修复 | skills/evolved-critical-fixer/SKILL.md |
+| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 293 | 155→56 | ✅改善中 | skills/evolved-safe-integration/SKILL.md |
+| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 293 | 328→373 | 🟠持续监控 | skills/evolved-safe-integration/SKILL.md |
 | PAT-083 | [超时] Timeout 激增 → 响应速度下降 | 超时 | Round 291 | Round 291 | 2210 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-084 | [网络] Network 错误激增 → 外部集成下降 | 网络 | Round 291 | Round 291 | 150 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-085 | [配置] Brave API Key 缺失 → 功能受限 | 配置 | Round 291 | Round 291 | 11 | 🟡新增 | memory/log-analysis-2026-03-08-1200.md |
 
-> 活跃模式 80 个，**65 个已解决/有方案/改善中/已修复，15 个持续监控/高风险/恶化，系统健康评分 7.0/10（🟢 改善中），55 Skills，50 修复脚本，系统基线配置已建立** 🟢
+> 活跃模式 80 个，**66 个已解决/有方案/改善中/已修复，14 个持续监控/高风险/恶化，系统健康评分 7.5/10（🟢 改善中），61 Skills，51 修复脚本，系统基线配置已建立** 🟢
 
 ---
 
