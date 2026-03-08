@@ -1,0 +1,257 @@
+{
+  "timestamp": "2026-03-07T20:00:57.487Z",
+  "logFiles": [
+    {
+      "name": "adaptive-scheduler.log",
+      "size": 238955,
+      "lines": 3094,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-alerts.log",
+      "size": 4896,
+      "lines": 97,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-health-check.log",
+      "size": 5141,
+      "lines": 98,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-health.log",
+      "size": 9880,
+      "lines": 191,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-rate-state.json",
+      "size": 102,
+      "lines": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-integration.log",
+      "size": 941,
+      "lines": 18,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-optimization.log",
+      "size": 3036,
+      "lines": 33,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "effect-verification.log",
+      "size": 11036,
+      "lines": 442,
+      "errors": 9,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-a2a.log",
+      "size": 19975,
+      "lines": 189,
+      "errors": 3,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-bounty.log",
+      "size": 38618,
+      "lines": 458,
+      "errors": 6,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-heartbeat.log",
+      "size": 189947,
+      "lines": 1970,
+      "errors": 93,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-node-status.json",
+      "size": 499,
+      "lines": 21,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-publish.log",
+      "size": 22877,
+      "lines": 262,
+      "errors": 19,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation-boost-state.json",
+      "size": 159,
+      "lines": 8,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation-boost.jsonl",
+      "size": 56129,
+      "lines": 246,
+      "errors": 130,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation.log",
+      "size": 25898,
+      "lines": 121,
+      "errors": 3,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-auto-recovery.log",
+      "size": 68479,
+      "lines": 1093,
+      "errors": 0,
+      "warnings": 76
+    },
+    {
+      "name": "gateway-memory-state.json",
+      "size": 235,
+      "lines": 11,
+      "errors": 0,
+      "warnings": 1
+    },
+    {
+      "name": "gateway-memory.log",
+      "size": 116119,
+      "lines": 1886,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-recovery-history.log",
+      "size": 69,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart-history.log",
+      "size": 293,
+      "lines": 6,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart-state.json",
+      "size": 65,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart.log",
+      "size": 4581,
+      "lines": 91,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-smart-restart.log",
+      "size": 2654,
+      "lines": 52,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "last-invite.txt",
+      "size": 423,
+      "lines": 18,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "memory-alerts.log",
+      "size": 3659,
+      "lines": 70,
+      "errors": 0,
+      "warnings": 67
+    },
+    {
+      "name": "memory-archiver.log",
+      "size": 4516,
+      "lines": 83,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "molecular-experiment.log",
+      "size": 11150,
+      "lines": 136,
+      "errors": 43,
+      "warnings": 0
+    },
+    {
+      "name": "outreach.log",
+      "size": 124854,
+      "lines": 2099,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "rate-limit.log",
+      "size": 89984,
+      "lines": 1735,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "rccam.log",
+      "size": 58764,
+      "lines": 2263,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "relationship-maintenance.log",
+      "size": 3339,
+      "lines": 52,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-stagger-state.json",
+      "size": 379,
+      "lines": 11,
+      "errors": 1,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-stagger.log",
+      "size": 815,
+      "lines": 16,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "threats.log",
+      "size": 69023,
+      "lines": 1318,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "errors": [],
+  "patterns": [],
+  "summary": {
+    "totalFiles": 35,
+    "totalErrors": 307,
+    "totalWarnings": 144
+  }
+}

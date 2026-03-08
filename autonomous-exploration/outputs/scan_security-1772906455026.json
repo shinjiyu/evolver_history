@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-03-07T18:00:55.023Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 1000,
+      "suspiciousIPs": 3
+    }
+  ],
+  "threats": [
+    {
+      "ip": "104.249.159.225",
+      "type": "env_file_access",
+      "timestamp": "2026-03-07T18:00:55.025Z"
+    },
+    {
+      "ip": "142.93.146.198",
+      "type": "scanner",
+      "timestamp": "2026-03-07T18:00:55.026Z"
+    },
+    {
+      "ip": "183.252.136.35",
+      "type": "env_file_access",
+      "timestamp": "2026-03-07T18:00:55.026Z"
+    },
+    {
+      "ip": "183.252.136.35",
+      "type": "env_file_access",
+      "timestamp": "2026-03-07T18:00:55.026Z"
+    },
+    {
+      "ip": "183.252.136.35",
+      "type": "env_file_access",
+      "timestamp": "2026-03-07T18:00:55.026Z"
+    }
+  ]
+}
