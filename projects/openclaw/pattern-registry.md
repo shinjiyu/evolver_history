@@ -79,8 +79,93 @@
 | PAT-078 | [权限] Subagent agentId 限制 → 小说评审功能受限 | 权限 | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-079 | [配置] 文件存在性检查缺失 → 自进化任务失败 | 配置 | Round 289 | Round 289 | 6 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-080 | [API] EvoMap API 测试失败 (404) → 自动化测试失败 | API | Round 289 | Round 290 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
+| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 291 | 155 | 🔴严重恶化 | skills/evolved-critical-fixer/SKILL.md |
+| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 291 | 328 | 🔴严重恶化 | skills/evolved-critical-fixer/SKILL.md |
+| PAT-083 | [超时] Timeout 激增 → 响应速度下降 | 超时 | Round 291 | Round 291 | 2210 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
+| PAT-084 | [网络] Network 错误激增 → 外部集成下降 | 网络 | Round 291 | Round 291 | 150 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
+| PAT-085 | [配置] Brave API Key 缺失 → 功能受限 | 配置 | Round 291 | Round 291 | 11 | 🟡新增 | memory/log-analysis-2026-03-08-1200.md |
 
-> 活跃模式 75 个，**63 个已解决/有方案/改善中/已修复，12 个持续监控/高风险/恶化，系统健康评分 8.8/10（🟢 优秀），54 Skills，46 修复脚本，系统基线配置已建立** 🟢
+> 活跃模式 80 个，**63 个已解决/有方案/改善中/已修复，17 个持续监控/高风险/恶化，系统健康评分 6.5/10（🟠 需要关注），55 Skills，48 修复脚本，系统基线配置已建立** 🟠
+
+---
+
+## Round 291 改进记录（紧急修复）
+
+**时间**: 2026-03-08 12:30
+**重点**: 紧急修复严重恶化的错误模式
+**状态**: 🔴 **系统健康评分下降** 8.8/10 → 6.5/10
+
+### 发现的问题
+
+1. **PAT-081（新）**: Edit 匹配失败激增（P0）
+   - 失败次数: 3 → 155（+5067%）
+   - 影响: 系统自我改进能力受阻
+   - 主要文件: pattern-registry.md, HEARTBEAT.md, MEMORY.md
+
+2. **PAT-082（新）**: ENOENT 错误激增（P0）
+   - 错误次数: 6 → 328（+5367%）
+   - 影响: 学习能力受阻
+   - 原因: 访问不存在的文件
+
+3. **PAT-083（新）**: Timeout 激增（P1）
+   - 超时次数: 62 → 2210（+3465%）
+   - 影响: 系统响应速度下降
+
+4. **PAT-084（新）**: Network 错误激增（P1）
+   - 错误次数: 5 → 150（+2900%）
+   - 影响: 外部集成能力下降
+
+5. **PAT-085（新）**: Brave API Key 缺失（P1）
+   - 错误次数: 0 → 11（新增）
+   - 影响: Web search 功能不可用
+
+### 实施的改进
+
+**A. 创建新 Skill**:
+1. `evolved-critical-fixer`
+   - 目的: 自动检测和修复关键错误
+   - 功能: Edit 匹配修复、ENOENT 修复、自动化流程
+
+**C. 生成修复脚本**:
+1. `fix-edit-matching.sh`
+   - 解决 Edit 匹配失败（PAT-081）
+   - 创建 safe_edit, flexible_edit, locked_edit 函数
+   - 提供版本检查和重试机制
+
+2. `fix-enoint-errors.sh`
+   - 解决 ENOENT 错误（PAT-082）
+   - 创建 safe_read 函数
+   - 创建缺失的配置文件
+   - 清理硬编码引用
+
+**D. 更新进化历史**:
+- 新增 Pattern: PAT-081~085
+- 更新系统健康评分: 8.8 → 6.5
+- 记录紧急修复措施
+
+### 文件变更
+**新建**:
+- `skills/evolved-critical-fixer/SKILL.md` (2.3KB)
+- `evolver/fixes/fix-edit-matching.sh` (5.9KB)
+- `evolver/fixes/fix-enoint-errors.sh` (5.4KB)
+- `evolver/lib/safe-edit.sh` (自动生成)
+- `evolver/lib/safe-read.sh` (自动生成)
+- `evolver/relationships.json` (默认配置)
+- `memory/enoint-fix-report-*.md` (修复报告)
+
+### 预期效果
+- Edit 匹配失败: 155 → <5（-97%）
+- ENOENT 错误: 328 → <10（-97%）
+- 系统健康评分: 6.5 → 8.5（+2.0）
+- 文件操作成功率: 90% → 99%
+
+### 下次进化
+**时间**: 2026-03-08 18:30 (6 小时后)
+**重点**:
+1. 验证 Edit 和 ENOENT 修复效果
+2. 解决 Timeout 问题（PAT-083）
+3. 解决 Network 错误（PAT-084）
+4. 配置 Brave API Key（PAT-085）
 
 ---
 
@@ -327,3 +412,67 @@
 | PAT-074 | [内存] Gateway 内存持续增长 → 超过阈值 | 内存 | Round 284 | Round 285 | 6 | 🔧有方案 | evolver/fixes/gateway-smart-restart.sh |
 | PAT-075 | [任务] ReCAP 任务树耗尽 → R-CCAM 无法找到任务 | 任务 | Round 284 | Round 285 | 1 | ✅已解决 | TASKS.md (第 3 轮 ReCAP) |
 | PAT-076 | [任务] ReCAP 任务树耗尽（第 3 次）→ R-CCAM 无法找到任务 | 任务 | Round 285 | Round 286 | 4 | ✅已解决 | TASKS.md (第 4 轮 ReCAP) |
+| PAT-077 | [权限] Elevated 权限不可用 → 心跳任务自动化失败 | 权限 | Round 289 | Round 289 | 3 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
+| PAT-078 | [权限] Subagent agentId 限制 → 小说评审功能受限 | 权限 | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
+| PAT-079 | [配置] 文件存在性检查缺失 → 自进化任务失败 | 配置 | Round 289 | Round 289 | 6 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
+| PAT-080 | [API] EvoMap API 测试失败 (404) → 自动化测试失败 | API | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
+| **PAT-081** | **[操作] Edit 匹配失败激增 (155次, +5067%) → 系统自我改进受阻** | **操作** | **Round 290** | **Round 290** | **155** | **🔴P0** | **memory/log-analysis-2026-03-08-1200.md** |
+| **PAT-082** | **[文件] ENOENT 错误激增 (328次, +5367%) → 学习能力受阻** | **文件** | **Round 290** | **Round 290** | **328** | **🔴P0** | **memory/log-analysis-2026-03-08-1200.md** |
+| PAT-083 | [性能] Timeout 激增 (2210次, +3465%) → 响应速度下降 | 性能 | Round 290 | Round 290 | 2210 | 🟠P1 | memory/log-analysis-2026-03-08-1200.md |
+| PAT-084 | [网络] Network 错误激增 (150次, +2900%) → 外部集成下降 | 网络 | Round 290 | Round 290 | 150 | 🟠P1 | memory/log-analysis-2026-03-08-1200.md |
+| PAT-085 | [配置] Brave API Key 缺失 (11次) → Web search 不可用 | 配置 | Round 290 | Round 290 | 11 | 🟠P1 | memory/log-analysis-2026-03-08-1200.md |
+
+> 活跃模式 80 个，**63 个已解决/有方案/改善中/已修复，17 个持续监控/高风险/恶化，系统健康评分 6.5/10（🟠 需要关注），53 Skills，44 修复脚本，发现 2 个 P0 级严重问题** 🔴
+
+---
+
+## Round 290 紧急改进记录
+
+**时间**: 2026-03-08 12:00
+**严重程度**: 🔴 **系统严重恶化**
+
+### 核心发现
+
+**系统健康评分下降**: 8.8/10 → 6.5/10（-2.3 分）
+
+**错误激增统计**:
+- Edit 匹配失败: 3 → 155（+5067%）
+- ENOENT 错误: 6 → 328（+5367%）
+- Timeout: 62 → 2210（+3465%）
+- Network 错误: 5 → 150（+2900%）
+
+### 新增模式（5 个）
+
+**P0 级（2 个）**:
+1. **PAT-081**: Edit 匹配失败激增 → 系统自我改进能力受阻
+2. **PAT-082**: ENOENT 错误激增 → 系统学习能力受阻
+
+**P1 级（3 个）**:
+3. PAT-083: Timeout 激增 → 系统响应速度下降
+4. PAT-084: Network 错误激增 → 外部集成能力下降
+5. PAT-085: Brave API Key 缺失 → Web search 功能不可用
+
+### 紧急行动计划
+
+**今天执行（P0）**:
+1. 修复 Edit 匹配失败（添加版本检查、重试机制）
+2. 修复 ENOENT 错误（添加文件存在性检查）
+
+**本周执行（P1）**:
+3. 优化 Timeout 问题
+4. 修复 Network 错误
+5. 配置 Brave API Key
+
+### 预期效果
+
+修复后预期：
+- Edit 匹配失败: 155 → <10（-94%）
+- ENOENT 错误: 328 → <20（-94%）
+- 系统健康评分: 6.5 → 8.5（+31%）
+
+---
+
+**Round**: 290
+**状态**: 🔴 紧急
+**系统健康评分**: 6.5/10
+**下次分析**: 2026-03-08 16:00
