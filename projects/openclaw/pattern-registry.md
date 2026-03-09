@@ -16,16 +16,17 @@
 | PAT-077 | [权限] Elevated 权限不可用 → 心跳任务自动化失败 | 权限 | Round 289 | Round 289 | 3 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-078 | [权限] Subagent agentId 限制 → 小说评审功能受限 | 权限 | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-080 | [API] EvoMap API 测试失败 (404) → 自动化测试失败 | API | Round 289 | Round 290 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
-| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 295 | 186 | ✅增速放缓 | evolver/safe-functions.sh |
-| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 295 | 433 | ✅增速放缓 | evolver/safe-functions.sh |
+| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 296 | 187 | ✅增速放缓 | evolver/safe-functions.sh |
+| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 296 | 449 | 🟡增速回升 | evolver/safe-functions.sh |
 | PAT-083 | [超时] Timeout 激增 → 响应速度下降 | 超时 | Round 291 | Round 291 | 2210 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-084 | [网络] Network 错误激增 → 外部集成下降 | 网络 | Round 291 | Round 291 | 150 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-085 | [配置] Brave API Key 缺失 → 功能受限 | 配置 | Round 291 | Round 291 | 11 | 🟡新增 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-086 | [集成] Safe Functions 未集成 → 错误持续增长 | 集成 | Round 293 | Round 295 | 35 | ✅✅已生效 | evolver/fixes/integrate-safe-functions.sh |
 
-| PAT-087 | [监控] Safe Functions 效果跟踪 → 持续验证 | 监控 | Round 295 | Round 295 | 1 | ✅已创建 | evolver/fixes/monitor-safe-functions-impact.sh |
+| PAT-087 | [监控] Safe Functions 效果跟踪 → 持续验证 | 监控 | Round 295 | Round 296 | 2 | ✅持续运行 | evolver/fixes/monitor-safe-functions-impact.sh |
+| PAT-088 | [审计] 48 个脚本未使用 Safe Functions → 错误持续 | 审计 | Round 296 | Round 296 | 155 | 🔴严重 | evolver/fixes/audit-unsafe-operations.sh |
 
-> 活跃模式 18 个，**14 个已解决/有方案/生效/放缓，4 个持续监控，系统健康评分 7.0/10（🟢 改善中），55 Skills，52 修复脚本，系统基线配置已建立** 🟢
+> 活跃模式 19 个，**14 个已解决/有方案/生效/放缓，5 个持续监控/严重，系统健康评分 7.0/10（🟡 需要关注），55 Skills，54 修复脚本，系统基线配置已建立** 🟡
 
 ---
 
