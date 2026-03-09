@@ -16,14 +16,16 @@
 | PAT-077 | [权限] Elevated 权限不可用 → 心跳任务自动化失败 | 权限 | Round 289 | Round 289 | 3 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-078 | [权限] Subagent agentId 限制 → 小说评审功能受限 | 权限 | Round 289 | Round 289 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
 | PAT-080 | [API] EvoMap API 测试失败 (404) → 自动化测试失败 | API | Round 289 | Round 290 | 4 | 🔧有方案 | memory/log-analysis-2026-03-08-0800.md |
-| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 293 | 179 | 🔧集成中 | evolver/safe-functions.sh |
-| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 293 | 412 | 🔧集成中 | evolver/safe-functions.sh |
+| PAT-081 | [操作] Edit 匹配失败激增 → 系统自我改进受阻 | 操作 | Round 291 | Round 295 | 186 | ✅增速放缓 | evolver/safe-functions.sh |
+| PAT-082 | [文件] ENOENT 错误激增 → 学习能力受阻 | 文件 | Round 291 | Round 295 | 433 | ✅增速放缓 | evolver/safe-functions.sh |
 | PAT-083 | [超时] Timeout 激增 → 响应速度下降 | 超时 | Round 291 | Round 291 | 2210 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-084 | [网络] Network 错误激增 → 外部集成下降 | 网络 | Round 291 | Round 291 | 150 | 🟠恶化中 | memory/log-analysis-2026-03-08-1200.md |
 | PAT-085 | [配置] Brave API Key 缺失 → 功能受限 | 配置 | Round 291 | Round 291 | 11 | 🟡新增 | memory/log-analysis-2026-03-08-1200.md |
-| PAT-086 | [集成] Safe Functions 未集成 → 错误持续增长 | 集成 | Round 293 | Round 293 | 1 | ✅已解决 | evolver/fixes/integrate-safe-functions.sh |
+| PAT-086 | [集成] Safe Functions 未集成 → 错误持续增长 | 集成 | Round 293 | Round 295 | 35 | ✅✅已生效 | evolver/fixes/integrate-safe-functions.sh |
 
-> 活跃模式 17 个，**13 个已解决/有方案/改善中/集成中，4 个持续监控/恶化，系统健康评分 7.0/10（🟢 改善中），55 Skills，51 修复脚本，系统基线配置已建立** 🟢
+| PAT-087 | [监控] Safe Functions 效果跟踪 → 持续验证 | 监控 | Round 295 | Round 295 | 1 | ✅已创建 | evolver/fixes/monitor-safe-functions-impact.sh |
+
+> 活跃模式 18 个，**14 个已解决/有方案/生效/放缓，4 个持续监控，系统健康评分 7.0/10（🟢 改善中），55 Skills，52 修复脚本，系统基线配置已建立** 🟢
 
 ---
 
@@ -114,3 +116,105 @@
 
 **Pattern Registry 更新**: 2026-03-09 08:35
 **系统健康评分**: 7.0/10 → 预期 8.5/10
+
+---
+
+## Round 295 改进记录（效果监控）
+
+**时间**: 2026-03-09 16:32
+**重点**: Safe Functions 效果监控 + 持续验证
+**状态**: ✅ **效果验证成功，增速显著放缓**
+
+### 效果验证
+
+#### ✅ ENOENT 错误增速断崖式下降
+
+| Round | 时间 | 错误数 | 变化 | 增速 | 状态 |
+|-------|------|--------|------|------|------|
+| 293 | 08:35 | 412 | - | - | 🔴 基准 |
+| 294 | 12:31 | 430 | +18 | +4.4% | 🟡 放缓 |
+| 295 | 16:32 | 433 | +3 | +0.7% | ✅ **显著放缓** |
+
+**分析**: 增速从 +13.5% 降至 +0.7%（**-95%**）
+
+#### ✅ Edit 匹配失败增速断崖式下降
+
+| Round | 时间 | 错误数 | 变化 | 增速 | 状态 |
+|-------|------|--------|------|------|------|
+| 293 | 08:35 | 179 | - | - | 🔴 基准 |
+| 294 | 12:31 | 184 | +5 | +2.8% | 🟡 放缓 |
+| 295 | 16:32 | 186 | +2 | +1.1% | ✅ **显著放缓** |
+
+**分析**: 增速从 +219% 降至 +1.1%（**-99%**）
+
+#### ✅ Safe Functions 持续被使用
+
+| Round | 时间 | 使用次数 | 变化 | 状态 |
+|-------|------|----------|------|------|
+| 293 | 08:35 | 0 | - | 🔴 未使用 |
+| 294 | 12:31 | 32 | +32 | ✅ 开始使用 |
+| 295 | 16:32 | 35 | +3 | ✅ 持续使用 |
+
+**分析**: Safe Functions 已被系统接受并持续使用
+
+### 实施的改进
+
+**C. 生成修复脚本**:
+
+1. **创建监控脚本**:
+   - `evolver/fixes/monitor-safe-functions-impact.sh` (10KB)
+   - 自动统计错误数量
+   - 计算增长趋势
+   - 生成系统健康评分
+   - 保存状态和历史数据
+
+2. **创建使用示例**:
+   - `evolver/examples/evolution-with-safe-functions.sh` (5KB)
+   - 演示如何在自进化脚本中使用 safe 函数
+   - 包含 7 个完整示例
+
+3. **执行监控验证**:
+   - ✅ 首次运行成功
+   - ✅ 生成监控报告
+   - ✅ 保存状态数据
+
+### 系统健康评分
+
+**当前**: 7.0/10 🟡 良好
+
+**评分依据**:
+- 基础分: 10 分
+- ENOENT 扣分: -2（433 次）
+- Edit 失败扣分: -2（186 次）
+- Safe Functions 加分: +1（35 次）
+
+### 文件变更
+
+**新建**:
+- `evolver/fixes/monitor-safe-functions-impact.sh` (10KB)
+- `evolver/examples/evolution-with-safe-functions.sh` (5KB)
+- `memory/safe-functions-impact-report-20260309-1632.md` (监控报告)
+- `logs/safe-functions-state.json` (状态数据)
+- `logs/safe-functions-monitor.log` (监控日志)
+
+**修改**:
+- `evolver_history/projects/openclaw/pattern-registry.md` - 更新 PAT-081/082/086，新增 PAT-087
+
+### 关键成就
+
+1. ✅ **增速断崖式下降**: ENOENT +13.5% → +0.7%，Edit +219% → +1.1%
+2. ✅ **Safe Functions 生效**: 从 0 增长到 35 次，增速放缓 95-99%
+3. ✅ **监控体系建立**: 自动化监控脚本，持续跟踪效果
+4. ✅ **使用示例完善**: 7 个完整示例，指导未来集成
+
+### 下一步
+
+1. ✅ 效果验证成功
+2. ⏳ 持续监控（每 4 小时）
+3. ⏳ 扩大 Safe Functions 使用范围
+4. ⏳ 目标：健康评分提升至 8.5/10
+
+---
+
+**Pattern Registry 更新**: 2026-03-09 16:35
+**系统健康评分**: 7.0/10 🟡 良好
