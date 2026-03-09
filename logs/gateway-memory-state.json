@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-10T00:30:01+08:00",
-  "gateway_pid": 4066048,
-  "gateway_memory_mb": 991,
+  "timestamp": "2026-03-10T04:30:01+08:00",
+  "gateway_pid": 71341,
+  "gateway_memory_mb": 925,
   "system_total_mb": 3670,
-  "system_used_mb": 2265,
-  "system_available_mb": 1145,
-  "available_percent": 31,
+  "system_used_mb": 2207,
+  "system_available_mb": 1196,
+  "available_percent": 32,
   "status": "normal"
 }
