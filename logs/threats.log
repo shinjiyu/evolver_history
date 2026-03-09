@@ -1597,3 +1597,75 @@
 [2026-03-09 04:15:01] ✅ 未发现路径遍历攻击
 [2026-03-09 04:15:01] ✅ 完成
 [2026-03-09 04:15:01] ✅ 完成
+[2026-03-09 05:15:01] 🚀 Threat Detector 启动
+[2026-03-09 05:15:01] 🚀 Threat Detector 启动
+[2026-03-09 05:15:01]   - 动作: --check
+[2026-03-09 05:15:01]   - 动作: --check
+[2026-03-09 05:15:01]   - 时间范围: 1h
+[2026-03-09 05:15:01]   - 时间范围: 1h
+[2026-03-09 05:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 05:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 05:15:01] ✅ 检测完成: 发现 0 种扫描模式
+[2026-03-09 05:15:01] ✅ 检测完成: 发现 0 种扫描模式
+[2026-03-09 05:15:01] 🔍 检测高频请求...
+[2026-03-09 05:15:01] 🔍 检测高频请求...
+[2026-03-09 05:15:01] ✅ 高频请求检测完成
+[2026-03-09 05:15:01] ✅ 高频请求检测完成
+[2026-03-09 05:15:01] 🔍 检测 SQL 注入尝试...
+[2026-03-09 05:15:01] 🔍 检测 SQL 注入尝试...
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 119: [: 0
+0: integer expression expected
+[2026-03-09 05:15:01] ✅ 未发现 SQL 注入尝试
+[2026-03-09 05:15:01] ✅ 未发现 SQL 注入尝试
+[2026-03-09 05:15:01] 🔍 检测路径遍历攻击...
+[2026-03-09 05:15:01] 🔍 检测路径遍历攻击...
+/root/.openclaw/workspace/evolver/fixes/threat-detector.sh: line 136: [: 0
+0: integer expression expected
+[2026-03-09 05:15:01] ✅ 未发现路径遍历攻击
+[2026-03-09 05:15:01] ✅ 未发现路径遍历攻击
+[2026-03-09 05:15:01] ✅ 完成
+[2026-03-09 05:15:01] ✅ 完成
+[2026-03-09 06:15:01] 🚀 Threat Detector 启动
+[2026-03-09 06:15:01] 🚀 Threat Detector 启动
+[2026-03-09 06:15:01]   - 动作: --check
+[2026-03-09 06:15:01]   - 动作: --check
+[2026-03-09 06:15:01]   - 时间范围: 1h
+[2026-03-09 06:15:01]   - 时间范围: 1h
+[2026-03-09 06:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 06:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 06:15:01] ⚠️  发现 wp-admin 扫描: 8 次
+[2026-03-09 06:15:01] ⚠️  发现 wp-admin 扫描: 8 次
+[2026-03-09 07:15:01] 🚀 Threat Detector 启动
+[2026-03-09 07:15:01] 🚀 Threat Detector 启动
+[2026-03-09 07:15:01]   - 动作: --check
+[2026-03-09 07:15:01]   - 动作: --check
+[2026-03-09 07:15:02]   - 时间范围: 1h
+[2026-03-09 07:15:02]   - 时间范围: 1h
+[2026-03-09 07:15:02] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 07:15:02] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 07:15:02] ⚠️  发现 wp-admin 扫描: 8 次
+[2026-03-09 07:15:02] ⚠️  发现 wp-admin 扫描: 8 次
+[2026-03-09 08:15:01] 🚀 Threat Detector 启动
+[2026-03-09 08:15:01] 🚀 Threat Detector 启动
+[2026-03-09 08:15:01]   - 动作: --check
+[2026-03-09 08:15:01]   - 动作: --check
+[2026-03-09 08:15:01]   - 时间范围: 1h
+[2026-03-09 08:15:01]   - 时间范围: 1h
+[2026-03-09 08:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 08:15:01] 🔍 检测敏感文件扫描（最近 1h）...
+[2026-03-09 08:15:01] ⚠️  发现 wp-admin 扫描: 8 次
+[2026-03-09 08:15:01] ⚠️  发现 wp-admin 扫描: 8 次
