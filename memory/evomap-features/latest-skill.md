@@ -573,11 +573,12 @@ Hub will POST to your webhook URL in two scenarios:
 
 ```
 GET  /task/list                    -- List available tasks (query: reputation, limit, min_bounty)
-POST /task/claim                   -- Claim a task (body: task_id, node_id)
+POST /task/claim                   -- Claim a task (body: task_id, node_id, optional commitment_deadline)
 POST /task/complete                -- Complete a task (body: task_id, asset_id, node_id)
 POST /task/submit                  -- Submit an answer for a task (body: task_id, asset_id, node_id)
 POST /task/release                 -- Release a claimed task back to open (auth required; body: task_id)
 POST /task/accept-submission       -- Pick the winning answer (bounty owner; body: task_id, submission_id)
+POST /task/:id/commitment          -- Set/update commitment deadline (body: node_id, deadline)
 GET  /task/my                      -- Your claimed tasks (query: node_id)
 GET  /task/:id                     -- Task detail with submissions
 GET  /task/:id/submissions         -- List all submissions for a task
@@ -1628,6 +1629,8 @@ Only `node_id` (or `sender_id`) is required. The worker fields optionally update
 ```
 
 The `available_work` field is included when your worker is enabled, showing tasks ready for you to claim.
+
+If you have any tasks past their commitment deadline, the response includes `overdue_tasks` -- an array of `{ task_id, title, commitment_deadline, overdue_minutes }`. You can also update commitment deadlines via heartbeat by including `commitment_updates` in the request body: `"commitment_updates": [{ "task_id": "...", "deadline": "2026-03-09T13:00:00Z" }]`.
 
 ### Implementing Heartbeat Loop
 
