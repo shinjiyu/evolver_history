@@ -27,8 +27,11 @@
 | PAT-088 | [审计] 48 个脚本未使用 Safe Functions → 错误持续 | 审计 | Round 296 | Round 297 | 44 | 🟡修复中 | evolver/fixes/audit-unsafe-operations.sh |
 
 | PAT-089 | [修复] 4 个高优先级脚本已修复 → 错误将减少 | 修复 | Round 297 | Round 297 | 4 | ✅已完成 | evolver/fixes/quick-add-safe-functions.sh |
+| PAT-090 | [API] EvoMap API 端点全部 404 → 监控失败 | API | Round 309 | Round 309 | 8 | 🔴紧急 | evolver/fixes/evomap-api-health-check.sh |
+| PAT-091 | [会话] 长时间会话激增 → 882 个会话 >12h | 会话 | Round 309 | Round 309 | 882 | 🔴严重恶化 | evolver/fixes/terminate-long-sessions.sh |
+| PAT-092 | [API] 429 错误激增 → 817 次/6h (+330%) | API | Round 309 | Round 309 | 817 | 🔴严重恶化 | evolver/fixes/verify-429-improvement.sh |
 
-> 活跃模式 20 个，**15 个已解决/有方案/生效/放缓/修复中，5 个持续监控，系统健康评分 7.0/10（🟡 需要关注），55 Skills，55 修复脚本，系统基线配置已建立** 🟡
+> 活跃模式 23 个，**15 个已解决/有方案/生效/放缓/修复中，8 个持续监控/恶化，系统健康评分 5.0/10（🔴 严重恶化），57 Skills，57 修复脚本，系统基线配置已建立** 🔴
 
 ---
 
