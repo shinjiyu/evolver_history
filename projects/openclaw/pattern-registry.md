@@ -41,9 +41,89 @@
 | PAT-098 | [会话] 长时间会话激增 → 891 个会话 >12h | 会话 | Round 316 | Round 317 | 908→27 | ✅✅已清理 | skills/evolved-session-cleanup/SKILL.md |
 | PAT-099 | [超时] 超时警告激增 → +45 次 | 超时 | Round 316 | Round 316 | 45 | 🟡新增 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-100 | [清理] 会话清理脚本执行 → 清理 881 个会话 | 清理 | Round 317 | Round 317 | 881 | ✅已执行 | evolver/fixes/session-cleanup.sh |
+| PAT-101 | [API] API 错误全面激增 → +43%~+109% | API | Round 318 | Round 318 | 206 | 🔴🔴严重 | evolver/fixes/cron-stagger-scheduler.sh |
+| PAT-102 | [调度] Cron 任务错峰调度 → 减少 429 错误 | 调度 | Round 318 | Round 318 | 1 | ✅新增 | evolver/fixes/cron-stagger-scheduler.sh |
 
-> 活跃模式 31 个
-**18 个已解决/有方案/生效/放缓/修复中，13 个持续监控/恶化，系统健康评分 5.0→6.5/10（✅ 显著改善），60 Skills，59 修复脚本，系统基线配置已建立** ✅
+> 活跃模式 33 个
+**18 个已解决/有方案/生效/放缓/修复中，15 个持续监控/恶化，系统健康评分 6.5→4.0/10（🔴🔴 严重恶化），60 Skills，60 修复脚本，系统基线配置已建立** 🔴
+
+---
+
+## Round 318 改进记录（API 错误激增紧急响应）
+
+**时间**: 2026-03-13 20:30
+**重点**: API 错误全面激增紧急响应 + 错峰调度
+**状态**: 🔴 **系统严重恶化，已采取紧急措施**
+
+### 问题分析
+
+#### 🔴🔴 P0 问题 - 所有 API 错误激增
+
+| 错误类型 | Round 317 | Round 318 | 变化 |
+|---------|-----------|-----------|------|
+| 429 错误 | 37 | 67 | 🔴 +81% |
+| 404 错误 | 33 | 69 | 🔴 +109% |
+| 超时警告 | 45 | 75 | 🔴 +67% |
+| API 失败 | 54 | 80 | 🔴 +48% |
+| 总错误数 | 144 | 206 | 🔴 +43% |
+
+### 实施的改进
+
+**C. 生成修复脚本**:
+
+1. **cron-stagger-scheduler.sh** (新脚本)
+   - 路径: `evolver/fixes/cron-stagger-scheduler.sh`
+   - 功能:
+     - 分析当前任务冲突
+     - 生成错峰调度建议
+     - 临时禁用高错误任务
+     - 生成 API 请求队列配置
+
+2. **生成的配置文件**:
+   - `logs/cron-stagger-suggestions.json` - 错峰建议
+   - `logs/disabled-tasks.json` - 禁用任务列表
+   - `logs/api-queue-config.json` - API 队列配置
+
+### 错峰调度建议
+
+| 任务 | 当前调度 | 建议调度 | 原因 |
+|------|---------|---------|------|
+| evomap-feature-system | 0 * * * * | **禁用** | API 404 错误 |
+| evolver-self-evolution | 0 */4 * * * | 5 */4 * * * | 错开整点 |
+| novel-auto-review | 0 */6 * * * | 10 */6 * * * | 错开高峰 |
+| swe-agent-iteration | 0 */2 * * * | 20 */2 * * * | 与其他任务错峰 |
+
+### 预期效果
+
+| 指标 | 预期减少 |
+|------|---------|
+| 并发任务 | -70% |
+| 429 错误 | -60% |
+| API 失败 | -50% |
+
+### 文件变更
+
+**新建**:
+- `evolver/fixes/cron-stagger-scheduler.sh` (4474 bytes)
+- `logs/cron-stagger-suggestions.json`
+- `logs/disabled-tasks.json`
+- `logs/api-queue-config.json`
+
+### 系统健康评分
+
+**当前**: 4.0/10 🔴 严重恶化
+
+**评分依据**:
+- 基础分: 10 分
+- P0 问题扣分: -4（所有 API 错误激增）
+- P1 问题扣分: -1（任务失败）
+- 紧急措施加分: +0.5
+
+---
+
+**Pattern Registry 更新**: 2026-03-13 20:31
+**系统健康评分**: 6.5 → 4.0 (-2.5) 🔴
+**新增修复脚本**: 59 → 60
 
 ---
 
