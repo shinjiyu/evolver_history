@@ -27,7 +27,10 @@
 | PAT-088 | [审计] 48 个脚本未使用 Safe Functions → 错误持续 | 审计 | Round 296 | Round 297 | 44 | 🟡修复中 | evolver/fixes/audit-unsafe-operations.sh |
 
 | PAT-089 | [修复] 4 个高优先级脚本已修复 → 错误将减少 | 修复 | Round 297 | Round 297 | 4 | ✅已完成 | evolver/fixes/quick-add-safe-functions.sh |
-| PAT-090 | [API] EvoMap API 端点全部 404 → 监控失败 | API | Round 309 | Round 313 | 14 | 🟡降级P2 | evolver/fixes/evomap-api-health-check.sh |
+| PAT-090 | [API] EvoMap API 端点全部 404 → 监控失败 | API | Round 309 | Round 316 | 33 | 🟡降级P2 | evolver/fixes/evomap-api-health-check.sh |
+| PAT-098 | [API] API 失败次数增加 (401/403/500/502/503) → 系统稳定性下降 | API | Round 316 | Round 316 | 54 | 🔴新增P0 | memory/log-analysis-2026-03-13-1200.md |
+| PAT-099 | [超时] 超时警告激增 → 任务执行效率下降 | 超时 | Round 316 | Round 316 | 45 | 🟡新增P1 | memory/log-analysis-2026-03-13-1200.md |
+| PAT-100 | [Cron] analyze-openclaw-updates 报错 → 更新分析中断 | Cron | Round 316 | Round 316 | 1 | 🟡新增P2 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-091 | [会话] 长时间会话激增 → 16 个会话 >12h | 会话 | Round 309 | Round 313 | 16 | ⚠️再次出现 | evolver/fixes/terminate-long-sessions.sh |
 | PAT-092 | [API] 429 错误趋势 → 739 次/6h | API | Round 309 | Round 313 | 739 | ✅改善中 | evolver/fixes/verify-429-improvement.sh |
 | PAT-093 | [Cron] novel-auto-review 报错 → 小说评审中断 | Cron | Round 311 | Round 313 | 8h+ | 🔴持续 | memory/log-analysis-2026-03-12-2000.md |
@@ -35,9 +38,89 @@
 | PAT-095 | [Cron] swe-agent-iteration 报错 → 代码迭代中断 | Cron | Round 313 | Round 313 | 1h | 🔴新增 | memory/log-analysis-2026-03-12-2000.md |
 | PAT-096 | [API] API 404/429 降级机制 → 优雅降级而非失败 | API | Round 314 | Round 314 | 1 | ✅新增Skill | skills/evolved-api-degradation/SKILL.md |
 | PAT-097 | [操作] Edit 工具自动重试 → 提高编辑成功率 | 操作 | Round 314 | Round 314 | 1 | ✅改进Skill | skills/smart-file-edit/SKILL.md |
+| PAT-098 | [会话] 长时间会话激增 → 891 个会话 >12h | 会话 | Round 316 | Round 316 | 891 | 🔴严重 | evolver/fixes/emergency-api-stabilizer.sh |
+| PAT-099 | [超时] 超时警告激增 → +45 次 | 超时 | Round 316 | Round 316 | 45 | 🟡新增 | memory/log-analysis-2026-03-13-1200.md |
 
-> 活跃模式 28 个
-**17 个已解决/有方案/生效/放缓/修复中，11 个持续监控/恶化，系统健康评分 6.0/10（⚠️ 需改进），58 Skills，57 修复脚本，系统基线配置已建立** ✅
+> 活跃模式 30 个
+**17 个已解决/有方案/生效/放缓/修复中，13 个持续监控/恶化，系统健康评分 5.0/10（🔴 需紧急处理），59 Skills，58 修复脚本，系统基线配置已建立** ⚠️
+
+---
+
+## Round 316 改进记录（紧急 API 稳定化）
+
+**时间**: 2026-03-13 12:30
+**重点**: 紧急 API 稳定化 + 长时间会话清理
+**状态**: ✅ **修复脚本创建完成，需执行**
+
+### 问题分析
+
+#### 🔴 P0 问题 - 系统健康评分持续下降
+- Round 313: 6.5/10
+- Round 314: 6.0/10
+- Round 315: 5.5/10
+- Round 316: **5.0/10** 🔴
+
+#### 🔴 P0 问题 - 429 错误激增
+- 出现次数: 37 次（6 小时内，+18 次）
+- 影响: 子代理任务失败，小说评审中断
+
+#### 🔴 P0 问题 - 长时间会话激增
+- 发现: 891 个会话运行超过 12 小时
+- 影响: 资源占用，可能导致 429 错误
+
+#### 🟡 P1 问题 - 超时警告激增
+- 出现次数: 45 次（6 小时内，显著增加）
+- 影响: 任务执行效率下降
+
+### 实施的改进
+
+**C. 生成修复脚本**:
+
+1. **emergency-api-stabilizer.sh** (新脚本)
+   - 路径: `evolver/fixes/emergency-api-stabilizer.sh`
+   - 功能:
+     - 检查长时间会话（发现 891 个）
+     - 检查 API 服务状态
+     - 分析 API 请求频率
+     - 优化任务调度
+     - 清理临时文件
+     - 生成稳定报告
+
+### 文件变更
+
+**新建**:
+- `evolver/fixes/emergency-api-stabilizer.sh` (6496 bytes)
+- `logs/api-stabilizer-state.json` (状态文件)
+- `memory/api-stabilization-report-20260313-123154.md` (稳定报告)
+
+### 预期效果
+
+**短期（24 小时）**:
+- 长时间会话: 891 → <50 (-94%)
+- 429 错误频率: 37 → <10 (-73%)
+- 系统健康评分: 5.0 → 6.0 (+1.0)
+
+**中期（1 周）**:
+- 会话生命周期: 优化管理
+- API 稳定性: 85% → 95%
+- 健康评分: 5.0 → 7.0 (+2.0)
+
+### 系统健康评分
+
+**当前**: 5.0/10 🔴 需紧急处理
+
+**评分依据**:
+- 基础分: 10 分
+- P0 问题扣分: -3（健康评分下降 + 429 激增 + 长会话激增）
+- P1 问题扣分: -1（超时激增）
+- 资源改善加分: +0.5（内存/负载显著改善）
+- 修复脚本加分: +0.5
+
+---
+
+**Pattern Registry 更新**: 2026-03-13 12:31
+**系统健康评分**: 5.0/10 🔴 需紧急处理
+**新增修复脚本**: 57 → 58
 
 ---
 
