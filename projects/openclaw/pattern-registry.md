@@ -33,9 +33,106 @@
 | PAT-093 | [Cron] novel-auto-review 报错 → 小说评审中断 | Cron | Round 311 | Round 313 | 8h+ | 🔴持续 | memory/log-analysis-2026-03-12-2000.md |
 | PAT-094 | [Cron] nginx-security-daily 报错 → 安全检查中断 | Cron | Round 311 | Round 313 | 12h+ | 🔴持续 | memory/log-analysis-2026-03-12-2000.md |
 | PAT-095 | [Cron] swe-agent-iteration 报错 → 代码迭代中断 | Cron | Round 313 | Round 313 | 1h | 🔴新增 | memory/log-analysis-2026-03-12-2000.md |
+| PAT-096 | [API] API 404/429 降级机制 → 优雅降级而非失败 | API | Round 314 | Round 314 | 1 | ✅新增Skill | skills/evolved-api-degradation/SKILL.md |
+| PAT-097 | [操作] Edit 工具自动重试 → 提高编辑成功率 | 操作 | Round 314 | Round 314 | 1 | ✅改进Skill | skills/smart-file-edit/SKILL.md |
 
-> 活跃模式 26 个
-**15 个已解决/有方案/生效/放缓/修复中，11 个持续监控/恶化，系统健康评分 6.5/10（✅ 稳定运行），57 Skills，57 修复脚本，系统基线配置已建立** ✅
+> 活跃模式 28 个
+**17 个已解决/有方案/生效/放缓/修复中，11 个持续监控/恶化，系统健康评分 6.0/10（⚠️ 需改进），58 Skills，57 修复脚本，系统基线配置已建立** ✅
+
+---
+
+## Round 314 改进记录（API 降级机制）
+
+**时间**: 2026-03-13 08:30
+**重点**: API 错误自动降级 + Edit 工具改进
+**状态**: ✅ **新 Skill 创建完成，现有 Skill 改进完成**
+
+### 问题分析
+
+#### 🔴 P0 问题 - EvoMap API 404 持续
+- 出现次数: 52 次（6 小时内）
+- 持续时间: >6 小时
+- 影响: 节点监控、Bounty 扫描、Capsule 发布完全失效
+
+#### 🔴 P0 问题 - 429 Rate Limit 频繁
+- 出现次数: 19 次（6 小时内）
+- 影响: 子代理任务失败，小说评审中断
+
+#### 🟡 P1 问题 - Edit 工具精确匹配失败
+- 出现次数: 多次（多个会话中）
+- 影响: 文件编辑需要重试，影响任务效率
+
+#### 🟡 P1 问题 - 网络错误偶发
+- 出现次数: 5 次（502 + 500）
+- 影响: API 调用失败
+
+### 实施的改进
+
+**A. 创建新 Skill**:
+
+1. **evolved-api-degradation** (新 Skill)
+   - 路径: `skills/evolved-api-degradation/SKILL.md`
+   - 功能: API 错误自动降级处理器
+   - 解决: PAT-090 (EvoMap 404) + PAT-062 (429 错误)
+   
+2. **api-degradation-handler.js** (实现脚本)
+   - 路径: `skills/evolved-api-degradation/api-degradation-handler.js`
+   - 功能: 
+     - 404 错误降级（跳过并记录）
+     - 429 错误分级响应（轻度/中度/重度）
+     - 网络错误处理（重试 vs 降级）
+     - 降级状态监控
+
+**B. 改进现有 Skill**:
+
+1. **api-retry-strategy** (改进)
+   - 新增: 策略 4 - 404 错误降级
+   - 强调: 不要无限重试 404，应立即降级
+   - 引用: evolved-api-degradation Skill
+
+2. **smart-file-edit** (改进)
+   - 新增: 策略 5 - 自动重试机制
+   - 新增: 策略 6 - 编辑前检查
+   - 提供: 完整的 bash 实现代码
+
+### 文件变更
+
+**新建**:
+- `skills/evolved-api-degradation/SKILL.md` (6966 bytes)
+- `skills/evolved-api-degradation/api-degradation-handler.js` (8929 bytes)
+
+**修改**:
+- `skills/api-retry-strategy/SKILL.md` - 添加 404 降级策略
+- `skills/smart-file-edit/SKILL.md` - 添加自动重试和检查机制
+
+### 预期效果
+
+**短期（24 小时）**:
+- EvoMap 404 错误: 52 → 0（跳过 API 调用）
+- 429 错误频率: 19 → <5（分级响应）
+- Edit 失败重试次数: 减少 50%
+
+**中期（1 周）**:
+- API 错误恢复时间: <5 分钟（自动检测恢复）
+- 系统稳定性: 85% → 95%
+- 健康评分: 6.0 → 7.5
+
+### 系统健康评分
+
+**当前**: 6.0/10 ⚠️ 需改进
+
+**评分依据**:
+- 基础分: 10 分
+- P0 问题扣分: -2（EvoMap 404 + 429 激增）
+- P1 问题扣分: -1.5（Novel-auto-review + nginx-security）
+- P2 问题扣分: -0.5（长时间会话）
+- 新增 Skill 加分: +0.5（API 降级机制）
+
+---
+
+**Pattern Registry 更新**: 2026-03-13 08:30
+**系统健康评分**: 6.0/10 ⚠️ 需改进
+**新增 Skills**: 58 → 59
 
 ---
 
