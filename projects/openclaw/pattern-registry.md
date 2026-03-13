@@ -27,12 +27,12 @@
 | PAT-088 | [审计] 48 个脚本未使用 Safe Functions → 错误持续 | 审计 | Round 296 | Round 297 | 44 | 🟡修复中 | evolver/fixes/audit-unsafe-operations.sh |
 
 | PAT-089 | [修复] 4 个高优先级脚本已修复 → 错误将减少 | 修复 | Round 297 | Round 297 | 4 | ✅已完成 | evolver/fixes/quick-add-safe-functions.sh |
-| PAT-090 | [API] EvoMap API 端点全部 404 → 监控失败 | API | Round 309 | Round 316 | 33 | 🟡降级P2 | evolver/fixes/evomap-api-health-check.sh |
+| PAT-090 | [API] EvoMap API 端点全部 404 → 监控失败 | API | Round 309 | Round 318 | 107 | 🔴🔴🔴危机 | evolver/fixes/evomap-api-health-check.sh |
 | PAT-098 | [API] API 失败次数增加 (401/403/500/502/503) → 系统稳定性下降 | API | Round 316 | Round 316 | 54 | 🔴新增P0 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-099 | [超时] 超时警告激增 → 任务执行效率下降 | 超时 | Round 316 | Round 316 | 45 | 🟡新增P1 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-100 | [Cron] analyze-openclaw-updates 报错 → 更新分析中断 | Cron | Round 316 | Round 316 | 1 | 🟡新增P2 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-091 | [会话] 长时间会话激增 → 16 个会话 >12h | 会话 | Round 309 | Round 313 | 16 | ⚠️再次出现 | evolver/fixes/terminate-long-sessions.sh |
-| PAT-092 | [API] 429 错误趋势 → 739 次/6h | API | Round 309 | Round 313 | 739 | ✅改善中 | evolver/fixes/verify-429-improvement.sh |
+| PAT-092 | [API] 429 错误趋势 → 739 次/6h | API | Round 309 | Round 318 | 85 | 🔴🔴🔴危机 | evolver/fixes/verify-429-improvement.sh |
 | PAT-093 | [Cron] novel-auto-review 报错 → 小说评审中断 | Cron | Round 311 | Round 313 | 8h+ | 🔴持续 | memory/log-analysis-2026-03-12-2000.md |
 | PAT-094 | [Cron] nginx-security-daily 报错 → 安全检查中断 | Cron | Round 311 | Round 313 | 12h+ | 🔴持续 | memory/log-analysis-2026-03-12-2000.md |
 | PAT-095 | [Cron] swe-agent-iteration 报错 → 代码迭代中断 | Cron | Round 313 | Round 313 | 1h | 🔴新增 | memory/log-analysis-2026-03-12-2000.md |
@@ -41,7 +41,7 @@
 | PAT-098 | [会话] 长时间会话激增 → 891 个会话 >12h | 会话 | Round 316 | Round 317 | 908→27 | ✅✅已清理 | skills/evolved-session-cleanup/SKILL.md |
 | PAT-099 | [超时] 超时警告激增 → +45 次 | 超时 | Round 316 | Round 316 | 45 | 🟡新增 | memory/log-analysis-2026-03-13-1200.md |
 | PAT-100 | [清理] 会话清理脚本执行 → 清理 881 个会话 | 清理 | Round 317 | Round 317 | 881 | ✅已执行 | evolver/fixes/session-cleanup.sh |
-| PAT-101 | [API] API 错误全面激增 → +43%~+109% | API | Round 318 | Round 318 | 206 | 🔴🔴严重 | evolver/fixes/cron-stagger-scheduler.sh |
+| PAT-101 | [API] API 错误全面激增 → API失败翻倍(+103%) | API | Round 317 | Round 318 | 162 | 🔴🔴🔴危机 | memory/log-analysis-2026-03-14-0000.md |
 | PAT-102 | [调度] Cron 任务错峰调度 → 减少 429 错误 | 调度 | Round 318 | Round 318 | 1 | ✅新增 | evolver/fixes/cron-stagger-scheduler.sh |
 
 > 活跃模式 33 个
