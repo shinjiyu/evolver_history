@@ -13,6 +13,8 @@ const path = require('path');
 class SmartGoalGenerator {
   constructor() {
     this.workspace = '/root/.openclaw/workspace';
+    this.cooldownsFile = '/root/.openclaw/workspace/autonomous-exploration/.task-cooldowns.json';
+    this.cooldownDuration = 4 * 60 * 60 * 1000; // 4小时冷却期
     
     // 产出导向的任务类型
     this.productiveGoals = [
@@ -79,6 +81,9 @@ class SmartGoalGenerator {
     // 2. 选择最高优先级的任务
     const selectedGoal = priority.goal;
     
+    // 3. 记录任务冷却
+    this.recordCooldown(selectedGoal.type);
+    
     console.log(`✅ 选择任务: ${selectedGoal.type} - ${selectedGoal.description}`);
     console.log(`   优先级: ${priority.score.toFixed(2)}`);
     console.log(`   产出类型: ${selectedGoal.outputType}`);
@@ -92,6 +97,54 @@ class SmartGoalGenerator {
       reason: priority.reason,
       timestamp: new Date().toISOString()
     };
+  }
+
+  /**
+   * 加载冷却记录
+   */
+  loadCooldowns() {
+    try {
+      if (fs.existsSync(this.cooldownsFile)) {
+        const data = fs.readFileSync(this.cooldownsFile, 'utf8');
+        return JSON.parse(data);
+      }
+    } catch (e) {
+      // 忽略错误
+    }
+    return {};
+  }
+
+  /**
+   * 保存冷却记录
+   */
+  saveCooldowns(cooldowns) {
+    try {
+      fs.writeFileSync(this.cooldownsFile, JSON.stringify(cooldowns, null, 2));
+    } catch (e) {
+      // 忽略错误
+    }
+  }
+
+  /**
+   * 检查任务是否在冷却中
+   */
+  isInCooldown(taskType) {
+    const cooldowns = this.loadCooldowns();
+    const lastRun = cooldowns[taskType];
+    
+    if (!lastRun) return false;
+    
+    const elapsed = Date.now() - new Date(lastRun).getTime();
+    return elapsed < this.cooldownDuration;
+  }
+
+  /**
+   * 记录任务冷却
+   */
+  recordCooldown(taskType) {
+    const cooldowns = this.loadCooldowns();
+    cooldowns[taskType] = new Date().toISOString();
+    this.saveCooldowns(cooldowns);
   }
 
   /**
@@ -121,6 +174,14 @@ class SmartGoalGenerator {
   async calculateGoalScore(goal) {
     let score = 0;
     const reasons = [];
+    
+    // 检查冷却期
+    if (this.isInCooldown(goal.type)) {
+      // 在冷却期内，大幅降低分数
+      score = 0.01;
+      reasons.push('任务在冷却期内');
+      return { total: score, reason: reasons.join('; ') };
+    }
     
     switch (goal.type) {
       case 'analyze_logs':

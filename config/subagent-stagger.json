@@ -1,48 +1,47 @@
 {
-  "version": "1.0",
-  "created": "2026-03-05T04:30:00+08:00",
-  "description": "子代理串行化启动配置",
+  "version": "3.0-emergency-halt",
+  "created": "2026-03-11T00:30:00+08:00",
+  "description": "最激进配置：紧急暂停期间",
   "settings": {
-    "stagger_delay_seconds": 10,
-    "max_concurrent_subagents": 2,
+    "stagger_delay_seconds": 120,
+    "max_concurrent_subagents": 1,
     "retry_on_429": true,
-    "retry_delay_seconds": 30,
-    "max_retries": 3
+    "retry_delay_seconds": 180,
+    "max_retries": 5
   },
   "priority_levels": {
+    "critical": {
+      "description": "关键任务（仅在低峰期执行）",
+      "delay_seconds": 60,
+      "examples": ["log-analysis", "self-evolution", "security-scan"]
+    },
     "high": {
-      "description": "高优先级任务（安全、恢复）",
-      "delay_seconds": 5,
-      "examples": ["security-scan", "gateway-recovery"]
+      "description": "高优先级任务（暂停）",
+      "delay_seconds": 120,
+      "examples": []
     },
     "medium": {
-      "description": "中优先级任务（监控、分析）",
-      "delay_seconds": 10,
-      "examples": ["log-analysis", "api-health-check"]
+      "description": "中优先级任务（暂停）",
+      "delay_seconds": 180,
+      "examples": []
     },
     "low": {
-      "description": "低优先级任务（探索、优化）",
-      "delay_seconds": 15,
-      "examples": ["self-evolution", "autonomous-exploration"]
+      "description": "低优先级任务（暂停）",
+      "delay_seconds": 240,
+      "examples": []
     }
   },
   "blackout_periods": [
     {
-      "name": "API高峰期",
-      "start_hour": 9,
-      "end_hour": 11,
-      "description": "避免在API高峰期启动子代理"
-    },
-    {
-      "name": "API高峰期",
-      "start_hour": 14,
-      "end_hour": 16,
-      "description": "避免在API高峰期启动子代理"
+      "name": "全天暂停（紧急）",
+      "start_hour": 0,
+      "end_hour": 24,
+      "description": "紧急暂停期间，仅执行关键任务"
     }
   ],
   "expected_improvement": {
-    "success_rate_before": "42%",
+    "success_rate_before": "39.6%",
     "success_rate_target": "70%",
-    "429_errors_reduction": "60%"
+    "429_errors_reduction": "90%"
   }
 }

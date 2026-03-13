@@ -1,0 +1,8 @@
+{"timestamp":"2026-03-10T12:49:16.234Z","chapterNumber":1,"chapterFile":"chapter-001.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T13:00:01.474Z","chapterNumber":2,"chapterFile":"chapter-002.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T13:45:01.667Z","chapterNumber":3,"chapterFile":"chapter-003.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T14:00:02.034Z","chapterNumber":4,"chapterFile":"chapter-004.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T14:45:01.960Z","chapterNumber":5,"chapterFile":"chapter-005.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T15:00:01.350Z","chapterNumber":6,"chapterFile":"chapter-006.md","issuesFound":0,"issues":[],"status":"passed"}
+{"timestamp":"2026-03-10T15:45:02.046Z","chapterNumber":7,"chapterFile":"chapter-007.md","issuesFound":1,"issues":[{"type":"重复用词","word":"林深说","count":13,"suggestion":"考虑减少使用\"林深说\"（出现 13 次）"}],"status":"reviewed"}
+{"timestamp":"2026-03-10T16:00:01.522Z","chapterNumber":8,"chapterFile":"chapter-008.md","issuesFound":0,"issues":[],"status":"passed"}

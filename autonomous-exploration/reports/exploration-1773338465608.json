@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-03-12T18:01:05.607Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "analyze_logs",
+    "description": "分析日志文件，发现错误模式和优化机会",
+    "outputType": "analysis_report",
+    "priority": 0.8,
+    "reason": "日志文件较大，可能有问题"
+  },
+  "result": {
+    "success": true,
+    "findings": [
+      "evomap-heartbeat.log 有 93 个错误",
+      "evomap-publish.log 有 19 个错误",
+      "evomap-reputation-boost.jsonl 有 130 个错误",
+      "molecular-experiment.log 有 62 个错误"
+    ],
+    "recommendations": [
+      "检查 evomap-heartbeat.log 中的错误日志",
+      "检查 evomap-publish.log 中的错误日志",
+      "检查 evomap-reputation-boost.jsonl 中的错误日志",
+      "检查 molecular-experiment.log 中的错误日志",
+      "总计 331 个错误需要关注"
+    ],
+    "outputFile": "/root/.openclaw/workspace/autonomous-exploration/outputs/analyze_logs-1773338465607.json"
+  },
+  "duration": 94
+}

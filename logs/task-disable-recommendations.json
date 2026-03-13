@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-03-14T00:30:00Z",
+  "reason": "health_score_3.0",
+  "recommendations": [
+    {
+      "task": "evomap-feature-system",
+      "action": "disable",
+      "reason": "API 404 错误持续激增 (+55%)",
+      "duration": "until_api_fixed",
+      "priority": "critical"
+    },
+    {
+      "task": "novel-auto-review",
+      "action": "disable",
+      "reason": "子代理 429 错误",
+      "duration": "4h",
+      "priority": "high"
+    },
+    {
+      "task": "swe-agent-iteration",
+      "action": "reduce_frequency",
+      "reason": "减少 API 请求",
+      "new_schedule": "0 */6 * * *",
+      "priority": "medium"
+    }
+  ],
+  "keep_running": [
+    "evolver-log-analysis",
+    "evolver-self-evolution"
+  ]
+}

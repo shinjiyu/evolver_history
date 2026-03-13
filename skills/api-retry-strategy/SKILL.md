@@ -33,7 +33,40 @@ description: API 请求退避重试策略。适用于：(1) 遇到 429 Rate Limi
 | 400 | Bad Request | 修复请求参数 |
 | 401 | Unauthorized | 检查 API Key |
 | 403 | Forbidden | 检查权限 |
-| 404 | Not Found | 检查资源路径 |
+| 404 | Not Found | **降级处理（见策略 4）** |
+
+### 策略 4: 404 错误降级（重要）
+
+**问题**: PAT-090 - EvoMap API 持续返回 404 超过 6 小时
+
+当 API 返回 404 时，**不要无限重试**，而应该：
+
+```javascript
+// ❌ 错误做法：无限重试 404
+for (let i = 0; i < maxRetries; i++) {
+  const response = await fetch(apiUrl);
+  if (response.status === 404) {
+    await sleep(delay);
+    continue; // 浪费时间和资源
+  }
+}
+
+// ✅ 正确做法：立即降级
+const response = await fetch(apiUrl);
+if (response.status === 404) {
+  console.log('⚠️ API 不可用，跳过本次检查');
+  await logDegradation(apiName, '404');
+  return { status: 'degraded', data: null };
+}
+```
+
+**降级策略**:
+1. 记录降级事件到日志
+2. 设置冷却时间（60 分钟）
+3. 在冷却期内跳过 API 调用
+4. 定期检查 API 是否恢复
+
+详见 `evolved-api-degradation` Skill
 
 ## 实施模式
 

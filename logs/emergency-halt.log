@@ -1,0 +1,74 @@
+[2026-03-11 00:32:59] [HALT] === 🚨🚨🚨 紧急暂停非关键任务 ===
+[2026-03-11 00:32:59] [HALT] 严重程度: P0 紧急
+[2026-03-11 00:32:59] [HALT] 原因: 改善趋势被打断，429 错误增幅反弹（23% → 34%）
+[2026-03-11 00:32:59] [HALT] 当前健康评分: 5.3/10（恶化）
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 1: 备份当前 crontab ===
+[2026-03-11 00:32:59] [HALT] ✅ 已备份 crontab: /root/.openclaw/workspace/logs/crontab.backup-20260311-003259
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 2: 识别关键任务 ===
+[2026-03-11 00:32:59] [HALT] 关键任务（保持运行）:
+[2026-03-11 00:32:59] [HALT]   ✅ evolver-log-analysis
+[2026-03-11 00:32:59] [HALT]   ✅ evolver-self-evolution
+[2026-03-11 00:32:59] [HALT]   ✅ gateway-health-check
+[2026-03-11 00:32:59] [HALT]   ✅ security-scan
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] 非关键任务（暂停）:
+[2026-03-11 00:32:59] [HALT]   ⏸️ novel-auto-review
+[2026-03-11 00:32:59] [HALT]   ⏸️ novel-review-and-revision
+[2026-03-11 00:32:59] [HALT]   ⏸️ autonomous-exploration
+[2026-03-11 00:32:59] [HALT]   ⏸️ openclaw-updates
+[2026-03-11 00:32:59] [HALT]   ⏸️ evomap-*
+[2026-03-11 00:32:59] [HALT]   ⏸️ rccam-*
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 3: 创建新的 crontab ===
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 0 2 * * 0 /root/.openclaw/workspace/evolver/fixes/memory-archiver.sh --archive 3
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 0 4 * * * /root/.openclaw/workspace/evolver/fixes/gateway-restart.sh >> /root/.o
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 10 * * * * /root/.openclaw/workspace/evolver/fixes/api-rate-limiter.sh --auto-ad
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 15,45 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-auto-recovery.sh >
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 15 * * * * /root/.openclaw/workspace/evolver/fixes/threat-detector.sh --check >>
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 20 */6 * * * /root/.openclaw/workspace/evolver/scripts/verify-improvement-effect
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: */30 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-memory-monitor.sh >
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: */30 * * * * /root/.openclaw/workspace/evolver/scripts/execute-rccam-cycle.sh >>
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: 5 * * * * /root/.openclaw/workspace/evolver/fixes/api-health-checker.sh --check 
+[2026-03-11 00:32:59] [HALT]   ⏸️ 暂停: */45 * * * * /usr/bin/node /root/.openclaw/workspace/cron/novel-auto-revise.js >
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 4: 应用新的 crontab ===
+[2026-03-11 00:32:59] [HALT] ✅ 已应用新的 crontab
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 5: 应用最激进的串行化配置 ===
+[2026-03-11 00:32:59] [HALT] ✅ 已应用最激进配置:
+[2026-03-11 00:32:59] [HALT]   - 延迟: 120 秒（之前 60s）
+[2026-03-11 00:32:59] [HALT]   - 并发: 1（保持）
+[2026-03-11 00:32:59] [HALT]   - 重试延迟: 180 秒（之前 120s）
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 6: 创建恢复脚本 ===
+[2026-03-11 00:32:59] [HALT] ✅ 创建恢复脚本: /root/.openclaw/workspace/evolver/fixes/resume-cron-tasks.sh
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 7: 创建状态检查脚本 ===
+[2026-03-11 00:32:59] [HALT] ✅ 创建状态检查脚本: /root/.openclaw/workspace/evolver/fixes/check-emergency-status.sh
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 8: 创建说明文档 ===
+[2026-03-11 00:32:59] [HALT] ✅ 创建说明文档: /root/.openclaw/workspace/evolver/fixes/README-EMERGENCY-HALT.md
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 步骤 9: 执行状态检查 ===
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] === 🎯 紧急暂停完成 ===
+[2026-03-11 00:32:59] [HALT] 创建的文件:
+[2026-03-11 00:32:59] [HALT]   1. Crontab 备份: /root/.openclaw/workspace/logs/crontab.backup-20260311-003259
+[2026-03-11 00:32:59] [HALT]   2. 新 Crontab: /root/.openclaw/workspace/logs/crontab.emergency-20260311-003259
+[2026-03-11 00:32:59] [HALT]   3. 激进配置: /root/.openclaw/workspace/config/subagent-stagger.json
+[2026-03-11 00:32:59] [HALT]   4. 恢复脚本: /root/.openclaw/workspace/evolver/fixes/resume-cron-tasks.sh
+[2026-03-11 00:32:59] [HALT]   5. 状态检查: /root/.openclaw/workspace/evolver/fixes/check-emergency-status.sh
+[2026-03-11 00:32:59] [HALT]   6. 说明文档: /root/.openclaw/workspace/evolver/fixes/README-EMERGENCY-HALT.md
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] ⚠️ 重要提示:
+[2026-03-11 00:32:59] [HALT]   - 非关键任务已暂停
+[2026-03-11 00:32:59] [HALT]   - 仅关键任务在运行
+[2026-03-11 00:32:59] [HALT]   - 每 6 小时检查一次状态
+[2026-03-11 00:32:59] [HALT]   - 恢复条件：429 错误 <50 次/6h，成功率 >60%，健康评分 >7.0
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] 下次验证时间: 2026-03-11 06:30
+[2026-03-11 00:32:59] [HALT] 
+[2026-03-11 00:32:59] [HALT] 恢复方法:
+[2026-03-11 00:32:59] [HALT]   bash /root/.openclaw/workspace/evolver/fixes/resume-cron-tasks.sh

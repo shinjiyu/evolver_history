@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-03-10T20:04:02.813Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 20,
+      "suspiciousIPs": 1
+    }
+  ],
+  "threats": [
+    {
+      "ip": "209.38.88.189",
+      "type": "env_file_access",
+      "timestamp": "2026-03-10T20:04:02.814Z"
+    }
+  ]
+}

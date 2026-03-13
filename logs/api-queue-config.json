@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-03-13T20:30:00Z",
+  "queue_settings": {
+    "max_concurrent_requests": 2,
+    "request_delay_ms": 1000,
+    "retry_delay_ms": 2000,
+    "max_retries": 3,
+    "rate_limit_window_ms": 60000,
+    "max_requests_per_window": 30
+  },
+  "priority_queues": {
+    "critical": {
+      "tasks": ["evolver-log-analysis", "evolver-self-evolution"],
+      "max_concurrent": 1,
+      "priority": 10
+    },
+    "high": {
+      "tasks": ["swe-agent-iteration"],
+      "max_concurrent": 1,
+      "priority": 5
+    },
+    "normal": {
+      "tasks": ["novel-auto-review"],
+      "max_concurrent": 1,
+      "priority": 3
+    },
+    "low": {
+      "tasks": ["evomap-feature-system"],
+      "max_concurrent": 0,
+      "priority": 1,
+      "status": "disabled"
+    }
+  }
+}

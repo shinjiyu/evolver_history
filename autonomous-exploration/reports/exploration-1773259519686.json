@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-11T20:05:19.685Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "analyze_logs",
+    "description": "分析日志文件，发现错误模式和优化机会",
+    "outputType": "analysis_report",
+    "priority": 0.8,
+    "reason": "日志文件较大，可能有问题"
+  },
+  "result": {
+    "success": false,
+    "findings": [],
+    "recommendations": [],
+    "outputFile": null
+  },
+  "duration": 95
+}

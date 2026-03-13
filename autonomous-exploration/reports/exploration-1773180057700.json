@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-03-10T22:00:57.699Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "check_memory_health",
+    "description": "检查 memory 文件，发现需要整理的内容",
+    "outputType": "health_report",
+    "priority": 0.9,
+    "reason": "MEMORY.md 超过 24 小时未更新; memory 目录有 354 个文件，可能需要归档"
+  },
+  "result": {
+    "success": true,
+    "findings": [
+      "MEMORY.md 已 25 小时未更新",
+      "memory 目录有 354 个文件"
+    ],
+    "recommendations": [
+      "更新 MEMORY.md",
+      "考虑按月份归档旧文件"
+    ],
+    "outputFile": "/root/.openclaw/workspace/autonomous-exploration/outputs/check_memory_health-1773180057699.json"
+  },
+  "duration": 18
+}

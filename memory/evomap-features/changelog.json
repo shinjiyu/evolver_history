@@ -716,6 +716,151 @@
         },
         "timestamp": "2026-03-09T16:06:14.242Z"
       }
+    },
+    {
+      "timestamp": "2026-03-12T06:04:31.141Z",
+      "changes": {
+        "skill": {
+          "error": "HTTP 502"
+        },
+        "llmsFull": {
+          "error": "HTTP 502"
+        },
+        "timestamp": "2026-03-12T06:04:31.141Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-12T09:04:23.526Z",
+      "changes": {
+        "skill": {
+          "hash": "ccc2a60828321e2fa70ece6c489612c330149733e446391571d7a2ae569c95e4",
+          "size": 82862,
+          "features": {
+            "newEndpoints": [
+              "GET https://evomap.ai/arena/topic-saturation",
+              "GET https://evomap.ai/arena/topic-saturation/summary"
+            ],
+            "newSections": []
+          }
+        },
+        "llmsFull": {
+          "hash": "6dd8bfc6ad7c6df1757d8d190c3035291126419ddaa669f167ab995864ee83dc",
+          "size": 367992,
+          "features": {
+            "newEndpoints": [],
+            "newSections": [
+              "Topic Saturation (Macro Regulation)"
+            ]
+          }
+        },
+        "timestamp": "2026-03-12T09:04:23.526Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-12T18:04:21.270Z",
+      "changes": {
+        "skill": {
+          "hash": "9fef0984c9e3d28b72347874c973a87be1211f5e820deb870aa4464a3688d982",
+          "size": 83152,
+          "features": {
+            "newEndpoints": [
+              "POST https://evomap.ai/a2a/discover",
+              "GET https://evomap.ai/a2a/session/board?session_id=...",
+              "POST https://evomap.ai/a2a/session/board/update",
+              "POST https://evomap.ai/a2a/session/orchestrate"
+            ],
+            "newSections": []
+          }
+        },
+        "llmsFull": {
+          "hash": "ca77f2e3b53c8bf7736aeabe4e4464b0f46d449a53e3da7a43d185b33b5e8ac2",
+          "size": 368592,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "timestamp": "2026-03-12T18:04:21.270Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-13T06:04:25.830Z",
+      "changes": {
+        "skill": null,
+        "llmsFull": {
+          "hash": "bda13104abe2dada265b9ee7b29b2dca43029876e828ff89a54f38c762d69cc4",
+          "size": 369429,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "timestamp": "2026-03-13T06:04:25.830Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-13T07:04:22.376Z",
+      "changes": {
+        "skill": null,
+        "llmsFull": {
+          "hash": "95c57037fa0a543c67b89a4e2d28875abe48383f8493b9065be95a7cf5c43c45",
+          "size": 369494,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "timestamp": "2026-03-13T07:04:22.376Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-13T11:04:22.304Z",
+      "changes": {
+        "skill": {
+          "hash": "894c4279faaff34cde881192422b654d6a5b6e945bb1a3803f5cbd2697c8ec06",
+          "size": 82822,
+          "features": {
+            "newEndpoints": [
+              "POST /a2a/validate"
+            ],
+            "newSections": [
+              "Getting Started -- Step by Step"
+            ]
+          }
+        },
+        "llmsFull": null,
+        "timestamp": "2026-03-13T11:04:22.304Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-13T12:05:18.220Z",
+      "changes": {
+        "skill": {
+          "hash": "990932ca88b734e2b9847cb7e30ae49729d1953a1384ebe5bcd3b6d3ac43a252",
+          "size": 84623,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "llmsFull": null,
+        "timestamp": "2026-03-13T12:05:18.220Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-13T16:06:43.957Z",
+      "changes": {
+        "skill": {
+          "hash": "d36111a2dece2422718c13ede987be2f81c8b1a2ba81628654e1fe57acd0bdf1",
+          "size": 85335,
+          "features": {
+            "newEndpoints": [],
+            "newSections": []
+          }
+        },
+        "llmsFull": null,
+        "timestamp": "2026-03-13T16:06:43.957Z"
+      }
     }
   ]
 }

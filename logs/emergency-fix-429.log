@@ -1,0 +1,40 @@
+[2026-03-10 16:33:15] [EMERGENCY] === 🚨🚨🚨 紧急修复：429 速率限制危机 ===
+[2026-03-10 16:33:15] [EMERGENCY] 严重程度: P0 紧急
+[2026-03-10 16:33:15] [EMERGENCY] 当前状态: 系统严重恶化（健康评分 5.5/10）
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 1: 应用激进的串行化配置 ===
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 已备份当前配置: /root/.openclaw/workspace/config/subagent-stagger.json.backup-20260310-163315
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 已应用激进配置:
+[2026-03-10 16:33:15] [EMERGENCY]   - 延迟: 10s → 60s
+[2026-03-10 16:33:15] [EMERGENCY]   - 并发: 2 → 1
+[2026-03-10 16:33:15] [EMERGENCY]   - 重试延迟: 30s → 120s
+[2026-03-10 16:33:15] [EMERGENCY]   - 最大重试: 3 → 5
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 2: 创建强制串行化包装脚本 ===
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 创建强制串行化脚本: /root/.openclaw/workspace/evolver/fixes/force-stagger-spawn.sh
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 3: 创建 Cron 任务管理脚本 ===
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 创建 Cron 管理脚本: /root/.openclaw/workspace/evolver/fixes/cron-emergency-manager.sh
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 4: 创建验证脚本 ===
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 创建验证脚本: /root/.openclaw/workspace/evolver/fixes/verify-emergency-fix.sh
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 5: 创建说明文档 ===
+[2026-03-10 16:33:15] [EMERGENCY] ✅ 创建说明文档: /root/.openclaw/workspace/evolver/fixes/README-EMERGENCY-FIX.md
+[2026-03-10 16:33:15] [EMERGENCY] 
+[2026-03-10 16:33:15] [EMERGENCY] === 步骤 6: 执行验证 ===
+[2026-03-10 16:33:16] [EMERGENCY] 
+[2026-03-10 16:33:16] [EMERGENCY] === 🎯 紧急修复完成 ===
+[2026-03-10 16:33:16] [EMERGENCY] 创建的文件:
+[2026-03-10 16:33:16] [EMERGENCY]   1. 激进配置: /root/.openclaw/workspace/config/subagent-stagger.json
+[2026-03-10 16:33:16] [EMERGENCY]   2. 强制串行化脚本: /root/.openclaw/workspace/evolver/fixes/force-stagger-spawn.sh
+[2026-03-10 16:33:16] [EMERGENCY]   3. Cron 管理脚本: /root/.openclaw/workspace/evolver/fixes/cron-emergency-manager.sh
+[2026-03-10 16:33:16] [EMERGENCY]   4. 验证脚本: /root/.openclaw/workspace/evolver/fixes/verify-emergency-fix.sh
+[2026-03-10 16:33:16] [EMERGENCY]   5. 说明文档: /root/.openclaw/workspace/evolver/fixes/README-EMERGENCY-FIX.md
+[2026-03-10 16:33:16] [EMERGENCY] 
+[2026-03-10 16:33:16] [EMERGENCY] ⚠️ 重要提示:
+[2026-03-10 16:33:16] [EMERGENCY]   - 配置已更新，但需要主系统读取并应用
+[2026-03-10 16:33:16] [EMERGENCY]   - 如果 2 小时后没有改善，考虑暂停非关键 Cron 任务
+[2026-03-10 16:33:16] [EMERGENCY]   - 监控 429 错误趋势，目标 <40 次/6h
+[2026-03-10 16:33:16] [EMERGENCY] 
+[2026-03-10 16:33:16] [EMERGENCY] 下次验证时间: 2026-03-10 20:00

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-03-11 12:30:32",
+  "errors_30m": 108,
+  "errors_1h": 108,
+  "errors_2h": 109,
+  "errors_4h": 109,
+  "errors_6h": 109,
+  "trend_2h": 109,
+  "status": "critical"
+}

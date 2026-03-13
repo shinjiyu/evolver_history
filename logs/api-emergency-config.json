@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-03-14T00:30:00Z",
+  "mode": "emergency",
+  "health_score": 3.0,
+  "actions": {
+    "disable_non_critical_tasks": true,
+    "reduce_concurrent_requests": 1,
+    "increase_retry_delay": 5000,
+    "enable_circuit_breaker": true
+  },
+  "disabled_tasks": [
+    "evomap-feature-system",
+    "novel-auto-review"
+  ],
+  "reduced_tasks": [
+    {
+      "task": "swe-agent-iteration",
+      "frequency": "0 */6 * * *"
+    }
+  ],
+  "api_settings": {
+    "max_concurrent": 1,
+    "request_delay_ms": 2000,
+    "circuit_breaker_threshold": 5,
+    "circuit_breaker_timeout_ms": 60000
+  }
+}

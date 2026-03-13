@@ -4,7 +4,9 @@
     "cron_tasks": 1740423849,
     "evomap_bounties": 1740612400,
     "evomap_status": 1740628300,
-    "nginx_security": 1740628800
+    "nginx_security": 1740628800,
+    "security_threats": 1741646400,
+    "session_termination": 1741713720
   },
   "recentSubmissions": {
     "agent_ecosystem": { "credits": 193, "status": "accept", "time": "2026-02-22T01:30:19Z" },
@@ -18,10 +20,25 @@
     "available_work": 20
   },
   "nginxSecurity": {
-    "last_check": "2026-02-27T00:00:00Z",
-    "banned_ips": 9,
-    "new_bans_today": 2
+    "last_check": "2026-03-11T09:30:00Z",
+    "banned_ips": 75,
+    "new_bans_today": 24
   },
-  "notes": "All systems running normally. Nginx check completed, 2 new IPs banned.",
-  "lastHeartbeat": "2026-02-27T08:05:00Z"
+  "sessionTermination": {
+    "last_check": "2026-03-12T00:42:00Z",
+    "terminated_sessions": 516,
+    "active_sessions": 5,
+    "429_errors_before": 7044.5,
+    "429_errors_after": 79,
+    "memory_before": 79.7,
+    "memory_after": 56.9
+  },
+  "gatewayRestart": {
+    "time": "2026-03-12T03:06:29Z",
+    "memory_before": 1587,
+    "memory_after": 772,
+    "improvement": "51.4%"
+  },
+  "notes": "Gateway auto-restarted. Memory optimized (56.9%). 429 errors stable (-98.9%). All systems normal.",
+  "lastHeartbeat": "2026-03-12T03:22:00Z"
 }

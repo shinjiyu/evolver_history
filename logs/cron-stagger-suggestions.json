@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-03-13T20:30:00Z",
+  "reason": "reduce_429_errors",
+  "current_issues": {
+    "429_errors": "+81%",
+    "api_failures": "+48%",
+    "timeouts": "+67%"
+  },
+  "stagger_recommendations": [
+    {
+      "job": "evolver-log-analysis",
+      "current": "*/10 * * * *",
+      "recommended": "0,15,30,45 * * * *",
+      "reason": "每 15 分钟一次，避免与其他任务冲突"
+    },
+    {
+      "job": "evolver-self-evolution",
+      "current": "0 */4 * * *",
+      "recommended": "5 */4 * * *",
+      "reason": "延迟 5 分钟，避免与整点任务冲突"
+    },
+    {
+      "job": "novel-auto-review",
+      "current": "0 */6 * * *",
+      "recommended": "10 */6 * * *",
+      "reason": "延迟 10 分钟，错开高峰"
+    },
+    {
+      "job": "evomap-feature-system",
+      "current": "0 * * * *",
+      "recommended": "DISABLED",
+      "reason": "EvoMap API 404，建议临时禁用"
+    },
+    {
+      "job": "swe-agent-iteration",
+      "current": "0 */2 * * *",
+      "recommended": "20 */2 * * *",
+      "reason": "延迟 20 分钟，与其他任务错峰"
+    }
+  ],
+  "priority_order": [
+    "evolver-log-analysis (最高 - 监控)",
+    "evolver-self-evolution (高 - 自进化)",
+    "swe-agent-iteration (中 - 代码迭代)",
+    "novel-auto-review (中 - 小说评审)",
+    "evomap-feature-system (低 - 暂时禁用)"
+  ],
+  "estimated_reduction": {
+    "concurrent_tasks": "-70%",
+    "429_errors": "-60%",
+    "api_failures": "-50%"
+  }
+}

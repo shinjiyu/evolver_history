@@ -274,3 +274,50 @@
 {"timestamp":"2026-03-09T16:06:04.390Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":49}
 {"timestamp":"2026-03-09T18:01:00.291Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":51}
 {"timestamp":"2026-03-09T20:01:09.059Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":3,"recommendationsCount":3,"duration":71}
+{"timestamp":"2026-03-09T22:01:07.878Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":11}
+{"timestamp":"2026-03-10T00:08:10.805Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":11}
+{"timestamp":"2026-03-10T02:01:05.051Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":20}
+{"timestamp":"2026-03-10T04:06:53.449Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":15}
+{"timestamp":"2026-03-10T06:01:02.827Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":11}
+{"timestamp":"2026-03-10T08:06:28.176Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":18}
+{"timestamp":"2026-03-10T10:01:01.403Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":27}
+{"timestamp":"2026-03-10T12:05:05.822Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":22}
+{"timestamp":"2026-03-10T14:01:03.640Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":36}
+{"timestamp":"2026-03-10T16:06:28.974Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":26}
+{"timestamp":"2026-03-10T18:01:04.585Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":22}
+{"timestamp":"2026-03-10T20:04:02.814Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":13}
+{"timestamp":"2026-03-10T22:00:57.699Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":18}
+{"timestamp":"2026-03-11T00:05:30.884Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":15}
+{"timestamp":"2026-03-11T02:01:00.176Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":30}
+{"timestamp":"2026-03-11T04:04:55.250Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":19}
+{"timestamp":"2026-03-11T06:00:57.750Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":55}
+{"timestamp":"2026-03-11T08:04:55.225Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":22}
+{"timestamp":"2026-03-11T10:00:57.017Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":36}
+{"timestamp":"2026-03-11T12:06:32.858Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":33}
+{"timestamp":"2026-03-11T14:00:57.274Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":38}
+{"timestamp":"2026-03-11T16:04:16.177Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":45}
+{"timestamp":"2026-03-11T18:01:01.966Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":64}
+{"timestamp":"2026-03-11T20:05:19.685Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":false,"findingsCount":0,"recommendationsCount":0,"duration":95}
+{"timestamp":"2026-03-11T22:01:02.072Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":98}
+{"timestamp":"2026-03-12T00:06:02.196Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":26}
+{"timestamp":"2026-03-12T02:00:57.891Z","type":"check_evomap_status","description":"检查 EvoMap 节点状态和声誉","success":true,"findingsCount":1,"recommendationsCount":1,"duration":10}
+{"timestamp":"2026-03-12T04:10:12.577Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":108}
+{"timestamp":"2026-03-12T06:01:05.606Z","type":"check_evomap_status","description":"检查 EvoMap 节点状态和声誉","success":true,"findingsCount":1,"recommendationsCount":1,"duration":13}
+{"timestamp":"2026-03-12T08:03:27.168Z","type":"generate_content","description":"为小说/EvoMap 生成有用的内容","success":true,"findingsCount":1,"recommendationsCount":1,"duration":22}
+{"timestamp":"2026-03-12T10:01:02.433Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":131}
+{"timestamp":"2026-03-12T12:06:31.049Z","type":"check_evomap_status","description":"检查 EvoMap 节点状态和声誉","success":true,"findingsCount":1,"recommendationsCount":1,"duration":18}
+{"timestamp":"2026-03-12T14:01:02.523Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":107}
+{"timestamp":"2026-03-12T18:01:00.668Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":31}
+{"timestamp":"2026-03-12T18:01:05.607Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":94}
+{"timestamp":"2026-03-12T20:04:36.119Z","type":"check_evomap_status","description":"检查 EvoMap 节点状态和声誉","success":true,"findingsCount":1,"recommendationsCount":1,"duration":16}
+{"timestamp":"2026-03-13T00:03:08.589Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":44}
+{"timestamp":"2026-03-13T03:05:44.354Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":1,"recommendationsCount":1,"duration":46}
+{"timestamp":"2026-03-13T04:05:50.026Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":22}
+{"timestamp":"2026-03-13T06:00:58.015Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":112}
+{"timestamp":"2026-03-13T08:00:58.097Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":28}
+{"timestamp":"2026-03-13T10:01:01.836Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":27}
+{"timestamp":"2026-03-13T12:05:03.896Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":50}
+{"timestamp":"2026-03-13T14:00:58.387Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":128}
+{"timestamp":"2026-03-13T16:06:30.120Z","type":"check_memory_health","description":"检查 memory 文件，发现需要整理的内容","success":true,"findingsCount":2,"recommendationsCount":2,"duration":37}
+{"timestamp":"2026-03-13T18:00:57.322Z","type":"scan_security","description":"扫描安全日志，发现可疑活动","success":true,"findingsCount":1,"recommendationsCount":1,"duration":20}
+{"timestamp":"2026-03-13T20:04:25.972Z","type":"analyze_logs","description":"分析日志文件，发现错误模式和优化机会","success":true,"findingsCount":4,"recommendationsCount":5,"duration":136}

@@ -1,0 +1,12 @@
+# OpenClaw Evolver System - Cleaned
+
+# [PAUSED] 0 2 * * 0 /root/.openclaw/workspace/evolver/fixes/memory-archiver.sh --archive 30 --force >> /root/.openclaw/workspace/logs/memory-archiver.log 2>&1
+# [PAUSED] 0 4 * * * /root/.openclaw/workspace/evolver/fixes/gateway-restart.sh >> /root/.openclaw/workspace/logs/gateway-restart.log 2>&1
+# [PAUSED] 10 * * * * /root/.openclaw/workspace/evolver/fixes/api-rate-limiter.sh --auto-adjust >> /root/.openclaw/workspace/logs/rate-limit.log 2>&1
+# [PAUSED] 15,45 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-auto-recovery.sh >> /root/.openclaw/workspace/logs/gateway-auto-recovery.log 2>&1
+# [PAUSED] 15 * * * * /root/.openclaw/workspace/evolver/fixes/threat-detector.sh --check >> /root/.openclaw/workspace/logs/threats.log 2>&1
+# [PAUSED] 20 */6 * * * /root/.openclaw/workspace/evolver/scripts/verify-improvement-effects.sh >> /root/.openclaw/workspace/logs/effect-verification.log 2>&1
+# [PAUSED] */30 * * * * /root/.openclaw/workspace/evolver/fixes/gateway-memory-monitor.sh >> /root/.openclaw/workspace/logs/gateway-memory.log 2>&1
+# [PAUSED] */30 * * * * /root/.openclaw/workspace/evolver/scripts/execute-rccam-cycle.sh >> /root/.openclaw/workspace/logs/rccam.log 2>&1
+# [PAUSED] 5 * * * * /root/.openclaw/workspace/evolver/fixes/api-health-checker.sh --check >> /root/.openclaw/workspace/logs/api-health.log 2>&1
+# [PAUSED] */45 * * * * /usr/bin/node /root/.openclaw/workspace/cron/novel-auto-revise.js >> /root/.openclaw/workspace/logs/novel-auto-revise.log 2>&1

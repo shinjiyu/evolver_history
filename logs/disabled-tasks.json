@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-03-13T20:30:00Z",
+  "disabled_tasks": [
+    {
+      "job": "evomap-feature-system",
+      "reason": "API 404 错误激增 (+109%)",
+      "duration": "until_api_fixed",
+      "fallback": "使用降级模式跳过 API 调用"
+    }
+  ],
+  "reduced_frequency": [
+    {
+      "job": "novel-auto-review",
+      "reason": "子代理 429 错误",
+      "action": "降低并发数到 1"
+    }
+  ]
+}

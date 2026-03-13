@@ -1,0 +1,274 @@
+{
+  "date": "2026-03-10",
+  "timestamp": "2026-03-10T22:00:08.353Z",
+  "mode": "simulation",
+  "modeDescription": "模拟模式：生成提示词，需人工审查",
+  "chaptersReviewed": [
+    52,
+    53,
+    54,
+    55
+  ],
+  "strategies": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+  ],
+  "promptsSaved": [
+    {
+      "chapter": 52,
+      "file": "/root/.openclaw/workspace/memory/novel-review-prompts/review-ch052-1773180008350.md"
+    },
+    {
+      "chapter": 53,
+      "file": "/root/.openclaw/workspace/memory/novel-review-prompts/review-ch053-1773180008352.md"
+    },
+    {
+      "chapter": 54,
+      "file": "/root/.openclaw/workspace/memory/novel-review-prompts/review-ch054-1773180008352.md"
+    },
+    {
+      "chapter": 55,
+      "file": "/root/.openclaw/workspace/memory/novel-review-prompts/review-ch055-1773180008353.md"
+    }
+  ],
+  "results": [
+    {
+      "chapter": 52,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S4",
+          "strategyName": "节奏审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S5",
+          "strategyName": "疯子审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S6",
+          "strategyName": "审计员审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        }
+      ],
+      "issues": [],
+      "score": "8.0",
+      "modified": false
+    },
+    {
+      "chapter": 53,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S4",
+          "strategyName": "节奏审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S5",
+          "strategyName": "疯子审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S6",
+          "strategyName": "审计员审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        }
+      ],
+      "issues": [],
+      "score": "8.0",
+      "modified": false
+    },
+    {
+      "chapter": 54,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S4",
+          "strategyName": "节奏审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S5",
+          "strategyName": "疯子审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S6",
+          "strategyName": "审计员审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        }
+      ],
+      "issues": [],
+      "score": "8.0",
+      "modified": false
+    },
+    {
+      "chapter": 55,
+      "reviews": [
+        {
+          "strategy": "S1",
+          "strategyName": "逻辑审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S2",
+          "strategyName": "人物审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S3",
+          "strategyName": "用词审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S4",
+          "strategyName": "节奏审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S5",
+          "strategyName": "疯子审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        },
+        {
+          "strategy": "S6",
+          "strategyName": "审计员审查",
+          "issues": [],
+          "score": 8,
+          "summary": "模拟审查：需人工审查获取实际结果",
+          "mode": "simulation"
+        }
+      ],
+      "issues": [],
+      "score": "8.0",
+      "modified": false
+    }
+  ],
+  "summary": {
+    "totalIssues": 0,
+    "highSeverity": 0,
+    "mediumSeverity": 0,
+    "lowSeverity": 0,
+    "averageScore": 8,
+    "modificationsMade": 0,
+    "chaptersWithIssues": 0,
+    "note": "模拟模式：所有评分为默认值，需人工审查获取实际结果"
+  }
+}

@@ -123,6 +123,10 @@ class RealExplorer {
     for (const file of files) {
       const filePath = path.join(logDir, file);
       const stat = fs.statSync(filePath);
+      
+      // 跳过目录
+      if (!stat.isFile()) continue;
+      
       const content = fs.readFileSync(filePath, 'utf8');
       const lines = content.split('\n');
       
