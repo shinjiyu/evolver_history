@@ -43,9 +43,91 @@
 | PAT-100 | [清理] 会话清理脚本执行 → 清理 881 个会话 | 清理 | Round 317 | Round 317 | 881 | ✅已执行 | evolver/fixes/session-cleanup.sh |
 | PAT-101 | [API] API 错误全面激增 → API失败翻倍(+103%) | API | Round 317 | Round 318 | 162 | 🔴🔴🔴危机 | memory/log-analysis-2026-03-14-0000.md |
 | PAT-102 | [调度] Cron 任务错峰调度 → 减少 429 错误 | 调度 | Round 318 | Round 318 | 1 | ✅新增 | evolver/fixes/cron-stagger-scheduler.sh |
+| PAT-103 | [恢复] 紧急系统恢复 → API 降级配置 | 恢复 | Round 319 | Round 319 | 1 | ✅新增 | evolver/fixes/emergency-system-recovery.sh |
+| PAT-104 | [危机] 健康评分危机 → 3.0/10 危急状态 | 危机 | Round 319 | Round 319 | 1 | 🔴🔴🔴危急 | memory/emergency-recovery-report-*.md |
 
-> 活跃模式 33 个
-**18 个已解决/有方案/生效/放缓/修复中，15 个持续监控/恶化，系统健康评分 6.5→4.0/10（🔴🔴 严重恶化），60 Skills，60 修复脚本，系统基线配置已建立** 🔴
+> 活跃模式 35 个
+**18 个已解决/有方案/生效/放缓/修复中，17 个持续监控/恶化，系统健康评分 4.0→3.0/10（🔴🔴🔴 危急），60 Skills，61 修复脚本，系统基线配置已建立** 🔴
+
+---
+
+## Round 319 改进记录（紧急系统恢复）
+
+**时间**: 2026-03-14 00:31
+**重点**: 紧急系统恢复 + API 降级配置
+**状态**: 🔴🔴🔴 **系统危急，已执行紧急恢复**
+
+### 问题分析
+
+#### 🔴🔴🔴 P0 问题 - 系统健康评分危机
+
+| 错误类型 | Round 318 | Round 319 | 变化 |
+|---------|-----------|-----------|------|
+| 健康评分 | 4.0/10 | 3.0/10 | 🔴 -25% |
+| API 失败 | 80 | 162 | 🔴🔴 +103% |
+| 404 错误 | 69 | 107 | 🔴 +55% |
+| 429 错误 | 67 | 85 | 🔴 +27% |
+| 超时警告 | 75 | 92 | 🔴 +23% |
+| 总错误数 | 206 | 271 | 🔴 +32% |
+
+### 实施的改进
+
+**C. 生成修复脚本**:
+
+1. **emergency-system-recovery.sh** (新脚本)
+   - 路径: `evolver/fixes/emergency-system-recovery.sh`
+   - 功能:
+     - 清理长时间会话
+     - 检查系统资源
+     - 生成 API 降级配置
+     - 生成任务禁用建议
+     - 生成恢复报告
+
+2. **生成的配置文件**:
+   - `logs/api-emergency-config.json` - API 降级配置
+   - `logs/task-disable-recommendations.json` - 任务禁用建议
+   - `memory/emergency-recovery-report-*.md` - 恢复报告
+
+### 紧急建议
+
+| 任务 | 操作 | 原因 |
+|------|------|------|
+| evomap-feature-system | **禁用** | API 404 错误 (+55%) |
+| novel-auto-review | **禁用** | 子代理 429 错误 |
+| swe-agent-iteration | **降低频率** | 每 6 小时一次 |
+
+### 预期效果
+
+| 指标 | 预期减少 |
+|------|---------|
+| API 请求 | -60% |
+| 429 错误 | -50% |
+| 系统负载 | -40% |
+| 健康评分 | 恢复至 5.0+ |
+
+### 文件变更
+
+**新建**:
+- `evolver/fixes/emergency-system-recovery.sh` (4262 bytes)
+- `logs/api-emergency-config.json`
+- `logs/task-disable-recommendations.json`
+- `memory/emergency-recovery-report-20260314-003121.md`
+
+### 系统健康评分
+
+**当前**: 3.0/10 🔴🔴🔴 危急
+
+**评分依据**:
+- 基础分: 10 分
+- P0 问题扣分: -5（API 失败翻倍 + 所有错误激增）
+- P1 问题扣分: -1（任务失败）
+- 紧急恢复加分: +0.5
+
+---
+
+**Pattern Registry 更新**: 2026-03-14 00:31
+**系统健康评分**: 4.0 → 3.0 (-1.0) 🔴🔴🔴
+**新增修复脚本**: 60 → 61
 
 ---
 
