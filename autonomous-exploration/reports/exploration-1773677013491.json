@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-16T16:03:33.491Z",
+  "version": "productive-1.0",
+  "goal": {
+    "type": "check_evomap_status",
+    "description": "检查 EvoMap 节点状态和声誉",
+    "outputType": "evomap_status",
+    "priority": 0.7,
+    "reason": "EvoMap 状态较久未检查"
+  },
+  "result": {
+    "success": true,
+    "findings": [
+      "节点状态文件不存在"
+    ],
+    "recommendations": [
+      "运行 EvoMap 状态检查"
+    ],
+    "outputFile": "/root/.openclaw/workspace/autonomous-exploration/outputs/check_evomap_status-1773677013490.json"
+  },
+  "duration": 16
+}

@@ -1,0 +1,579 @@
+{
+  "timestamp": "2026-03-15T16:02:52.058Z",
+  "logFiles": [
+    {
+      "name": "429-emergency.log",
+      "size": 2547,
+      "lines": 56,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "429-hotspots.log",
+      "size": 586,
+      "lines": 9,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "429-monitor.log",
+      "size": 1146,
+      "lines": 46,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "429-state.json",
+      "size": 185,
+      "lines": 11,
+      "errors": 5,
+      "warnings": 0
+    },
+    {
+      "name": "active-threats.json",
+      "size": 203,
+      "lines": 12,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "adaptive-scheduler.log",
+      "size": 238955,
+      "lines": 3094,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-alerts.log",
+      "size": 7395,
+      "lines": 146,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-emergency-config.json",
+      "size": 598,
+      "lines": 28,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-health-check.log",
+      "size": 7738,
+      "lines": 147,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-health.log",
+      "size": 15092,
+      "lines": 293,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-queue-config.json",
+      "size": 772,
+      "lines": 35,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-queue-state.json",
+      "size": 180,
+      "lines": 10,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-rate-state.json",
+      "size": 102,
+      "lines": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-request-queue.log",
+      "size": 160,
+      "lines": 4,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-stabilizer-state.json",
+      "size": 159,
+      "lines": 10,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "api-stabilizer.log",
+      "size": 1062,
+      "lines": 18,
+      "errors": 0,
+      "warnings": 1
+    },
+    {
+      "name": "api-status-20260313-123154.json",
+      "size": 85,
+      "lines": 6,
+      "errors": 1,
+      "warnings": 0
+    },
+    {
+      "name": "auto-optimize.log",
+      "size": 403,
+      "lines": 16,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "context-state.json",
+      "size": 230,
+      "lines": 12,
+      "errors": 0,
+      "warnings": 2
+    },
+    {
+      "name": "cron-fix.log",
+      "size": 1328,
+      "lines": 27,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-health-monitor.log",
+      "size": 148,
+      "lines": 3,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-integration.log",
+      "size": 941,
+      "lines": 18,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-optimization.log",
+      "size": 3036,
+      "lines": 33,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "cron-stagger-suggestions.json",
+      "size": 1484,
+      "lines": 54,
+      "errors": 3,
+      "warnings": 0
+    },
+    {
+      "name": "cron-stagger.log",
+      "size": 1230,
+      "lines": 22,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "crontab.backup-20260311-003259",
+      "size": 1412,
+      "lines": 13,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "crontab.emergency-20260311-003259",
+      "size": 1522,
+      "lines": 13,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "disabled-tasks.json",
+      "size": 415,
+      "lines": 19,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "disk-space-manager.log",
+      "size": 2045,
+      "lines": 39,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "effect-verification.log",
+      "size": 20848,
+      "lines": 834,
+      "errors": 10,
+      "warnings": 0
+    },
+    {
+      "name": "emergency-memory.log",
+      "size": 130,
+      "lines": 5,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "emergency-recovery.log",
+      "size": 2007,
+      "lines": 43,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "emergency-session-cleanup.log",
+      "size": 573,
+      "lines": 12,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "emergency-verification.log",
+      "size": 7245,
+      "lines": 139,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-a2a.log",
+      "size": 19975,
+      "lines": 189,
+      "errors": 3,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-api-degradation.log",
+      "size": 55,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-api-health.log",
+      "size": 797,
+      "lines": 16,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-bounty.log",
+      "size": 38618,
+      "lines": 458,
+      "errors": 6,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-heartbeat.log",
+      "size": 189947,
+      "lines": 1970,
+      "errors": 93,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-node-status.json",
+      "size": 499,
+      "lines": 21,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-publish.log",
+      "size": 22877,
+      "lines": 262,
+      "errors": 19,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation-boost-state.json",
+      "size": 159,
+      "lines": 8,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation-boost.jsonl",
+      "size": 56129,
+      "lines": 246,
+      "errors": 130,
+      "warnings": 0
+    },
+    {
+      "name": "evomap-reputation.log",
+      "size": 25898,
+      "lines": 121,
+      "errors": 3,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-auto-recovery.log",
+      "size": 107298,
+      "lines": 1716,
+      "errors": 0,
+      "warnings": 88
+    },
+    {
+      "name": "gateway-memory-alerts.log",
+      "size": 128,
+      "lines": 4,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-memory-state.json",
+      "size": 232,
+      "lines": 11,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-memory.log",
+      "size": 181837,
+      "lines": 2950,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-recovery-history.log",
+      "size": 138,
+      "lines": 3,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart-history.log",
+      "size": 468,
+      "lines": 9,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart-state.json",
+      "size": 65,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-restart.log",
+      "size": 7121,
+      "lines": 141,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "gateway-smart-restart.log",
+      "size": 2654,
+      "lines": 52,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "git-sync.log",
+      "size": 368,
+      "lines": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "last-invite.txt",
+      "size": 423,
+      "lines": 18,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "log-cleanup.log",
+      "size": 455,
+      "lines": 13,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "long-sessions-20260313-123154.json",
+      "size": 135,
+      "lines": 7,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "long-sessions.log",
+      "size": 988,
+      "lines": 15,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "memory-alerts.log",
+      "size": 6045,
+      "lines": 115,
+      "errors": 0,
+      "warnings": 111
+    },
+    {
+      "name": "memory-archiver.log",
+      "size": 4516,
+      "lines": 83,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "memory-optimizer.log",
+      "size": 598,
+      "lines": 12,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "molecular-experiment.log",
+      "size": 15919,
+      "lines": 192,
+      "errors": 62,
+      "warnings": 0
+    },
+    {
+      "name": "outreach.log",
+      "size": 124854,
+      "lines": 2099,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "rate-limit.log",
+      "size": 135802,
+      "lines": 2617,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "rccam.log",
+      "size": 109359,
+      "lines": 4167,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "relationship-maintenance.log",
+      "size": 4467,
+      "lines": 68,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "safe-functions-monitor.log",
+      "size": 6009,
+      "lines": 139,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "safe-functions-state.json",
+      "size": 171,
+      "lines": 10,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "security-alerts.log",
+      "size": 107,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "security-threats.log",
+      "size": 397,
+      "lines": 14,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "session-cleanup-stats.json",
+      "size": 54,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "session-cleanup.log",
+      "size": 246,
+      "lines": 9,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "session-termination.log",
+      "size": 77054,
+      "lines": 827,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-queue.json",
+      "size": 3,
+      "lines": 2,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-scheduler-state.json",
+      "size": 164,
+      "lines": 10,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-scheduler.log",
+      "size": 259,
+      "lines": 6,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-stagger-state.json",
+      "size": 379,
+      "lines": 11,
+      "errors": 1,
+      "warnings": 0
+    },
+    {
+      "name": "subagent-stagger.log",
+      "size": 815,
+      "lines": 16,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "task-disable-recommendations.json",
+      "size": 732,
+      "lines": 32,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "threats.log",
+      "size": 98057,
+      "lines": 1872,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "name": "verify-429-improvement.log",
+      "size": 633,
+      "lines": 12,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "errors": [],
+  "patterns": [],
+  "summary": {
+    "totalFiles": 83,
+    "totalErrors": 336,
+    "totalWarnings": 202
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-03-16T12:06:10.931Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 455,
+      "suspiciousIPs": 4
+    }
+  ],
+  "threats": [
+    {
+      "ip": "207.211.184.123",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-16T12:06:10.932Z"
+    },
+    {
+      "ip": "13.86.117.6",
+      "type": "scanner",
+      "timestamp": "2026-03-16T12:06:10.932Z"
+    },
+    {
+      "ip": "20.65.194.183",
+      "type": "scanner",
+      "timestamp": "2026-03-16T12:06:10.932Z"
+    },
+    {
+      "ip": "20.65.193.170",
+      "type": "scanner",
+      "timestamp": "2026-03-16T12:06:10.932Z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-15T22:00:58.993Z",
+  "scans": [
+    {
+      "file": "nginx_access.log",
+      "linesChecked": 43,
+      "suspiciousIPs": 2
+    }
+  ],
+  "threats": [
+    {
+      "ip": "207.211.184.123",
+      "type": "wordpress_scan",
+      "timestamp": "2026-03-15T22:00:58.994Z"
+    },
+    {
+      "ip": "13.86.117.6",
+      "type": "scanner",
+      "timestamp": "2026-03-15T22:00:58.994Z"
+    }
+  ]
+}

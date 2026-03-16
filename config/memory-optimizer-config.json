@@ -1,0 +1,8 @@
+{
+  "warning_threshold": 80,
+  "emergency_threshold": 90,
+  "gateway_memory_limit": 1536,
+  "session_max_hours": 12,
+  "auto_optimize_enabled": true,
+  "cache_clean_enabled": true
+}

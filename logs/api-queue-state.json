@@ -1,0 +1,9 @@
+{
+  "tokens": 100,
+  "last_refill": "2026-03-14 12:33:33",
+  "queue_length": 0,
+  "requests_processed": 0,
+  "rate_limit_hits": 0,
+  "current_backoff": 1.0,
+  "status": "normal"
+}

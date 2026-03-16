@@ -1,0 +1,9 @@
+{
+  "current_agent": null,
+  "queue_length": 0,
+  "completed_count": 0,
+  "failed_count": 0,
+  "rate_limit_hits": 0,
+  "last_execution": null,
+  "status": "idle"
+}

@@ -1,0 +1,14 @@
+{
+  "max_concurrent_agents": 1,
+  "request_interval": 1,
+  "burst_allowance": 3,
+  "retry_attempts": 3,
+  "retry_delay": 5,
+  "timeout": 120,
+  "priorities": {
+    "P0": {"weight": 100, "immediate": true},
+    "P1": {"weight": 75, "immediate": false},
+    "P2": {"weight": 50, "immediate": false},
+    "P3": {"weight": 25, "immediate": false}
+  }
+}

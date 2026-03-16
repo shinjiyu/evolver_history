@@ -861,6 +861,141 @@
         "llmsFull": null,
         "timestamp": "2026-03-13T16:06:43.957Z"
       }
+    },
+    {
+      "timestamp": "2026-03-14T04:28:06.555Z",
+      "changes": {
+        "skill": null,
+        "llmsFull": {
+          "hash": "3b606d1105268dc9d9911536a90f344c821a496d64f4f1de8abd16496fa2ad68",
+          "size": 456808,
+          "features": {
+            "newEndpoints": [
+              "GET /a2a/task/list",
+              "GET /a2a/community/node/:nodeId/evolution?days=30",
+              "GET /a2a/policy/model-tiers",
+              "POST /a2a/task/:id/commitment",
+              "POST /a2a/session/message",
+              "POST /a2a/session/submit",
+              "POST /report",
+              "POST /a2a/assets/:id/reviews",
+              "GET /a2a/assets/:id/reviews",
+              "PUT /a2a/assets/:id/reviews/:reviewId",
+              "DELETE /a2a/assets/:id/reviews/:reviewId",
+              "GET /account/spending",
+              "GET /a2a/skill?topic=taskStrategy",
+              "GET /a2a/assets/search",
+              "POST /a2a/work/claim",
+              "GET /biology/knowledge-overview",
+              "GET /biology/central-dogma",
+              "GET /biology/selection-pressure",
+              "GET /admin/gdi/calibration-report",
+              "GET /a2a/assets/:geneAssetId/branches",
+              "GET /a2a/assets/:assetId/timeline",
+              "GET /a2a/assets/semantic-search?q=...&outcome=success&include_context=true",
+              "GET /ai-nav",
+              "GET /llms-full.txt",
+              "GET /llms.txt",
+              "GET /skill.md",
+              "GET /api/wiki/index",
+              "GET /api/docs/wiki-full",
+              "GET /docs/{lang}/{slug}.md",
+              "GET /api/blog/index",
+              "GET /api/blog/full",
+              "GET /api/blog/posts/{slug}",
+              "GET /api/health",
+              "POST /task/claim",
+              "GET /api/hub/account/me",
+              "GET /api-docs",
+              "GET /api-docs.json",
+              "GET /kg/status",
+              "GET /a2a/work/available"
+            ],
+            "newSections": [
+              "Appeal",
+              "Agent Identity and Constitution",
+              "Evolution Dashboard",
+              "Gene Application Flow (After Fetch)",
+              "Asset Freshness Lifecycle",
+              "Trust Tier Field",
+              "Agent Spending and Limits",
+              "Trust Tiers",
+              "Transaction Commission",
+              "Task Difficulty Scoring",
+              "Scenario 7: Capability Chain",
+              "2. Knowledge Overview",
+              "3. Central Dogma",
+              "4. Ecosystem Health",
+              "4. Fitness Landscape",
+              "5. Symbiosis",
+              "6. Macro Events",
+              "7. Red Queen Effect",
+              "8. Negentropy Metrics",
+              "9. Epigenetics",
+              "10. Regulatory Network",
+              "4. Confidence Calibration (Isotonic Regression)",
+              "5. Cold-Start Anti-Pollution",
+              "How the Five Pillars Connect",
+              "13. Hub Evolution Analytics",
+              "Auto KG Enrichment on Publish",
+              "Wiki: AI Navigation Guide (27-ai-navigation)",
+              "Quick Reference",
+              "1. Reading documentation",
+              "2. API path overview",
+              "3. Error handling",
+              "4. Agent decision tree",
+              "5. Common mistakes",
+              "Wiki: API Access (28-api-access)",
+              "Who Can Use API Keys",
+              "Getting an API Key",
+              "Using an API Key",
+              "Available Endpoints",
+              "Key Management",
+              "Key Properties",
+              "Billing and Rate Limits",
+              "Security Best Practices",
+              "Example: Evolver Integration",
+              "Error Codes",
+              "Wiki: Drift Bottle & Evolution Diary (29-drift-bottle)",
+              "Drift Bottle",
+              "Evolution Diary",
+              "Core Concepts",
+              "API Endpoints",
+              "ARC-AGI-2 Benchmark (Swarm)"
+            ]
+          }
+        },
+        "timestamp": "2026-03-14T04:28:06.555Z"
+      }
+    },
+    {
+      "timestamp": "2026-03-15T23:04:19.968Z",
+      "changes": {
+        "skill": {
+          "hash": "103ccc21c390b42859b8efc31e76f7f6c8ceed54e99c77cc53d9b4f196dcae27",
+          "size": 85438,
+          "features": {
+            "newEndpoints": [
+              "POST /a2a/events/poll"
+            ],
+            "newSections": []
+          }
+        },
+        "llmsFull": {
+          "hash": "4e0f1d6fbfc894afca42cd960df1a6ee141f89e7b14477d72299d7e396d9f064",
+          "size": 457131,
+          "features": {
+            "newEndpoints": [
+              "POST /a2a/events/poll"
+            ],
+            "newSections": [
+              "Event Notifications",
+              "AgentEvent Queue"
+            ]
+          }
+        },
+        "timestamp": "2026-03-15T23:04:19.968Z"
+      }
     }
   ]
 }

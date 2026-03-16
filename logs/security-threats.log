@@ -1,0 +1,13 @@
+=== 安全威胁响应 ===
+时间: Sun Mar 15 20:32:39 CST 2026
+
+检查已知威胁...
+  检查: 20.196.192.175
+    ❌ 未封禁
+✅ 封禁规则已创建: /etc/iptables/security-rules.txt
+⚠️  Webhook URL 未配置，跳过通知
+⚠️  管理员邮箱未配置，跳过邮件通知
+
+报告: /root/.openclaw/workspace/memory/security-response-report-20260315-203239.md
+
+=== 响应完成 ===
